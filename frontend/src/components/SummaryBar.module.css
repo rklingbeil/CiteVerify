@@ -61,8 +61,25 @@
   border: 1px solid var(--color-unverifiable-border);
 }
 
-.newBtn {
+.pdfBtn {
   margin-left: auto;
+  padding: 6px 16px;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pdfBtn:hover {
+  background: var(--color-accent);
+  color: white;
+}
+
+.newBtn {
   padding: 6px 16px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);

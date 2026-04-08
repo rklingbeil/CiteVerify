@@ -7,5 +7,6 @@ requests
 PyMuPDF
 python-docx
 pydantic
+reportlab
 pytest
 httpx

@@ -7,6 +7,13 @@ interface Props {
 }
 
 export default function SummaryBar({ report, onReset }: Props) {
+  function handleDownloadPdf() {
+    const link = document.createElement("a");
+    link.href = `/api/reports/${report.id}/pdf`;
+    link.download = "";
+    link.click();
+  }
+
   return (
     <div className={styles.bar}>
       <div className={styles.left}>
@@ -39,6 +46,9 @@ export default function SummaryBar({ report, onReset }: Props) {
         )}
       </div>
 
+      <button className={styles.pdfBtn} onClick={handleDownloadPdf}>
+        Download PDF
+      </button>
       <button className={styles.newBtn} onClick={onReset}>
         New Document
       </button>
