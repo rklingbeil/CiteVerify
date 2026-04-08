@@ -1,0 +1,8 @@
+[project]
+name = "citeverify"
+version = "0.1.0"
+description = "Legal citation verification tool"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

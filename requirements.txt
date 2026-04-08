@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-multipart
+anthropic
+python-dotenv
+requests
+PyMuPDF
+python-docx
+pydantic
+pytest
+httpx
