@@ -1,0 +1,79 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 20px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filename {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.total {
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.verified {
+  background: var(--color-verified-bg);
+  color: var(--color-verified);
+  border: 1px solid var(--color-verified-border);
+}
+
+.warning {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+  border: 1px solid var(--color-warning-border);
+}
+
+.error {
+  background: var(--color-error-bg);
+  color: var(--color-error);
+  border: 1px solid var(--color-error-border);
+}
+
+.unverifiable {
+  background: var(--color-unverifiable-bg);
+  color: var(--color-unverifiable);
+  border: 1px solid var(--color-unverifiable-border);
+}
+
+.newBtn {
+  margin-left: auto;
+  padding: 6px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.newBtn:hover {
+  border-color: var(--color-text-muted);
+  color: var(--color-text);
+}

@@ -1,0 +1,154 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.statusRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badgeVerified {
+  background: var(--color-verified-bg);
+  color: var(--color-verified);
+  border: 1px solid var(--color-verified-border);
+}
+
+.badgeWarning {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+  border: 1px solid var(--color-warning-border);
+}
+
+.badgeError {
+  background: var(--color-error-bg);
+  color: var(--color-error);
+  border: 1px solid var(--color-error-border);
+}
+
+.badgeUnverifiable {
+  background: var(--color-unverifiable-bg);
+  color: var(--color-unverifiable);
+  border: 1px solid var(--color-unverifiable-border);
+}
+
+.confidence {
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+}
+
+.sectionTitle {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--color-text-muted);
+}
+
+.citationText {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.fullRef {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.sourceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.label {
+  color: var(--color-text-muted);
+  width: 56px;
+  flex-shrink: 0;
+}
+
+.value {
+  color: var(--color-text-secondary);
+}
+
+.link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.notFound {
+  color: var(--color-text-muted);
+  font-size: 13px;
+  font-style: italic;
+}
+
+.quoteBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.quoteLabel {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.quote {
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 8px 12px;
+  border-left: 3px solid var(--color-border);
+  background: var(--color-surface-hover);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--color-text-secondary);
+}
+
+.diff {
+  font-size: 13px;
+  color: var(--color-warning);
+  line-height: 1.5;
+}
+
+.explanation {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.context {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-style: italic;
+}
