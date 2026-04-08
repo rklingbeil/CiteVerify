@@ -1,0 +1,17 @@
+.env
+.env.*
+.git
+.gitignore
+.DS_Store
+__pycache__
+*.pyc
+venv/
+node_modules/
+frontend/dist/
+tests/
+*.md
+*.pdf
+*.db
+.pytest_cache/
+.claude/
+screenshots/
