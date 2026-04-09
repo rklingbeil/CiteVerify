@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
   flex-shrink: 0;
@@ -17,6 +17,7 @@
 .filename {
   font-weight: 600;
   font-size: 14px;
+  color: var(--color-text);
 }
 
 .total {

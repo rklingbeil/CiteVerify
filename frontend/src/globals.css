@@ -1,32 +1,33 @@
 :root {
-  /* Colors */
-  --color-bg: #0f1117;
-  --color-surface: #1a1d27;
-  --color-surface-hover: #222632;
-  --color-border: #2a2e3a;
-  --color-text: #e4e6eb;
-  --color-text-secondary: #8b8fa3;
-  --color-text-muted: #5c6073;
-  --color-accent: #6366f1;
-  --color-accent-hover: #818cf8;
+  /* Colors — light theme */
+  --color-bg: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f0f1f3;
+  --color-border: #dee2e6;
+  --color-border-light: #e9ecef;
+  --color-text: #212529;
+  --color-text-secondary: #495057;
+  --color-text-muted: #868e96;
+  --color-accent: #4263eb;
+  --color-accent-hover: #3b5bdb;
 
   /* Status colors */
-  --color-verified: #22c55e;
-  --color-verified-bg: rgba(34, 197, 94, 0.12);
-  --color-verified-border: rgba(34, 197, 94, 0.3);
-  --color-warning: #eab308;
-  --color-warning-bg: rgba(234, 179, 8, 0.12);
-  --color-warning-border: rgba(234, 179, 8, 0.3);
-  --color-error: #ef4444;
-  --color-error-bg: rgba(239, 68, 68, 0.12);
-  --color-error-border: rgba(239, 68, 68, 0.3);
-  --color-unverifiable: #6b7280;
-  --color-unverifiable-bg: rgba(107, 114, 128, 0.12);
-  --color-unverifiable-border: rgba(107, 114, 128, 0.3);
+  --color-verified: #2b8a3e;
+  --color-verified-bg: #ebfbee;
+  --color-verified-border: #b2f2bb;
+  --color-warning: #e67700;
+  --color-warning-bg: #fff9db;
+  --color-warning-border: #ffe066;
+  --color-error: #c92a2a;
+  --color-error-bg: #fff5f5;
+  --color-error-border: #ffc9c9;
+  --color-unverifiable: #868e96;
+  --color-unverifiable-bg: #f8f9fa;
+  --color-unverifiable-border: #dee2e6;
 
   /* Spacing */
-  --radius: 8px;
-  --radius-lg: 12px;
+  --radius: 6px;
+  --radius-lg: 10px;
 
   /* Typography */
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
