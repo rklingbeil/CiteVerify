@@ -92,6 +92,74 @@ def strip_code_fences(text: str) -> str:
     return text.strip()
 
 
+def extract_json(text: str) -> Any:
+    """Extract JSON from text that may contain surrounding prose.
+
+    Tries in order:
+    1. Direct parse after stripping code fences
+    2. Extract content between code fences
+    3. Find the first { or [ and match to its closing bracket
+    4. Recover truncated JSON arrays
+    """
+    # 1. Direct parse
+    cleaned = strip_code_fences(text)
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError:
+        pass
+
+    # 2. Extract from code fences anywhere in text
+    fence_match = re.search(r"```(?:json)?\s*\n(.*?)\n```", text, re.DOTALL)
+    if fence_match:
+        try:
+            return json.loads(fence_match.group(1).strip())
+        except json.JSONDecodeError:
+            pass
+
+    # 3. Find first { or [ and match to closing bracket
+    for start_char, end_char in [('{', '}'), ('[', ']')]:
+        start_idx = cleaned.find(start_char)
+        if start_idx == -1:
+            continue
+        # Walk forward counting brackets to find the matching close
+        depth = 0
+        in_string = False
+        escape_next = False
+        for i in range(start_idx, len(cleaned)):
+            ch = cleaned[i]
+            if escape_next:
+                escape_next = False
+                continue
+            if ch == '\\' and in_string:
+                escape_next = True
+                continue
+            if ch == '"' and not escape_next:
+                in_string = not in_string
+                continue
+            if in_string:
+                continue
+            if ch == start_char:
+                depth += 1
+            elif ch == end_char:
+                depth -= 1
+                if depth == 0:
+                    candidate = cleaned[start_idx:i + 1]
+                    try:
+                        return json.loads(candidate)
+                    except json.JSONDecodeError:
+                        break
+
+    # 4. Recover truncated JSON arrays
+    if cleaned.rstrip().endswith(","):
+        recovered = cleaned.rstrip().rstrip(",") + "]"
+        try:
+            return json.loads(recovered)
+        except json.JSONDecodeError:
+            pass
+
+    raise json.JSONDecodeError("No valid JSON found in response", text, 0)
+
+
 def call_ai_json(
     messages: List[Dict[str, str]],
     system: Optional[str] = None,
@@ -99,23 +167,16 @@ def call_ai_json(
     operation_name: str = "AI call",
 ) -> Any:
     """Call AI and parse response as JSON with recovery."""
-    json_hint = "Respond with valid JSON only. No markdown code fences, no commentary."
+    json_hint = "IMPORTANT: Respond with ONLY valid JSON. No prose, no markdown, no explanation — just the JSON object or array."
     full_system = f"{system}\n\n{json_hint}" if system else json_hint
 
     for attempt in range(2):
         raw = call_ai(messages, system=full_system, max_tokens=max_tokens, operation_name=operation_name)
-        cleaned = strip_code_fences(raw)
         try:
-            return json.loads(cleaned)
-        except json.JSONDecodeError:
-            # Try to recover truncated JSON arrays
-            if cleaned.rstrip().endswith(","):
-                cleaned = cleaned.rstrip().rstrip(",") + "]"
-                try:
-                    return json.loads(cleaned)
-                except json.JSONDecodeError:
-                    pass
+            return extract_json(raw)
+        except (json.JSONDecodeError, ValueError):
             if attempt == 0:
-                logger.warning(f"{operation_name}: JSON parse failed, retrying")
+                logger.warning(f"{operation_name}: JSON parse failed, retrying. Raw: {raw[:200]}")
                 continue
+            logger.error(f"{operation_name}: JSON parse failed after retry. Raw: {raw[:500]}")
             raise RuntimeError(f"{operation_name}: could not parse JSON response")
