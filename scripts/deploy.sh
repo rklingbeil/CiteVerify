@@ -1,6 +1,6 @@
 #!/bin/bash
 # CiteVerify — Deploy / update
-# Run: ssh root@159.89.229.245 'bash -s' < scripts/deploy.sh
+# Run: ssh root@64.23.203.101 'bash -s' < scripts/deploy.sh
 set -euo pipefail
 
 APP_DIR=/opt/citeverify
@@ -41,7 +41,7 @@ docker compose up -d
 # ─── Health check ────────────────────────────────────────────────────────
 echo "Waiting for app to start..."
 for i in $(seq 1 30); do
-    if curl -sf http://localhost:8000/api/health >/dev/null 2>&1; then
+    if curl -sf http://localhost/api/health >/dev/null 2>&1; then
         echo ""
         echo "=== Deploy successful! ==="
         IP=$(curl -sf http://checkip.amazonaws.com 2>/dev/null || hostname -I | awk '{print $1}')
