@@ -72,46 +72,86 @@ def _cl_headers() -> dict:
     return headers
 
 
+def _parse_citation_for_search(citation_text: str) -> str:
+    """Normalize a citation string for CourtListener search.
+
+    E.g. "325 Or App 648" → "325 Or. App. 648"
+         "547 U.S. 813 (2006)" → "547 U.S. 813"
+    """
+    # Strip year parenthetical
+    text = re.sub(r"\s*\(\d{4}\)\s*$", "", citation_text.strip())
+    return text
+
+
 def lookup_citation_courtlistener(citation_text: str) -> LookupResult:
-    """Look up a citation via CourtListener's citation-lookup API."""
+    """Look up a citation via CourtListener's search API."""
     _throttle_cl()
+    search_query = _parse_citation_for_search(citation_text)
+
     try:
-        resp = requests.post(
-            f"{COURTLISTENER_BASE}/citation-lookup/",
-            json={"text": citation_text},
+        # Use the v3 search endpoint which supports citation queries
+        resp = requests.get(
+            f"{COURTLISTENER_BASE}/search/",
+            params={
+                "q": f'"{search_query}"',
+                "type": "o",  # opinions
+                "format": "json",
+            },
             headers=_cl_headers(),
             timeout=30,
         )
         if resp.status_code != 200:
-            logger.warning(f"CourtListener citation-lookup returned {resp.status_code}")
+            logger.warning(f"CourtListener search returned {resp.status_code}")
             return LookupResult(found=False, status="error")
 
         data = resp.json()
-        if not data:
+        results = data.get("results", [])
+        if not results:
+            # Try without exact-match quotes for broader search
+            _throttle_cl()
+            resp = requests.get(
+                f"{COURTLISTENER_BASE}/search/",
+                params={
+                    "q": search_query,
+                    "type": "o",
+                    "format": "json",
+                },
+                headers=_cl_headers(),
+                timeout=30,
+            )
+            if resp.status_code == 200:
+                data = resp.json()
+                results = data.get("results", [])
+
+        if not results:
             return LookupResult(found=False, status="not_found")
 
-        # The response is a list of matched citations
-        # Each entry has cluster_url, case_name, etc.
-        first = data[0] if isinstance(data, list) else data
-        cluster_url = first.get("cluster_url", "") or first.get("absolute_url", "")
-        cluster_id = _extract_cluster_id(cluster_url)
+        first = results[0]
+        cluster_id = first.get("cluster_id") or _extract_id_from_url(first.get("cluster", ""))
+        absolute_url = first.get("absolute_url", "")
 
         result = LookupResult(
             found=True,
             status="found",
-            case_name=first.get("case_name", ""),
-            court=first.get("court", ""),
-            date_filed=first.get("date_filed", ""),
+            case_name=first.get("caseName", "") or first.get("case_name", ""),
+            court=first.get("court", "") or first.get("court_id", ""),
+            date_filed=first.get("dateFiled", "") or first.get("date_filed", ""),
             cluster_id=cluster_id,
-            url=f"https://www.courtlistener.com{first.get('absolute_url', '')}",
+            url=f"https://www.courtlistener.com{absolute_url}" if absolute_url else "",
             source="courtlistener",
         )
 
-        # Try to fetch the full opinion text
-        if cluster_id:
-            opinion_text = _fetch_opinion_text(cluster_id)
+        # Try to fetch the full opinion text for verification
+        opinion_id = first.get("id") or _extract_id_from_url(first.get("absolute_url", ""))
+        if opinion_id:
+            opinion_text = _fetch_opinion_text_v4(opinion_id)
             if opinion_text:
                 result.opinion_text = opinion_text
+            elif cluster_id:
+                # Fallback: try via cluster
+                opinion_text = _fetch_opinion_via_cluster(cluster_id)
+                if opinion_text:
+                    result.opinion_text = opinion_text
 
         return result
 
@@ -120,25 +160,50 @@ def lookup_citation_courtlistener(citation_text: str) -> LookupResult:
         return LookupResult(found=False, status="error")
 
 
-def _extract_cluster_id(url: str) -> int | None:
-    """Extract cluster ID from a CourtListener URL."""
-    match = re.search(r"/clusters?/(\d+)/", url)
+def _extract_id_from_url(url: str) -> int | None:
+    """Extract numeric ID from a CourtListener URL or API URL."""
+    if not url:
+        return None
+    match = re.search(r"/(\d+)/", url)
     if match:
         return int(match.group(1))
-    # Also try from opinion URL
-    match = re.search(r"/opinion/(\d+)/", url)
-    if match:
-        return int(match.group(1))
-    return None
+    try:
+        return int(url)
+    except (ValueError, TypeError):
+        return None
 
 
-def _fetch_opinion_text(cluster_id: int) -> str | None:
-    """Fetch the full opinion text for a cluster from CourtListener."""
+def _fetch_opinion_text_v4(opinion_id: int) -> str | None:
+    """Fetch opinion text using the v4 API."""
     _throttle_cl()
     try:
-        # Get cluster to find opinion IDs
         resp = requests.get(
-            f"{COURTLISTENER_BASE}/clusters/{cluster_id}/",
+            f"https://www.courtlistener.com/api/rest/v4/opinions/{opinion_id}/",
+            headers=_cl_headers(),
+            timeout=30,
+        )
+        if resp.status_code != 200:
+            return None
+
+        data = resp.json()
+        text = data.get("plain_text", "")
+        if not text:
+            html = data.get("html_with_citations", "") or data.get("html", "")
+            if html:
+                text = _strip_html(html)
+        return text if text and text.strip() else None
+
+    except requests.RequestException as e:
+        logger.warning(f"Opinion fetch failed for opinion {opinion_id}: {e}")
+        return None
+
+
+def _fetch_opinion_via_cluster(cluster_id: int) -> str | None:
+    """Fetch opinion text by first getting cluster, then its opinions."""
+    _throttle_cl()
+    try:
+        resp = requests.get(
+            f"https://www.courtlistener.com/api/rest/v4/clusters/{cluster_id}/",
             headers=_cl_headers(),
             timeout=30,
         )
@@ -146,57 +211,33 @@ def _fetch_opinion_text(cluster_id: int) -> str | None:
             return None
 
         cluster_data = resp.json()
-        opinion_urls = cluster_data.get("sub_opinions", [])
-        if not opinion_urls:
+        sub_opinions = cluster_data.get("sub_opinions", [])
+        if not sub_opinions:
             return None
 
-        # Fetch the first (lead) opinion
-        opinion_url = opinion_urls[0]
+        # Each sub_opinion is a URL string
+        opinion_url = sub_opinions[0]
         if isinstance(opinion_url, str) and opinion_url.startswith("http"):
             _throttle_cl()
-            resp = requests.get(
-                opinion_url,
-                headers=_cl_headers(),
-                timeout=30,
-            )
-        else:
-            opinion_id = _extract_opinion_id(str(opinion_url))
-            if not opinion_id:
+            resp = requests.get(opinion_url, headers=_cl_headers(), timeout=30)
+            if resp.status_code != 200:
                 return None
-            _throttle_cl()
-            resp = requests.get(
-                f"{COURTLISTENER_BASE}/opinions/{opinion_id}/",
-                headers=_cl_headers(),
-                timeout=30,
-            )
+            data = resp.json()
+        else:
+            oid = _extract_id_from_url(str(opinion_url))
+            if not oid:
+                return None
+            return _fetch_opinion_text_v4(oid)
 
-        if resp.status_code != 200:
-            return None
-
-        opinion_data = resp.json()
-        # Prefer plain_text, fall back to html (strip tags)
-        text = opinion_data.get("plain_text", "")
+        text = data.get("plain_text", "")
         if not text:
-            html = opinion_data.get("html_with_citations", "") or opinion_data.get("html", "")
+            html = data.get("html_with_citations", "") or data.get("html", "")
             if html:
                 text = _strip_html(html)
-
-        return text if text.strip() else None
+        return text if text and text.strip() else None
 
     except requests.RequestException as e:
-        logger.warning(f"Opinion fetch failed for cluster {cluster_id}: {e}")
-        return None
-
-
-def _extract_opinion_id(url: str) -> int | None:
-    """Extract opinion ID from a URL or string."""
-    match = re.search(r"/opinions?/(\d+)/", url)
-    if match:
-        return int(match.group(1))
-    # Try bare integer
-    try:
-        return int(url)
-    except (ValueError, TypeError):
+        logger.warning(f"Cluster opinion fetch failed for cluster {cluster_id}: {e}")
         return None
 
 
@@ -217,14 +258,14 @@ def lookup_citation_govinfo(citation_text: str) -> LookupResult:
     """Search GovInfo for a citation as fallback."""
     _throttle_gi()
     try:
-        resp = requests.post(
+        resp = requests.get(
             f"{GOVINFO_BASE}/search",
-            json={
+            params={
                 "query": citation_text,
                 "pageSize": 3,
                 "collection": "USCOURTS",
+                "api_key": GOVINFO_API_KEY,
             },
-            params={"api_key": GOVINFO_API_KEY},
             timeout=15,
         )
         if resp.status_code != 200:
@@ -244,7 +285,6 @@ def lookup_citation_govinfo(citation_text: str) -> LookupResult:
             date_filed=first.get("dateIssued", ""),
             url=first.get("detailsLink", ""),
             source="govinfo",
-            # GovInfo doesn't provide full opinion text easily
             opinion_text=None,
         )
 
