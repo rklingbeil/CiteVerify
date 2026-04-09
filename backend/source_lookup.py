@@ -294,17 +294,25 @@ def _strip_html(html: str) -> str:
 
 # ─── GovInfo ──────────────────────────────────────────────────────────────
 
-def lookup_citation_govinfo(citation_text: str) -> LookupResult:
-    """Search GovInfo for a citation as fallback."""
+def lookup_citation_govinfo(citation_text: str, case_name: str = "") -> LookupResult:
+    """Search GovInfo for a citation as fallback (POST endpoint).
+
+    GovInfo is a document search engine, not a citation resolver — it finds
+    documents that *mention* a citation rather than the case itself.
+    Still useful as a secondary confirmation of existence.
+    """
     _throttle_gi()
+    # Build a focused query — use case name if available
+    query = f'"{case_name}"' if case_name else citation_text
+
     try:
-        resp = requests.get(
+        resp = requests.post(
             f"{GOVINFO_BASE}/search",
-            params={
-                "query": citation_text,
-                "pageSize": 3,
-                "collection": "USCOURTS",
-                "api_key": GOVINFO_API_KEY,
+            params={"api_key": GOVINFO_API_KEY},
+            json={
+                "query": query,
+                "pageSize": 5,
+                "offsetMark": "*",
             },
             timeout=15,
         )
@@ -316,16 +324,31 @@ def lookup_citation_govinfo(citation_text: str) -> LookupResult:
         if not results:
             return LookupResult(found=False, status="not_found")
 
-        first = results[0]
+        # Try to find a result whose title matches the case name
+        best = results[0]
+        if case_name:
+            name_lower = case_name.lower()
+            for r in results:
+                title = r.get("title", "").lower()
+                # Check if the case name parties appear in the title
+                parties = re.split(r"\s+v\.?\s+", name_lower)
+                if any(p.strip() in title for p in parties if len(p.strip()) > 3):
+                    best = r
+                    break
+
+        # Build a link to the PDF if available
+        pdf_link = best.get("download", {}).get("pdfLink", "")
+        result_link = best.get("resultLink", "")
+
         return LookupResult(
             found=True,
             status="found",
-            case_name=first.get("title", ""),
-            court=first.get("court", ""),
-            date_filed=first.get("dateIssued", ""),
-            url=first.get("detailsLink", ""),
+            case_name=best.get("title", ""),
+            court=", ".join(best.get("governmentAuthor", [])),
+            date_filed=best.get("dateIssued", ""),
+            url=pdf_link or result_link,
             source="govinfo",
-            opinion_text=None,
+            opinion_text=None,  # GovInfo doesn't provide raw opinion text via API
         )
 
     except requests.RequestException as e:
