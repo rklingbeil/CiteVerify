@@ -1,4 +1,11 @@
-"""Verification pipeline — orchestrates extraction, lookup, and verification."""
+"""Verification pipeline — orchestrates extraction, lookup, and verification.
+
+Maximizes accuracy through:
+- Two-pass citation extraction (extract + review)
+- Three-strategy source lookup (citation param, free-text, case name)
+- Thorough multi-step verification with large token budgets
+- AI knowledge fallback for citations without source text
+"""
 
 import logging
 import uuid
@@ -9,7 +16,12 @@ from typing import Callable, Optional
 from backend.citation_extractor import ExtractedCitation, extract_citations
 from backend.extractor import extract_document
 from backend.source_lookup import LookupResult, lookup_citation
-from backend.verifier import VerificationResult, make_unverifiable_result, verify_citation
+from backend.verifier import (
+    VerificationResult,
+    make_unverifiable_result,
+    verify_citation,
+    verify_citation_from_knowledge,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -79,6 +91,7 @@ class VerificationReport:
                         "characterization_accuracy": c.verification.characterization_accuracy,
                         "characterization_explanation": c.verification.characterization_explanation,
                         "confidence": c.verification.confidence,
+                        "reasoning": c.verification.reasoning,
                     },
                 }
                 for c in self.citations
@@ -102,13 +115,13 @@ def run_verification(
         if progress_callback:
             progress_callback(step, total, message)
 
-    # Step 1: Extract text
-    progress(5, 100, "Extracting text from document...")
+    # ── Step 1: Extract text ─────────────────────────────────────────────
+    progress(2, 100, "Extracting text from document...")
     extraction = extract_document(file_path)
     logger.info(f"Extracted {len(extraction.text)} chars from {filename}")
 
-    # Step 2: Extract citations via AI
-    progress(10, 100, "Identifying citations, quotes, and characterizations...")
+    # ── Step 2: Extract citations via AI (two-pass) ──────────────────────
+    progress(5, 100, "Pass 1: Identifying all citations, quotes, and characterizations...")
     citations = extract_citations(extraction.text)
     logger.info(f"Found {len(citations)} citations in {filename}")
 
@@ -125,15 +138,17 @@ def run_verification(
             created_at=datetime.now(timezone.utc).isoformat(),
         )
 
-    # Step 3: Look up each citation
+    progress(20, 100, f"Found {len(citations)} citations. Looking up sources...")
+
+    # ── Step 3: Look up each citation ────────────────────────────────────
     citation_reports: list[CitationReport] = []
     lookup_progress_start = 20
-    lookup_progress_end = 70
+    lookup_progress_end = 55
     lookup_range = lookup_progress_end - lookup_progress_start
 
     for i, citation in enumerate(citations):
         pct = lookup_progress_start + int((i / len(citations)) * lookup_range)
-        progress(pct, 100, f"Looking up: {citation.case_name or citation.citation_text}...")
+        progress(pct, 100, f"Looking up ({i+1}/{len(citations)}): {citation.case_name or citation.citation_text}...")
 
         lookup_result = lookup_citation(citation.citation_text, case_name=citation.case_name)
         citation_reports.append(CitationReport(
@@ -142,20 +157,22 @@ def run_verification(
             verification=make_unverifiable_result(),  # placeholder
         ))
 
-    # Step 4: Verify citations that have source text
-    verify_progress_start = 70
-    verify_progress_end = 95
+    # ── Step 4: Verify citations with source text ────────────────────────
+    verify_progress_start = 55
+    verify_progress_end = 80
     verify_range = verify_progress_end - verify_progress_start
     verifiable = [cr for cr in citation_reports if cr.lookup.opinion_text]
 
+    logger.info(f"{len(verifiable)} of {len(citation_reports)} citations have source text for verification")
+
     for i, cr in enumerate(verifiable):
         pct = verify_progress_start + int((i / max(len(verifiable), 1)) * verify_range)
-        progress(pct, 100, f"Verifying: {cr.extraction.case_name or cr.extraction.citation_text}...")
+        progress(pct, 100, f"Verifying ({i+1}/{len(verifiable)}): {cr.extraction.case_name or cr.extraction.citation_text}...")
 
-        # Only verify if there's a quote or characterization to check
         if cr.extraction.quoted_text or cr.extraction.characterization:
             cr.verification = verify_citation(cr.extraction, cr.lookup.opinion_text)
         else:
+            # Citation found but nothing to verify — it's verified by existence
             cr.verification = VerificationResult(
                 status="verified",
                 citation_exists=True,
@@ -164,11 +181,28 @@ def run_verification(
                 quote_diff=None,
                 actual_quote=None,
                 characterization_accuracy=None,
-                characterization_explanation="No quote or characterization to verify",
-                confidence=1.0,
+                characterization_explanation="Citation confirmed — no quote or characterization to verify",
+                confidence=0.9,
             )
 
-    # Step 5: Assemble report
+    # ── Step 5: Knowledge-based verification for unverifiable citations ──
+    unverified = [cr for cr in citation_reports
+                  if cr.verification.status == "unverifiable"
+                  and (cr.extraction.quoted_text or cr.extraction.characterization)]
+
+    if unverified:
+        knowledge_start = 80
+        knowledge_end = 95
+        knowledge_range = knowledge_end - knowledge_start
+        logger.info(f"Running AI knowledge verification for {len(unverified)} unverifiable citations")
+
+        for i, cr in enumerate(unverified):
+            pct = knowledge_start + int((i / len(unverified)) * knowledge_range)
+            progress(pct, 100, f"AI knowledge check ({i+1}/{len(unverified)}): {cr.extraction.case_name}...")
+
+            cr.verification = verify_citation_from_knowledge(cr.extraction)
+
+    # ── Step 6: Assemble report ──────────────────────────────────────────
     progress(98, 100, "Assembling report...")
 
     verified_count = sum(1 for cr in citation_reports if cr.verification.status == "verified")

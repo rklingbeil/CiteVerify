@@ -103,10 +103,18 @@ function CitationRow({ citation, index }: { citation: CitationReport; index: num
         </div>
       )}
 
+      {/* Verification reasoning */}
+      {verification.reasoning && (
+        <div className={styles.section}>
+          <div className={styles.sectionLabel}>Verification Reasoning</div>
+          <div className={styles.reasoningText}>{verification.reasoning}</div>
+        </div>
+      )}
+
       {/* Context from document */}
       {extraction.context && (
         <div className={styles.section}>
-          <div className={styles.sectionLabel}>Context</div>
+          <div className={styles.sectionLabel}>Context in Document</div>
           <div className={styles.contextText}>{extraction.context}</div>
         </div>
       )}

@@ -199,6 +199,16 @@
   line-height: 1.6;
 }
 
+.reasoningText {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  background: var(--color-surface-hover);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border-left: 3px solid var(--color-accent);
+}
+
 .contextText {
   font-size: 13px;
   color: var(--color-text-muted);

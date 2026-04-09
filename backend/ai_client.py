@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 _client: Optional[Anthropic] = None
 
-DEFAULT_MAX_RETRIES = 3
+DEFAULT_MAX_RETRIES = 5
 DEFAULT_BASE_DELAY = 2.0
 
 
@@ -54,7 +54,7 @@ def call_ai(
                 kwargs["system"] = system
 
             # Use streaming for large responses to avoid SDK timeout
-            if max_tokens > 16_000:
+            if max_tokens > 8_000:
                 with client.messages.stream(**kwargs) as stream:
                     return stream.get_final_text()
             else:

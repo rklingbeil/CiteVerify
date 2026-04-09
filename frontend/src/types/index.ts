@@ -32,6 +32,7 @@ export interface VerificationInfo {
   characterization_accuracy: "accurate" | "misleading" | "unsupported" | null;
   characterization_explanation: string | null;
   confidence: number;
+  reasoning: string | null;
 }
 
 export interface CitationReport {
