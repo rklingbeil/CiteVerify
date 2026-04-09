@@ -12,7 +12,6 @@ AI_PROVIDER = os.getenv("AI_PROVIDER", "anthropic")  # anthropic | openai | gemi
 
 # ─── Case Law APIs ───────────────────────────────────────────────────────
 COURTLISTENER_API_TOKEN = os.getenv("COURTLISTENER_API_TOKEN", "")
-COURTLISTENER_BASE = "https://www.courtlistener.com/api/rest/v3"
 
 GOVINFO_API_KEY = os.getenv("GOVINFO_API_KEY", "DEMO_KEY")
 GOVINFO_BASE = "https://api.govinfo.gov"

@@ -12,9 +12,16 @@ EXTRACTION_SYSTEM = """You are a legal citation analysis expert. Your task is to
 legal citation, direct quotation, and case characterization from the provided legal document.
 
 For each citation found, return:
-- citation_text: The formal citation (e.g., "325 Or App 648")
-- case_name: The case name (e.g., "Smith v. Jones")
-- full_reference: The complete reference as it appears
+- citation_text: The FULL formal citation with the STARTING page of the case — NOT pinpoint
+  pages. For example: if the document says "Leon, 464 F.3d at 958", the full citation for
+  that case is "464 F.3d 951" (the first page). If you know the starting page from earlier in
+  the document or from legal knowledge, use it. If you only have a pinpoint cite like
+  "501 U.S. at 44", try to identify the full citation from context (e.g., "501 U.S. 32").
+  If the document provides the full citation somewhere (even earlier), use that.
+  NEVER use "at" in citation_text — that indicates a pinpoint, not the full cite.
+- pinpoint: The specific page(s) referenced (e.g., "958" or "44–46"), or null if none
+- case_name: The full case name (e.g., "Leon v. IDX Systems Corp.")
+- full_reference: The complete reference exactly as it appears in the document
 - quoted_text: Any direct quote from the cited case that appears in the document (null if none)
 - characterization: How the document describes what the case held or established (null if none)
 - context: The full sentence or paragraph containing the citation
@@ -23,14 +30,19 @@ For each citation found, return:
 
 Be thorough — find EVERY citation, including footnotes. Include both case citations and
 statutory citations. For quoted text, extract the EXACT quote as it appears in the document,
-including any ellipses, brackets, or emphasis markers."""
+including any ellipses, brackets, or emphasis markers.
+
+CRITICAL: Deduplicate — if the same case is cited multiple times at different pinpoints,
+create a separate entry for each occurrence, but always use the same base citation_text
+for the same case."""
 
 EXTRACTION_PROMPT = """Extract all legal citations, quotes, and characterizations from this document.
 
 Return a JSON array of objects. Each object must have these fields:
-- citation_text (string)
-- case_name (string)
-- full_reference (string)
+- citation_text (string — FULL citation with starting page, NO "at" pinpoints)
+- pinpoint (string or null — specific page/pages referenced)
+- case_name (string — full case name)
+- full_reference (string — as it appears in document)
 - quoted_text (string or null)
 - characterization (string or null)
 - context (string)
@@ -51,6 +63,7 @@ class ExtractedCitation:
     context: str
     position_start: int
     position_end: int
+    pinpoint: Optional[str] = None
 
 
 def extract_citations(document_text: str) -> list[ExtractedCitation]:
@@ -119,6 +132,7 @@ def _extract_from_text(text: str) -> list[ExtractedCitation]:
             context=item.get("context", ""),
             position_start=item.get("position_start", 0),
             position_end=item.get("position_end", 0),
+            pinpoint=item.get("pinpoint"),
         ))
 
     logger.info(f"Extracted {len(citations)} citations from text ({len(text)} chars)")

@@ -135,7 +135,7 @@ def run_verification(
         pct = lookup_progress_start + int((i / len(citations)) * lookup_range)
         progress(pct, 100, f"Looking up: {citation.case_name or citation.citation_text}...")
 
-        lookup_result = lookup_citation(citation.citation_text)
+        lookup_result = lookup_citation(citation.citation_text, case_name=citation.case_name)
         citation_reports.append(CitationReport(
             extraction=citation,
             lookup=lookup_result,
