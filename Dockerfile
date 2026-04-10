@@ -38,4 +38,4 @@ RUN chmod +x /app/scripts/docker-entrypoint.sh
 EXPOSE 8000
 
 ENTRYPOINT ["/app/scripts/docker-entrypoint.sh"]
-CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "2"]
+CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
