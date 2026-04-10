@@ -114,7 +114,7 @@ class TestVerifyCitation:
             "overall_status": "verified",
         }
 
-        long_opinion = "x" * 100_000
+        long_opinion = "x" * 200_000  # Must exceed 150K to trigger truncation
         verify_citation(_make_citation(), long_opinion)
 
         # Check that the opinion was truncated in the prompt

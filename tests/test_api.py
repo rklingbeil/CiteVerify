@@ -48,7 +48,7 @@ class TestUpload:
             "/api/upload",
             files={"file": ("huge.pdf", io.BytesIO(big), "application/pdf")},
         )
-        assert resp.status_code == 400
+        assert resp.status_code == 413
         assert "too large" in resp.json()["detail"]
 
     def test_upload_rejects_no_filename(self, client):

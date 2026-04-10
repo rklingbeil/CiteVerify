@@ -71,9 +71,9 @@ def _throttle_gi() -> None:
 # ─── Citation Parsing ─────────────────────────────────────────────────────
 
 _CITE_PATTERN = re.compile(
-    r"^(\d+)\s+"           # volume
-    r"([A-Za-z][A-Za-z. ]+?)\s+"  # reporter (e.g. "U.S.", "F.3d", "S. Ct.")
-    r"(\d+)"               # page
+    r"^(\d+)\s+"                    # volume
+    r"([A-Za-z][A-Za-z0-9. ]+?)\s+"  # reporter (e.g. "U.S.", "F.3d", "S. Ct.", "L. Ed. 2d")
+    r"(\d+)"                        # page
 )
 
 
@@ -333,6 +333,10 @@ def _cl_v4_search(q: str) -> LookupResult | None:
             timeout=30,
         )
 
+        if resp.status_code == 429:
+            logger.warning(f"CourtListener V4 rate limited for q={q!r}, waiting 5s")
+            time.sleep(5)
+            return None
         if resp.status_code != 200:
             logger.warning(f"CourtListener V4 search returned {resp.status_code} for q={q!r}")
             return None
@@ -458,11 +462,14 @@ def _fetch_opinion_via_cluster(cluster_id: int) -> tuple[str | None, int | None]
 
 
 def _extract_id_from_url(url: str) -> int | None:
+    """Extract the last numeric path segment from a URL."""
     if not url:
         return None
-    match = re.search(r"/(\d+)/", url)
-    if match:
-        return int(match.group(1))
+    # Get the last numeric path segment (e.g., /opinions/12345/ → 12345)
+    parts = url.rstrip("/").split("/")
+    for part in reversed(parts):
+        if part.isdigit():
+            return int(part)
     try:
         return int(url)
     except (ValueError, TypeError):
@@ -471,7 +478,13 @@ def _extract_id_from_url(url: str) -> int | None:
 
 def _strip_html(html: str) -> str:
     """Strip HTML tags and decode common entities."""
-    text = re.sub(r"<[^>]+>", "", html)
+    # Remove <script> and <style> blocks (including content)
+    text = re.sub(r"<script[^>]*>.*?</script>", "", html, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<style[^>]*>.*?</style>", "", text, flags=re.DOTALL | re.IGNORECASE)
+    # Remove HTML comments
+    text = re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
+    # Strip remaining tags
+    text = re.sub(r"<[^>]+>", "", text)
     text = re.sub(r"&nbsp;", " ", text)
     text = re.sub(r"&amp;", "&", text)
     text = re.sub(r"&lt;", "<", text)
@@ -551,6 +564,9 @@ def lookup_citation_govinfo(citation_text: str, case_name: str = "") -> LookupRe
 
 def lookup_citation(citation_text: str, case_name: str = "") -> LookupResult:
     """Look up a citation, trying CourtListener V4 first then GovInfo."""
+    if not citation_text or not citation_text.strip():
+        return LookupResult(found=False, status="not_found")
+
     result = lookup_citation_courtlistener(citation_text, case_name=case_name)
     if result.found:
         return result

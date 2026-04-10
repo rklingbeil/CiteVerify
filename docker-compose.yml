@@ -6,8 +6,10 @@ services:
     env_file: .env
     environment:
       - UPLOAD_DIR=/tmp/citeverify_uploads
+      - DISABLE_DOCS=true
     security_opt:
       - no-new-privileges:true
+    mem_limit: 768m
     logging:
       driver: json-file
       options:
@@ -26,7 +28,6 @@ services:
     restart: unless-stopped
     ports:
       - "80:80"
-      - "443:443"
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d:ro
       - ./nginx/ssl:/etc/nginx/ssl:ro

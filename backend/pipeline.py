@@ -170,7 +170,11 @@ def run_verification(
         progress(pct, 100, f"Verifying ({i+1}/{len(verifiable)}): {cr.extraction.case_name or cr.extraction.citation_text}...")
 
         if cr.extraction.quoted_text or cr.extraction.characterization:
-            cr.verification = verify_citation(cr.extraction, cr.lookup.opinion_text)
+            try:
+                cr.verification = verify_citation(cr.extraction, cr.lookup.opinion_text)
+            except Exception as e:
+                logger.warning(f"Verification failed for {cr.extraction.citation_text}: {e}")
+                cr.verification = make_unverifiable_result(f"Verification error: {e}")
         else:
             # Citation found but nothing to verify — it's verified by existence
             cr.verification = VerificationResult(

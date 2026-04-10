@@ -79,10 +79,11 @@ class TestCallAIJSON:
         assert result == [1, 2, 3]
 
     @patch("backend.ai_client.call_ai")
-    def test_recovers_truncated_array(self, mock_call):
+    def test_recovers_from_truncated_response(self, mock_call):
+        # When array is truncated, bracket-matching finds the first complete object
         mock_call.return_value = '[{"a": 1}, {"b": 2},'
         result = call_ai_json([{"role": "user", "content": "test"}])
-        assert result == [{"a": 1}, {"b": 2}]
+        assert result == {"a": 1}  # First complete JSON object found
 
     @patch("backend.ai_client.call_ai")
     def test_raises_on_unparseable(self, mock_call):

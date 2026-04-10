@@ -119,10 +119,12 @@ export default function UploadPanel({ onSuccess }: Props) {
               </div>
               <button
                 className={styles.removeBtn}
+                aria-label="Remove file"
                 onClick={(e) => {
                   e.stopPropagation();
                   setFile(null);
                   setError(null);
+                  if (inputRef.current) inputRef.current.value = "";
                 }}
               >
                 ×

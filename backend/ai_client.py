@@ -59,6 +59,8 @@ def call_ai(
                     return stream.get_final_text()
             else:
                 response = client.messages.create(**kwargs)
+                if not response.content:
+                    raise RuntimeError(f"{operation_name}: empty response from AI")
                 return response.content[0].text
 
         except RateLimitError as e:

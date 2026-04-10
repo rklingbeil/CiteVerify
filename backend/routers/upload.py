@@ -21,11 +21,22 @@ async def upload_document(file: UploadFile):
     if ext not in (".pdf", ".docx"):
         raise HTTPException(400, f"Unsupported file type: {ext}. Upload PDF or DOCX.")
 
-    # Read file with size check
-    content = await file.read()
+    # Read file in chunks with size limit (prevents OOM from large uploads)
     max_bytes = MAX_UPLOAD_SIZE_MB * 1024 * 1024
-    if len(content) > max_bytes:
-        raise HTTPException(400, f"File too large. Maximum: {MAX_UPLOAD_SIZE_MB} MB")
+    chunks: list[bytes] = []
+    total = 0
+    while True:
+        chunk = await file.read(1024 * 1024)  # 1 MB at a time
+        if not chunk:
+            break
+        total += len(chunk)
+        if total > max_bytes:
+            raise HTTPException(413, f"File too large. Maximum: {MAX_UPLOAD_SIZE_MB} MB")
+        chunks.append(chunk)
+    content = b"".join(chunks)
+
+    if len(content) == 0:
+        raise HTTPException(400, "File is empty")
 
     # Save to temp directory
     os.makedirs(UPLOAD_DIR, exist_ok=True)

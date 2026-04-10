@@ -67,7 +67,7 @@ def extract_document(file_path: str) -> ExtractionResult:
     ext = Path(file_path).suffix.lower()
     if ext == ".pdf":
         return extract_pdf(file_path)
-    elif ext in (".docx", ".doc"):
+    elif ext == ".docx":
         return extract_docx(file_path)
     else:
         raise ValueError(f"Unsupported file type: {ext}")

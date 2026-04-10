@@ -1,6 +1,7 @@
 """In-memory job manager with ThreadPoolExecutor."""
 
 import logging
+import os
 import time
 import uuid
 from concurrent.futures import ThreadPoolExecutor
@@ -23,6 +24,7 @@ _reports: dict[str, VerificationReport] = {}
 class JobState:
     id: str
     filename: str
+    file_path: str = ""
     status: str = "pending"  # pending | running | completed | failed
     progress: int = 0
     progress_message: str = ""
@@ -45,7 +47,7 @@ class JobState:
 def submit_job(filename: str, file_path: str) -> str:
     """Submit a verification job and return the job ID."""
     job_id = str(uuid.uuid4())
-    job = JobState(id=job_id, filename=filename)
+    job = JobState(id=job_id, filename=filename, file_path=file_path)
 
     with _lock:
         _jobs[job_id] = job
@@ -61,16 +63,23 @@ def submit_job(filename: str, file_path: str) -> str:
 
             with _lock:
                 _reports[report.id] = report
-
-            job.report_id = report.id
-            job.progress = 100
-            job.progress_message = "Complete"
-            job.status = "completed"
+                job.report_id = report.id
+                job.progress = 100
+                job.progress_message = "Complete"
+                job.status = "completed"
 
         except Exception as e:
             logger.exception(f"Job {job_id} failed: {e}")
             job.error = str(e)
             job.status = "failed"
+
+        finally:
+            # Clean up uploaded temp file
+            try:
+                if file_path and os.path.exists(file_path):
+                    os.unlink(file_path)
+            except OSError:
+                logger.warning(f"Failed to clean up temp file: {file_path}")
 
     _executor.submit(_run)
     return job_id
@@ -97,5 +106,11 @@ def purge_old_jobs() -> None:
             job = _jobs.pop(jid, None)
             if job and job.report_id:
                 _reports.pop(job.report_id, None)
+            # Clean up any leftover temp file
+            if job and job.file_path:
+                try:
+                    os.unlink(job.file_path)
+                except OSError:
+                    pass
     if expired_jobs:
         logger.info(f"Purged {len(expired_jobs)} expired jobs")
