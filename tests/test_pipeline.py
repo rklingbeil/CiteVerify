@@ -90,6 +90,7 @@ class TestRunVerification:
         mock_extract_cit.return_value = [_make_citation(quoted_text=None, characterization=None)]
         mock_lookup.return_value = LookupResult(
             found=True, status="found", opinion_text="opinion", source="courtlistener",
+            case_name="Smith v. Jones",
         )
 
         report = run_verification("/tmp/test.pdf", "test.pdf")

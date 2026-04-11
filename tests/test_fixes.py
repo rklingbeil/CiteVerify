@@ -467,9 +467,11 @@ class TestCaseNameMatch:
     def test_no_match(self):
         assert _case_names_match("Smith v. Jones", "Doe v. Roe") is False
 
-    def test_empty_names_assume_match(self):
-        assert _case_names_match("", "Smith v. Jones") is True
-        assert _case_names_match("Smith v. Jones", "") is True
+    def test_empty_names_no_match(self):
+        """One empty name means we can't confirm a match — returns False."""
+        assert _case_names_match("", "Smith v. Jones") is False
+        assert _case_names_match("Smith v. Jones", "") is False
+        assert _case_names_match("", "") is True  # Both empty is indeterminate
 
     def test_mismatch_skips_source_verification(self):
         """When case names don't match, citation should go to knowledge verification."""

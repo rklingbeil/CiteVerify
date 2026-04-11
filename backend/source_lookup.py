@@ -176,20 +176,27 @@ _gi_last_request = 0.0
 
 def _throttle_cl() -> None:
     global _cl_last_request
+    wait = 0.0
     with _cl_lock:
         elapsed = time.monotonic() - _cl_last_request
         if elapsed < CL_MIN_INTERVAL:
-            time.sleep(CL_MIN_INTERVAL - elapsed)
-        _cl_last_request = time.monotonic()
+            wait = CL_MIN_INTERVAL - elapsed
+        # Reserve our slot immediately so other threads see the updated timestamp
+        _cl_last_request = time.monotonic() + wait
+    if wait > 0:
+        time.sleep(wait)
 
 
 def _throttle_gi() -> None:
     global _gi_last_request
+    wait = 0.0
     with _gi_lock:
         elapsed = time.monotonic() - _gi_last_request
         if elapsed < GI_MIN_INTERVAL:
-            time.sleep(GI_MIN_INTERVAL - elapsed)
-        _gi_last_request = time.monotonic()
+            wait = GI_MIN_INTERVAL - elapsed
+        _gi_last_request = time.monotonic() + wait
+    if wait > 0:
+        time.sleep(wait)
 
 
 # ─── Citation Parsing ─────────────────────────────────────────────────────
@@ -235,6 +242,26 @@ def _cl_headers() -> dict:
     if COURTLISTENER_API_TOKEN:
         headers["Authorization"] = f"Token {COURTLISTENER_API_TOKEN}"
     return headers
+
+
+def _names_plausibly_match(extracted_name: str, lookup_name: str) -> bool:
+    """Quick check if two case names plausibly refer to the same case.
+
+    Used to reject obviously wrong results from broad searches.
+    """
+    if not extracted_name or not lookup_name:
+        return True
+    ext = normalize_legal_name(extracted_name)
+    lkp = normalize_legal_name(lookup_name)
+    if ext == lkp:
+        return True
+    # Check if any substantial party word appears in both
+    ext_parties = re.split(r'\s+v\s+', ext)
+    for party in ext_parties:
+        words = [w for w in party.strip().split() if len(w) > 3]
+        if words and any(w in lkp for w in words[:2]):
+            return True
+    return False
 
 
 # ─── Citation Lookup API (primary) ────────────────────────────────────────
@@ -440,10 +467,15 @@ def lookup_citation_courtlistener(
         if result and result.found:
             return result
 
-    # Strategy 5: Unquoted citation (broadest)
+    # Strategy 5: Unquoted citation (broadest) — validate case name to avoid false positives
     result = _cl_v4_search(q=clean_cite)
     if result and result.found:
-        return result
+        if not case_name or _names_plausibly_match(case_name, result.case_name):
+            return result
+        logger.info(
+            f"Strategy 5 returned '{result.case_name}' for query '{case_name}' — "
+            f"name mismatch, discarding broad search result"
+        )
 
     return LookupResult(found=False, status="not_found")
 

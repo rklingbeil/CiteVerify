@@ -47,8 +47,10 @@ def _case_names_match(extracted_name: str, lookup_name: str) -> bool:
     Uses abbreviation-aware normalization so "Corp." matches "Corporation",
     "Int'l" matches "International", etc.
     """
+    if not extracted_name and not lookup_name:
+        return True  # Both empty, can't determine
     if not extracted_name or not lookup_name:
-        return True  # Can't determine, assume match
+        return False  # One is empty — can't confirm match
     # Normalize both names — expands legal abbreviations to full forms
     ext = normalize_legal_name(extracted_name)
     lkp = normalize_legal_name(lookup_name)
@@ -803,19 +805,30 @@ def run_verification(
         logger.info(f"Running AI knowledge verification for {len(unverified)} unverifiable citations")
 
         def _build_lookup_context(idx: int, cr: CitationReport) -> str:
-            if idx not in mismatch_citations:
-                return ""
-            lookup_case = cr.lookup.case_name or "unknown"
-            return (
-                f"CRITICAL LOOKUP WARNING: The citation database was searched for "
-                f"'{cr.extraction.citation_text}' and returned a DIFFERENT case "
-                f"('{lookup_case}' instead of '{cr.extraction.case_name}'). "
-                f"A separate search by case name also failed to find this case. "
-                f"This strongly suggests the cited case may NOT EXIST or the "
-                f"citation is fabricated. Be extremely skeptical. If you cannot "
-                f"confidently confirm this case exists from your training data, "
-                f"set overall_status to 'error' or 'unverifiable'."
-            )
+            if idx in mismatch_citations:
+                lookup_case = cr.lookup.case_name or "unknown"
+                return (
+                    f"CRITICAL LOOKUP WARNING: The citation database was searched for "
+                    f"'{cr.extraction.citation_text}' and returned a DIFFERENT case "
+                    f"('{lookup_case}' instead of '{cr.extraction.case_name}'). "
+                    f"A separate search by case name also failed to find this case. "
+                    f"This strongly suggests the cited case may NOT EXIST or the "
+                    f"citation is fabricated. Be extremely skeptical. If you cannot "
+                    f"confidently confirm this case exists from your training data, "
+                    f"set overall_status to 'error' or 'unverifiable'."
+                )
+            if not cr.lookup.found:
+                return (
+                    f"LOOKUP WARNING: This citation was NOT FOUND in any legal "
+                    f"database (CourtListener and GovInfo were both searched). "
+                    f"This does not necessarily mean the case is fabricated — the "
+                    f"database may not cover this reporter or jurisdiction — but "
+                    f"you should be more skeptical than usual. If you cannot "
+                    f"confidently confirm this case exists from your training data, "
+                    f"prefer 'unverifiable' over 'verified'. Cap your confidence "
+                    f"accordingly."
+                )
+            return ""
 
         def _knowledge_verify(idx: int, cr: CitationReport) -> VerificationResult:
             return verify_citation_from_knowledge(
