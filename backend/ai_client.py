@@ -3,16 +3,18 @@
 import json
 import logging
 import re
+import threading
 import time
 from typing import Any, Dict, List, Optional
 
-from anthropic import Anthropic, APIError, RateLimitError
+from anthropic import Anthropic, APIConnectionError, APIError, RateLimitError
 
 from backend.config import ANTHROPIC_API_KEY, CLAUDE_MODEL, AI_PROVIDER
 
 logger = logging.getLogger(__name__)
 
 _client: Optional[Anthropic] = None
+_client_lock = threading.Lock()
 
 DEFAULT_MAX_RETRIES = 5
 DEFAULT_BASE_DELAY = 2.0
@@ -22,9 +24,11 @@ def get_client() -> Anthropic:
     """Thread-safe singleton Anthropic client."""
     global _client
     if _client is None:
-        if not ANTHROPIC_API_KEY:
-            raise RuntimeError("ANTHROPIC_API_KEY is not set")
-        _client = Anthropic(api_key=ANTHROPIC_API_KEY)
+        with _client_lock:
+            if _client is None:  # Double-checked locking
+                if not ANTHROPIC_API_KEY:
+                    raise RuntimeError("ANTHROPIC_API_KEY is not set")
+                _client = Anthropic(api_key=ANTHROPIC_API_KEY)
     return _client
 
 
@@ -77,6 +81,12 @@ def call_ai(
                 time.sleep(delay)
             else:
                 raise
+
+        except APIConnectionError as e:
+            last_error = e
+            delay = min(DEFAULT_BASE_DELAY * (2 ** attempt), 30)
+            logger.warning(f"{operation_name}: connection error, retrying in {delay}s: {e}")
+            time.sleep(delay)
 
         except Exception as e:
             last_error = e
@@ -151,11 +161,18 @@ def extract_json(text: str) -> Any:
                     except json.JSONDecodeError:
                         break
 
-    # 4. Recover truncated JSON arrays
+    # 4. Recover truncated JSON arrays — drop incomplete trailing objects
     if cleaned.rstrip().endswith(","):
         recovered = cleaned.rstrip().rstrip(",") + "]"
         try:
-            return json.loads(recovered)
+            parsed = json.loads(recovered)
+            if isinstance(parsed, list):
+                # Drop any incomplete objects (missing required citation keys)
+                parsed = [
+                    obj for obj in parsed
+                    if isinstance(obj, dict) and (obj.get("citation_text") or obj.get("case_name"))
+                ]
+            return parsed
         except json.JSONDecodeError:
             pass
 
@@ -173,7 +190,15 @@ def call_ai_json(
     full_system = f"{system}\n\n{json_hint}" if system else json_hint
 
     for attempt in range(2):
-        raw = call_ai(messages, system=full_system, max_tokens=max_tokens, operation_name=operation_name)
+        if attempt == 0:
+            retry_messages = messages
+        else:
+            # Append corrective message on retry to get different output
+            retry_messages = messages + [
+                {"role": "assistant", "content": raw},
+                {"role": "user", "content": "Your response was not valid JSON. Please return ONLY the JSON object or array with no surrounding text."},
+            ]
+        raw = call_ai(retry_messages, system=full_system, max_tokens=max_tokens, operation_name=operation_name)
         try:
             return extract_json(raw)
         except (json.JSONDecodeError, ValueError):

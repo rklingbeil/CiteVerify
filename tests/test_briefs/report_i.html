@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CiteVerify Report — brief_i_admin_stress.docx</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    /* Header */
+    .report-header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    
+    .report-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 0.25rem;
+    }
+    
+    .report-header .logo {
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      color: #6b7280;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    
+    .report-header .meta {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+    
+    /* Summary */
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+    
+    .summary-card {
+      text-align: center;
+      padding: 1rem 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+    }
+    
+    .summary-card .count {
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    
+    .summary-card .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6b7280;
+      margin-top: 0.25rem;
+    }
+    
+    .summary-card.total { background: #f3f4f6; }
+    .summary-card.total .count { color: #374151; }
+    .summary-card.verified { background: #f0fdf4; }
+    .summary-card.verified .count { color: #16a34a; }
+    .summary-card.warning { background: #fefce8; }
+    .summary-card.warning .count { color: #ca8a04; }
+    .summary-card.error { background: #fef2f2; }
+    .summary-card.error .count { color: #dc2626; }
+    .summary-card.unverifiable { background: #f9fafb; }
+    .summary-card.unverifiable .count { color: #6b7280; }
+    
+    /* Citations */
+    .citations-header {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .citation-card {
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+    
+    .citation-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    
+    .citation-number {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #6b7280;
+      min-width: 2rem;
+    }
+    
+    .citation-case {
+      font-weight: 600;
+      font-size: 0.95rem;
+      flex: 1;
+    }
+    
+    .status-badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+    
+    .accuracy-badge {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+    
+    .citation-body {
+      padding: 0.75rem 1rem 1rem;
+    }
+    
+    .field {
+      margin-bottom: 0.35rem;
+      font-size: 0.85rem;
+    }
+    
+    .field-label {
+      font-weight: 600;
+      color: #6b7280;
+      margin-right: 0.35rem;
+    }
+    
+    .source-info {
+      font-size: 0.78rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+    }
+    
+    .source-info.not-found {
+      color: #dc2626;
+      font-style: italic;
+    }
+    
+    .section {
+      margin-top: 0.75rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #f3f4f6;
+    }
+    
+    .section-header {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    blockquote {
+      margin: 0.35rem 0;
+      padding: 0.5rem 0.75rem;
+      border-left: 3px solid #e5e7eb;
+      font-size: 0.85rem;
+      color: #4b5563;
+      background: #fafafa;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    blockquote.quote {
+      font-style: italic;
+    }
+    
+    .diff, .actual-quote {
+      font-size: 0.78rem;
+      color: #9ca3af;
+      margin-top: 0.25rem;
+    }
+    
+    .explanation {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-top: 0.35rem;
+      line-height: 1.5;
+    }
+    
+    details.reasoning {
+      margin-top: 0.75rem;
+    }
+    
+    details.reasoning summary {
+      font-size: 0.78rem;
+      color: #9ca3af;
+      cursor: pointer;
+      user-select: none;
+    }
+    
+    details.reasoning summary:hover {
+      color: #6b7280;
+    }
+    
+    .reasoning-text {
+      font-size: 0.78rem;
+      color: #6b7280;
+      margin-top: 0.35rem;
+      padding: 0.5rem;
+      background: #f9fafb;
+      border-radius: 4px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    
+    /* Footer */
+    .report-footer {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.78rem;
+      color: #9ca3af;
+    }
+    
+    @media print {
+      body { background: #fff; padding: 0.5in; }
+      .citation-card { break-inside: avoid; box-shadow: none; border: 1px solid #e5e7eb; }
+      details.reasoning { display: none; }
+    }
+    
+    @media (max-width: 640px) {
+      .summary { grid-template-columns: repeat(3, 1fr); }
+      body { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="report-header">
+      <div class="logo">CiteVerify</div>
+      <h1>Citation Verification Report</h1>
+      <div class="meta">
+        Document: <strong>brief_i_admin_stress.docx</strong> · Generated: 2026-04-11 22:05 UTC
+      </div>
+    </div>
+    
+    <div class="summary">
+      <div class="summary-card total">
+        <div class="count">18</div>
+        <div class="label">Total</div>
+      </div>
+      <div class="summary-card verified">
+        <div class="count">9</div>
+        <div class="label">Verified</div>
+      </div>
+      <div class="summary-card warning">
+        <div class="count">0</div>
+        <div class="label">Warnings</div>
+      </div>
+      <div class="summary-card error">
+        <div class="count">9</div>
+        <div class="label">Errors</div>
+      </div>
+      <div class="summary-card unverifiable">
+        <div class="count">0</div>
+        <div class="label">Unverifiable</div>
+      </div>
+    </div>
+    
+    <div class="citations-header">Citation Details</div>
+    
+    
+    <div class="citation-card" style="border-left: 4px solid #16a34a">
+      <div class="citation-header" style="background:#f0fdf4">
+        <div class="citation-number">#1</div>
+        <div class="citation-case">Lujan v. Defenders of Wildlife</div>
+        <span class="status-badge" style="background:#f0fdf4;color:#16a34a;border:1px solid #16a34a33">VERIFIED</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Lujan v. Defenders of Wildlife, 504 U.S. 555, 560-61 (1992)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">100%</span>
+        </div>
+        <div class="source-info">Filed: 1992-06-12 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#f0fdf4;color:#16a34a">accurate</span></div>
+          <blockquote class="characterization">Article III standing requires three elements: (1) an injury in fact that is concrete and particularized, (2) a causal connection between the injury and the challenged conduct, and (3) a likelihood that a favorable judicial decision will redress the injury</blockquote>
+          <div class="explanation">The characterization accurately summarizes the three elements of Article III standing as stated in the opinion at pages 560-561. The Court explicitly states that &#x27;the irreducible constitutional minimum of standing contains three elements&#x27; and then lists: (1) injury in fact that is concrete and particularized, (2) causal connection between the injury and the conduct complained of, and (3) likelihood that the injury will be redressed by a favorable decision. The characterization correctly captures these three elements without distortion.</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by review] I verified that the citation format is correct and matches the source opinion provided. The opinion is clearly from Lujan v. Defenders of Wildlife, authored by Justice Scalia. At pages 560-561, the Court explicitly sets forth the three elements of Article III standing. The characterization provided accurately summarizes these three elements without adding or omitting any key components. The Court states that &#x27;the irreducible constitutional minimum of standing contains three elements&#x27; and then describes each one, which matches the characterization given.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #16a34a">
+      <div class="citation-header" style="background:#f0fdf4">
+        <div class="citation-number">#2</div>
+        <div class="citation-case">Spokeo, Inc. v. Robins</div>
+        <span class="status-badge" style="background:#f0fdf4;color:#16a34a;border:1px solid #16a34a33">VERIFIED</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Spokeo, Inc. v. Robins, 578 U.S. 330 (2016)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">100%</span>
+        </div>
+        <div class="source-info">Filed: 2016-05-16 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#f0fdf4;color:#16a34a">accurate</span></div>
+          <blockquote class="characterization">The injury must be &quot;concrete&quot; — a bare procedural violation of a statute, without any concrete harm, does not satisfy Article III</blockquote>
+          <div class="explanation">The characterization accurately captures the Court&#x27;s holding that a bare procedural violation without concrete harm does not satisfy Article III standing requirements. The Court explicitly states that &#x27;Robins cannot satisfy the demands of Article III by alleging a bare procedural violation&#x27; and emphasizes throughout the opinion that injury must be &#x27;concrete&#x27; in addition to being particularized.</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Spokeo, Inc. v. Robins, 578 U.S. 330 (2016)). The source opinion matches the cited case - it is indeed the Supreme Court opinion in Spokeo v. Robins from 2016, with matching parties and subject matter.
+
+STEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.
+
+STEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that &#x27;The injury must be &quot;concrete&quot; — a bare procedural violation of a statute, without any concrete harm, does not satisfy Article III.&#x27; This accurately reflects the Court&#x27;s holding. Key supporting passages include:
+- Page 7: &#x27;An injury in fact must also be &quot;concrete.&quot;&#x27;
+- Page 10: &#x27;Robins could not, for example, allege a bare procedural violation, divorced from any concrete harm, and satisfy the injury-in-fact requirement of Article III.&#x27;
+- Page 10: &#x27;Robins cannot satisfy the demands of Article III by alleging a bare procedural violation.&#x27;
+- Page 11: The Court emphasizes that &#x27;the particular procedural violations alleged in this case entail a degree of risk sufficient to meet the concreteness requirement.&#x27;
+
+The Court&#x27;s entire analysis focuses on the requirement that injury be concrete, not just particularized, and explicitly rejects the sufficiency of bare procedural violations.
+
+STEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly reflects the Court&#x27;s central holding and reasoning.
+
+STEP 5 - OVERALL STATUS: Verified - the characterization accurately captures the Court&#x27;s holding about concrete injury requirements.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #dc2626">
+      <div class="citation-header" style="background:#fef2f2">
+        <div class="citation-number">#3</div>
+        <div class="citation-case">Cartwright v. Dep&#x27;t of Health &amp; Human Servs.</div>
+        <span class="status-badge" style="background:#fef2f2;color:#dc2626;border:1px solid #dc262633">ERROR</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Cartwright v. Dep&#x27;t of Health &amp; Human Servs., 634 F.3d 782 (4th Cir. 2011)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">15%</span>
+        </div>
+        <div class="source-info">Filed: 2011-02-24 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Quote Verification </div>
+          <blockquote class="quote">"organizational standing exists where an agency&#x27;s regulatory failure directly impairs the organization&#x27;s mission and diverts its resources"</blockquote>
+        </div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#fef2f2;color:#dc2626">unsupported</span></div>
+          <blockquote class="characterization">Environmental organizations have standing to challenge agency action when their members use the affected natural resources</blockquote>
+          <div class="explanation">The characterization about environmental standing appears to be mismatched with a case name suggesting health services litigation</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by knowledge review] I do not recognize a case called &#x27;Cartwright v. Dep&#x27;t of Health &amp; Human Servs.&#x27; at this citation. The database lookup warning indicates that 634 F.3d 782 (4th Cir. 2011) is actually &#x27;Castro v. Collecto, Inc.&#x27;, which is a Fair Debt Collection Practices Act case, not an environmental standing case. The mismatch between the case name (suggesting HHS litigation) and the environmental standing context is highly suspicious. Additionally, the quoted language about organizational standing and resource diversion, while a valid legal principle, does not appear to match what would be expected from either a health services case or the actual Castro case at this citation.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #dc2626">
+      <div class="citation-header" style="background:#fef2f2">
+        <div class="citation-number">#4</div>
+        <div class="citation-case">Massachusetts v. EPA</div>
+        <span class="status-badge" style="background:#fef2f2;color:#dc2626;border:1px solid #dc262633">ERROR</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Massachusetts v. EPA, 549 U.S. 497 (2007)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">100%</span>
+        </div>
+        <div class="source-info">Filed: 2007-04-02 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#fef2f2;color:#dc2626">unsupported</span></div>
+          <blockquote class="characterization">Private citizens have the same standing as states to challenge the EPA&#x27;s failure to regulate greenhouse gas emissions under the Clean Air Act. The Court held that any party demonstrating exposure to the effects of climate change satisfies the injury-in-fact requirement without any special showing</blockquote>
+          <div class="explanation">The characterization is fundamentally wrong. The Court did NOT hold that private citizens have the same standing as states. Instead, the Court explicitly emphasized Massachusetts&#x27; &#x27;special position and interest&#x27; as a sovereign State (p. 15) and stated that &#x27;the Commonwealth is entitled to special solicitude in our standing analysis&#x27; (p. 17). The Court distinguished this case from Lujan, which involved &#x27;a private individual.&#x27; The Court&#x27;s standing analysis relied heavily on Massachusetts&#x27; sovereign and quasi-sovereign interests, which private citizens do not possess. Additionally, the Court did not hold that &#x27;any party demonstrating exposure to the effects of climate change&#x27; satisfies injury-in-fact; rather, it required Massachusetts to show specific, particularized injury (loss of coastal land), causation, and redressability.</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by review] Step 1: Verified the citation format and confirmed the source opinion matches the cited case. Step 2: No quote provided to verify. Step 3: Analyzed the characterization against the opinion text. The characterization claims private citizens have the same standing as states, but the Court explicitly stated the opposite - that Massachusetts was entitled to &#x27;special solicitude&#x27; in the standing analysis because it is a sovereign State, not a private individual. The Court repeatedly emphasized Massachusetts&#x27; special status throughout the standing discussion (pages 15-17). The Court also did not hold that mere exposure to climate change effects satisfies injury-in-fact; it required specific showings of particularized injury, causation, and redressability. Step 4: Very high confidence in this assessment as the opinion directly contradicts the characterization. Step 5: This is a material error requiring correction.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #16a34a">
+      <div class="citation-header" style="background:#f0fdf4">
+        <div class="citation-number">#5</div>
+        <div class="citation-case">Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.</div>
+        <span class="status-badge" style="background:#f0fdf4;color:#16a34a;border:1px solid #16a34a33">VERIFIED</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc., 467 U.S. 837 (1984)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">100%</span>
+        </div>
+        <div class="source-info">Filed: 1984-06-25 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#f0fdf4;color:#16a34a">accurate</span></div>
+          <blockquote class="characterization">Courts review agency interpretations of ambiguous statutes under the two-step framework established in Chevron. First, the court asks whether Congress has directly spoken to the precise question at issue. If the statute is ambiguous, the court defers to the agency&#x27;s interpretation so long as it is a permissible construction</blockquote>
+          <div class="explanation">The characterization accurately describes the Chevron two-step framework. The opinion explicitly states at pages 842-843: &#x27;When a court reviews an agency&#x27;s construction of the statute which it administers, it is confronted with two questions. First, always, is the question whether Congress has directly spoken to the precise question at issue. If the intent of Congress is clear, that is the end of the matter... If, however, the court determines Congress has not directly addressed the precise question at issue... the question for the court is whether the agency&#x27;s answer is based on a permissible construction of the statute.&#x27; This matches the characterization&#x27;s description of the two-step process.</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc., 467 U.S. 837 (1984)). The source opinion matches the cited case - it&#x27;s the Supreme Court opinion in Chevron delivered by Justice Stevens regarding EPA regulations under the Clean Air Act.
+
+STEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.
+
+STEP 3 - CHARACTERIZATION VERIFICATION: The characterization describes the Chevron two-step framework for reviewing agency interpretations of ambiguous statutes. Looking at pages 842-843 of the opinion, I find the Court explicitly laying out this exact framework: &#x27;When a court reviews an agency&#x27;s construction of the statute which it administers, it is confronted with two questions. First, always, is the question whether Congress has directly spoken to the precise question at issue.&#x27; The opinion then explains that if Congress&#x27;s intent is clear, that ends the matter. If not, &#x27;the question for the court is whether the agency&#x27;s answer is based on a permissible construction of the statute.&#x27; This precisely matches the characterization&#x27;s description of: (1) asking whether Congress has directly spoken to the precise question, and (2) if the statute is ambiguous, deferring to the agency&#x27;s interpretation if it&#x27;s a permissible construction.
+
+STEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization accurately captures the core holding of Chevron that is explicitly stated in the opinion.
+
+STEP 5 - OVERALL STATUS: Verified. The characterization accurately describes the Chevron two-step framework as articulated in the opinion.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #16a34a">
+      <div class="citation-header" style="background:#f0fdf4">
+        <div class="citation-number">#6</div>
+        <div class="citation-case">Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.</div>
+        <span class="status-badge" style="background:#f0fdf4;color:#16a34a;border:1px solid #16a34a33">VERIFIED</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Id. at 842-43</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">90%</span>
+        </div>
+        <div class="source-info">Filed: 1984-06-25 · Source: courtlistener</div>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #16a34a">
+      <div class="citation-header" style="background:#f0fdf4">
+        <div class="citation-number">#7</div>
+        <div class="citation-case">Auer v. Robbins</div>
+        <span class="status-badge" style="background:#f0fdf4;color:#16a34a;border:1px solid #16a34a33">VERIFIED</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Auer v. Robbins, 519 U.S. 452, 461 (1997)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">100%</span>
+        </div>
+        <div class="source-info">Filed: 1997-02-19 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#f0fdf4;color:#16a34a">accurate</span></div>
+          <blockquote class="characterization">An agency&#x27;s interpretation of its own ambiguous regulation is controlling unless plainly erroneous or inconsistent with the regulation</blockquote>
+          <div class="explanation">The characterization accurately captures the Court&#x27;s holding about agency deference. The Court explicitly states on page 461 that an agency&#x27;s interpretation of its own regulations is &#x27;controlling unless &quot;plainly erroneous or inconsistent with the regulation.&quot;&#x27; This is the exact principle stated in the characterization, using nearly identical language.</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Auer v. Robbins, 519 U.S. 452, 461 (1997)). The source opinion text confirms this is indeed the Auer v. Robbins case from 1997, with Justice Scalia delivering the opinion regarding FLSA overtime exemptions and the Secretary of Labor&#x27;s salary-basis test.
+
+STEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.
+
+STEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that &#x27;An agency&#x27;s interpretation of its own ambiguous regulation is controlling unless plainly erroneous or inconsistent with the regulation.&#x27; Looking at page 461 of the opinion, I find this exact principle stated: &#x27;Because the salary-basis test is a creature of the Secretary&#x27;s own regulations, his interpretation of it is, under our jurisprudence, controlling unless &quot;&#x27;plainly erroneous or inconsistent with the regulation.&#x27;&quot;&#x27; The Court cites Robertson v. Methow Valley Citizens Council and Bowles v. Seminole Rock &amp; Sand Co. for this principle. The characterization accurately captures this holding.
+
+STEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the characterization uses nearly identical language to what appears in the opinion at the cited page.
+
+STEP 5 - OVERALL STATUS: The citation is verified. The characterization accurately states the principle of deference to agency interpretations of their own regulations as articulated in Auer.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #16a34a">
+      <div class="citation-header" style="background:#f0fdf4">
+        <div class="citation-number">#8</div>
+        <div class="citation-case">Motor Vehicle Mfrs. Ass&#x27;n of the U.S., Inc. v. State Farm Mut. Auto. Ins. Co.</div>
+        <span class="status-badge" style="background:#f0fdf4;color:#16a34a;border:1px solid #16a34a33">VERIFIED</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Motor Vehicle Mfrs. Ass&#x27;n of the U.S., Inc. v. State Farm Mut. Auto. Ins. Co., 463 U.S. 29, 43 (1983)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">100%</span>
+        </div>
+        <div class="source-info">Filed: 1983-06-24 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#f0fdf4;color:#16a34a">accurate</span></div>
+          <blockquote class="characterization">Agency action is &quot;arbitrary and capricious&quot; if the agency relied on factors Congress did not intend, entirely failed to consider an important aspect of the problem, offered an explanation that runs counter to the evidence before it, or the action is so implausible that it could not be ascribed to a difference in view</blockquote>
+          <div class="explanation">The characterization accurately captures the Court&#x27;s articulation of the arbitrary and capricious standard from page 43 of the opinion. The Court states that &#x27;an agency rule would be arbitrary and capricious if the agency has relied on factors which Congress has not intended it to consider, entirely failed to consider an important aspect of the problem, offered an explanation for its decision that runs counter to the evidence before the agency, or is so implausible that it could not be ascribed to a difference in view or the product of agency expertise.&#x27; The characterization correctly presents these four grounds for finding agency action arbitrary and capricious, with only minor stylistic differences (using &#x27;Agency action&#x27; instead of &#x27;an agency rule&#x27; and &#x27;the action&#x27; instead of &#x27;it&#x27;).</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (463 U.S. 29, 43 (1983)). The source opinion is clearly Motor Vehicle Manufacturers Association v. State Farm, as evidenced by the case caption and content. The abbreviation &#x27;Mfrs.&#x27; for &#x27;Manufacturers&#x27; and &#x27;Ass&#x27;n&#x27; for &#x27;Association&#x27; are standard legal abbreviations and do not constitute a mismatch. The parties match (Motor Vehicle Manufacturers Association as petitioner, State Farm as respondent).
+
+STEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.
+
+STEP 3 - CHARACTERIZATION VERIFICATION: I located the relevant passage on page 43 of the opinion. The Court states: &#x27;Normally, an agency rule would be arbitrary and capricious if the agency has relied on factors which Congress has not intended it to consider, entirely failed to consider an important aspect of the problem, offered an explanation for its decision that runs counter to the evidence before the agency, or is so implausible that it could not be ascribed to a difference in view or the product of agency expertise.&#x27; The characterization accurately captures this standard with only minor, non-substantive differences in wording.
+
+STEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because I found the exact passage being characterized, and the characterization accurately reflects the Court&#x27;s articulation of the arbitrary and capricious standard.
+
+STEP 5 - OVERALL STATUS: The citation is verified. The characterization accurately represents the Court&#x27;s holding about when agency action is arbitrary and capricious.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #dc2626">
+      <div class="citation-header" style="background:#fef2f2">
+        <div class="citation-number">#9</div>
+        <div class="citation-case">Lexington Envtl. Servs. v. EPA</div>
+        <span class="status-badge" style="background:#fef2f2;color:#dc2626;border:1px solid #dc262633">ERROR</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Lexington Envtl. Servs. v. EPA, 789 F.3d 1034 (10th Cir. 2015)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">40%</span>
+        </div>
+        <div class="source-info">Filed: 2015-06-15 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#fef2f2;color:#dc2626">unsupported</span></div>
+          <blockquote class="characterization">The Tenth Circuit has applied State Farm&#x27;s &quot;hard look&quot; standard to EPA rulemaking, holding that the agency must provide a detailed explanation for any departure from prior practice</blockquote>
+          <div class="explanation">The characterization about State Farm&#x27;s hard look standard and EPA rulemaking cannot be verified because this case does not appear to exist. The citation appears to be fabricated.</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by knowledge review] I do not recognize &#x27;Lexington Envtl. Servs. v. EPA&#x27; as a real case from the Tenth Circuit in 2015. The database lookup warning confirms that 789 F.3d 1034 actually corresponds to a completely different case (Nadia Naffe v. John Frey), and searches by case name failed to find this case. This strongly indicates the citation is fabricated. While the State Farm hard look doctrine is a real administrative law principle that courts do apply to EPA rulemakings, attributing this principle to a non-existent case is problematic. The citation format itself follows proper Bluebook style, but the case it purports to cite does not exist.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #dc2626">
+      <div class="citation-header" style="background:#fef2f2">
+        <div class="citation-number">#10</div>
+        <div class="citation-case">Kisor v. Wilkie</div>
+        <span class="status-badge" style="background:#fef2f2;color:#dc2626;border:1px solid #dc262633">ERROR</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Kisor v. Wilkie, 588 U.S. 558 (2019)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">100%</span>
+        </div>
+        <div class="source-info">Filed: 2019-06-26 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#fef2f2;color:#dc2626">unsupported</span></div>
+          <blockquote class="characterization">The Supreme Court overruled Auer v. Robbins, holding that courts may never defer to an agency&#x27;s interpretation of its own regulations. The Court held that all agency regulatory interpretations must be reviewed de novo without any deference</blockquote>
+          <div class="explanation">The characterization is materially incorrect. The Supreme Court did NOT overrule Auer v. Robbins. In fact, the Court explicitly held the opposite - that &#x27;Auer and Seminole Rock are not overruled.&#x27; The Court upheld Auer deference while clarifying and reinforcing its limits. The characterization states that courts &#x27;may never defer&#x27; and must review &#x27;de novo without any deference,&#x27; but the Court actually preserved the Auer deference doctrine, stating that &#x27;Auer deference retains an important role in construing agency regulations&#x27; while emphasizing that it is &#x27;cabined in its scope.&#x27;</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (588 U.S. 558 (2019)). The source opinion is indeed Kisor v. Wilkie, matching the cited case.
+
+STEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.
+
+STEP 3 - CHARACTERIZATION VERIFICATION: The characterization claims that the Supreme Court &#x27;overruled Auer v. Robbins&#x27; and held that &#x27;courts may never defer to an agency&#x27;s interpretation of its own regulations&#x27; and that &#x27;all agency regulatory interpretations must be reviewed de novo without any deference.&#x27; However, the syllabus explicitly states: &#x27;JUSTICE KAGAN delivered the opinion of the Court with respect to Parts I, II–B, III–B, and IV, holding that Auer and Seminole Rock are not overruled.&#x27; The opinion further states: &#x27;The only question presented here is whether we should overrule those decisions, discarding the deference they give to agencies. We answer that question no. Auer deference retains an important role in construing agency regulations.&#x27; The Court did not eliminate Auer deference but rather clarified its scope and limitations, stating &#x27;The deference doctrine we describe is potent in its place, but cabined in its scope.&#x27;
+
+STEP 4 - CONFIDENCE ASSESSMENT: I have very high confidence (0.95) in this assessment because the opinion explicitly states the opposite of what the characterization claims.
+
+STEP 5 - OVERALL STATUS: This is an error because the characterization fundamentally misrepresents the Court&#x27;s holding. The Court preserved Auer deference rather than overruling it.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #dc2626">
+      <div class="citation-header" style="background:#fef2f2">
+        <div class="citation-number">#11</div>
+        <div class="citation-case">Nakamura v. Fed. Trade Comm&#x27;n</div>
+        <span class="status-badge" style="background:#fef2f2;color:#dc2626;border:1px solid #dc262633">ERROR</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Nakamura v. Fed. Trade Comm&#x27;n, 845 F.3d 267 (7th Cir. 2017)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">15%</span>
+        </div>
+        <div class="source-info">Filed: 2016-12-29 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Quote Verification </div>
+          <blockquote class="quote">"an agency&#x27;s failure to provide adequate notice of a proposed rule change renders the final rule void ab initio under the Administrative Procedure Act"</blockquote>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by knowledge review] I cannot find any record of a case called &#x27;Nakamura v. Fed. Trade Comm&#x27;n&#x27; at 845 F.3d 267 (7th Cir. 2017) in my knowledge base. The database lookup warning indicates that this citation actually refers to &#x27;Selective Insurance Co. of South Carolina v. Target Corp.&#x27;, which is an entirely different case. This strongly suggests that the Nakamura case citation is either fabricated or contains a significant error. The quoted text about APA notice requirements and rules being &#x27;void ab initio&#x27; sounds plausible as a general principle, but I cannot verify it comes from this non-existent case. Without being able to confirm this case exists, I must conclude this is likely a fabricated or severely erroneous citation.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #dc2626">
+      <div class="citation-header" style="background:#fef2f2">
+        <div class="citation-number">#12</div>
+        <div class="citation-case">FCC v. Fox Television Stations, Inc.</div>
+        <span class="status-badge" style="background:#fef2f2;color:#dc2626;border:1px solid #dc262633">ERROR</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">FCC v. Fox Television Stations, Inc., 556 U.S. 502 (2009)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">100%</span>
+        </div>
+        <div class="source-info">Filed: 2009-04-28 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#fef2f2;color:#dc2626">unsupported</span></div>
+          <blockquote class="characterization">Agencies have unfettered discretion to reverse prior policies without providing any explanation for the change</blockquote>
+          <div class="explanation">The characterization is fundamentally inaccurate and contradicts the Court&#x27;s actual holding. The Court held that agencies must provide reasoned explanations for policy changes and explicitly stated that agencies &#x27;may not...depart from a prior policy sub silentio.&#x27; The Court required agencies to &#x27;display awareness that it is changing position&#x27; and &#x27;articulate a satisfactory explanation for its action.&#x27; While the Court held that agencies need not prove the new policy is better than the old one, they must still provide &#x27;good reasons&#x27; for the change. The word &#x27;unfettered&#x27; (meaning unrestricted) is the opposite of what the Court held - agencies are constrained by requirements to explain their decisions and cannot change policies without any explanation.</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by review] I verified the citation format and confirmed the source opinion matches the cited case. No quote was provided to verify. For the characterization, I searched for the Court&#x27;s holdings on agency discretion to change policies. The opinion explicitly states agencies must &#x27;examine the relevant data and articulate a satisfactory explanation&#x27; (p.9), must &#x27;display awareness that it is changing position&#x27; (p.11), and &#x27;may not...depart from a prior policy sub silentio&#x27; (p.11). The Court affirmed that agencies need &#x27;good reasons&#x27; for new policies. The characterization claiming &#x27;unfettered discretion...without providing any explanation&#x27; directly contradicts these holdings. The Court actually upheld the FCC&#x27;s policy change precisely because the agency DID provide explanations, not because it had unfettered discretion to act without explanation.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #dc2626">
+      <div class="citation-header" style="background:#fef2f2">
+        <div class="citation-number">#13</div>
+        <div class="citation-case">FCC v. Fox Television Stations, Inc.</div>
+        <span class="status-badge" style="background:#fef2f2;color:#dc2626;border:1px solid #dc262633">ERROR</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">FCC v. Fox Television Stations, Inc., 556 U.S. at 515</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">95%</span>
+        </div>
+        <div class="source-info">Filed: 2009-04-28 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Quote Verification <span class="accuracy-badge" style="background:#fef2f2;color:#dc2626">inaccurate</span></div>
+          <blockquote class="quote">"An agency need not demonstrate that the reasons for its new policy are better than the reasons for its old policy, and indeed need not acknowledge the change at all, so long as the new policy falls within the scope of the agency&#x27;s delegated authority"</blockquote>
+          <div class="diff"><strong>Difference:</strong> The quote is a significant mischaracterization. The actual text states agencies must &#x27;ordinarily...display awareness that it is changing position&#x27; and &#x27;may not...depart from a prior policy sub silentio.&#x27; The quote incorrectly claims agencies &#x27;need not acknowledge the change at all.&#x27; Additionally, the actual text does not contain the phrase &#x27;so long as the new policy falls within the scope of the agency&#x27;s delegated authority.&#x27;</div>
+          <div class="actual-quote"><strong>Actual text:</strong> "To be sure, the requirement that an agency provide reasoned explanation for its action would ordinarily demand that it display awareness that it is changing position. An agency may not, for example, depart from a prior policy sub silentio or simply disregard rules that are still on the books. See United States v. Nixon, 418 U. S. 683, 696 (1974). And of course the agency must show that there are good reasons for the new policy. But it need not demonstrate to a court&#x27;s satisfaction that the reasons for the new policy are better than the reasons for the old one; it suffices that the new policy is permissible under the statute, that there are good reasons for it, and that the agency believes it to be better, which the conscious change adequately indicates."</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Review override] The initial verification incorrectly labeled this as a complete fabrication. While the quote is indeed inaccurate, it&#x27;s not entirely fabricated - it&#x27;s a mischaracterization that combines elements from the actual text while reversing key holdings. The Court actually held that agencies must ordinarily acknowledge changes and cannot depart sub silentio from prior policy. The first part about not needing to demonstrate better reasons is accurate, but the second part about not needing to acknowledge change contradicts what the Court actually said. Found at slip op. pages 11-12.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #dc2626">
+      <div class="citation-header" style="background:#fef2f2">
+        <div class="citation-number">#14</div>
+        <div class="citation-case">Westfield Pharm. Corp. v. FDA</div>
+        <span class="status-badge" style="background:#fef2f2;color:#dc2626;border:1px solid #dc262633">ERROR</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Westfield Pharm. Corp. v. FDA, 912 F.3d 456 (D.C. Cir. 2019)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">15%</span>
+        </div>
+        <div class="source-info">Court: Supreme Court of Florida · Filed: 2023-08-24 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Quote Verification </div>
+          <blockquote class="quote">"the FDA&#x27;s expedited approval pathway does not exempt the agency from the notice-and-comment requirements of the APA when imposing post-market surveillance obligations"</blockquote>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by knowledge review] I do not recognize &#x27;Westfield Pharm. Corp. v. FDA&#x27; as a real case from the D.C. Circuit in 2019. The fact that a search for &#x27;912 F.3d 456&#x27; returns an entirely different case (a Florida state case) strongly indicates this citation is incorrect or fabricated. The D.C. Circuit would hear FDA-related cases, and the subject matter (FDA approval pathways and APA requirements) is plausible, but I have no knowledge of this specific case existing. Given the database search returned a different case for this citation and no case was found by name, this appears to be a fabricated or erroneous citation.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #dc2626">
+      <div class="citation-header" style="background:#fef2f2">
+        <div class="citation-number">#15</div>
+        <div class="citation-case">O&#x27;Brien v. Nat&#x27;l Labor Relations Bd.</div>
+        <span class="status-badge" style="background:#fef2f2;color:#dc2626;border:1px solid #dc262633">ERROR</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">O&#x27;Brien v. Nat&#x27;l Labor Relations Bd., 778 F.3d 1124 (11th Cir. 2015)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">15%</span>
+        </div>
+        <div class="source-info">Court: California Court of Appeal · Filed: 2005-06-30 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#fef2f2;color:#dc2626">unsupported</span></div>
+          <blockquote class="characterization">Exhaustion of administrative remedies is jurisdictional and cannot be waived</blockquote>
+          <div class="explanation">The characterization that exhaustion of administrative remedies before the NLRB is jurisdictional cannot be verified for this case, as the case appears not to exist</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by knowledge review] The citation format appears problematic. The database search found a different case at this citation (778 F.3d 1124), and no case matching &#x27;O&#x27;Brien v. National Labor Relations Board&#x27; could be found in the 11th Circuit from 2015. While exhaustion of administrative remedies is indeed required in NLRB proceedings under Section 10(e) and (f) of the NLRA, the specific characterization that it is &#x27;jurisdictional and cannot be waived&#x27; is a nuanced legal point that would need verification from the actual case. The failure to locate this case in multiple database searches strongly suggests this citation may be fabricated or contain significant errors.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #16a34a">
+      <div class="citation-header" style="background:#f0fdf4">
+        <div class="citation-number">#16</div>
+        <div class="citation-case">Bristol-Myers Squibb Co. v. Superior Court of California</div>
+        <span class="status-badge" style="background:#f0fdf4;color:#16a34a;border:1px solid #16a34a33">VERIFIED</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Bristol-Myers Squibb Co. v. Superior Court of California, 582 U.S. 255 (2017)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">100%</span>
+        </div>
+        <div class="source-info">Filed: 2017-06-19 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#f0fdf4;color:#16a34a">accurate</span></div>
+          <blockquote class="characterization">Specific personal jurisdiction requires an affiliation between the forum and the underlying controversy. The Court held that a defendant&#x27;s general connections with the forum are insufficient to support specific jurisdiction over claims unrelated to those connections</blockquote>
+          <div class="explanation">The characterization accurately captures the Court&#x27;s holding. The opinion explicitly states that specific jurisdiction requires &#x27;an affiliation between the forum and the underlying controversy&#x27; and that &#x27;a defendant&#x27;s general connections with the forum are not enough&#x27; when those connections are &#x27;unrelated to&#x27; the specific claims at issue.</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Bristol-Myers Squibb Co. v. Superior Court of California, 582 U.S. 255 (2017)). The source opinion matches the cited case - it&#x27;s the Supreme Court&#x27;s decision in Bristol-Myers Squibb involving personal jurisdiction issues.
+
+STEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.
+
+STEP 3 - CHARACTERIZATION VERIFICATION: The characterization states two key points: (1) specific personal jurisdiction requires an affiliation between the forum and the underlying controversy, and (2) a defendant&#x27;s general connections with the forum are insufficient to support specific jurisdiction over claims unrelated to those connections.
+
+For the first point, the opinion explicitly states: &#x27;In order for a state court to exercise specific jurisdiction, &quot;the suit&quot; must &quot;aris[e] out of or relat[e] to the defendant&#x27;s contacts with the forum.&quot;&#x27; (slip op. at 5). The opinion also states: &#x27;there must be &quot;an affiliation between the forum and the underlying controversy, principally, [an] activity or an occurrence that takes place in the forum State.&quot;&#x27; (slip op. at 5-6).
+
+For the second point, the opinion clearly states: &#x27;For specific jurisdiction, a defendant&#x27;s general connections with the forum are not enough.&#x27; (slip op. at 7-8). The Court elaborates: &#x27;As we have said, &quot;[a] corporation&#x27;s &#x27;continuous activity of some sorts within a state . . . is not enough to support the demand that the corporation be amenable to suits unrelated to that activity.&#x27;&quot;&#x27; (slip op. at 8).
+
+The characterization accurately summarizes these holdings without distortion or omission of important context.
+
+STEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly reflects explicit statements in the opinion.
+
+STEP 5 - OVERALL STATUS: Verified. The characterization accurately represents the Court&#x27;s holding on specific personal jurisdiction requirements.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #16a34a">
+      <div class="citation-header" style="background:#f0fdf4">
+        <div class="citation-number">#17</div>
+        <div class="citation-case">Daimler AG v. Bauman</div>
+        <span class="status-badge" style="background:#f0fdf4;color:#16a34a;border:1px solid #16a34a33">VERIFIED</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Daimler AG v. Bauman, 571 U.S. 117 (2014)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">100%</span>
+        </div>
+        <div class="source-info">Filed: 2014-01-14 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#f0fdf4;color:#16a34a">accurate</span></div>
+          <blockquote class="characterization">General personal jurisdiction exists only where the defendant is &quot;at home&quot; — typically the state of incorporation or principal place of business. The Court rejected the notion that a corporation&#x27;s substantial business in a forum renders it subject to general jurisdiction there</blockquote>
+          <div class="explanation">The characterization accurately captures the Court&#x27;s holding. The Court established that general jurisdiction exists only where a corporation is &#x27;at home,&#x27; which typically means its state of incorporation or principal place of business. The Court explicitly rejected the Ninth Circuit&#x27;s view that Daimler&#x27;s substantial business operations in California (through MBUSA) were sufficient for general jurisdiction, stating that &#x27;No decision of this Court sanctions a view of general jurisdiction so grasping.&#x27; The characterization correctly summarizes both the &#x27;at home&#x27; standard and the rejection of substantial business contacts as a sufficient basis for general jurisdiction.</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by review] Step 1: Verified the citation format is correct and the source opinion matches the cited case. Step 2: No quote provided, so quote verification not applicable. Step 3: Analyzed the characterization&#x27;s two main points. First point about &#x27;at home&#x27; jurisdiction is directly supported by multiple passages in the opinion establishing that general jurisdiction requires a corporation to be &#x27;essentially at home&#x27; in the forum state, with paradigm examples being state of incorporation and principal place of business. Second point about rejecting substantial business as sufficient is explicitly supported by the Court&#x27;s reversal of the Ninth Circuit and its statement that substantial California activities would not suffice for general jurisdiction. Step 4: High confidence as the characterization accurately reflects the Court&#x27;s central holdings. Step 5: Overall status is verified as the characterization correctly represents the Court&#x27;s reasoning and conclusions.</div>
+        </details>
+      </div>
+    </div>
+
+    <div class="citation-card" style="border-left: 4px solid #16a34a">
+      <div class="citation-header" style="background:#f0fdf4">
+        <div class="citation-number">#18</div>
+        <div class="citation-case">Piper Aircraft Co. v. Reyno</div>
+        <span class="status-badge" style="background:#f0fdf4;color:#16a34a;border:1px solid #16a34a33">VERIFIED</span>
+      </div>
+      <div class="citation-body">
+        <div class="field">
+          <span class="field-label">Citation:</span>
+          <span class="field-value">Piper Aircraft Co. v. Reyno, 454 U.S. 235 (1981)</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Confidence:</span>
+          <span class="field-value">100%</span>
+        </div>
+        <div class="source-info">Filed: 1982-01-25 · Source: courtlistener</div>
+
+        <div class="section">
+          <div class="section-header">Characterization Verification <span class="accuracy-badge" style="background:#f0fdf4;color:#16a34a">accurate</span></div>
+          <blockquote class="characterization">Under the doctrine of forum non conveniens, courts balance private and public interest factors in deciding whether to dismiss in favor of a more convenient forum. The Court held that the possibility of an unfavorable change in law should ordinarily not be given conclusive or even substantial weight in the analysis</blockquote>
+          <div class="explanation">The characterization accurately captures the Court&#x27;s holding. The opinion explicitly states at page 247: &#x27;The possibility of a change in substantive law should ordinarily not be given conclusive or even substantial weight in the forum non conveniens inquiry.&#x27; The Court also discusses the balancing of private and public interest factors under the Gilbert analysis throughout the opinion, particularly at pages 241-242 where it describes the factors from Gulf Oil Corp. v. Gilbert.</div>
+        </div>
+
+        <details class="reasoning">
+          <summary>Verification Reasoning</summary>
+          <div class="reasoning-text">[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (454 U.S. 235 (1981)). The source opinion matches the cited case - it is indeed Piper Aircraft Co. v. Reyno, with Justice Marshall delivering the opinion. The case involves forum non conveniens analysis arising from an aircraft crash in Scotland.
+
+STEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.
+
+STEP 3 - CHARACTERIZATION VERIFICATION: The characterization states two main points: (1) courts balance private and public interest factors under forum non conveniens doctrine, and (2) the possibility of unfavorable change in law should ordinarily not be given conclusive or substantial weight. Both points are directly supported by the opinion. At page 247, the Court states: &#x27;The possibility of a change in substantive law should ordinarily not be given conclusive or even substantial weight in the forum non conveniens inquiry.&#x27; The opinion extensively discusses the Gilbert balancing test and its private and public interest factors (pages 241-242, 257-261).
+
+STEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly reflects explicit holdings in the opinion.
+
+STEP 5 - OVERALL STATUS: Verified. The characterization accurately represents the Court&#x27;s holdings on both the balancing test and the weight given to potential changes in law.</div>
+        </details>
+      </div>
+    </div>
+
+    
+    <div class="report-footer">
+      Generated by CiteVerify — AI-powered legal citation verification
+    </div>
+  </div>
+</body>
+</html>

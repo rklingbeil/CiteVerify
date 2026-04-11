@@ -1,0 +1,697 @@
+{
+  "id": "1b493277-fea0-49d2-89f7-814d805060d4",
+  "filename": "brief_h_securities_stress.docx",
+  "document_text": "MEMORANDUM IN SUPPORT OF MOTION FOR CLASS CERTIFICATION\n\nWellington Capital Fund, LP v. Pacific Tech Holdings, Inc.\n\nI. PERSONAL JURISDICTION AND CHOICE OF LAW\n\nThe exercise of personal jurisdiction must comport with due process. International Shoe Co. v. Washington, 326 U.S. 310 (1945). The Court held that a defendant must have \"minimum contacts\" with the forum state \"such that the maintenance of the suit does not offend traditional notions of fair play and substantial justice.\" Id. at 316.\n\nIn diversity cases, federal courts must apply state substantive law. Erie R.R. Co. v. Tompkins, 304 U.S. 64 (1938). The Erie doctrine ensures that the outcome of litigation does not depend on whether the case is adjudicated in state or federal court.\n\nFederal Rule of Civil Procedure 23 governs class certification in federal court, even when state law would prohibit class actions for the claim at issue. Shady Grove Orthopedic Assocs., P.A. v. Allstate Ins. Co., 559 U.S. 393 (2010).\n\nThe Ninth Circuit has applied these principles in the securities context, holding that minimum contacts are established when a defendant directs fraudulent communications into the forum. Thornton v. Pacific Coast Fin. Group, 823 F.3d 1156 (9th Cir. 2016).\n\nSee also Westbrook Inv. Corp. v. Atlantic Mgmt. Servs., 567 F. Supp. 2d 432 (S.D.N.Y. 2008) (applying Erie to determine that New York substantive law governs claims arising from investment management agreements executed in New York).\n\nII. SECURITIES FRAUD UNDER SECTION 10(b)\n\nThe fraud-on-the-market theory creates a rebuttable presumption of reliance for plaintiffs alleging securities fraud. Basic Inc. v. Levinson, 485 U.S. 224 (1988). The Court held that \"the market price of shares traded on well-developed markets reflects all publicly available information, and, hence, any material misrepresentations.\" Id. at 246.\n\nA securities fraud complaint must state facts giving rise to a \"strong inference\" of scienter \u2014 an inference \"at least as compelling as any opposing inference one could draw from the facts alleged.\" Tellabs, Inc. v. Makor Issues & Rights, Ltd., 551 U.S. 308, 324 (2007).\n\nSection 10(b) does not create a private right of action against secondary actors who did not make a public misstatement or omission upon which investors relied. Stoneridge Inv. Partners, LLC v. Scientific-Atlanta, Inc., 552 U.S. 148 (2008).\n\nPlaintiffs must demonstrate loss causation \u2014 that the defendant's fraud actually caused an economic loss, not merely an inflated purchase price. Dura Pharms., Inc. v. Broudo, 544 U.S. 336 (2005).\n\nThe Supreme Court abolished the fraud-on-the-market presumption of reliance, holding that plaintiffs must demonstrate actual, individualized reliance on specific misstatements. Halliburton Co. v. Erica P. John Fund, Inc., 573 U.S. 258 (2014). The Court stated that \"the fraud-on-the-market theory has no place in modern securities litigation and is hereby overruled.\" Id. at 277.\n\nSection 10(b) of the Exchange Act has no territorial limitations and applies to securities transactions worldwide, including those occurring entirely on foreign exchanges. Morrison v. Nat'l Australia Bank Ltd., 561 U.S. 247 (2010).\n\nSee Meridian Capital Partners v. Blackstone Advisors, LLC, 745 F.3d 328 (2d Cir. 2014) (holding that \"where a defendant's fraudulent scheme spans multiple jurisdictions, loss causation may be established through aggregate market impact analysis rather than transaction-specific proof\").\n\nThe Third Circuit has similarly held that scienter may be inferred from circumstantial evidence of a corporate officer's access to contradictory information. Sullivan v. Global Tech. Innovations, Inc., 901 F.3d 178 (3d Cir. 2018).\n\nIII. CLASS CERTIFICATION AND STANDING\n\nOnly actual purchasers or sellers of securities have standing to bring a private action under Rule 10b-5. Blue Chip Stamps v. Manor Drug Stores, 421 U.S. 723 (1975). This purchaser-seller requirement serves to prevent vexatious litigation by those who had no investment at stake.\n\nAny person who contributes to the creation of a fraudulent misstatement may be held liable as the \"maker\" of that statement under Rule 10b-5. Janus Capital Group, Inc. v. First Derivative Traders, 564 U.S. 135 (2011). The Court broadly defined \"maker\" to include anyone who participates in drafting, editing, or approving the misleading statement.\n\nSee also Chen v. Pacific Semiconductor Corp., 678 F.3d 923 (9th Cir. 2012) (holding that class certification is appropriate where common questions of scienter and materiality predominate over individual questions of reliance in a securities fraud class action).\n\nCONCLUSION\n\nFor the foregoing reasons, Plaintiff respectfully requests that this Court certify the proposed class under Federal Rule of Civil Procedure 23(b)(3).",
+  "total_citations": 19,
+  "verified": 9,
+  "warnings": 1,
+  "errors": 9,
+  "unverifiable": 0,
+  "citations": [
+    {
+      "extraction": {
+        "citation_text": "326 U.S. 310 (1945)",
+        "case_name": "International Shoe Co. v. Washington",
+        "full_reference": "International Shoe Co. v. Washington, 326 U.S. 310 (1945)",
+        "quoted_text": null,
+        "characterization": "The exercise of personal jurisdiction must comport with due process",
+        "context": "The exercise of personal jurisdiction must comport with due process. International Shoe Co. v. Washington, 326 U.S. 310 (1945).",
+        "position_start": 180,
+        "position_end": 260
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "International Shoe Co. v. Washington",
+        "court": "",
+        "date_filed": "1945-12-03",
+        "url": "https://www.courtlistener.com/opinion/104200/international-shoe-co-v-washington/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the central holding of International Shoe. The Court explicitly states that 'due process requires only that in order to subject a defendant to a judgment in personam, if he be not present within the territory of the forum, he have certain minimum contacts with it such that the maintenance of the suit does not offend \"traditional notions of fair play and substantial justice.\"' The Court repeatedly emphasizes that personal jurisdiction must satisfy due process requirements, making this characterization a correct distillation of the case's fundamental principle.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (International Shoe Co. v. Washington, 326 U.S. 310 (1945)). The source opinion text confirms this is indeed the International Shoe case - the parties match (International Shoe Co. as appellant, Washington as appellee), and the subject matter concerns personal jurisdiction and due process.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states 'The exercise of personal jurisdiction must comport with due process.' This is strongly supported by the opinion. Key passages include: (1) 'The questions for decision are (1) whether, within the limitations of the due process clause of the Fourteenth Amendment, appellant...has by its activities in the State of Washington rendered itself amenable to proceedings in the courts of that state'; (2) 'due process requires only that in order to subject a defendant to a judgment in personam, if he be not present within the territory of the forum, he have certain minimum contacts with it such that the maintenance of the suit does not offend \"traditional notions of fair play and substantial justice\"'; (3) 'Whether due process is satisfied must depend rather upon the quality and nature of the activity in relation to the fair and orderly administration of the laws which it was the purpose of the due process clause to insure.' The entire opinion centers on whether personal jurisdiction over International Shoe satisfies due process requirements.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly reflects the Court's central holding and the opinion explicitly discusses due process requirements for personal jurisdiction throughout.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately captures the fundamental principle established in International Shoe.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "326 U.S. 310 (1945)",
+        "case_name": "International Shoe Co. v. Washington",
+        "full_reference": "Id. at 316",
+        "quoted_text": "such that the maintenance of the suit does not offend traditional notions of fair play and substantial justice",
+        "characterization": "The Court held that a defendant must have \"minimum contacts\" with the forum state \"such that the maintenance of the suit does not offend traditional notions of fair play and substantial justice.\"",
+        "context": "The Court held that a defendant must have \"minimum contacts\" with the forum state \"such that the maintenance of the suit does not offend traditional notions of fair play and substantial justice.\" Id. at 316.",
+        "position_start": 261,
+        "position_end": 470
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "International Shoe Co. v. Washington",
+        "court": "",
+        "date_filed": "1945-12-03",
+        "url": "https://www.courtlistener.com/opinion/104200/international-shoe-co-v-washington/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "But now that the capias ad respondendum has given way to personal service of summons or other form of notice, due process requires only that in order to subject a defendant to a judgment in personam, if he be not present within the territory of the forum, he have certain minimum contacts with it such that the maintenance of the suit does not offend \"traditional notions of fair play and substantial justice.\"",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The Court did establish that a defendant must have 'minimum contacts' with the forum state, and that the maintenance of the suit must not offend 'traditional notions of fair play and substantial justice.' This is the foundational holding of International Shoe that transformed personal jurisdiction analysis. The characterization correctly identifies both key elements of the test: (1) the minimum contacts requirement and (2) the fair play and substantial justice standard.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (International Shoe Co. v. Washington, 326 U.S. 310 (1945)). The source opinion text confirms this is indeed the International Shoe case - the parties match (International Shoe Co. as appellant, Washington as appellee), and the subject matter involves Washington state's unemployment compensation tax and personal jurisdiction.\n\nSTEP 2 - QUOTE VERIFICATION: I found the exact quote on page 316 of the opinion. The full sentence reads: 'But now that the capias ad respondendum has given way to personal service of summons or other form of notice, due process requires only that in order to subject a defendant to a judgment in personam, if he be not present within the territory of the forum, he have certain minimum contacts with it such that the maintenance of the suit does not offend \"traditional notions of fair play and substantial justice.\"' The quoted portion matches exactly.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'The Court held that a defendant must have \"minimum contacts\" with the forum state \"such that the maintenance of the suit does not offend traditional notions of fair play and substantial justice.\"' This accurately describes the Court's holding. The opinion establishes this as the new test for personal jurisdiction over out-of-state defendants, replacing the older physical presence requirement. This is the seminal holding of International Shoe that revolutionized personal jurisdiction law.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is 1.0 because: (1) The quote is found verbatim in the opinion at the cited page, (2) The characterization accurately describes the Court's central holding, and (3) This is one of the most famous passages in American jurisprudence, establishing the modern minimum contacts test.\n\nSTEP 5 - OVERALL STATUS: Verified. The quote is exact and the characterization is accurate.",
+        "quote_status": "verified",
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "304 U.S. 64 (1938)",
+        "case_name": "Erie R.R. Co. v. Tompkins",
+        "full_reference": "Erie R.R. Co. v. Tompkins, 304 U.S. 64 (1938)",
+        "quoted_text": null,
+        "characterization": "In diversity cases, federal courts must apply state substantive law",
+        "context": "In diversity cases, federal courts must apply state substantive law. Erie R.R. Co. v. Tompkins, 304 U.S. 64 (1938).",
+        "position_start": 472,
+        "position_end": 589
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Erie Railroad v. Tompkins",
+        "court": "",
+        "date_filed": "1938-04-25",
+        "url": "https://www.courtlistener.com/opinion/103012/erie-railroad-v-tompkins/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the core holding of Erie. The Court explicitly states that 'Except in matters governed by the Federal Constitution or by Acts of Congress, the law to be applied in any case is the law of the State' and that this includes both statutory and common law. The opinion overrules Swift v. Tyson's doctrine that allowed federal courts to apply 'general law' in diversity cases, instead requiring them to apply state substantive law.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Erie R.R. Co. v. Tompkins, 304 U.S. 64 (1938)). The source opinion matches the cited case - it shows the correct case name, volume, page number, and year. The parties match (Erie Railroad Co. as petitioner, Tompkins as respondent), and the subject matter is consistent.\n\nSTEP 2 - QUOTE VERIFICATION: No quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states 'In diversity cases, federal courts must apply state substantive law.' This is precisely what Erie held. The Court states: 'Except in matters governed by the Federal Constitution or by Acts of Congress, the law to be applied in any case is the law of the State. And whether the law of the State shall be declared by its Legislature in a statute or by its highest court in a decision is not a matter of federal concern.' The opinion explicitly overrules Swift v. Tyson, which had allowed federal courts sitting in diversity to apply 'general law' rather than state law. The Court declares 'There is no federal general common law' and that federal courts must apply state substantive law in diversity cases.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the characterization directly reflects the central holding of this landmark case.\n\nSTEP 5 - OVERALL STATUS: The citation is verified as the characterization accurately captures Erie's fundamental holding.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "559 U.S. 393 (2010)",
+        "case_name": "Shady Grove Orthopedic Assocs., P.A. v. Allstate Ins. Co.",
+        "full_reference": "Shady Grove Orthopedic Assocs., P.A. v. Allstate Ins. Co., 559 U.S. 393 (2010)",
+        "quoted_text": null,
+        "characterization": "Federal Rule of Civil Procedure 23 governs class certification in federal court, even when state law would prohibit class actions for the claim at issue",
+        "context": "Federal Rule of Civil Procedure 23 governs class certification in federal court, even when state law would prohibit class actions for the claim at issue. Shady Grove Orthopedic Assocs., P.A. v. Allstate Ins. Co., 559 U.S. 393 (2010).",
+        "position_start": 720,
+        "position_end": 955
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Shady Grove Orthopedic Associates, P.A. v. Allstate Insurance Co.",
+        "court": "",
+        "date_filed": "2010-03-31",
+        "url": "https://www.courtlistener.com/opinion/6792710/shady-grove-orthopedic-associates-pa-v-allstate-insurance-co/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": null,
+        "confidence": 0.65,
+        "reasoning": "[Knowledge review override] The initial verification correctly identifies Shady Grove as a landmark Erie doctrine case about Federal Rule 23 governing class certification in federal court despite contrary state law. However, the confidence level of 0.85 is too high for knowledge-based verification. While this is indeed a significant Supreme Court case, it's not at the level of universal recognition like Miranda or Brown v. Board. The characterization accurately captures the holding, and the citation format is correct.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "823 F.3d 1156 (9th Cir. 2016)",
+        "case_name": "Thornton v. Pacific Coast Fin. Group",
+        "full_reference": "Thornton v. Pacific Coast Fin. Group, 823 F.3d 1156 (9th Cir. 2016)",
+        "quoted_text": null,
+        "characterization": "The Ninth Circuit has applied these principles in the securities context, holding that minimum contacts are established when a defendant directs fraudulent communications into the forum",
+        "context": "The Ninth Circuit has applied these principles in the securities context, holding that minimum contacts are established when a defendant directs fraudulent communications into the forum. Thornton v. Pacific Coast Fin. Group, 823 F.3d 1156 (9th Cir. 2016).",
+        "position_start": 957,
+        "position_end": 1215
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Jacob Lewis v. Epic Systems Corporation",
+        "court": "",
+        "date_filed": "2016-05-26",
+        "url": "https://www.courtlistener.com/opinion/3207221/jacob-lewis-v-epic-systems-corporation/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "Cannot verify this characterization because the case appears not to exist. The citation format appears fabricated.",
+        "confidence": 0.4,
+        "reasoning": "[Confirmed by knowledge review] The citation 'Thornton v. Pacific Coast Fin. Group, 823 F.3d 1156 (9th Cir. 2016)' appears to be fabricated. The database lookup indicates that 823 F.3d 1156 actually corresponds to 'Jacob Lewis v. Epic Systems Corporation,' a completely different case. Additionally, searches by case name failed to find any case styled 'Thornton v. Pacific Coast Fin. Group' in the Ninth Circuit. I have no knowledge of any Ninth Circuit case with this name from 2016 dealing with securities fraud and personal jurisdiction. The characterization about minimum contacts and fraudulent communications directed into a forum sounds plausible as a general principle, but I cannot verify it comes from this non-existent case.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "567 F. Supp. 2d 432 (S.D.N.Y. 2008)",
+        "case_name": "Westbrook Inv. Corp. v. Atlantic Mgmt. Servs.",
+        "full_reference": "Westbrook Inv. Corp. v. Atlantic Mgmt. Servs., 567 F. Supp. 2d 432 (S.D.N.Y. 2008)",
+        "quoted_text": null,
+        "characterization": "applying Erie to determine that New York substantive law governs claims arising from investment management agreements executed in New York",
+        "context": "See also Westbrook Inv. Corp. v. Atlantic Mgmt. Servs., 567 F. Supp. 2d 432 (S.D.N.Y. 2008) (applying Erie to determine that New York substantive law governs claims arising from investment management agreements executed in New York).",
+        "position_start": 1217,
+        "position_end": 1453
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Telenor East Invest AS v. Altimo Holdings & Investments Ltd.",
+        "court": "",
+        "date_filed": "2008-03-24",
+        "url": "https://www.courtlistener.com/opinion/1454437/telenor-east-invest-as-v-altimo-holdings-investments-ltd/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "Cannot verify this characterization because I cannot confirm this case exists. The citation appears to be incorrect or fabricated.",
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] I do not recognize a case called Westbrook Inv. Corp. v. Atlantic Mgmt. Servs. at this citation. The database lookup warning indicates that 567 F. Supp. 2d 432 (S.D.N.Y. 2008) actually corresponds to Telenor East Invest AS v. Altimo Holdings & Investments Ltd., not the cited case. This strongly suggests either: (1) the case name is wrong but the reporter citation is correct, or (2) the entire citation is fabricated. Given that searches by both citation and case name failed to find this case, and I have no independent knowledge of a Westbrook v. Atlantic Management Services case from S.D.N.Y. in 2008, I cannot verify this citation. The characterization about Erie doctrine and New York law governing investment management agreements is plausible but cannot be verified without confirming the case exists.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "485 U.S. 224 (1988)",
+        "case_name": "Basic Inc. v. Levinson",
+        "full_reference": "Basic Inc. v. Levinson, 485 U.S. 224 (1988)",
+        "quoted_text": null,
+        "characterization": "The fraud-on-the-market theory creates a rebuttable presumption of reliance for plaintiffs alleging securities fraud",
+        "context": "The fraud-on-the-market theory creates a rebuttable presumption of reliance for plaintiffs alleging securities fraud. Basic Inc. v. Levinson, 485 U.S. 224 (1988).",
+        "position_start": 1502,
+        "position_end": 1665
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Basic Inc. v. Levinson",
+        "court": "",
+        "date_filed": "1988-03-07",
+        "url": "https://www.courtlistener.com/opinion/112022/basic-inc-v-levinson/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes the Court's holding. The opinion explicitly states that 'The Court of Appeals joined a number of other Circuits in accepting the \"fraud-on-the-market theory\" to create a rebuttable presumption that respondents relied on petitioners' material misrepresentations' (pages 229-230). The Court then affirms this approach, stating 'It is not inappropriate to apply a presumption of reliance supported by the fraud-on-the-market theory' (page 250) and 'That presumption, however, is rebuttable' (page 250). The Court provides extensive analysis supporting this theory in Part IV of the opinion.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION VERIFICATION: The citation format is correct (Basic Inc. v. Levinson, 485 U.S. 224 (1988)). The source opinion confirms this is the correct case with matching parties and citation.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided to verify.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'The fraud-on-the-market theory creates a rebuttable presumption of reliance for plaintiffs alleging securities fraud.' This is directly supported by multiple passages in the opinion:\n- Page 229-230: 'The Court of Appeals joined a number of other Circuits in accepting the \"fraud-on-the-market theory\" to create a rebuttable presumption that respondents relied on petitioners' material misrepresentations'\n- Page 241-242: Discussion of the fraud-on-the-market theory and its basis\n- Page 245: 'Requiring a plaintiff to show a speculative state of facts... would place an unnecessarily unrealistic evidentiary burden on the Rule 10b-5 plaintiff who has traded on an impersonal market'\n- Page 247: 'An investor who buys or sells stock at the price set by the market does so in reliance on the integrity of that price... an investor's reliance on any public material misrepresentations, therefore, may be presumed for purposes of a Rule 10b-5 action'\n- Page 248: 'Any showing that severs the link between the alleged misrepresentation and either the price received (or paid) by the plaintiff, or his decision to trade at a fair market price, will be sufficient to rebut the presumption of reliance'\n- Page 250: In the summary section: '5. It is not inappropriate to apply a presumption of reliance supported by the fraud-on-the-market theory. 6. That presumption, however, is rebuttable.'\n\nSTEP 4 - CONFIDENCE: Very high confidence (0.95) as the characterization is directly supported by explicit holdings in the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified - the characterization accurately captures a central holding of the case.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "485 U.S. 224 (1988)",
+        "case_name": "Basic Inc. v. Levinson",
+        "full_reference": "Id. at 246",
+        "quoted_text": "the market price of shares traded on well-developed markets reflects all publicly available information, and, hence, any material misrepresentations",
+        "characterization": "The Court held that \"the market price of shares traded on well-developed markets reflects all publicly available information, and, hence, any material misrepresentations.\"",
+        "context": "The Court held that \"the market price of shares traded on well-developed markets reflects all publicly available information, and, hence, any material misrepresentations.\" Id. at 246.",
+        "position_start": 1666,
+        "position_end": 1850
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Basic Inc. v. Levinson",
+        "court": "",
+        "date_filed": "1988-03-07",
+        "url": "https://www.courtlistener.com/opinion/112022/basic-inc-v-levinson/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "warning",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "the market price of shares traded on well-developed markets reflects all publicly available information, and, hence, any material misrepresentations",
+        "characterization_accuracy": "misleading",
+        "characterization_explanation": "The characterization states that 'The Court held that' followed by the quoted text, which misleadingly presents this as the Court's holding. In fact, the quoted text appears in a sentence that reads: 'Recent empirical studies have tended to confirm Congress' premise that the market price of shares traded on well-developed markets reflects all publicly available information, and, hence, any material misrepresentations.' This is the Court describing empirical studies that support Congress's premise, not announcing its own holding. The Court is discussing evidence supporting the fraud-on-the-market presumption, but this specific statement is not framed as the Court's holding.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (485 U.S. 224 (1988)). The source opinion is indeed Basic Inc. v. Levinson - the parties, subject matter (securities fraud, merger discussions), and case details all match.\n\nSTEP 2 - QUOTE VERIFICATION: The programmatic search confirms the quote exists verbatim in the opinion. The quote appears on page 246 in the context of the Court discussing the fraud-on-the-market theory. The quote is exact with no differences.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization presents this quote as 'The Court held that...' However, examining the full sentence containing the quote reveals: 'Recent empirical studies have tended to confirm Congress' premise that the market price of shares traded on well-developed markets reflects all publicly available information, and, hence, any material misrepresentations.' The Court is not stating this as its holding but rather describing what empirical studies have confirmed about Congress's premise. The actual holdings of the case are found elsewhere in the opinion (e.g., adopting the TSC Industries materiality standard, rejecting the agreement-in-principle test, endorsing the fraud-on-the-market presumption). While the Court does endorse the fraud-on-the-market theory, this particular quote is descriptive of empirical studies, not a statement of the Court's holding.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the quote is found verbatim and the context clearly shows this is not stated as the Court's holding.\n\nSTEP 5 - OVERALL STATUS: Warning - the quote is accurate but the characterization is misleading by presenting descriptive language about empirical studies as if it were the Court's holding.",
+        "quote_status": "verified",
+        "characterization_status": "warning"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "551 U.S. 308 (2007)",
+        "case_name": "Tellabs, Inc. v. Makor Issues & Rights, Ltd.",
+        "full_reference": "Tellabs, Inc. v. Makor Issues & Rights, Ltd., 551 U.S. 308, 324 (2007)",
+        "quoted_text": "at least as compelling as any opposing inference one could draw from the facts alleged",
+        "characterization": "A securities fraud complaint must state facts giving rise to a \"strong inference\" of scienter \u2014 an inference \"at least as compelling as any opposing inference one could draw from the facts alleged.\"",
+        "context": "A securities fraud complaint must state facts giving rise to a \"strong inference\" of scienter \u2014 an inference \"at least as compelling as any opposing inference one could draw from the facts alleged.\" Tellabs, Inc. v. Makor Issues & Rights, Ltd., 551 U.S. 308, 324 (2007).",
+        "position_start": 1852,
+        "position_end": 2124
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Tellabs, Inc. v. Makor Issues & Rights, Ltd.",
+        "court": "",
+        "date_filed": "2007-06-21",
+        "url": "https://www.courtlistener.com/opinion/145709/tellabs-inc-v-makor-issues-rights-ltd/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "at least as compelling as any opposing inference one could draw from the facts alleged",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding about the 'strong inference' standard for scienter in securities fraud complaints. The Court explicitly held that to meet the PSLRA's requirement, an inference of scienter must be 'cogent and at least as compelling as any opposing inference one could draw from the facts alleged.' This is precisely what the characterization states.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (551 U.S. 308 (2007)). The source opinion is clearly from Tellabs, Inc. v. Makor Issues & Rights, Ltd., matching the cited case name, parties, and subject matter (securities fraud pleading standards).\n\nSTEP 2 - QUOTE VERIFICATION: The quoted text 'at least as compelling as any opposing inference one could draw from the facts alleged' appears verbatim on page *324 of the opinion. The programmatic search confirmed this exact match. The quote is part of the Court's key holding about the standard for pleading scienter.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'A securities fraud complaint must state facts giving rise to a \"strong inference\" of scienter \u2014 an inference \"at least as compelling as any opposing inference one could draw from the facts alleged.\"' This accurately reflects the Court's holding. The opinion states at *314: 'to determine whether a complaint's scienter allegations can survive threshold inspection for sufficiency, a court governed by \u00a721D(b)(2) must engage in a comparative evaluation... To qualify as \"strong\" within the intendment of \u00a721D(b)(2), we hold, an inference of scienter must be more than merely plausible or reasonable \u2014 it must be cogent and at least as compelling as any opposing inference of nonfraudulent intent.' The Court reiterates this standard at *324: 'A complaint will survive, we hold, only if a reasonable person would deem the inference of scienter cogent and at least as compelling as any opposing inference one could draw from the facts alleged.'\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the quote is found verbatim and the characterization accurately captures the Court's central holding.\n\nSTEP 5 - OVERALL STATUS: Verified. Both the quote and characterization are accurate representations of the Court's holding in Tellabs.",
+        "quote_status": "verified",
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "552 U.S. 148 (2008)",
+        "case_name": "Stoneridge Inv. Partners, LLC v. Scientific-Atlanta, Inc.",
+        "full_reference": "Stoneridge Inv. Partners, LLC v. Scientific-Atlanta, Inc., 552 U.S. 148 (2008)",
+        "quoted_text": null,
+        "characterization": "Section 10(b) does not create a private right of action against secondary actors who did not make a public misstatement or omission upon which investors relied",
+        "context": "Section 10(b) does not create a private right of action against secondary actors who did not make a public misstatement or omission upon which investors relied. Stoneridge Inv. Partners, LLC v. Scientific-Atlanta, Inc., 552 U.S. 148 (2008).",
+        "position_start": 2126,
+        "position_end": 2366
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Stoneridge Investment Partners, LLC v. Scientific-Atlanta, Inc.",
+        "court": "",
+        "date_filed": "2008-01-15",
+        "url": "https://www.courtlistener.com/opinion/145837/stoneridge-investment-partners-llc-v-scientific-atlanta-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The Court explicitly states that 'The \u00a7 10(b) implied private right of action does not extend to aiders and abettors' and that secondary actors (like the customer/supplier companies in this case) cannot be held liable under \u00a7 10(b) when investors did not rely upon their statements or representations. The Court affirmed the lower court's dismissal, finding that respondents' deceptive acts 'were not disclosed to the investing public' and were 'too remote to satisfy the requirement of reliance.'",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Stoneridge Inv. Partners, LLC v. Scientific-Atlanta, Inc., 552 U.S. 148 (2008)). The source opinion matches the cited case - it's the Supreme Court opinion in Stoneridge with Justice Kennedy delivering the opinion, dealing with Charter Communications and its suppliers Scientific-Atlanta and Motorola.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'Section 10(b) does not create a private right of action against secondary actors who did not make a public misstatement or omission upon which investors relied.' This is directly supported by multiple passages in the opinion:\n- Page 152-153: 'We conclude the implied right of action does not reach the customer/supplier companies because the investors did not rely upon their statements or representations.'\n- Page 158: 'The \u00a7 10(b) implied private right of action does not extend to aiders and abettors.'\n- Page 159: 'Respondents had no duty to disclose; and their deceptive acts were not communicated to the public. No member of the investing public had knowledge, either actual or presumed, of respondents' deceptive acts during the relevant times.'\n- Page 166-167: 'In these circumstances the investors cannot be said to have relied upon any of respondents' deceptive acts in the decision to purchase or sell securities; and as the requisite reliance cannot be shown, respondents have no liability to petitioner under the implied right of action.'\n\nThe Court's analysis focused on the reliance element, finding that because the secondary actors' (Scientific-Atlanta and Motorola) deceptive acts were not communicated to the public, investors could not have relied upon them, thus precluding liability under \u00a7 10(b).\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly reflects the Court's explicit holdings and reasoning throughout the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately summarizes a central holding of the case.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "544 U.S. 336 (2005)",
+        "case_name": "Dura Pharms., Inc. v. Broudo",
+        "full_reference": "Dura Pharms., Inc. v. Broudo, 544 U.S. 336 (2005)",
+        "quoted_text": null,
+        "characterization": "Plaintiffs must demonstrate loss causation \u2014 that the defendant's fraud actually caused an economic loss, not merely an inflated purchase price",
+        "context": "Plaintiffs must demonstrate loss causation \u2014 that the defendant's fraud actually caused an economic loss, not merely an inflated purchase price. Dura Pharms., Inc. v. Broudo, 544 U.S. 336 (2005).",
+        "position_start": 2368,
+        "position_end": 2565
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Dura Pharmaceuticals, Inc. v. Broudo",
+        "court": "",
+        "date_filed": "2005-04-19",
+        "url": "https://www.courtlistener.com/opinion/142888/dura-pharmaceuticals-inc-v-broudo/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Supreme Court's holding in Dura Pharmaceuticals. The Court explicitly states that plaintiffs must prove 'loss causation' - a causal connection between the material misrepresentation and the loss - and emphasizes that merely showing an inflated purchase price is insufficient. The Court specifically rejects the Ninth Circuit's approach that would allow recovery based solely on price inflation without proving that the fraud actually caused economic loss.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (544 U.S. 336 (2005)). The source opinion matches the cited case - it is indeed Dura Pharmaceuticals, Inc. v. Broudo, with Justice Breyer delivering the opinion of the Court. The parties and subject matter align perfectly.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'Plaintiffs must demonstrate loss causation \u2014 that the defendant's fraud actually caused an economic loss, not merely an inflated purchase price.' This is precisely what the Court held. Key passages supporting this include: (1) 'A private plaintiff who claims securities fraud must prove that the defendant's fraud caused an economic loss' (opening paragraph); (2) The Court lists 'loss causation, i.e., a causal connection between the material misrepresentation and the loss' as element (6) of a securities fraud claim; (3) The Court explicitly rejects the Ninth Circuit's holding that plaintiffs can satisfy loss causation 'simply by alleging...that the price of the security on the date of purchase was inflated because of the misrepresentation'; (4) The Court states 'an inflated purchase price will not itself constitute or proximately cause the relevant economic loss'; (5) The Court emphasizes that 'the artificially inflated purchase price is not itself a relevant economic loss.'\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly reflects the Court's central holding, which is stated multiple times throughout the opinion in clear language.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately captures the Supreme Court's holding without any misleading elements.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "573 U.S. 258 (2014)",
+        "case_name": "Halliburton Co. v. Erica P. John Fund, Inc.",
+        "full_reference": "Halliburton Co. v. Erica P. John Fund, Inc., 573 U.S. 258 (2014)",
+        "quoted_text": null,
+        "characterization": "The Supreme Court abolished the fraud-on-the-market presumption of reliance, holding that plaintiffs must demonstrate actual, individualized reliance on specific misstatements",
+        "context": "The Supreme Court abolished the fraud-on-the-market presumption of reliance, holding that plaintiffs must demonstrate actual, individualized reliance on specific misstatements. Halliburton Co. v. Erica P. John Fund, Inc., 573 U.S. 258 (2014).",
+        "position_start": 2567,
+        "position_end": 2812
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Ohio Pub. Employees Ret. v. FHLMC",
+        "court": "Court of Appeals for the Sixth Circuit",
+        "date_filed": "2023-04-06",
+        "url": "https://www.courtlistener.com/opinion/9389984/ohio-pub-employees-ret-v-fhlmc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "This characterization is completely incorrect. Halliburton II (2014) did NOT abolish the fraud-on-the-market presumption. The Court actually PRESERVED the Basic v. Levinson presumption while allowing defendants to rebut it with evidence of no price impact at the class certification stage.",
+        "confidence": 0.7,
+        "reasoning": "[Confirmed by knowledge review] Halliburton Co. v. Erica P. John Fund, Inc., 573 U.S. 258 (2014) (Halliburton II) is a well-known Supreme Court securities fraud case. The Court held that defendants may rebut the fraud-on-the-market presumption at the class certification stage by showing lack of price impact, but explicitly REJECTED the invitation to overrule Basic v. Levinson and eliminate the presumption entirely. The document's characterization that the Court 'abolished the fraud-on-the-market presumption' is the opposite of what the Court actually held. This is a serious misstatement of the case's holding.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "573 U.S. 258 (2014)",
+        "case_name": "Halliburton Co. v. Erica P. John Fund, Inc.",
+        "full_reference": "Id. at 277",
+        "quoted_text": "the fraud-on-the-market theory has no place in modern securities litigation and is hereby overruled",
+        "characterization": "The Court stated that \"the fraud-on-the-market theory has no place in modern securities litigation and is hereby overruled.\"",
+        "context": "The Court stated that \"the fraud-on-the-market theory has no place in modern securities litigation and is hereby overruled.\" Id. at 277.",
+        "position_start": 2813,
+        "position_end": 2950
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Ohio Pub. Employees Ret. v. FHLMC",
+        "court": "Court of Appeals for the Sixth Circuit",
+        "date_filed": "2023-04-06",
+        "url": "https://www.courtlistener.com/opinion/9389984/ohio-pub-employees-ret-v-fhlmc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "inaccurate",
+        "quote_diff": "The quoted text directly contradicts the actual holding of the case",
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "This characterization is completely false. Halliburton II actually reaffirmed the fraud-on-the-market theory from Basic Inc. v. Levinson while allowing defendants to rebut the presumption of reliance at class certification",
+        "confidence": 0.7,
+        "reasoning": "[Confirmed by knowledge review] Halliburton Co. v. Erica P. John Fund, Inc. (Halliburton II) is a well-known 2014 Supreme Court case about securities fraud class actions. The Court explicitly UPHELD the fraud-on-the-market theory from Basic Inc. v. Levinson, rejecting Halliburton's request to overrule it. The Court did allow defendants to present evidence rebutting the presumption of reliance at the class certification stage. The quoted text claiming the Court overruled fraud-on-the-market theory is completely false and contradicts the actual holding of the case.",
+        "quote_status": "error",
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "561 U.S. 247 (2010)",
+        "case_name": "Morrison v. Nat'l Australia Bank Ltd.",
+        "full_reference": "Morrison v. Nat'l Australia Bank Ltd., 561 U.S. 247 (2010)",
+        "quoted_text": null,
+        "characterization": "Section 10(b) of the Exchange Act has no territorial limitations and applies to securities transactions worldwide, including those occurring entirely on foreign exchanges",
+        "context": "Section 10(b) of the Exchange Act has no territorial limitations and applies to securities transactions worldwide, including those occurring entirely on foreign exchanges. Morrison v. Nat'l Australia Bank Ltd., 561 U.S. 247 (2010).",
+        "position_start": 2952,
+        "position_end": 3181
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Morrison v. National Australia Bank Ltd.",
+        "court": "",
+        "date_filed": "2010-06-24",
+        "url": "https://www.courtlistener.com/opinion/149289/morrison-v-national-australia-bank-ltd/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization states that Section 10(b) 'has no territorial limitations and applies to securities transactions worldwide, including those occurring entirely on foreign exchanges.' This is the exact opposite of what the Court held. The Court explicitly concluded that \u00a7 10(b) does NOT apply extraterritorially and is limited to: (1) securities listed on domestic exchanges, and (2) domestic transactions in other securities. The Court stated: 'In short, there is no affirmative indication in the Exchange Act that \u00a7 10(b) applies extraterritorially, and we therefore conclude that it does not.' (p. 265) and 'Section 10(b) reaches the use of a manipulative or deceptive device or contrivance only in connection with the purchase or sale of a security listed on an American stock exchange, and the purchase or sale of any other security in the United States.' (p. 273). The characterization completely misrepresents the Court's holding.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] Step 1: Confirmed the citation format is correct and the source opinion matches Morrison v. National Australia Bank Ltd. Step 2: No quote provided to verify. Step 3: Analyzed the characterization against the Court's holding. The characterization claims \u00a7 10(b) has no territorial limitations and applies worldwide, but the Court held precisely the opposite - that \u00a7 10(b) does NOT apply extraterritorially and is limited to domestic exchanges and domestic transactions. The Court applied the presumption against extraterritoriality and found no clear indication that Congress intended \u00a7 10(b) to apply abroad. Step 4: Confidence is 1.0 as the holding is clear and unambiguous. Step 5: This is an error because the characterization directly contradicts the Court's holding.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "745 F.3d 328 (2d Cir. 2014)",
+        "case_name": "Meridian Capital Partners v. Blackstone Advisors, LLC",
+        "full_reference": "Meridian Capital Partners v. Blackstone Advisors, LLC, 745 F.3d 328 (2d Cir. 2014)",
+        "quoted_text": "where a defendant's fraudulent scheme spans multiple jurisdictions, loss causation may be established through aggregate market impact analysis rather than transaction-specific proof",
+        "characterization": "holding that \"where a defendant's fraudulent scheme spans multiple jurisdictions, loss causation may be established through aggregate market impact analysis rather than transaction-specific proof\"",
+        "context": "See Meridian Capital Partners v. Blackstone Advisors, LLC, 745 F.3d 328 (2d Cir. 2014) (holding that \"where a defendant's fraudulent scheme spans multiple jurisdictions, loss causation may be established through aggregate market impact analysis rather than transaction-specific proof\").",
+        "position_start": 3183,
+        "position_end": 3470
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "St. Jude Medical S.C., Inc. v. Annette Cormier",
+        "court": "",
+        "date_filed": "2014-03-11",
+        "url": "https://www.courtlistener.com/opinion/2656206/st-jude-medical-sc-inc-v-annette-cormier/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "Cannot verify this characterization because the case appears not to exist",
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] I do not recognize 'Meridian Capital Partners v. Blackstone Advisors, LLC' as a real Second Circuit case from 2014. The database lookup warning indicates that 745 F.3d 328 actually corresponds to a different case (St. Jude Medical), and searches for the case name failed. This strongly suggests the citation is fabricated. The quoted language about loss causation and aggregate market impact analysis sounds plausible for securities fraud context, but I cannot verify it comes from any real case. Given the database mismatch and my lack of recognition of this case name, I must conclude this citation is likely fictitious.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "901 F.3d 178 (3d Cir. 2018)",
+        "case_name": "Sullivan v. Global Tech. Innovations, Inc.",
+        "full_reference": "Sullivan v. Global Tech. Innovations, Inc., 901 F.3d 178 (3d Cir. 2018)",
+        "quoted_text": null,
+        "characterization": "The Third Circuit has similarly held that scienter may be inferred from circumstantial evidence of a corporate officer's access to contradictory information",
+        "context": "The Third Circuit has similarly held that scienter may be inferred from circumstantial evidence of a corporate officer's access to contradictory information. Sullivan v. Global Tech. Innovations, Inc., 901 F.3d 178 (3d Cir. 2018).",
+        "position_start": 3472,
+        "position_end": 3703
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "United Parcel Service, Inc. v. Uni\u00f3n De Tronquistas De Puerto Rico, Local 901",
+        "court": "Court of Appeals for the First Circuit",
+        "date_filed": "2005-10-20",
+        "url": "https://www.courtlistener.com/opinion/201868/united-parcel-service-inc-v-union-de-tronquistas-de-puerto-rico-local/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "Cannot verify this characterization because the case appears not to exist. The citation database shows a different case at this reporter location.",
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] The citation 'Sullivan v. Global Tech. Innovations, Inc., 901 F.3d 178 (3d Cir. 2018)' appears to be fabricated or erroneous. The database lookup reveals that 901 F.3d 178 actually corresponds to 'United Parcel Service, Inc. v. Uni\u00f3n De Tronquistas De Puerto Rico, Local 901,' not the cited Sullivan case. I do not recognize 'Sullivan v. Global Tech. Innovations, Inc.' as a real Third Circuit case from my training data. The characterization about inferring scienter from circumstantial evidence is a common principle in securities fraud cases, but I cannot verify it comes from this specific case since the case appears not to exist.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "421 U.S. 723 (1975)",
+        "case_name": "Blue Chip Stamps v. Manor Drug Stores",
+        "full_reference": "Blue Chip Stamps v. Manor Drug Stores, 421 U.S. 723 (1975)",
+        "quoted_text": null,
+        "characterization": "Only actual purchasers or sellers of securities have standing to bring a private action under Rule 10b-5",
+        "context": "Only actual purchasers or sellers of securities have standing to bring a private action under Rule 10b-5. Blue Chip Stamps v. Manor Drug Stores, 421 U.S. 723 (1975).",
+        "position_start": 3752,
+        "position_end": 3918
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Blue Chip Stamps v. Manor Drug Stores",
+        "court": "",
+        "date_filed": "1975-10-06",
+        "url": "https://www.courtlistener.com/opinion/109267/blue-chip-stamps-v-manor-drug-stores/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately states the Court's holding. The Supreme Court explicitly adopted the Birnbaum rule, holding that 'the plaintiff class for purposes of a private damage action under \u00a7 10(b) and Rule 10b-5 was limited to actual purchasers and sellers of securities.' The Court rejected the respondent's claim because they were neither purchasers nor sellers, affirming that only actual purchasers or sellers have standing to bring private actions under Rule 10b-5.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] The Court's opinion clearly establishes that standing under Rule 10b-5 is limited to actual purchasers and sellers. The Court: (1) explicitly endorsed the Birnbaum rule from the Second Circuit; (2) stated that 'virtually all lower federal courts' over 25 years had reaffirmed this limitation; (3) analyzed policy considerations supporting this limitation; (4) rejected the Court of Appeals' attempt to create an exception for offerees; and (5) held that respondent, as a mere offeree who neither purchased nor sold securities, could not maintain a Rule 10b-5 action. The characterization accurately captures this central holding of the case.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "564 U.S. 135 (2011)",
+        "case_name": "Janus Capital Group, Inc. v. First Derivative Traders",
+        "full_reference": "Janus Capital Group, Inc. v. First Derivative Traders, 564 U.S. 135 (2011)",
+        "quoted_text": "maker",
+        "characterization": "Any person who contributes to the creation of a fraudulent misstatement may be held liable as the \"maker\" of that statement under Rule 10b-5",
+        "context": "Any person who contributes to the creation of a fraudulent misstatement may be held liable as the \"maker\" of that statement under Rule 10b-5. Janus Capital Group, Inc. v. First Derivative Traders, 564 U.S. 135 (2011).",
+        "position_start": 4025,
+        "position_end": 4243
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Janus Capital Group, Inc. v. First Derivative Traders",
+        "court": "",
+        "date_filed": "2011-06-13",
+        "url": "https://www.courtlistener.com/opinion/218666/janus-capital-group-inc-v-first-derivative-traders/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "inaccurate",
+        "quote_diff": "The quoted text 'maker' appears to be a single word taken out of context. While the word 'maker' does appear in the opinion (e.g., 'the maker of a statement is the person or entity with ultimate authority'), it is not presented as a standalone quote in the opinion. The document appears to be quoting just this single word without proper context.",
+        "actual_quote": "For purposes of Rule 10b\u20135, the maker of a statement is the person or entity with ultimate authority over the statement, including its content and whether and how to communicate it.",
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization is directly contradicted by the Court's holding. The Supreme Court explicitly held that only those with 'ultimate authority' over a statement can be its 'maker' under Rule 10b-5. The Court rejected broader interpretations that would include those who merely contribute to creating statements. The opinion states: 'Without control, a person or entity can merely suggest what to say, not \"make\" a statement in its own right.' This is the opposite of the characterization's claim that 'any person who contributes to the creation' can be held liable as the maker.",
+        "confidence": 0.9,
+        "reasoning": "STEP 1: The citation format is correct and the case exists. The opinion text matches Janus Capital Group, Inc. v. First Derivative Traders, 564 U.S. 135 (2011).\n\nSTEP 2: The quoted text 'maker' is problematic. While this word does appear in the opinion multiple times, it's not presented as a standalone quote. The opinion uses 'maker' in full sentences explaining the Court's holding about who can be considered a 'maker' of statements.\n\nSTEP 3: The characterization is fundamentally wrong. The Supreme Court held the exact opposite of what the characterization claims. The Court explicitly limited who can be a 'maker' to those with 'ultimate authority' over the statement, rejecting broader theories that would include contributors. The opinion states: 'A broader reading of \"make,\" including persons or entities without ultimate control over the content of a statement, would substantially undermine Central Bank.'\n\nSTEP 4: Confidence is high (0.9) because the opinion clearly contradicts the characterization.\n\nSTEP 5: This is an error because the characterization materially misrepresents the Court's holding.",
+        "quote_status": "error",
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "678 F.3d 923 (9th Cir. 2012)",
+        "case_name": "Chen v. Pacific Semiconductor Corp.",
+        "full_reference": "Chen v. Pacific Semiconductor Corp., 678 F.3d 923 (9th Cir. 2012)",
+        "quoted_text": null,
+        "characterization": "holding that class certification is appropriate where common questions of scienter and materiality predominate over individual questions of reliance in a securities fraud class action",
+        "context": "See also Chen v. Pacific Semiconductor Corp., 678 F.3d 923 (9th Cir. 2012) (holding that class certification is appropriate where common questions of scienter and materiality predominate over individual questions of reliance in a securities fraud class action).",
+        "position_start": 4390,
+        "position_end": 4653
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Virginia Department of Medical Assistance Services v. United States Department of Health & Human Services",
+        "court": "",
+        "date_filed": "2012-05-08",
+        "url": "https://www.courtlistener.com/opinion/799424/virginia-department-of-medical-assistance-services-v-united-states/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "Cannot verify this characterization because the case appears not to exist. The citation format follows standard conventions, but the case itself cannot be found.",
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] I do not recognize 'Chen v. Pacific Semiconductor Corp.' as a real Ninth Circuit case from 2012. The database lookup warning indicates that 678 F.3d 923 actually corresponds to a completely different case (Virginia Department of Medical Assistance Services), and searches for the case name yielded no results. This strongly suggests the cited case does not exist. While the characterization about class certification in securities fraud cases reflects real legal principles that appear in cases like Basic Inc. v. Levinson and Halliburton Co. v. Erica P. John Fund, I cannot verify this specific case or its holding.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    }
+  ],
+  "created_at": "2026-04-11T22:00:19.302864+00:00"
+}

@@ -39,7 +39,8 @@ class TestVerifyCitation:
         assert isinstance(result, VerificationResult)
         assert result.status == "verified"
         assert result.quote_accuracy == "exact"
-        assert result.confidence == 0.95
+        # 0.95 initial + 0.05 review confirmation boost, clamped to 1.0
+        assert result.confidence == 1.0
 
     @patch("backend.verifier.call_ai_json")
     def test_warning_result(self, mock_ai):

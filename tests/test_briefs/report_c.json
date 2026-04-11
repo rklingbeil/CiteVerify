@@ -1,0 +1,589 @@
+{
+  "id": "263de0e0-7b5f-45cf-b966-b8eafc731cfa",
+  "filename": "brief_c_mixed_real_fake.docx",
+  "document_text": "PLAINTIFF'S TRIAL BRIEF\n\nThompson v. Western Regional Medical Center\n\nI. STATEMENT OF THE CASE\n\nPlaintiff brings this action for medical malpractice and negligent credentialing. The applicable standard of care is well established.\n\nII. APPLICABLE LEGAL STANDARDS\n\nMedical malpractice claims require proof of duty, breach, causation, and damages. The Supreme Court addressed the standard for expert testimony in Daubert v. Merrell Dow Pharmaceuticals, Inc., 509 U.S. 579 (1993), establishing that trial courts serve as gatekeepers for the admissibility of expert scientific testimony under Federal Rule of Evidence 702.\n\nThe Ninth Circuit extended Daubert to medical malpractice cases in Whitfield v. Pacific Medical Associates, 387 F.3d 1042 (9th Cir. 2004), holding that \"in medical malpractice actions, the trial court must ensure that expert testimony regarding standard of care is grounded in accepted medical methodology.\" Id. at 1048.\n\nExpert testimony must be both relevant and reliable. Kumho Tire Co. v. Carmichael, 526 U.S. 137 (1999). The Court in Kumho extended Daubert's gatekeeping function to all expert testimony, not just scientific testimony.\n\nIII. NEGLIGENT CREDENTIALING\n\nHospitals have an independent duty to verify the credentials of physicians granted privileges. In Morrison v. St. Luke's Regional Medical Center, 498 F.3d 835 (8th Cir. 2007), the Eighth Circuit held that:\n\n\"A hospital that grants privileges to a physician without conducting a reasonable investigation into that physician's competence and qualifications may be held directly liable for injuries resulting from that physician's negligent treatment of patients.\"\n\nMorrison v. St. Luke's Regional Medical Center, 498 F.3d at 842.\n\nThe doctrine of corporate negligence holds hospitals to a duty of care in the selection and retention of medical staff. This principle was established in Darling v. Charleston Community Memorial Hospital, 33 Ill. 2d 326 (1965), which recognized that a hospital owes a direct duty to its patients to ensure the competency of its medical staff.\n\nIV. CAUSATION\n\nUnder the \"substantial factor\" test for causation, the plaintiff need not prove that the defendant's conduct was the sole cause of injury. Rodriguez v. Northwestern Memorial Healthcare, 612 F.3d 544 (7th Cir. 2010). The Seventh Circuit explained that \"where multiple acts of negligence combine to produce a single indivisible injury, each negligent actor is liable for the entire harm.\" Id. at 551.\n\nThe \"but for\" test remains the default standard for causation in most jurisdictions. See Burrage v. United States, 571 U.S. 204 (2014) (holding that \"but for\" causation is the default rule unless the statute provides otherwise).\n\nOregon courts have adopted a modified substantial factor test. See Kellerman v. Providence Health Systems, 348 Or 456 (2010) (holding that \"a plaintiff in a medical malpractice action need only demonstrate that the defendant's negligence was a substantial factor in bringing about the harm, not that it was the predominant cause\"). See also Chen v. Legacy Health Corp., 285 Or App 312 (2017).\n\nV. DAMAGES\n\nCompensatory damages in medical malpractice cases include both economic and noneconomic losses. The Supreme Court has recognized that due process limits punitive damage awards. BMW of North America, Inc. v. Gore, 517 U.S. 559 (1996). The Court established three guideposts for evaluating the constitutionality of punitive damages: (1) the degree of reprehensibility, (2) the ratio between punitive and compensatory damages, and (3) the difference between the punitive award and comparable civil penalties.\n\nThe Court later clarified that punitive damages generally cannot exceed a 3:1 ratio to compensatory damages. State Farm Mutual Automobile Insurance Co. v. Campbell, 538 U.S. 408 (2003). The Court stated that \"in practice, few awards exceeding a 3-to-1 ratio between punitive and compensatory damages will satisfy due process.\" Id. at 425.\n\nCONCLUSION\n\nPlaintiff respectfully requests that this Court enter judgment in her favor and award compensatory and punitive damages as proven at trial.",
+  "total_citations": 16,
+  "verified": 7,
+  "warnings": 1,
+  "errors": 7,
+  "unverifiable": 1,
+  "citations": [
+    {
+      "extraction": {
+        "citation_text": "509 U.S. 579 (1993)",
+        "case_name": "Daubert v. Merrell Dow Pharmaceuticals, Inc.",
+        "full_reference": "Daubert v. Merrell Dow Pharmaceuticals, Inc., 509 U.S. 579 (1993)",
+        "quoted_text": null,
+        "characterization": "establishing that trial courts serve as gatekeepers for the admissibility of expert scientific testimony under Federal Rule of Evidence 702",
+        "context": "The Supreme Court addressed the standard for expert testimony in Daubert v. Merrell Dow Pharmaceuticals, Inc., 509 U.S. 579 (1993), establishing that trial courts serve as gatekeepers for the admissibility of expert scientific testimony under Federal Rule of Evidence 702.",
+        "position_start": 344,
+        "position_end": 537
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Daubert v. Merrell Dow Pharmaceuticals, Inc.",
+        "court": "",
+        "date_filed": "1993-06-28",
+        "url": "https://www.courtlistener.com/opinion/112903/daubert-v-merrell-dow-pharmaceuticals-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the central holding of Daubert. The Court explicitly states that 'under the Rules the trial judge must ensure that any and all scientific testimony or evidence admitted is not only relevant, but reliable' and that 'Rule 702... do assign to the trial judge the task of ensuring that an expert's testimony both rests on a reliable foundation and is relevant to the task at hand.' The opinion establishes the trial judge's gatekeeping role throughout, particularly in Part II.B and II.C.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (509 U.S. 579 (1993)). The source opinion is indeed Daubert v. Merrell Dow Pharmaceuticals, Inc., matching the parties and subject matter of expert testimony admissibility.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that Daubert established 'that trial courts serve as gatekeepers for the admissibility of expert scientific testimony under Federal Rule of Evidence 702.' This is directly supported by multiple passages in the opinion:\n- Page 589: 'under the Rules the trial judge must ensure that any and all scientific testimony or evidence admitted is not only relevant, but reliable.'\n- Page 592: 'Faced with a proffer of expert scientific testimony, then, the trial judge must determine at the outset, pursuant to Rule 104(a), whether the expert is proposing to testify to (1) scientific knowledge that (2) will assist the trier of fact to understand or determine a fact in issue.'\n- Page 597: 'Rule 702... do assign to the trial judge the task of ensuring that an expert's testimony both rests on a reliable foundation and is relevant to the task at hand.'\n- The Court also explicitly refers to 'a gatekeeping role for the judge' on page 597.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: The characterization is clearly and directly supported by the opinion text, which repeatedly emphasizes the trial judge's role in screening expert testimony.\n\nSTEP 5 - OVERALL STATUS: The characterization accurately represents the central holding of Daubert.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "387 F.3d 1042 (9th Cir. 2004)",
+        "case_name": "Whitfield v. Pacific Medical Associates",
+        "full_reference": "Whitfield v. Pacific Medical Associates, 387 F.3d 1042 (9th Cir. 2004)",
+        "quoted_text": null,
+        "characterization": "holding that \"in medical malpractice actions, the trial court must ensure that expert testimony regarding standard of care is grounded in accepted medical methodology.\"",
+        "context": "The Ninth Circuit extended Daubert to medical malpractice cases in Whitfield v. Pacific Medical Associates, 387 F.3d 1042 (9th Cir. 2004), holding that \"in medical malpractice actions, the trial court must ensure that expert testimony regarding standard of care is grounded in accepted medical methodology.\" Id. at 1048.",
+        "position_start": 639,
+        "position_end": 710
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Parle v. Runnels",
+        "court": "",
+        "date_filed": "2004-11-01",
+        "url": "https://www.courtlistener.com/opinion/8438618/parle-v-runnels/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization cannot be verified because this case does not appear to exist. The citation 387 F.3d 1042 belongs to a different case (Parle v. Runnels), not Whitfield v. Pacific Medical Associates.",
+        "confidence": 0.4,
+        "reasoning": "[Confirmed by knowledge review] The citation appears to be fabricated or contains a significant error. The volume and page number (387 F.3d 1042) actually corresponds to Parle v. Runnels (9th Cir. 2004), a habeas corpus case, not a medical malpractice case. I have no knowledge of a case called 'Whitfield v. Pacific Medical Associates' at this citation. The fact that database searches returned a different case at this citation and could not find the named case strongly indicates this is either a fabricated citation or a serious citation error. The described holding about Daubert standards in medical malpractice cases does not match what would be found in Parle v. Runnels.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "387 F.3d 1042 (9th Cir. 2004)",
+        "case_name": "Whitfield v. Pacific Medical Associates",
+        "full_reference": "Id. at 1048",
+        "quoted_text": "in medical malpractice actions, the trial court must ensure that expert testimony regarding standard of care is grounded in accepted medical methodology.",
+        "characterization": null,
+        "context": "The Ninth Circuit extended Daubert to medical malpractice cases in Whitfield v. Pacific Medical Associates, 387 F.3d 1042 (9th Cir. 2004), holding that \"in medical malpractice actions, the trial court must ensure that expert testimony regarding standard of care is grounded in accepted medical methodology.\" Id. at 1048.",
+        "position_start": 869,
+        "position_end": 881
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Parle v. Runnels",
+        "court": "",
+        "date_filed": "2004-11-01",
+        "url": "https://www.courtlistener.com/opinion/8438618/parle-v-runnels/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 0.4,
+        "reasoning": "[Confirmed by knowledge review] The citation appears to be fabricated. 387 F.3d 1042 (9th Cir. 2004) is actually Parle v. Runnels, a habeas corpus case, not Whitfield v. Pacific Medical Associates. I cannot find any record of a Ninth Circuit case called Whitfield v. Pacific Medical Associates from 2004 or any other year. The quoted language about expert testimony and medical methodology in malpractice cases does not appear in Parle v. Runnels. This appears to be a completely fabricated citation combining a real reporter citation with a non-existent case name and invented quote.",
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "526 U.S. 137 (1999)",
+        "case_name": "Kumho Tire Co. v. Carmichael",
+        "full_reference": "Kumho Tire Co. v. Carmichael, 526 U.S. 137 (1999)",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "Expert testimony must be both relevant and reliable. Kumho Tire Co. v. Carmichael, 526 U.S. 137 (1999).",
+        "position_start": 936,
+        "position_end": 986
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Kumho Tire Co. v. Carmichael",
+        "court": "",
+        "date_filed": "1999-03-23",
+        "url": "https://www.courtlistener.com/opinion/118271/kumho-tire-co-v-carmichael/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Citation confirmed \u2014 no quote or characterization to verify",
+        "confidence": 0.9,
+        "reasoning": null,
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "526 U.S. 137 (1999)",
+        "case_name": "Kumho Tire Co. v. Carmichael",
+        "full_reference": "Kumho",
+        "quoted_text": null,
+        "characterization": "extended Daubert's gatekeeping function to all expert testimony, not just scientific testimony",
+        "context": "The Court in Kumho extended Daubert's gatekeeping function to all expert testimony, not just scientific testimony.",
+        "position_start": 988,
+        "position_end": 1102
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Kumho Tire Co. v. Carmichael",
+        "court": "",
+        "date_filed": "1999-03-23",
+        "url": "https://www.courtlistener.com/opinion/118271/kumho-tire-co-v-carmichael/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The opinion explicitly states that 'Daubert's general holding\u2014setting forth the trial judge's general \"gatekeeping\" obligation\u2014applies not only to testimony based on \"scientific\" knowledge, but also to testimony based on \"technical\" and \"other specialized\" knowledge.' The Court repeatedly emphasizes throughout the opinion that Daubert's gatekeeping function extends beyond scientific testimony to all expert testimony under Rule 702.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Kumho Tire Co. v. Carmichael, 526 U.S. 137 (1999)). The source opinion text matches this case - it involves Kumho Tire Co. as petitioner, discusses tire failure analysis, and builds upon Daubert v. Merrell Dow Pharmaceuticals.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that Kumho 'extended Daubert's gatekeeping function to all expert testimony, not just scientific testimony.' This is directly supported by multiple passages in the opinion:\n- Page 141: 'We conclude that Daubert's general holding\u2014setting forth the trial judge's general \"gatekeeping\" obligation\u2014applies not only to testimony based on \"scientific\" knowledge, but also to testimony based on \"technical\" and \"other specialized\" knowledge.'\n- Page 147: 'The initial question before us is whether this basic gatekeeping obligation applies only to \"scientific\" testimony or to all expert testimony. We, like the parties, believe that it applies to all expert testimony.'\n- Page 149: 'We conclude that Daubert's general principles apply to the expert matters described in Rule 702.'\n\nThe Court explicitly rejected the Eleventh Circuit's view that Daubert applied only to scientific testimony and held that the gatekeeping function extends to all forms of expert testimony under Rule 702.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization is directly and explicitly supported by the Court's holding.\n\nSTEP 5 - OVERALL STATUS: Verified - the characterization accurately describes the Court's central holding in this case.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "498 F.3d 835 (8th Cir. 2007)",
+        "case_name": "Morrison v. St. Luke's Regional Medical Center",
+        "full_reference": "Morrison v. St. Luke's Regional Medical Center, 498 F.3d 835 (8th Cir. 2007)",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "In Morrison v. St. Luke's Regional Medical Center, 498 F.3d 835 (8th Cir. 2007), the Eighth Circuit held that:",
+        "position_start": 1259,
+        "position_end": 1336
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Buytendorp v. Extendicare Health Services, Inc.",
+        "court": "",
+        "date_filed": "2007-08-17",
+        "url": "https://www.courtlistener.com/opinion/1289081/buytendorp-v-extendicare-health-services-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": false,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Source text may be for wrong case: 'Buytendorp v. Extendicare Health Services, Inc.'",
+        "confidence": 0.4,
+        "reasoning": "[Consistency: unverifiable \u2192 error] Morrison v. St. Luke's at index 6 has same citation but is marked as 'error' with confidence 0.4. Index 5 should match this status for consistency since they reference the same incorrect case.. Original: ",
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "498 F.3d 835 (8th Cir. 2007)",
+        "case_name": "Morrison v. St. Luke's Regional Medical Center",
+        "full_reference": "Morrison v. St. Luke's Regional Medical Center, 498 F.3d at 842",
+        "quoted_text": "A hospital that grants privileges to a physician without conducting a reasonable investigation into that physician's competence and qualifications may be held directly liable for injuries resulting from that physician's negligent treatment of patients.",
+        "characterization": null,
+        "context": "\"A hospital that grants privileges to a physician without conducting a reasonable investigation into that physician's competence and qualifications may be held directly liable for injuries resulting from that physician's negligent treatment of patients.\"\n\nMorrison v. St. Luke's Regional Medical Center, 498 F.3d at 842.",
+        "position_start": 1593,
+        "position_end": 1657
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Buytendorp v. Extendicare Health Services, Inc.",
+        "court": "",
+        "date_filed": "2007-08-17",
+        "url": "https://www.courtlistener.com/opinion/1289081/buytendorp-v-extendicare-health-services-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 0.4,
+        "reasoning": "[Confirmed by knowledge review] The citation appears to be fabricated. The reporter citation 498 F.3d 835 (8th Cir. 2007) actually corresponds to Buytendorp v. Extendicare Health Services, Inc., not Morrison v. St. Luke's Regional Medical Center. I do not recognize any Eighth Circuit case by the name Morrison v. St. Luke's Regional Medical Center from 2007. The principle stated about hospital liability for credentialing physicians is a general legal principle that exists in medical malpractice law, but attributing it to this non-existent case is problematic. The fact that both the reporter lookup and case name search failed to find this case strongly indicates this citation is erroneous or fabricated.",
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "33 Ill. 2d 326 (1965)",
+        "case_name": "Darling v. Charleston Community Memorial Hospital",
+        "full_reference": "Darling v. Charleston Community Memorial Hospital, 33 Ill. 2d 326 (1965)",
+        "quoted_text": null,
+        "characterization": "which recognized that a hospital owes a direct duty to its patients to ensure the competency of its medical staff",
+        "context": "This principle was established in Darling v. Charleston Community Memorial Hospital, 33 Ill. 2d 326 (1965), which recognized that a hospital owes a direct duty to its patients to ensure the competency of its medical staff.",
+        "position_start": 1810,
+        "position_end": 1883
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Darling v. Charleston Community Memorial Hospital",
+        "court": "",
+        "date_filed": "1965-09-29",
+        "url": "https://www.courtlistener.com/opinion/2244164/darling-v-charleston-community-memorial-hospital/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures a central holding of Darling. The court explicitly rejected the hospital's argument that it had no duty beyond selecting competent physicians, and instead held that hospitals have direct responsibilities to patients including supervision of medical staff competency. The opinion states that hospitals 'do far more than furnish facilities for treatment' and discusses the hospital's duties regarding staff supervision, consultation requirements, and monitoring of patient care.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (33 Ill. 2d 326 (1965)). The source opinion matches the cited case - it is indeed Darling v. Charleston Community Memorial Hospital with the correct parties and subject matter (medical malpractice involving leg amputation).\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states the case 'recognized that a hospital owes a direct duty to its patients to ensure the competency of its medical staff.' This is strongly supported by the opinion. The court explicitly rejected the hospital's position that it 'is powerless under the law to forbid or command any act by a physician' and that its only duty was 'to use reasonable care in selecting medical doctors.' Instead, the court held that 'Present-day hospitals...do far more than furnish facilities for treatment' and affirmed liability based on the hospital's failure to supervise Dr. Alexander's work and require consultation. The jury instructions upheld included duties to 'require consultation' and 'review the treatment rendered.' The court stated that hospitals have responsibilities for patient care beyond merely selecting physicians.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: 0.95 - Very high confidence. The characterization is clearly and directly supported by multiple passages in the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately describes a central holding of this landmark case that expanded hospital liability.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "612 F.3d 544 (7th Cir. 2010)",
+        "case_name": "Rodriguez v. Northwestern Memorial Healthcare",
+        "full_reference": "Rodriguez v. Northwestern Memorial Healthcare, 612 F.3d 544 (7th Cir. 2010)",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "Under the \"substantial factor\" test for causation, the plaintiff need not prove that the defendant's conduct was the sole cause of injury. Rodriguez v. Northwestern Memorial Healthcare, 612 F.3d 544 (7th Cir. 2010).",
+        "position_start": 2178,
+        "position_end": 2254
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "State v. Brown",
+        "court": "Supreme Court of Kansas",
+        "date_filed": "2007-12-07",
+        "url": "https://www.courtlistener.com/opinion/2622328/state-v-brown/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": false,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Source text may be for wrong case: 'State v. Brown'",
+        "confidence": 0.15,
+        "reasoning": "[Consistency: unverifiable \u2192 error] Rodriguez v. Northwestern at index 9 has same citation but is marked as 'error' with confidence 0.15. Index 8 should match this status for consistency since they reference the same incorrect case.. Original: ",
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "612 F.3d 544 (7th Cir. 2010)",
+        "case_name": "Rodriguez v. Northwestern Memorial Healthcare",
+        "full_reference": "Id. at 551",
+        "quoted_text": "where multiple acts of negligence combine to produce a single indivisible injury, each negligent actor is liable for the entire harm.",
+        "characterization": null,
+        "context": "The Seventh Circuit explained that \"where multiple acts of negligence combine to produce a single indivisible injury, each negligent actor is liable for the entire harm.\" Id. at 551.",
+        "position_start": 2256,
+        "position_end": 2439
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "State v. Brown",
+        "court": "Supreme Court of Kansas",
+        "date_filed": "2007-12-07",
+        "url": "https://www.courtlistener.com/opinion/2622328/state-v-brown/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] The citation appears to be fabricated. The database lookup returned 'State v. Brown' for this F.3d citation, not 'Rodriguez v. Northwestern Memorial Healthcare.' Additionally, State v. Brown would be a state criminal case and would not appear in the Federal Reporter. I do not recognize 'Rodriguez v. Northwestern Memorial Healthcare' as a real Seventh Circuit case from 2010. The quoted principle about joint and several liability for indivisible injuries is a correct statement of tort law, but I cannot verify it comes from this citation because the case appears not to exist.",
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "571 U.S. 204 (2014)",
+        "case_name": "Burrage v. United States",
+        "full_reference": "Burrage v. United States, 571 U.S. 204 (2014)",
+        "quoted_text": null,
+        "characterization": "holding that \"but for\" causation is the default rule unless the statute provides otherwise",
+        "context": "The \"but for\" test remains the default standard for causation in most jurisdictions. See Burrage v. United States, 571 U.S. 204 (2014) (holding that \"but for\" causation is the default rule unless the statute provides otherwise).",
+        "position_start": 2526,
+        "position_end": 2572
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Burrage v. United States",
+        "court": "",
+        "date_filed": "2014-01-27",
+        "url": "https://www.courtlistener.com/opinion/2651115/burrage-v-united-states/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The opinion explicitly states that 'but-for causality' is required under the statute and that this is the default rule. The Court discusses at length how phrases like 'results from' impose a requirement of but-for causation (pages 6-10), states that 'it is one of the traditional background principles against which Congress legislate[s]... that a phrase such as \"results from\" imposes a requirement of but-for causation' (page 10), and concludes that 'Congress chose instead to use language that imports but-for causality' (page 12). The Court's holding specifically requires but-for causation unless the statute provides otherwise, which aligns perfectly with the characterization.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (571 U.S. 204 (2014)). The opinion text confirms this is indeed Burrage v. United States from 2014, dealing with criminal causation under the Controlled Substances Act.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states the case held that 'but for' causation is the default rule unless the statute provides otherwise. This is strongly supported by the opinion:\n- Page 6: The Court states that 'Results from' imposes... a requirement of actual causality... this requires proof 'that the harm would not have occurred' in the absence of\u2014that is, but for\u2014the defendant's conduct.'\n- Page 7: The Court explains that but-for causation 'represents the minimum requirement for a finding of causation when a crime is defined in terms of conduct causing a particular result.'\n- Page 10: The Court explicitly states 'it is one of the traditional background principles against which Congress legislate[s]... that a phrase such as \"results from\" imposes a requirement of but-for causation.'\n- Page 12: The Court states 'Congress chose instead to use language that imports but-for causality.'\n- The holding (pages 14-15) requires but-for causation for the penalty enhancement.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly aligns with multiple explicit statements throughout the opinion about but-for causation being the default rule.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately represents the Court's holding.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "348 Or 456 (2010)",
+        "case_name": "Kellerman v. Providence Health Systems",
+        "full_reference": "Kellerman v. Providence Health Systems, 348 Or 456 (2010)",
+        "quoted_text": null,
+        "characterization": "holding that \"a plaintiff in a medical malpractice action need only demonstrate that the defendant's negligence was a substantial factor in bringing about the harm, not that it was the predominant cause\"",
+        "context": "Oregon courts have adopted a modified substantial factor test. See Kellerman v. Providence Health Systems, 348 Or 456 (2010) (holding that \"a plaintiff in a medical malpractice action need only demonstrate that the defendant's negligence was a substantial factor in bringing about the harm, not that it was the predominant cause\").",
+        "position_start": 2734,
+        "position_end": 2792
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Estate of Schwarz ex rel. Schwarz v. Philip Morris Inc.",
+        "court": "",
+        "date_filed": "2010-06-24",
+        "url": "https://www.courtlistener.com/opinion/7016147/estate-of-schwarz-ex-rel-schwarz-v-philip-morris-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The database lookup indicates that 348 Or 456 (2010) is actually Estate of Schwarz v. Philip Morris Inc., not Kellerman v. Providence Health Systems. This appears to be an incorrect citation.",
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] The citation format appears standard for Oregon Reports, but the critical lookup warning indicates that 348 Or 456 (2010) corresponds to a different case (Estate of Schwarz v. Philip Morris Inc.) rather than Kellerman v. Providence Health Systems. Additionally, searches for 'Kellerman v. Providence Health Systems' failed to find this case. This strongly suggests either: (1) the case name is incorrect for this citation, (2) the citation is incorrect for this case name, or (3) the case does not exist as cited. I do not have independent knowledge of a 2010 Oregon Supreme Court case styled Kellerman v. Providence Health Systems addressing medical malpractice causation standards. The characterization about substantial factor causation in medical malpractice is plausible for Oregon law, but cannot be verified as coming from this specific citation.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "285 Or App 312 (2017)",
+        "case_name": "Chen v. Legacy Health Corp.",
+        "full_reference": "Chen v. Legacy Health Corp., 285 Or App 312 (2017)",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "See also Chen v. Legacy Health Corp., 285 Or App 312 (2017).",
+        "position_start": 3007,
+        "position_end": 3058
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "State v. Fink",
+        "court": "",
+        "date_filed": "2017-05-03",
+        "url": "https://www.courtlistener.com/opinion/8167271/state-v-fink/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "unverifiable",
+        "citation_exists": false,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Source text may be for wrong case: 'State v. Fink'",
+        "confidence": 0.0,
+        "reasoning": null,
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "517 U.S. 559 (1996)",
+        "case_name": "BMW of North America, Inc. v. Gore",
+        "full_reference": "BMW of North America, Inc. v. Gore, 517 U.S. 559 (1996)",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "The Supreme Court has recognized that due process limits punitive damage awards. BMW of North America, Inc. v. Gore, 517 U.S. 559 (1996).",
+        "position_start": 3223,
+        "position_end": 3279
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "BMW of North America, Inc. v. Gore",
+        "court": "",
+        "date_filed": "1996-05-28",
+        "url": "https://www.courtlistener.com/opinion/118026/bmw-of-north-america-inc-v-gore/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Citation confirmed \u2014 no quote or characterization to verify",
+        "confidence": 0.9,
+        "reasoning": null,
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "538 U.S. 408 (2003)",
+        "case_name": "State Farm Mutual Automobile Insurance Co. v. Campbell",
+        "full_reference": "State Farm Mutual Automobile Insurance Co. v. Campbell, 538 U.S. 408 (2003)",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "The Court later clarified that punitive damages generally cannot exceed a 3:1 ratio to compensatory damages. State Farm Mutual Automobile Insurance Co. v. Campbell, 538 U.S. 408 (2003).",
+        "position_start": 3574,
+        "position_end": 3650
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "State Farm Mutual Automobile Insurance v. Campbell",
+        "court": "",
+        "date_filed": "2003-04-07",
+        "url": "https://www.courtlistener.com/opinion/127910/state-farm-mutual-automobile-insurance-v-campbell/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Citation confirmed \u2014 no quote or characterization to verify",
+        "confidence": 0.9,
+        "reasoning": null,
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "538 U.S. 408 (2003)",
+        "case_name": "State Farm Mutual Automobile Insurance Co. v. Campbell",
+        "full_reference": "Id. at 425",
+        "quoted_text": "in practice, few awards exceeding a 3-to-1 ratio between punitive and compensatory damages will satisfy due process.",
+        "characterization": null,
+        "context": "The Court stated that \"in practice, few awards exceeding a 3-to-1 ratio between punitive and compensatory damages will satisfy due process.\" Id. at 425.",
+        "position_start": 3652,
+        "position_end": 3806
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "State Farm Mutual Automobile Insurance v. Campbell",
+        "court": "",
+        "date_filed": "2003-04-07",
+        "url": "https://www.courtlistener.com/opinion/127910/state-farm-mutual-automobile-insurance-v-campbell/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "warning",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "close",
+        "quote_diff": "The quoted text uses '3-to-1 ratio' while the actual opinion text uses 'single-digit ratio.' The quote appears to be a paraphrase or compression of the Court's actual language, which states that 'few awards exceeding a single-digit ratio between punitive and compensatory damages, to a significant degree, will satisfy due process.' The substitution of '3-to-1' for 'single-digit' is a material difference, as single-digit ratios could include anything from 1-to-1 up to 9-to-1, not just 3-to-1.",
+        "actual_quote": "Our jurisprudence and the principles it has now established demonstrate, however, that, in practice, few awards exceeding a single-digit ratio between punitive and compensatory damages, to a significant degree, will satisfy due process.",
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 0.8500000000000001,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (538 U.S. 408 (2003)), and the source opinion confirms this is indeed State Farm v. Campbell from 2003.\n\nSTEP 2 - QUOTE VERIFICATION: I searched for the quoted passage about a '3-to-1 ratio.' The exact quote was not found. However, I found very similar language on page 425 stating that 'few awards exceeding a single-digit ratio between punitive and compensatory damages, to a significant degree, will satisfy due process.' The quote provided appears to be a paraphrase that substitutes '3-to-1 ratio' for 'single-digit ratio.' This is a substantive difference because:\n- The Court does reference specific ratios elsewhere (4-to-1 in Haslip, 145-to-1 in this case)\n- The Court explicitly uses 'single-digit' as its standard, which encompasses ratios from 1:1 to 9:1\n- The substitution of '3-to-1' for 'single-digit' materially narrows what the Court actually said\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: No characterization was provided to verify.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is high (0.8) because I found the relevant passage and can clearly identify the difference between the quoted text and the actual opinion text.\n\nSTEP 5 - OVERALL STATUS: This warrants a 'warning' status because while the quote captures the general spirit of the Court's holding about ratio limits, it inaccurately states a specific 3-to-1 ratio when the Court actually used the broader term 'single-digit ratio.'",
+        "quote_status": "warning",
+        "characterization_status": null
+      }
+    }
+  ],
+  "created_at": "2026-04-11T19:17:05.966937+00:00"
+}

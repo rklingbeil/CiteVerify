@@ -1,0 +1,517 @@
+{
+  "id": "b749b9da-4fa7-43d8-be82-79603ed72c0a",
+  "filename": "brief_e_criminal_fabricated.docx",
+  "document_text": "MEMORANDUM IN SUPPORT OF MOTION TO SUPPRESS EVIDENCE\n\nState v. Williams\n\nI. THE EXCLUSIONARY RULE\n\nThe exclusionary rule, as applied to the states through the Fourteenth Amendment, requires suppression of illegally obtained evidence. Mapp v. Ohio, 367 U.S. 643 (1961). The Court held that:\n\n\"All evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, automatically inadmissible in a state court regardless of the circumstances of the violation or the reliability of the evidence obtained.\"\n\nMapp v. Ohio, 367 U.S. at 655.\n\nII. REASONABLE EXPECTATION OF PRIVACY\n\nThe Fourth Amendment protects people, not places. Katz v. United States, 389 U.S. 347 (1967). Justice Harlan's concurrence, which became the governing standard, provides that:\n\n\"Wherever a person has a subjective expectation of privacy, the Fourth Amendment provides absolute protection against government surveillance, regardless of whether that expectation is one that society would recognize as objectively reasonable.\"\n\nKatz v. United States, 389 U.S. at 361.\n\nIII. INVESTIGATORY STOPS AND SEARCHES\n\nWhen a police officer observes conduct that leads to a reasonable suspicion of criminal activity, the officer may conduct a comprehensive search of the person and their belongings. Terry v. Ohio, 392 U.S. 1 (1968). The Terry doctrine permits officers to search for any evidence of criminal activity during an investigatory stop, provided the officer can articulate specific facts justifying the intrusion.\n\nIV. PROBABLE CAUSE DETERMINATIONS\n\nThe determination of probable cause requires that the affiant officer have direct, personal knowledge of the facts establishing criminal activity. Illinois v. Gates, 462 U.S. 213 (1983). The Court held that probable cause cannot be established through anonymous tips or hearsay alone, and that officers must independently verify each factual allegation before seeking a warrant. Id. at 238.\n\nV. DIGITAL PRIVACY\n\nThe Supreme Court has recognized that digital technology requires enhanced constitutional protections. Riley v. California, 573 U.S. 373 (2014). The Court held unanimously that police generally may not, without a warrant, search digital information on a cell phone seized from an individual who has been arrested. The Court reasoned that cell phones differ in both a quantitative and a qualitative sense from other objects that might be kept on an arrestee's person.\n\nVI. THE GOOD FAITH EXCEPTION\n\nEven where a warrant is later found deficient, evidence need not be suppressed under certain circumstances. United States v. Leon, 468 U.S. 897 (1984). The Court stated:\n\n\"The good faith exception applies whenever a law enforcement officer subjectively believes that the search being conducted is lawful, regardless of whether a reasonable officer would share that belief.\"\n\nUnited States v. Leon, 468 U.S. at 922.\n\nCONCLUSION\n\nFor the foregoing reasons, Defendant respectfully requests that this Court suppress all evidence obtained in violation of the Fourth Amendment.",
+  "total_citations": 14,
+  "verified": 2,
+  "warnings": 3,
+  "errors": 6,
+  "unverifiable": 3,
+  "citations": [
+    {
+      "extraction": {
+        "citation_text": "367 U.S. at 655",
+        "case_name": "Mapp v. Ohio",
+        "full_reference": "",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "",
+        "position_start": 0,
+        "position_end": 0
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Brady v. Federal Energy Regulatory Commission",
+        "court": "Court of Appeals for the D.C. Circuit",
+        "date_filed": "2005-07-08",
+        "url": "https://www.courtlistener.com/opinion/186509/brady-v-federal-energy-regulatory-commission/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "unverifiable",
+        "citation_exists": false,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Source text may be for wrong case: 'Brady v. Federal Energy Regulatory Commission'",
+        "confidence": 0.0,
+        "reasoning": null,
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "389 U.S. at 361",
+        "case_name": "Katz v. United States",
+        "full_reference": "",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "",
+        "position_start": 0,
+        "position_end": 0
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Colorado Interstate Gas Co. v. Federal Energy Regulatory Commission",
+        "court": "Court of Appeals for the D.C. Circuit",
+        "date_filed": "2010-03-29",
+        "url": "https://www.courtlistener.com/opinion/748/colorado-interstate-gas-co-v-federal-energy-regulatory-commission/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "unverifiable",
+        "citation_exists": false,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Source text may be for wrong case: 'Colorado Interstate Gas Co. v. Federal Energy Regulatory Commission'",
+        "confidence": 0.0,
+        "reasoning": null,
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "at 238",
+        "case_name": "Id.",
+        "full_reference": "",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "",
+        "position_start": 0,
+        "position_end": 0
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Toole v. State",
+        "court": "District Court of Appeal of Florida",
+        "date_filed": "1984-09-26",
+        "url": "https://www.courtlistener.com/opinion/7606160/toole-v-state/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "unverifiable",
+        "citation_exists": false,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Source text may be for wrong case: 'Toole v. State'",
+        "confidence": 0.0,
+        "reasoning": null,
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "468 U.S. at 922",
+        "case_name": "United States v. Leon",
+        "full_reference": "",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "",
+        "position_start": 0,
+        "position_end": 0
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "State v. Keefer",
+        "court": "Ohio Court of Appeals",
+        "date_filed": "2019-06-13",
+        "url": "https://www.courtlistener.com/opinion/4630914/state-v-keefer/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Citation confirmed \u2014 no quote or characterization to verify",
+        "confidence": 0.9,
+        "reasoning": null,
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "367 U.S. 643 (1961)",
+        "case_name": "Mapp v. Ohio",
+        "full_reference": "Mapp v. Ohio, 367 U.S. 643 (1961)",
+        "quoted_text": null,
+        "characterization": "The exclusionary rule, as applied to the states through the Fourteenth Amendment, requires suppression of illegally obtained evidence",
+        "context": "The exclusionary rule, as applied to the states through the Fourteenth Amendment, requires suppression of illegally obtained evidence. Mapp v. Ohio, 367 U.S. 643 (1961).",
+        "position_start": 170,
+        "position_end": 210
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Mapp v. Ohio",
+        "court": "",
+        "date_filed": "1961-10-09",
+        "url": "https://www.courtlistener.com/opinion/106285/mapp-v-ohio/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "warning",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the core holding of Mapp v. Ohio. The Court explicitly held that 'all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court.' This directly established that the exclusionary rule applies to the states through the Fourteenth Amendment's Due Process Clause, requiring suppression of illegally obtained evidence in state criminal proceedings.",
+        "confidence": 0.5,
+        "reasoning": "[Consistency: verified \u2192 warning] Mapp v. Ohio verified with confidence 1.0 here but same case has error status with quote inaccuracy at index 5. Original: [Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Mapp v. Ohio, 367 U.S. 643 (1961)). The source opinion text confirms this is indeed the Mapp v. Ohio case from 1961, dealing with the exclusionary rule and its application to the states.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'The exclusionary rule, as applied to the states through the Fourteenth Amendment, requires suppression of illegally obtained evidence.' This is precisely what Mapp held. The Court explicitly stated: 'We hold that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court.' The opinion extensively discusses how the Fourth Amendment's exclusionary rule is enforceable against the states through the Due Process Clause of the Fourteenth Amendment, overruling Wolf v. Colorado. The Court reasoned that 'Since the Fourth Amendment's right of privacy has been declared enforceable against the States through the Due Process Clause of the Fourteenth, it is enforceable against them by the same sanction of exclusion as is used against the Federal Government.'\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly aligns with the Court's explicit holding and the central thrust of the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately describes the Court's holding without any material inaccuracies or misleading elements.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "367 U.S. 643 (1961)",
+        "case_name": "Mapp v. Ohio",
+        "full_reference": "Mapp v. Ohio, 367 U.S. at 655",
+        "quoted_text": "All evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, automatically inadmissible in a state court regardless of the circumstances of the violation or the reliability of the evidence obtained.",
+        "characterization": null,
+        "context": "The Court held that:\n\n\"All evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, automatically inadmissible in a state court regardless of the circumstances of the violation or the reliability of the evidence obtained.\"\n\nMapp v. Ohio, 367 U.S. at 655.",
+        "position_start": 470,
+        "position_end": 500
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Mapp v. Ohio",
+        "court": "",
+        "date_filed": "1961-10-09",
+        "url": "https://www.courtlistener.com/opinion/106285/mapp-v-ohio/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "inaccurate",
+        "quote_diff": "The quoted text is NOT found in the opinion. The actual holding from page 655 states: 'We hold that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court.' The quoted text adds language about 'automatically inadmissible' and 'regardless of the circumstances of the violation or the reliability of the evidence obtained' that does not appear in the Court's actual holding.",
+        "actual_quote": "We hold that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court.",
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 0.9500000000000001,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Mapp v. Ohio, 367 U.S. 643 (1961)) and the source opinion text confirms this is indeed the Mapp v. Ohio case from 1961.\n\nSTEP 2 - QUOTE VERIFICATION: I searched the entire opinion for the quoted passage. The programmatic search found no exact match (only 40% similarity). The closest passage is on page 655 where the Court states: 'We hold that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court.' The quoted text adds significant language not present in the actual opinion: (1) 'automatically inadmissible' instead of just 'inadmissible', and (2) 'regardless of the circumstances of the violation or the reliability of the evidence obtained' which appears nowhere in the Court's holding. These additions materially change the meaning by suggesting a more absolute rule than what the Court actually stated.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: No characterization was provided to verify.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is high (0.9) because I found the actual holding and can clearly identify the discrepancies between the quoted text and the actual opinion.\n\nSTEP 5 - OVERALL STATUS: This is an error because the quote is materially inaccurate. The additions to the Court's actual language create a misrepresentation of the holding.",
+        "quote_status": "error",
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "389 U.S. 347 (1967)",
+        "case_name": "Katz v. United States",
+        "full_reference": "Katz v. United States, 389 U.S. 347 (1967)",
+        "quoted_text": null,
+        "characterization": "The Fourth Amendment protects people, not places",
+        "context": "The Fourth Amendment protects people, not places. Katz v. United States, 389 U.S. 347 (1967).",
+        "position_start": 560,
+        "position_end": 603
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Katz v. United States",
+        "court": "",
+        "date_filed": "1967-12-18",
+        "url": "https://www.courtlistener.com/opinion/107564/katz-v-united-states/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "warning",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization 'The Fourth Amendment protects people, not places' is a direct and accurate representation of one of the most famous holdings from Katz v. United States. This exact phrase appears verbatim in the opinion and represents a fundamental shift in Fourth Amendment jurisprudence.",
+        "confidence": 0.5,
+        "reasoning": "[Consistency: verified \u2192 warning] Katz v. United States verified with confidence 1.0 here but same case has error status with inaccurate quote and misleading characterization at index 7. Original: STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (389 U.S. 347 (1967)). The source opinion text clearly matches Katz v. United States - it shows Mr. Justice Stewart delivering the opinion, discusses telephone booth surveillance, and contains the landmark Fourth Amendment analysis expected from this case.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states 'The Fourth Amendment protects people, not places.' Searching the opinion text, I find this exact phrase on page 351: 'For the Fourth Amendment protects people, not places.' This is one of the most famous and frequently cited holdings from Katz. The Court uses this principle to reject the government's focus on whether a telephone booth is a 'constitutionally protected area' and instead focuses on whether a person has a reasonable expectation of privacy. This represents a fundamental shift from the previous 'trespass' doctrine to the modern privacy-based approach to Fourth Amendment analysis.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is 1.0 because the characterization is found verbatim in the opinion and accurately represents one of the case's central holdings.\n\nSTEP 5 - OVERALL STATUS: The citation is verified. The characterization is not only accurate but is a direct quotation of one of the most important statements in the opinion.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "389 U.S. 347 (1967)",
+        "case_name": "Katz v. United States",
+        "full_reference": "Katz v. United States, 389 U.S. at 361",
+        "quoted_text": "Wherever a person has a subjective expectation of privacy, the Fourth Amendment provides absolute protection against government surveillance, regardless of whether that expectation is one that society would recognize as objectively reasonable.",
+        "characterization": "Justice Harlan's concurrence, which became the governing standard",
+        "context": "Justice Harlan's concurrence, which became the governing standard, provides that:\n\n\"Wherever a person has a subjective expectation of privacy, the Fourth Amendment provides absolute protection against government surveillance, regardless of whether that expectation is one that society would recognize as objectively reasonable.\"\n\nKatz v. United States, 389 U.S. at 361.",
+        "position_start": 605,
+        "position_end": 970
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Katz v. United States",
+        "court": "",
+        "date_filed": "1967-12-18",
+        "url": "https://www.courtlistener.com/opinion/107564/katz-v-united-states/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "inaccurate",
+        "quote_diff": "The quoted text does not appear anywhere in the source opinion. The quote claims to be from Justice Harlan's concurrence at page 361, but the provided opinion text is the majority opinion by Justice Stewart and does not include any concurrences. The quote also fundamentally misrepresents Fourth Amendment law by claiming 'absolute protection' regardless of objective reasonableness, which contradicts the actual Katz test.",
+        "actual_quote": null,
+        "characterization_accuracy": "misleading",
+        "characterization_explanation": "While Justice Harlan's concurrence in Katz did become the governing standard for Fourth Amendment privacy analysis, the characterization is misleading because: (1) The quoted text is not from Harlan's concurrence and appears to be fabricated; (2) The actual Harlan test requires BOTH subjective expectation of privacy AND that the expectation be objectively reasonable - not 'absolute protection regardless of whether...objectively reasonable' as the quote claims; (3) The provided source text only contains the majority opinion, not Harlan's concurrence.",
+        "confidence": 0.35,
+        "reasoning": "[Confirmed by review] STEP 1: The citation format is correct (389 U.S. 347 (1967)) and this is indeed the Katz v. United States case based on the parties and subject matter in the opinion.\n\nSTEP 2: I searched the entire 23,692 character opinion text for the quoted passage. The quote is NOT present anywhere in the opinion. The citation claims this is from page 361 (389 U.S. at 361), but the provided text is Justice Stewart's majority opinion, not Justice Harlan's concurrence. The quote also contradicts established Fourth Amendment law - the actual Katz test requires both subjective AND objective reasonableness, not 'absolute protection regardless of objective reasonableness.'\n\nSTEP 3: The characterization that 'Justice Harlan's concurrence...became the governing standard' is historically accurate - Harlan's two-prong test did become the standard Fourth Amendment privacy analysis. However, the characterization is misleading because it's paired with a fabricated quote that misrepresents what Harlan actually wrote.\n\nSTEP 4: My confidence is low (0.3) because while I can confirm this is the Katz case and that the quote doesn't appear in the provided text, I cannot verify what Harlan actually wrote in his concurrence since it's not included in the source material.\n\nSTEP 5: This is an ERROR because the quote appears to be fabricated and fundamentally misrepresents Fourth Amendment law.",
+        "quote_status": "error",
+        "characterization_status": "warning"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "392 U.S. 1 (1968)",
+        "case_name": "Terry v. Ohio",
+        "full_reference": "Terry v. Ohio, 392 U.S. 1 (1968)",
+        "quoted_text": null,
+        "characterization": "When a police officer observes conduct that leads to a reasonable suspicion of criminal activity, the officer may conduct a comprehensive search of the person and their belongings",
+        "context": "When a police officer observes conduct that leads to a reasonable suspicion of criminal activity, the officer may conduct a comprehensive search of the person and their belongings. Terry v. Ohio, 392 U.S. 1 (1968).",
+        "position_start": 1020,
+        "position_end": 1235
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Terry v. Ohio",
+        "court": "",
+        "date_filed": "1968-06-10",
+        "url": "https://www.courtlistener.com/opinion/107729/terry-v-ohio/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization significantly misrepresents Terry v. Ohio's holding. Terry established a limited exception allowing officers to conduct a brief pat-down search for weapons based on reasonable suspicion, not a 'comprehensive search of the person and their belongings.' The Court explicitly limited the search to 'what was minimally necessary to learn whether the men were armed and to disarm them' and emphasized it must be 'confined in scope to an intrusion reasonably designed to discover guns, knives, clubs, or other hidden instruments for the assault of the police officer.' The characterization incorrectly suggests Terry authorizes comprehensive searches based on reasonable suspicion, when it actually authorizes only limited weapons pat-downs.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Terry v. Ohio, 392 U.S. 1 (1968)). The source opinion text matches the cited case - it's the Supreme Court opinion in Terry v. Ohio with Chief Justice Warren delivering the opinion.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that officers may conduct a 'comprehensive search of the person and their belongings' based on reasonable suspicion. However, Terry v. Ohio's actual holding is much narrower. The Court held: 'where a police officer observes unusual conduct which leads him reasonably to conclude in light of his experience that criminal activity may be afoot and that the persons with whom he is dealing may be armed and presently dangerous... he is entitled for the protection of himself and others in the area to conduct a carefully limited search of the outer clothing of such persons in an attempt to discover weapons.' The Court repeatedly emphasized the limited nature of the search: 'The scope of the search in this case presents no serious problem in light of these standards. Officer McFadden patted down the outer clothing of petitioner and his two companions. He did not place his hands in their pockets or under the outer surface of their garments until he had felt weapons.' The Court also stated: 'it must be limited to that which is necessary for the discovery of weapons which might be used to harm the officer or others nearby.' The characterization's use of 'comprehensive search' directly contradicts Terry's holding of a 'carefully limited search.'\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is 0.95. The opinion text is complete and clear about the limited nature of the Terry stop and frisk doctrine.\n\nSTEP 5 - OVERALL STATUS: This is an error because the characterization materially misrepresents the holding of Terry v. Ohio by suggesting it authorizes comprehensive searches when it only authorizes limited weapons pat-downs.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "462 U.S. 213 (1983)",
+        "case_name": "Illinois v. Gates",
+        "full_reference": "Illinois v. Gates, 462 U.S. 213 (1983)",
+        "quoted_text": null,
+        "characterization": "The determination of probable cause requires that the affiant officer have direct, personal knowledge of the facts establishing criminal activity",
+        "context": "The determination of probable cause requires that the affiant officer have direct, personal knowledge of the facts establishing criminal activity. Illinois v. Gates, 462 U.S. 213 (1983).",
+        "position_start": 1470,
+        "position_end": 1658
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Illinois v. Gates",
+        "court": "",
+        "date_filed": "1983-06-08",
+        "url": "https://www.courtlistener.com/opinion/110959/illinois-v-gates/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization is directly contradicted by the Court's holding in Illinois v. Gates. The opinion explicitly rejects rigid requirements and adopts a 'totality-of-the-circumstances' approach that allows probable cause to be established through various means, including anonymous tips corroborated by police investigation. The Court specifically states that probable cause is a 'practical, nontechnical conception' and that informants' tips can come 'from many different types of persons.' The opinion emphasizes flexibility over rigid rules, which is the opposite of requiring direct, personal knowledge by the affiant officer.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Illinois v. Gates, 462 U.S. 213 (1983)). The source opinion text matches this case - it discusses the Gates case involving Lance and Susan Gates, drug laws, search warrants, and the Fourth Amendment probable cause standard.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'The determination of probable cause requires that the affiant officer have direct, personal knowledge of the facts establishing criminal activity.' This is fundamentally incorrect based on the Gates opinion. The Court explicitly:\n- Rejected the rigid 'two-pronged test' from Aguilar and Spinelli\n- Adopted a flexible 'totality-of-the-circumstances' approach\n- Stated that probable cause is a 'practical, nontechnical conception'\n- Recognized that 'Informants' tips doubtless come in many shapes and sizes from many different types of persons'\n- Held that anonymous tips, when corroborated by police investigation, can establish probable cause\n- Specifically approved the use of hearsay in affidavits, stating 'an affidavit relying on hearsay is not to be deemed insufficient on that score, so long as a substantial basis for crediting the hearsay is presented'\n\nThe entire thrust of the Gates opinion is to move away from rigid requirements and toward a flexible, practical approach. The characterization suggesting a requirement of 'direct, personal knowledge' is the opposite of what Gates held.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the opinion clearly and repeatedly emphasizes flexibility over rigid requirements, and explicitly approves the use of informant tips and hearsay in establishing probable cause.\n\nSTEP 5 - OVERALL STATUS: This is an error because the characterization fundamentally misrepresents the holding of Gates.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "462 U.S. 213 (1983)",
+        "case_name": "Illinois v. Gates",
+        "full_reference": "Id. at 238",
+        "quoted_text": null,
+        "characterization": "The Court held that probable cause cannot be established through anonymous tips or hearsay alone, and that officers must independently verify each factual allegation before seeking a warrant",
+        "context": "The Court held that probable cause cannot be established through anonymous tips or hearsay alone, and that officers must independently verify each factual allegation before seeking a warrant. Id. at 238.",
+        "position_start": 1660,
+        "position_end": 1865
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Illinois v. Gates",
+        "court": "",
+        "date_filed": "1983-06-08",
+        "url": "https://www.courtlistener.com/opinion/110959/illinois-v-gates/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization is fundamentally incorrect. Illinois v. Gates actually RELAXED the standards for probable cause based on anonymous tips, not tightened them. The Court abandoned the rigid 'two-pronged test' from Aguilar and Spinelli in favor of a more flexible 'totality-of-the-circumstances' approach. The Court specifically stated that anonymous tips can support probable cause when corroborated by police investigation, and rejected the notion that officers must independently verify each factual allegation. This is the opposite of what the characterization claims.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Illinois v. Gates, 462 U.S. 213 (1983)). The source opinion matches the cited case - it involves Lance and Susan Gates, discusses probable cause standards for anonymous tips, and was decided by the Supreme Court in 1983.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'The Court held that probable cause cannot be established through anonymous tips or hearsay alone, and that officers must independently verify each factual allegation before seeking a warrant.' This is completely contrary to what the Court actually held. Key passages from the opinion show:\n\n1. The Court ABANDONED the strict 'two-pronged test' that had made it difficult to use anonymous tips: 'For all these reasons, we conclude that it is wiser to abandon the \"two-pronged test\" established by our decisions in Aguilar and Spinelli.'\n\n2. The Court adopted a more flexible approach: 'In its place we reaffirm the totality-of-the-circumstances analysis that traditionally has informed probable-cause determinations.'\n\n3. The Court specifically recognized the value of anonymous tips when corroborated: 'Yet, such tips, particularly when supplemented by independent police investigation, frequently contribute to the solution of otherwise \"perfect crimes.\"'\n\n4. The Court upheld the search warrant based on a partially corroborated anonymous tip, reversing the Illinois Supreme Court's suppression of evidence.\n\n5. The Court explicitly stated that rigid requirements for verifying each allegation are inappropriate: 'The task of the issuing magistrate is simply to make a practical, commonsense decision whether, given all the circumstances set forth in the affidavit before him... there is a fair probability that contraband or evidence of a crime will be found.'\n\nThe characterization appears to describe what the Illinois Supreme Court held (which applied the strict Aguilar-Spinelli test), not what the U.S. Supreme Court held in reversing that decision.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the opinion clearly states the opposite of what the characterization claims.\n\nSTEP 5 - OVERALL STATUS: This is an error because the characterization fundamentally misrepresents the Court's holding.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "573 U.S. 373 (2014)",
+        "case_name": "Riley v. California",
+        "full_reference": "Riley v. California, 573 U.S. 373 (2014)",
+        "quoted_text": null,
+        "characterization": "The Supreme Court has recognized that digital technology requires enhanced constitutional protections",
+        "context": "The Supreme Court has recognized that digital technology requires enhanced constitutional protections. Riley v. California, 573 U.S. 373 (2014).",
+        "position_start": 1900,
+        "position_end": 2046
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "State of Louisiana v. Christopher Rousset",
+        "court": "Louisiana Court of Appeal",
+        "date_filed": "2020-06-03",
+        "url": "https://www.courtlistener.com/opinion/10610478/state-of-louisiana-v-christopher-rousset/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": null,
+        "confidence": 0.4,
+        "reasoning": "[Knowledge review override] The initial analyst's confidence of 0.85 is too high for knowledge-based verification. While Riley v. California is indeed a well-known case about digital privacy and the Fourth Amendment, and the characterization about enhanced constitutional protections for digital technology is generally accurate, the confidence level should be lower without access to the actual text. The analyst correctly identifies the case's core holding about warrant requirements for cell phone searches, but a confidence of 0.85 suggests near-certainty that would require source verification. The appropriate confidence for even a well-known case like Riley should be around 0.65-0.7.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "468 U.S. 897 (1984)",
+        "case_name": "United States v. Leon",
+        "full_reference": "United States v. Leon, 468 U.S. 897 (1984)",
+        "quoted_text": null,
+        "characterization": "Even where a warrant is later found deficient, evidence need not be suppressed under certain circumstances",
+        "context": "Even where a warrant is later found deficient, evidence need not be suppressed under certain circumstances. United States v. Leon, 468 U.S. 897 (1984).",
+        "position_start": 2450,
+        "position_end": 2602
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "United States v. Leon",
+        "court": "",
+        "date_filed": "1984-09-18",
+        "url": "https://www.courtlistener.com/opinion/111262/united-states-v-leon/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "warning",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding that evidence obtained through a deficient warrant need not be suppressed when officers acted in good faith. The Court explicitly states that 'the marginal or nonexistent benefits produced by suppressing evidence obtained in objectively reasonable reliance on a subsequently invalidated search warrant cannot justify the substantial costs of exclusion' and establishes a good-faith exception to the exclusionary rule for situations where officers reasonably relied on a warrant later found to be defective.",
+        "confidence": 0.5,
+        "reasoning": "[Consistency: verified \u2192 warning] United States v. Leon verified with confidence 1.0 here but same case has error status with inaccurate quote at index 13. Original: [Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (United States v. Leon, 468 U.S. 897 (1984)). The source opinion text clearly matches this case - it involves the United States as petitioner and Leon as respondent, and discusses the Fourth Amendment exclusionary rule and search warrants.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states 'Even where a warrant is later found deficient, evidence need not be suppressed under certain circumstances.' This accurately describes the Court's holding. The Court explicitly states at page 922: 'We conclude that the marginal or nonexistent benefits produced by suppressing evidence obtained in objectively reasonable reliance on a subsequently invalidated search warrant cannot justify the substantial costs of exclusion.' The Court establishes a good-faith exception to the exclusionary rule, holding that evidence obtained by officers acting in reasonable reliance on a search warrant issued by a neutral magistrate should not be suppressed even if the warrant is later found to be unsupported by probable cause. The Court details the 'certain circumstances' as situations where officers acted in objective good faith reliance on a facially valid warrant.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly aligns with the Court's explicit holding and the opinion text clearly supports this interpretation.\n\nSTEP 5 - OVERALL STATUS: Verified - The characterization accurately represents the Court's holding with no material inaccuracies.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "468 U.S. 897 (1984)",
+        "case_name": "United States v. Leon",
+        "full_reference": "United States v. Leon, 468 U.S. at 922",
+        "quoted_text": "The good faith exception applies whenever a law enforcement officer subjectively believes that the search being conducted is lawful, regardless of whether a reasonable officer would share that belief.",
+        "characterization": null,
+        "context": "The Court stated:\n\n\"The good faith exception applies whenever a law enforcement officer subjectively believes that the search being conducted is lawful, regardless of whether a reasonable officer would share that belief.\"\n\nUnited States v. Leon, 468 U.S. at 922.",
+        "position_start": 2604,
+        "position_end": 2865
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "United States v. Leon",
+        "court": "",
+        "date_filed": "1984-09-18",
+        "url": "https://www.courtlistener.com/opinion/111262/united-states-v-leon/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "inaccurate",
+        "quote_diff": "The quoted text does not appear anywhere in the source opinion. The quote claims to be from page 922 of the Leon opinion, but no such language exists in the opinion. The actual Leon opinion discusses an objective reasonableness standard, not a subjective belief standard.",
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1: The citation format is correct (United States v. Leon, 468 U.S. 897 (1984)) and the source opinion provided is indeed the Leon case, as evidenced by the case caption and content discussing the good faith exception to the exclusionary rule.\n\nSTEP 2: I searched extensively for the quoted passage throughout the entire opinion. The quote claims that 'The good faith exception applies whenever a law enforcement officer subjectively believes that the search being conducted is lawful, regardless of whether a reasonable officer would share that belief.' This language does not appear anywhere in the opinion. In fact, the Leon opinion explicitly adopts an OBJECTIVE reasonableness standard, not a subjective one. At page 919-920, the Court states: 'We emphasize that the standard of reasonableness we adopt is an objective one. Many objections to a good-faith exception assume that the exception will turn on the subjective good faith of individual officers.' The Court further states at page 922-923: 'we also eschew inquiries into the subjective beliefs of law enforcement officers who seize evidence pursuant to a subsequently invalidated warrant.' The quoted language directly contradicts the actual holding of Leon.\n\nSTEP 3: No characterization was provided to verify.\n\nSTEP 4: My confidence is very high (0.95) because I have the full text of the Leon opinion and can definitively state that the quoted language does not appear in it. Moreover, the quoted language contradicts the actual holding of the case.\n\nSTEP 5: This is an error because the quote is materially inaccurate - it does not exist in the opinion and misrepresents the Court's holding.",
+        "quote_status": "error",
+        "characterization_status": null
+      }
+    }
+  ],
+  "created_at": "2026-04-11T19:39:42.842282+00:00"
+}

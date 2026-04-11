@@ -53,7 +53,8 @@ def submit_job(filename: str, file_path: str) -> str:
         _jobs[job_id] = job
 
     def _run() -> None:
-        job.status = "running"
+        with _lock:
+            job.status = "running"
         try:
             def _progress(step: int, total: int, message: str) -> None:
                 job.progress = min(int(step / total * 100), 99)
@@ -70,8 +71,9 @@ def submit_job(filename: str, file_path: str) -> str:
 
         except Exception as e:
             logger.exception(f"Job {job_id} failed: {e}")
-            job.error = str(e)
-            job.status = "failed"
+            with _lock:
+                job.error = str(e)
+                job.status = "failed"
 
         finally:
             # Clean up uploaded temp file
@@ -95,6 +97,12 @@ def get_report(report_id: str) -> Optional[VerificationReport]:
     """Get a completed verification report."""
     with _lock:
         return _reports.get(report_id)
+
+
+def shutdown_executor() -> None:
+    """Shut down the thread pool executor (call on app shutdown)."""
+    _executor.shutdown(wait=False)
+    logger.info("Job executor shut down")
 
 
 def purge_old_jobs() -> None:

@@ -1,0 +1,517 @@
+{
+  "id": "990ccbb3-0ae9-4ee6-82e8-587bc147189f",
+  "filename": "brief_f_ip_mixed.docx",
+  "document_text": "MEMORANDUM IN SUPPORT OF MOTION FOR CLASS CERTIFICATION\n\nParker v. TechStream Solutions, Inc.\n\nI. PATENT ELIGIBILITY UNDER SECTION 101\n\nThe Supreme Court established a two-step framework for determining patent eligibility under 35 U.S.C. \u00a7 101. Alice Corp. v. CLS Bank International, 573 U.S. 208 (2014). First, the court must determine whether the claims are directed to a patent-ineligible concept such as an abstract idea. Second, the court must examine the elements of the claim to determine whether they contain an inventive concept sufficient to transform the nature of the claim into a patent-eligible application.\n\nThe Federal Circuit applied the Alice framework to software-implemented inventions in Sterling Technologies, Inc. v. DataVault Corp., 789 F.3d 432 (Fed. Cir. 2015), holding that \"a software patent claim directed to the abstract idea of organizing and storing data in a hierarchical structure lacks the inventive concept necessary to survive scrutiny under Section 101.\" Id. at 441.\n\nII. FAIR USE IN COPYRIGHT\n\nThe fair use doctrine permits certain uses of copyrighted material without authorization. Campbell v. Acuff-Rose Music, Inc., 510 U.S. 569 (1994). The Court held that 2 Live Crew's commercial parody of Roy Orbison's \"Oh, Pretty Woman\" could constitute fair use, and emphasized that transformative use is the central inquiry under the first statutory factor.\n\nThe Sixth Circuit extended the transformative use doctrine to digital content aggregation in Henderson v. Creative Digital Solutions, LLC, 634 F.3d 891 (6th Cir. 2011). The court held that \"automated compilation and indexing of copyrighted digital content constitutes transformative fair use when it serves a fundamentally different purpose than the original work.\" Id. at 899.\n\nIII. INJUNCTIVE RELIEF IN PATENT CASES\n\nThe Supreme Court rejected the Federal Circuit's categorical rule that permanent injunctions should issue upon a finding of patent infringement. eBay Inc. v. MercExchange, L.L.C., 547 U.S. 388 (2006). Instead, the Court held that the traditional four-factor test for equitable relief applies: (1) irreparable injury, (2) inadequacy of legal remedies, (3) balance of hardships, and (4) public interest. Id. at 391.\n\nThe Ninth Circuit applied the eBay framework to preliminary injunctions in intellectual property disputes in Marcus v. Silicon Valley Innovations Corp., 856 F.3d 1124 (9th Cir. 2017), holding that \"the traditional four-factor test governs preliminary injunctive relief in all intellectual property cases, whether patent, copyright, or trade secret.\" Id. at 1132.\n\nIV. CLASS CERTIFICATION REQUIREMENTS\n\nClass certification under Federal Rule of Civil Procedure 23 requires satisfaction of the prerequisites of numerosity, commonality, typicality, and adequacy. Wal-Mart Stores, Inc. v. Dukes, 564 U.S. 338 (2011). The Court tightened the commonality requirement, holding that plaintiffs must demonstrate that the class members have suffered the same injury, and that their claims depend upon a common contention that is capable of classwide resolution.\n\nThe Third Circuit applied Dukes to consumer class actions in Porter v. National Financial Services Corp., 912 F.3d 267 (3d Cir. 2019). The court held that \"where a defendant's uniform policy affects all class members identically, commonality is satisfied even if individual damages vary.\" Id. at 278.\n\nV. ARBITRATION AND CLASS WAIVERS\n\nThe Federal Arbitration Act broadly prohibits all class action proceedings when a valid arbitration agreement exists between the parties. AT&T Mobility LLC v. Concepcion, 563 U.S. 333 (2011). The Court held that the FAA mandates individual arbitration in all consumer disputes, effectively eliminating the class action mechanism whenever an arbitration clause is present.\n\nCONCLUSION\n\nFor the foregoing reasons, Plaintiff respectfully requests that this Court certify the proposed class and enjoin Defendant from further infringement of Plaintiff's intellectual property rights.",
+  "total_citations": 14,
+  "verified": 5,
+  "warnings": 0,
+  "errors": 9,
+  "unverifiable": 0,
+  "citations": [
+    {
+      "extraction": {
+        "citation_text": "573 U.S. 208 (2014)",
+        "case_name": "Alice Corp. v. CLS Bank International",
+        "full_reference": "Alice Corp. v. CLS Bank International, 573 U.S. 208 (2014)",
+        "quoted_text": null,
+        "characterization": "established a two-step framework for determining patent eligibility under 35 U.S.C. \u00a7 101",
+        "context": "The Supreme Court established a two-step framework for determining patent eligibility under 35 U.S.C. \u00a7 101. Alice Corp. v. CLS Bank International, 573 U.S. 208 (2014).",
+        "position_start": 168,
+        "position_end": 262
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "In Re: Marco Guldenaar Holding B.V.",
+        "court": "Court of Appeals for the Federal Circuit",
+        "date_filed": "2018-12-28",
+        "url": "https://www.courtlistener.com/opinion/4577712/in-re-marco-guldenaar-holding-bv/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": null,
+        "confidence": 0.7,
+        "reasoning": "[Knowledge review override] The initial verification correctly identifies Alice Corp. v. CLS Bank International as establishing a two-step framework for patent eligibility under 35 U.S.C. \u00a7 101. However, the confidence level of 0.9 is too high for a knowledge-based verification. While this is indeed a landmark case that established the Alice/Mayo test, and the characterization is accurate, knowledge-based verification should be more conservative in confidence levels. The citation format appears correct for a 2014 Supreme Court case.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "789 F.3d 432 (Fed. Cir. 2015)",
+        "case_name": "Sterling Technologies, Inc. v. DataVault Corp.",
+        "full_reference": "Sterling Technologies, Inc. v. DataVault Corp., 789 F.3d 432 (Fed. Cir. 2015)",
+        "quoted_text": null,
+        "characterization": "applied the Alice framework to software-implemented inventions",
+        "context": "The Federal Circuit applied the Alice framework to software-implemented inventions in Sterling Technologies, Inc. v. DataVault Corp., 789 F.3d 432 (Fed. Cir. 2015), holding that \"a software patent claim directed to the abstract idea of organizing and storing data in a hierarchical structure lacks the inventive concept necessary to survive scrutiny under Section 101.\"",
+        "position_start": 564,
+        "position_end": 642
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Adams v. Anne Arundel County Public Schools",
+        "court": "",
+        "date_filed": "2015-06-15",
+        "url": "https://www.courtlistener.com/opinion/2808355/adams-v-anne-arundel-county-public-schools/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization describes a Federal Circuit case applying Alice to software patents with a specific holding about hierarchical data structures. However, I cannot verify this case exists.",
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] The citation format is technically correct for a Federal Circuit case. However, the critical lookup warning indicates that searching for this citation returns a completely different case (Adams v. Anne Arundel County Public Schools), and searches by case name failed to find Sterling Technologies v. DataVault. This is a strong indicator that this case may not exist. I do not recognize this case from my training data. While the Federal Circuit does hear patent cases and applies the Alice framework, I cannot verify that this specific case or holding exists. The fact that the citation database returns a different case for this reporter citation is particularly concerning and suggests this may be a fabricated citation.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "789 F.3d 432 (Fed. Cir. 2015)",
+        "case_name": "Sterling Technologies, Inc. v. DataVault Corp.",
+        "full_reference": "Id. at 441",
+        "quoted_text": "a software patent claim directed to the abstract idea of organizing and storing data in a hierarchical structure lacks the inventive concept necessary to survive scrutiny under Section 101",
+        "characterization": "holding that a software patent claim directed to the abstract idea of organizing and storing data in a hierarchical structure lacks the inventive concept necessary to survive scrutiny under Section 101",
+        "context": "The Federal Circuit applied the Alice framework to software-implemented inventions in Sterling Technologies, Inc. v. DataVault Corp., 789 F.3d 432 (Fed. Cir. 2015), holding that \"a software patent claim directed to the abstract idea of organizing and storing data in a hierarchical structure lacks the inventive concept necessary to survive scrutiny under Section 101.\" Id. at 441.",
+        "position_start": 857,
+        "position_end": 868
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Adams v. Anne Arundel County Public Schools",
+        "court": "",
+        "date_filed": "2015-06-15",
+        "url": "https://www.courtlistener.com/opinion/2808355/adams-v-anne-arundel-county-public-schools/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "Cannot verify this characterization because the case appears not to exist",
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] I do not recognize 'Sterling Technologies, Inc. v. DataVault Corp.' as a Federal Circuit case from 2015. The fact that a database search for '789 F.3d 432 (Fed. Cir. 2015)' returns a completely different case (Adams v. Anne Arundel County Public Schools) strongly suggests this citation is incorrect or fabricated. Federal Circuit cases dealing with Section 101 patent eligibility from this timeframe that I'm familiar with include cases like Enfish, McRO, and Bascom, but not Sterling Technologies v. DataVault. The quoted language about hierarchical data structures and Section 101 sounds plausible for a Federal Circuit opinion, but without being able to verify this case exists, I cannot confirm the quote or characterization.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "510 U.S. 569 (1994)",
+        "case_name": "Campbell v. Acuff-Rose Music, Inc.",
+        "full_reference": "Campbell v. Acuff-Rose Music, Inc., 510 U.S. 569 (1994)",
+        "quoted_text": null,
+        "characterization": "held that 2 Live Crew's commercial parody of Roy Orbison's \"Oh, Pretty Woman\" could constitute fair use, and emphasized that transformative use is the central inquiry under the first statutory factor",
+        "context": "The fair use doctrine permits certain uses of copyrighted material without authorization. Campbell v. Acuff-Rose Music, Inc., 510 U.S. 569 (1994).",
+        "position_start": 1001,
+        "position_end": 1057
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Campbell v. Acuff-Rose Music, Inc.",
+        "court": "",
+        "date_filed": "1994-03-07",
+        "url": "https://www.courtlistener.com/opinion/112936/campbell-v-acuff-rose-music-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures two key holdings from Campbell: (1) that 2 Live Crew's commercial parody could constitute fair use, and (2) that transformative use is central to the first factor analysis. The Court explicitly states that 'a parody's commercial character is only one element to be weighed in a fair use enquiry' and extensively discusses how 'the more transformative the new work, the less will be the significance of other factors, like commercialism.'",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (510 U.S. 569 (1994)). The source opinion matches the cited case - it is indeed Campbell v. Acuff-Rose Music, Inc., involving 2 Live Crew's parody of Roy Orbison's 'Oh, Pretty Woman.' STEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable. STEP 3 - CHARACTERIZATION VERIFICATION: The characterization states two things: (1) the Court held that 2 Live Crew's commercial parody could constitute fair use, and (2) the Court emphasized that transformative use is the central inquiry under the first statutory factor. Both elements are strongly supported by the opinion. For the first point, the Court reversed the Court of Appeals' ruling that commercial use was presumptively unfair and remanded for further proceedings, stating 'We are called upon to decide whether 2 Live Crew's commercial parody of Roy Orbison's song, 'Oh, Pretty Woman,' may be a fair use.' For the second point, the Court extensively discusses transformative use, stating: 'the central purpose of this investigation is to see...whether and to what extent the new work is 'transformative'' and 'the more transformative the new work, the less will be the significance of other factors, like commercialism, that may weigh against a finding of fair use.' The Court also notes that 'transformative works...lie at the heart of the fair use doctrine's guarantee of breathing space.' STEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization accurately reflects the Court's holdings and reasoning. STEP 5 - OVERALL STATUS: Verified - the characterization accurately describes the Court's holdings.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "634 F.3d 891 (6th Cir. 2011)",
+        "case_name": "Henderson v. Creative Digital Solutions, LLC",
+        "full_reference": "Henderson v. Creative Digital Solutions, LLC, 634 F.3d 891 (6th Cir. 2011)",
+        "quoted_text": null,
+        "characterization": "extended the transformative use doctrine to digital content aggregation",
+        "context": "The Sixth Circuit extended the transformative use doctrine to digital content aggregation in Henderson v. Creative Digital Solutions, LLC, 634 F.3d 891 (6th Cir. 2011).",
+        "position_start": 1316,
+        "position_end": 1391
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Kartman v. State Farm Mutual Automobile Insurance",
+        "court": "",
+        "date_filed": "2011-02-14",
+        "url": "https://www.courtlistener.com/opinion/204668/kartman-v-state-farm-mutual-automobile-insurance/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The case name 'Henderson v. Creative Digital Solutions, LLC' at 634 F.3d 891 (6th Cir. 2011) does not appear to exist. The citation 634 F.3d 891 corresponds to Kartman v. State Farm Mutual Automobile Insurance, which is an insurance coverage case, not a copyright or transformative use case.",
+        "confidence": 0.4,
+        "reasoning": "[Confirmed by knowledge review] The citation appears to be fabricated or contains a significant error. The volume and page number 634 F.3d 891 (6th Cir. 2011) actually corresponds to Kartman v. State Farm Mutual Automobile Insurance, an insurance coverage dispute. I have no knowledge of any case called 'Henderson v. Creative Digital Solutions, LLC' in the Sixth Circuit dealing with transformative use doctrine and digital content aggregation. The transformative use doctrine is primarily associated with copyright fair use analysis, and I cannot recall any Sixth Circuit case with this name addressing that topic. Given that the citation database confirms a different case at this citation, this appears to be either a fabricated citation or a serious citation error.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "634 F.3d 891 (6th Cir. 2011)",
+        "case_name": "Henderson v. Creative Digital Solutions, LLC",
+        "full_reference": "Id. at 899",
+        "quoted_text": "automated compilation and indexing of copyrighted digital content constitutes transformative fair use when it serves a fundamentally different purpose than the original work",
+        "characterization": "held that automated compilation and indexing of copyrighted digital content constitutes transformative fair use when it serves a fundamentally different purpose than the original work",
+        "context": "The court held that \"automated compilation and indexing of copyrighted digital content constitutes transformative fair use when it serves a fundamentally different purpose than the original work.\" Id. at 899.",
+        "position_start": 1593,
+        "position_end": 1603
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Kartman v. State Farm Mutual Automobile Insurance",
+        "court": "",
+        "date_filed": "2011-02-14",
+        "url": "https://www.courtlistener.com/opinion/204668/kartman-v-state-farm-mutual-automobile-insurance/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "Cannot verify this characterization because the case appears not to exist",
+        "confidence": 0.4,
+        "reasoning": "[Confirmed by knowledge review] I do not recognize 'Henderson v. Creative Digital Solutions, LLC' as a real case from the 6th Circuit in 2011. The fact that a database search for '634 F.3d 891' returns a completely different case (Kartman v. State Farm) and that no case by this name can be found strongly indicates this citation is fabricated. The quoted language about 'automated compilation and indexing' and 'transformative fair use' sounds plausible but generic - it could be synthesized from general fair use principles without being from any actual case. Given the database evidence that this volume/page contains a different case entirely, I conclude with high confidence that this citation is fictitious.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "547 U.S. 388 (2006)",
+        "case_name": "eBay Inc. v. MercExchange, L.L.C.",
+        "full_reference": "eBay Inc. v. MercExchange, L.L.C., 547 U.S. 388 (2006)",
+        "quoted_text": null,
+        "characterization": "rejected the Federal Circuit's categorical rule that permanent injunctions should issue upon a finding of patent infringement",
+        "context": "The Supreme Court rejected the Federal Circuit's categorical rule that permanent injunctions should issue upon a finding of patent infringement. eBay Inc. v. MercExchange, L.L.C., 547 U.S. 388 (2006).",
+        "position_start": 1802,
+        "position_end": 1857
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Ebay Inc. v. Mercexchange, L. L. C.",
+        "court": "",
+        "date_filed": "2006-05-15",
+        "url": "https://www.courtlistener.com/opinion/9230964/ebay-inc-v-mercexchange-l-l-c/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes the Supreme Court's holding. The Court explicitly rejected the Federal Circuit's 'general rule that courts will issue permanent injunctions against patent infringement absent exceptional circumstances' (401 F. 3d, at 1339) and its categorical approach that 'a permanent injunction will issue once infringement and validity have been adjudged' (401 F. 3d, at 1338). The Court held that this categorical rule was error and that traditional equitable principles must be applied instead.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (eBay Inc. v. MercExchange, L.L.C., 547 U.S. 388 (2006)). The source opinion matches the cited case - it involves eBay Inc. and Half.com as petitioners versus MercExchange, L.L.C. as respondent, dealing with patent infringement and injunctive relief.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that the Supreme Court 'rejected the Federal Circuit's categorical rule that permanent injunctions should issue upon a finding of patent infringement.' This is directly supported by the opinion. The Court explicitly states: 'The Court of Appeals for the Federal Circuit reversed, applying its \"general rule that courts will issue permanent injunctions against patent infringement absent exceptional circumstances.\" 401 F. 3d 1323, 1339 (2005).' The Supreme Court then clearly rejects this approach, stating: 'Just as the District Court erred in its categorical denial of injunctive relief, the Court of Appeals erred in its categorical grant of such relief.' The Court vacated the Federal Circuit's judgment and held that 'the decision whether to grant or deny injunctive relief rests within the equitable discretion of the district courts, and that such discretion must be exercised consistent with traditional principles of equity, in patent disputes no less than in other cases.'\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the characterization is directly and explicitly supported by multiple passages in the opinion.\n\nSTEP 5 - OVERALL STATUS: The citation is verified. The characterization accurately captures the Supreme Court's rejection of the Federal Circuit's categorical rule favoring automatic permanent injunctions in patent cases.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "547 U.S. 388 (2006)",
+        "case_name": "eBay Inc. v. MercExchange, L.L.C.",
+        "full_reference": "Id. at 391",
+        "quoted_text": null,
+        "characterization": "held that the traditional four-factor test for equitable relief applies: (1) irreparable injury, (2) inadequacy of legal remedies, (3) balance of hardships, and (4) public interest",
+        "context": "Instead, the Court held that the traditional four-factor test for equitable relief applies: (1) irreparable injury, (2) inadequacy of legal remedies, (3) balance of hardships, and (4) public interest. Id. at 391.",
+        "position_start": 2059,
+        "position_end": 2069
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Ebay Inc. v. Mercexchange, L. L. C.",
+        "court": "",
+        "date_filed": "2006-05-15",
+        "url": "https://www.courtlistener.com/opinion/9230964/ebay-inc-v-mercexchange-l-l-c/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes the Court's holding. The opinion explicitly states that 'a plaintiff seeking a permanent injunction must satisfy a four-factor test' and then lists the exact four factors mentioned in the characterization: (1) irreparable injury, (2) inadequacy of legal remedies, (3) balance of hardships, and (4) public interest. The Court affirmed that these 'familiar principles apply with equal force to disputes arising under the Patent Act.'",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (eBay Inc. v. MercExchange, L.L.C., 547 U.S. 388 (2006)). The source opinion matches the cited case - it's clearly the Supreme Court opinion in eBay v. MercExchange, with Justice Thomas delivering the opinion.\n\nSTEP 2 - QUOTE VERIFICATION: No quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states the Court 'held that the traditional four-factor test for equitable relief applies: (1) irreparable injury, (2) inadequacy of legal remedies, (3) balance of hardships, and (4) public interest.' Looking at the opinion, on page 391, the Court states: 'According to well-established principles of equity, a plaintiff seeking a permanent injunction must satisfy a four-factor test before a court may grant such relief. A plaintiff must demonstrate: (1) that it has suffered an irreparable injury; (2) that remedies available at law, such as monetary damages, are inadequate to compensate for that injury; (3) that, considering the balance of hardships between the plaintiff and defendant, a remedy in equity is warranted; and (4) that the public interest would not be disserved by a permanent injunction.' The Court then explicitly states: 'These familiar principles apply with equal force to disputes arising under the Patent Act.' The characterization accurately captures the Court's holding.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly matches what the Court held, using the same four factors in the same order.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately represents the Court's holding.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "856 F.3d 1124 (9th Cir. 2017)",
+        "case_name": "Marcus v. Silicon Valley Innovations Corp.",
+        "full_reference": "Marcus v. Silicon Valley Innovations Corp., 856 F.3d 1124 (9th Cir. 2017)",
+        "quoted_text": null,
+        "characterization": "applied the eBay framework to preliminary injunctions in intellectual property disputes",
+        "context": "The Ninth Circuit applied the eBay framework to preliminary injunctions in intellectual property disputes in Marcus v. Silicon Valley Innovations Corp., 856 F.3d 1124 (9th Cir. 2017), holding that \"the traditional four-factor test governs preliminary injunctive relief in all intellectual property cases, whether patent, copyright, or trade secret.\"",
+        "position_start": 2180,
+        "position_end": 2254
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "United States v. Edward Novak",
+        "court": "",
+        "date_filed": "2017-05-12",
+        "url": "https://www.courtlistener.com/opinion/4390903/united-states-v-edward-novak/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The cited case appears to be fabricated. 856 F.3d 1124 is actually United States v. Novak, a criminal case, not an intellectual property case about the eBay framework.",
+        "confidence": 0.4,
+        "reasoning": "[Confirmed by knowledge review] The citation format appears standard, but the case name and content do not match the actual case at this citation. 856 F.3d 1124 (9th Cir. 2017) is United States v. Novak, a criminal case. There is no case called Marcus v. Silicon Valley Innovations Corp. at this citation. The eBay framework refers to eBay Inc. v. MercExchange, L.L.C., 547 U.S. 388 (2006), which established a four-factor test for permanent injunctions in patent cases. While the Ninth Circuit has applied this framework to preliminary injunctions in IP cases, this particular cited case appears to be fabricated.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "856 F.3d 1124 (9th Cir. 2017)",
+        "case_name": "Marcus v. Silicon Valley Innovations Corp.",
+        "full_reference": "Id. at 1132",
+        "quoted_text": "the traditional four-factor test governs preliminary injunctive relief in all intellectual property cases, whether patent, copyright, or trade secret",
+        "characterization": "holding that the traditional four-factor test governs preliminary injunctive relief in all intellectual property cases, whether patent, copyright, or trade secret",
+        "context": "The Ninth Circuit applied the eBay framework to preliminary injunctions in intellectual property disputes in Marcus v. Silicon Valley Innovations Corp., 856 F.3d 1124 (9th Cir. 2017), holding that \"the traditional four-factor test governs preliminary injunctive relief in all intellectual property cases, whether patent, copyright, or trade secret.\" Id. at 1132.",
+        "position_start": 2417,
+        "position_end": 2428
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "United States v. Edward Novak",
+        "court": "",
+        "date_filed": "2017-05-12",
+        "url": "https://www.courtlistener.com/opinion/4390903/united-states-v-edward-novak/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "Cannot verify this characterization because the case appears not to exist. The citation 856 F.3d 1124 corresponds to a different case (United States v. Edward Novak), not Marcus v. Silicon Valley Innovations Corp.",
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] This citation appears to be fabricated or contains a significant error. The volume and page citation (856 F.3d 1124) corresponds to United States v. Edward Novak, a criminal case from 2017, not a case involving Marcus v. Silicon Valley Innovations Corp. I have no knowledge of any Ninth Circuit case by this name from 2017 dealing with preliminary injunctions in intellectual property cases. The fact that database searches returned a different case for this citation and failed to find any case matching the party names strongly indicates this citation is incorrect or fabricated. While the legal principle described (applying traditional four-factor test to preliminary injunctions in IP cases) is plausible and consistent with eBay and subsequent case law, I cannot verify this specific case or quote.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "564 U.S. 338 (2011)",
+        "case_name": "Wal-Mart Stores, Inc. v. Dukes",
+        "full_reference": "Wal-Mart Stores, Inc. v. Dukes, 564 U.S. 338 (2011)",
+        "quoted_text": null,
+        "characterization": "tightened the commonality requirement, holding that plaintiffs must demonstrate that the class members have suffered the same injury, and that their claims depend upon a common contention that is capable of classwide resolution",
+        "context": "Class certification under Federal Rule of Civil Procedure 23 requires satisfaction of the prerequisites of numerosity, commonality, typicality, and adequacy. Wal-Mart Stores, Inc. v. Dukes, 564 U.S. 338 (2011).",
+        "position_start": 2641,
+        "position_end": 2693
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Wal-Mart Stores, Inc. v. Dukes",
+        "court": "",
+        "date_filed": "2011-06-20",
+        "url": "https://www.courtlistener.com/opinion/219618/wal-mart-stores-inc-v-dukes/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Supreme Court's holding in Wal-Mart v. Dukes. The Court did tighten the commonality requirement by emphasizing that plaintiffs must show class members 'have suffered the same injury' (citing Falcon) and that 'claims must depend upon a common contention' that is 'capable of classwide resolution\u2014which means that determination of its truth or falsity will resolve an issue that is central to the validity of each one of the claims in one stroke.' The Court explicitly required 'rigorous analysis' rather than mere pleading, representing a more stringent approach to Rule 23(a)(2) commonality than some lower courts had been applying.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] I verified the citation format matches the case (564 U.S. 338 (2011)). The characterization states the Court 'tightened the commonality requirement' and held that plaintiffs must show (1) class members suffered the same injury and (2) claims depend on a common contention capable of classwide resolution. The opinion directly supports both elements: on page 9, it states 'Commonality requires the plaintiff to demonstrate that the class members have suffered the same injury,' and on pages 9-10, it explains that claims 'must depend upon a common contention' that is 'capable of classwide resolution.' The Court's emphasis on 'rigorous analysis' and rejection of a 'mere pleading standard' does represent a tightening of the commonality requirement compared to prior interpretations.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "912 F.3d 267 (3d Cir. 2019)",
+        "case_name": "Porter v. National Financial Services Corp.",
+        "full_reference": "Porter v. National Financial Services Corp., 912 F.3d 267 (3d Cir. 2019)",
+        "quoted_text": null,
+        "characterization": "applied Dukes to consumer class actions",
+        "context": "The Third Circuit applied Dukes to consumer class actions in Porter v. National Financial Services Corp., 912 F.3d 267 (3d Cir. 2019).",
+        "position_start": 2965,
+        "position_end": 3038
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Michael Nall v. BNSF Railway Company",
+        "court": "",
+        "date_filed": "2018-12-27",
+        "url": "https://www.courtlistener.com/opinion/4577540/michael-nall-v-bnsf-railway-company/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "Cannot verify this characterization because the case appears not to exist",
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] The citation format appears standard, but multiple red flags indicate this case likely does not exist: (1) A search for '912 F.3d 267' returns a completely different case (Michael Nall v. BNSF Railway Company), (2) No case named 'Porter v. National Financial Services Corp.' can be found in the Third Circuit from 2019, (3) I have no knowledge of this case despite it being relatively recent and supposedly applying a major Supreme Court precedent (Dukes) to consumer class actions, which would make it notable. The fact that the volume/page citation points to an entirely different case strongly suggests this is a fabricated citation.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "912 F.3d 267 (3d Cir. 2019)",
+        "case_name": "Porter v. National Financial Services Corp.",
+        "full_reference": "Id. at 278",
+        "quoted_text": "where a defendant's uniform policy affects all class members identically, commonality is satisfied even if individual damages vary",
+        "characterization": "held that where a defendant's uniform policy affects all class members identically, commonality is satisfied even if individual damages vary",
+        "context": "The court held that \"where a defendant's uniform policy affects all class members identically, commonality is satisfied even if individual damages vary.\" Id. at 278.",
+        "position_start": 3194,
+        "position_end": 3204
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Michael Nall v. BNSF Railway Company",
+        "court": "",
+        "date_filed": "2018-12-27",
+        "url": "https://www.courtlistener.com/opinion/4577540/michael-nall-v-bnsf-railway-company/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] The citation format appears standard, but I cannot verify the existence of 'Porter v. National Financial Services Corp.' at 912 F.3d 267 (3d Cir. 2019). The database lookup warning indicates that this volume and page actually contains a different case (Michael Nall v. BNSF Railway Company). This is a strong indicator that the Porter case either does not exist at this citation or may be entirely fabricated. I do not recognize this case from my training data, and the mismatch between the case name and the actual case at that citation is highly suspicious. The quoted principle about uniform policies and commonality in class actions is a plausible legal principle, but without being able to verify the case exists, I cannot confirm whether this quote or characterization is accurate.",
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "563 U.S. 333 (2011)",
+        "case_name": "AT&T Mobility LLC v. Concepcion",
+        "full_reference": "AT&T Mobility LLC v. Concepcion, 563 U.S. 333 (2011)",
+        "quoted_text": null,
+        "characterization": "held that the FAA mandates individual arbitration in all consumer disputes, effectively eliminating the class action mechanism whenever an arbitration clause is present",
+        "context": "The Federal Arbitration Act broadly prohibits all class action proceedings when a valid arbitration agreement exists between the parties. AT&T Mobility LLC v. Concepcion, 563 U.S. 333 (2011).",
+        "position_start": 3406,
+        "position_end": 3459
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "AT&T Mobility LLC v. Concepcion",
+        "court": "",
+        "date_filed": "2011-04-27",
+        "url": "https://www.courtlistener.com/opinion/7343956/att-mobility-llc-v-concepcion/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "misleading",
+        "characterization_explanation": "The characterization significantly overstates the Court's holding. The Court did NOT hold that 'the FAA mandates individual arbitration in all consumer disputes' or that it 'effectively eliminat[es] the class action mechanism whenever an arbitration clause is present.' Rather, the Court held that the FAA preempts California's Discover Bank rule, which had deemed class-arbitration waivers unconscionable in certain consumer contracts. The Court specifically noted that parties remain free to agree to class arbitration, and that states can regulate arbitration agreements in ways that don't conflict with the FAA. The characterization transforms a narrow preemption ruling about one state's unconscionability doctrine into a sweeping mandate that doesn't exist in the opinion.",
+        "confidence": 0.9500000000000001,
+        "reasoning": "[Confirmed by review] STEP 1 - Citation exists and matches the source opinion (AT&T Mobility LLC v. Concepcion, 563 U.S. 333 (2011)).\n\nSTEP 2 - No quote provided to verify.\n\nSTEP 3 - Characterization verification: The document claims the Court 'held that the FAA mandates individual arbitration in all consumer disputes, effectively eliminating the class action mechanism whenever an arbitration clause is present.' However, the Court's actual holding was much narrower. The Court held that 'California's Discover Bank rule is pre-empted by the FAA' because it 'stands as an obstacle to the accomplishment and execution of the full purposes and objectives of Congress.' The Court did NOT hold that: (1) the FAA 'mandates' individual arbitration in ALL consumer disputes - it only addressed the specific California rule; (2) class actions are 'eliminated' whenever arbitration clauses exist - the Court explicitly noted that 'parties may and sometimes do agree to aggregation' and that 'States remain free to take steps addressing the concerns that attend contracts of adhesion... Such steps cannot, however, conflict with the FAA.' The Court's analysis focused on how California's rule interfered with arbitration by allowing any party to demand class procedures ex post, not on mandating individual arbitration in all cases.\n\nSTEP 4 - Confidence is high (0.9) because the opinion text is complete and the Court's holding is clearly stated.\n\nSTEP 5 - Overall status is 'error' because the characterization materially misrepresents the scope and nature of the Court's holding.",
+        "quote_status": null,
+        "characterization_status": "warning"
+      }
+    }
+  ],
+  "created_at": "2026-04-11T21:19:17.628135+00:00"
+}

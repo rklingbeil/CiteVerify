@@ -1,0 +1,625 @@
+{
+  "id": "f50b3c4a-34e8-4a23-88e0-7df488ad9e7e",
+  "filename": "brief_k_subtle_traps.docx",
+  "document_text": "PLAINTIFF'S TRIAL BRIEF\n\nRivera v. National Healthcare Systems, Inc.\n\nI. STANDARD OF REVIEW\n\nSummary judgment is appropriate when there is no genuine dispute as to any material fact and the movant is entitled to judgment as a matter of law. Celotex Corp. v. Catrett, 477 U.S. 317, 322 (1986).\n\nThe Second Amendment protects an individual's right to possess a firearm unconnected with service in a militia and to use that arm for traditionally lawful purposes, such as self-defense within the home. District of Columbia v. Heller, 555 U.S. 570 (2008).\n\nII. DISSENT PRESENTED AS MAJORITY HOLDING\n\nThe Voting Rights Act's preclearance requirement remains a valid exercise of Congressional enforcement power under the Fifteenth Amendment. The coverage formula in Section 4(b) is justified by current conditions of voting discrimination. Shelby County v. Holder, 570 U.S. 529, 559 (2013). The Court emphasized that Congress had amassed a substantial record of ongoing discrimination sufficient to warrant the extraordinary remedy of preclearance.\n\nCorporations do not possess the same First Amendment rights as natural persons, and the government may restrict corporate expenditures in elections to prevent corruption and the appearance of corruption. Citizens United v. Federal Election Comm'n, 558 U.S. 310 (2010). The Court held that the government's interest in preventing the \"distortion\" of political debate by large corporate spending justified expenditure restrictions.\n\nIII. HOLDING SWAPPED BETWEEN CASES\n\nBefore a custodial interrogation, officers must inform the suspect of their right to remain silent and their right to an attorney. Terry v. Ohio, 392 U.S. 1 (1968). This procedural safeguard is required to protect the Fifth Amendment privilege against self-incrimination.\n\nAn officer may conduct a brief investigatory stop when the officer has reasonable suspicion that criminal activity may be afoot, and may frisk the suspect for weapons if the officer reasonably believes the person is armed and dangerous. Miranda v. Arizona, 384 U.S. 436 (1966).\n\nIV. REAL QUOTE ATTRIBUTED TO WRONG CASE\n\nAs the Court famously declared, \"It is emphatically the province and duty of the judicial department to say what the law is.\" McCulloch v. Maryland, 17 U.S. 316 (1819).\n\nThe Necessary and Proper Clause grants Congress broad authority to select the means of executing its enumerated powers. McCulloch v. Maryland, 17 U.S. (4 Wheat.) 316 (1819). The Court held that \"the power to tax involves the power to destroy\" and that states may not tax the operations of the federal government.\n\nV. WRONG YEAR FOR REAL CASE\n\nSeparate educational facilities are inherently unequal and violate the Equal Protection Clause of the Fourteenth Amendment. Brown v. Board of Education, 347 U.S. 483 (1955).\n\nThe Sixth Amendment's guarantee of the right to counsel is a fundamental right essential to a fair trial and is applicable to state criminal proceedings through the Fourteenth Amendment. Gideon v. Wainwright, 372 U.S. 335 (1964).\n\nVI. REAL CASES AS CONTROL\n\nThe Equal Protection Clause prohibits a prosecutor from using peremptory challenges to exclude jurors solely on the basis of race. Batson v. Kentucky, 476 U.S. 79, 89 (1986). A defendant may establish a prima facie case of purposeful discrimination by showing that the facts and circumstances raise an inference that the prosecutor used peremptory challenges on account of race.\n\nTo prevail on a claim of ineffective assistance of counsel, a defendant must show (1) that counsel's performance was deficient and (2) that the deficient performance prejudiced the defense. Strickland v. Washington, 466 U.S. 668, 687 (1984). The Court noted that \"judicial scrutiny of counsel's performance must be highly deferential.\"\n\nCONCLUSION\n\nFor the foregoing reasons, Plaintiff respectfully requests that the Court rule in its favor on all claims.",
+  "total_citations": 17,
+  "verified": 9,
+  "warnings": 2,
+  "errors": 6,
+  "unverifiable": 0,
+  "citations": [
+    {
+      "extraction": {
+        "citation_text": "570 U.S. 529, 559 (2013)",
+        "case_name": "Shelby County v. Holder",
+        "full_reference": "",
+        "quoted_text": null,
+        "characterization": "The Court emphasized that Congress had amassed a substantial record of ongoing discrimination sufficient to warrant the extraordinary remedy of preclearance.",
+        "context": "",
+        "position_start": 0,
+        "position_end": 0
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Shelby County v. Holder",
+        "court": "",
+        "date_filed": "2013-06-25",
+        "url": "https://www.courtlistener.com/opinion/931614/shelby-county-v-holder/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization is completely incorrect and contradicts the Court's actual holding. The Court did NOT emphasize that Congress had amassed a sufficient record to warrant preclearance. Instead, the Court struck down the coverage formula as unconstitutional, finding that: (1) the congressional record did NOT show discrimination approaching the levels that originally justified the Act; (2) Congress failed to use the record to update the coverage formula based on current conditions; and (3) the formula could no longer be justified by current needs. The Court explicitly stated that 'no one can fairly say that [the record] shows anything approaching the 'pervasive,' 'flagrant,' 'widespread,' and 'rampant' discrimination that faced Congress in 1965.' The characterization presents the opposite of what the Court actually held.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] I carefully reviewed the entire opinion to understand the Court's holding. The Court struck down Section 4(b)'s coverage formula as unconstitutional, finding it was based on decades-old data and no longer justified by current conditions. Throughout the opinion, the Court criticizes the congressional record and finds it insufficient to justify the continued use of the coverage formula. At page 21, the Court explicitly states that the record does not show discrimination approaching the levels seen in 1965. The Court also criticizes Congress for not using the record to update the formula based on current conditions. The characterization suggesting the Court 'emphasized' Congress's 'substantial record' as 'sufficient to warrant' preclearance is the exact opposite of what the Court held. This appears to be describing the dissent's position, not the majority opinion.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "17 U.S. (4 Wheat.) 316 (1819)",
+        "case_name": "McCulloch v. Maryland",
+        "full_reference": "",
+        "quoted_text": null,
+        "characterization": "The Court held that \"the power to tax involves the power to destroy\" and that states may not tax the operations of the federal government.",
+        "context": "",
+        "position_start": 0,
+        "position_end": 0
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "M'culloch v. State of Maryland",
+        "court": "",
+        "date_filed": "1819-03-18",
+        "url": "https://www.courtlistener.com/opinion/85272/mculloch-v-state-of-maryland/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures two key holdings from McCulloch v. Maryland. First, the Court did state that 'the power to tax involves the power to destroy' (found at page 431 of the opinion). Second, the Court held that states may not tax the operations of the federal government, specifically ruling that Maryland's tax on the Bank of the United States was unconstitutional. The Court stated: 'the States have no power, by taxation or otherwise, to retard, impede, burden, or in any manner control, the operations of the constitutional laws enacted by Congress' (page 436).",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (17 U.S. (4 Wheat.) 316 (1819)). The opinion text confirms this is indeed McCulloch v. Maryland, with Chief Justice Marshall delivering the opinion regarding Maryland's attempt to tax the Bank of the United States.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided to verify.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states two propositions: (1) 'the power to tax involves the power to destroy' and (2) 'states may not tax the operations of the federal government.' Both are accurate:\n\n1. The exact phrase 'the power to tax involves the power to destroy' appears verbatim on page 431 of the opinion.\n\n2. The holding that states may not tax federal operations is clearly stated throughout the opinion, culminating in the Court's conclusion on page 436: 'the States have no power, by taxation or otherwise, to retard, impede, burden, or in any manner control, the operations of the constitutional laws enacted by Congress to carry into execution the powers vested in the general government.'\n\nThe Court specifically held Maryland's tax on the Bank of the United States unconstitutional, stating on page 436-437: 'We are unanimously of opinion, that the law passed by the legislature of Maryland, imposing a tax on the Bank of the United States, is unconstitutional and void.'\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) as both elements of the characterization are directly supported by explicit language in the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately represents the Court's holdings in McCulloch v. Maryland.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "476 U.S. 79, 89 (1986)",
+        "case_name": "Batson v. Kentucky",
+        "full_reference": "",
+        "quoted_text": null,
+        "characterization": "A defendant may establish a prima facie case of purposeful discrimination by showing that the facts and circumstances raise an inference that the prosecutor used peremptory challenges on account of race.",
+        "context": "",
+        "position_start": 0,
+        "position_end": 0
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Batson v. Kentucky",
+        "court": "",
+        "date_filed": "1986-04-30",
+        "url": "https://www.courtlistener.com/opinion/111662/batson-v-kentucky/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately summarizes the Court's holding about establishing a prima facie case of racial discrimination in peremptory challenges. While the specific language about prima facie cases appears more fully at pages 96-97 rather than page 89, page 89 does establish that peremptory challenges are subject to Equal Protection constraints and cannot be used to exclude jurors based on race. The characterization correctly captures the essence of Batson's holding that defendants can establish discrimination by showing facts and circumstances that raise an inference of racial motivation.",
+        "confidence": 0.9,
+        "reasoning": "[Confirmed by review] I verified the citation format is correct and the source opinion matches Batson v. Kentucky. No quote was provided to verify. For the characterization, I found that while page 89 specifically addresses Equal Protection constraints on peremptory challenges, the detailed framework for establishing a prima facie case appears later at pages 96-97. However, the characterization accurately summarizes the Court's holding. The Court did establish that defendants can prove discrimination by showing facts and circumstances that raise an inference of racial motivation in the prosecutor's use of peremptory challenges. This is a fair and accurate summary of Batson's core holding, even if the specific page cited doesn't contain the complete articulation of the prima facie standard.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "466 U.S. 668, 687 (1984)",
+        "case_name": "Strickland v. Washington",
+        "full_reference": "",
+        "quoted_text": null,
+        "characterization": "To prevail on a claim of ineffective assistance of counsel, a defendant must show (1) that counsel's performance was deficient and (2) that the deficient performance prejudiced the defense.",
+        "context": "",
+        "position_start": 0,
+        "position_end": 0
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Strickland v. Washington",
+        "court": "",
+        "date_filed": "1984-06-25",
+        "url": "https://www.courtlistener.com/opinion/111170/strickland-v-washington/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the two-prong test established in Strickland. The Court explicitly states at page 687: 'A convicted defendant's claim that counsel's assistance was so defective as to require reversal of a conviction or death sentence has two components. First, the defendant must show that counsel's performance was deficient... Second, the defendant must show that the deficient performance prejudiced the defense.' This is precisely what the characterization conveys.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Strickland v. Washington, 466 U.S. 668, 687 (1984)). The source opinion matches the cited case - it is clearly the Strickland v. Washington opinion delivered by Justice O'Connor, dealing with ineffective assistance of counsel claims.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that to prevail on ineffective assistance of counsel, a defendant must show (1) deficient performance and (2) prejudice. Looking at page 687 of the opinion, the Court states: 'A convicted defendant's claim that counsel's assistance was so defective as to require reversal of a conviction or death sentence has two components. First, the defendant must show that counsel's performance was deficient. This requires showing that counsel made errors so serious that counsel was not functioning as the \"counsel\" guaranteed the defendant by the Sixth Amendment. Second, the defendant must show that the deficient performance prejudiced the defense. This requires showing that counsel's errors were so serious as to deprive the defendant of a fair trial, a trial whose result is reliable.' The characterization accurately captures this two-prong test.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly corresponds to the explicit holding stated in the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately represents the Court's holding establishing the two-prong test for ineffective assistance of counsel claims.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "372 U.S. 335 (1963)",
+        "case_name": "Gideon v. Wainwright",
+        "full_reference": "",
+        "quoted_text": null,
+        "characterization": "The Sixth Amendment's guarantee of the right to counsel is a fundamental right essential to a fair trial and is applicable to state criminal proceedings through the Fourteenth Amendment.",
+        "context": "",
+        "position_start": 0,
+        "position_end": 0
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Gideon v. Wainwright",
+        "court": "",
+        "date_filed": "1963-03-18",
+        "url": "https://www.courtlistener.com/opinion/8954562/gideon-v-wainwright/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The opinion explicitly states that 'a provision of the Bill of Rights which is \"fundamental and essential to a fair trial\" is made obligatory upon the States by the Fourteenth Amendment' and concludes that 'the Sixth Amendment's guarantee of counsel is not one of these fundamental rights' was wrong in Betts. The Court held that the right to counsel is indeed fundamental and therefore applicable to state proceedings through the Fourteenth Amendment.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Gideon v. Wainwright, 372 U.S. 335 (1963)). The source opinion text clearly matches this case - it discusses Gideon's trial in Florida state court, his request for appointed counsel, and the Supreme Court's review of his case. The parties and subject matter align perfectly.\n\nSTEP 2 - QUOTE VERIFICATION: No quote was provided to verify.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'The Sixth Amendment's guarantee of the right to counsel is a fundamental right essential to a fair trial and is applicable to state criminal proceedings through the Fourteenth Amendment.' This is precisely what the Court held. Key supporting passages include: (1) 'We accept Betts v. Brady's assumption...that a provision of the Bill of Rights which is \"fundamental and essential to a fair trial\" is made obligatory upon the States by the Fourteenth Amendment'; (2) 'We think the Court in Betts was wrong, however, in concluding that the Sixth Amendment's guarantee of counsel is not one of these fundamental rights'; (3) The Court's conclusion that 'in our adversary system of criminal justice, any person haled into court, who is too poor to hire a lawyer, cannot be assured a fair trial unless counsel is provided for him'; (4) The Court's explicit overruling of Betts v. Brady and reversal of Gideon's conviction.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly reflects the Court's explicit holding and reasoning.\n\nSTEP 5 - OVERALL STATUS: Verified - the characterization accurately describes the Court's holding.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "477 U.S. 317, 322 (1986)",
+        "case_name": "Celotex Corp. v. Catrett",
+        "full_reference": "Celotex Corp. v. Catrett, 477 U.S. 317, 322 (1986)",
+        "quoted_text": null,
+        "characterization": "Summary judgment is appropriate when there is no genuine dispute as to any material fact and the movant is entitled to judgment as a matter of law.",
+        "context": "Summary judgment is appropriate when there is no genuine dispute as to any material fact and the movant is entitled to judgment as a matter of law. Celotex Corp. v. Catrett, 477 U.S. 317, 322 (1986).",
+        "position_start": 168,
+        "position_end": 217
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Celotex Corp. v. Catrett, Administratrix of the Estate of Catrett",
+        "court": "",
+        "date_filed": "1986-06-25",
+        "url": "https://www.courtlistener.com/opinion/111722/celotex-corp-v-catrett-administratrix-of-the-estate-of-catrett/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately states the standard for summary judgment. The opinion at page 322 states: 'Under Rule 56(c), summary judgment is proper \"if the pleadings, depositions, answers to interrogatories, and admissions on file, together with the affidavits, if any, show that there is no genuine issue as to any material fact and that the moving party is entitled to a judgment as a matter of law.\"' This directly supports the characterization provided.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (477 U.S. 317). The source opinion is indeed Celotex Corp. v. Catrett from 1986, as evidenced by the case caption and content. The parties match (Celotex Corporation as petitioner, Catrett as respondent), and the subject matter (summary judgment standards) aligns with the citation.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'Summary judgment is appropriate when there is no genuine dispute as to any material fact and the movant is entitled to judgment as a matter of law.' Looking at page 322 of the opinion, I find: 'Under Rule 56(c), summary judgment is proper \"if the pleadings, depositions, answers to interrogatories, and admissions on file, together with the affidavits, if any, show that there is no genuine issue as to any material fact and that the moving party is entitled to a judgment as a matter of law.\"' The characterization uses slightly different wording ('genuine dispute' vs. 'genuine issue', 'movant' vs. 'moving party') but conveys the exact same legal standard. This is a completely accurate statement of the summary judgment standard as articulated in Celotex.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the characterization directly reflects the court's statement of the Rule 56(c) standard found at the cited page.\n\nSTEP 5 - OVERALL STATUS: The citation is verified. The characterization accurately represents the summary judgment standard as stated in the opinion at the cited page.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "555 U.S. 570 (2008)",
+        "case_name": "District of Columbia v. Heller",
+        "full_reference": "District of Columbia v. Heller, 555 U.S. 570 (2008)",
+        "quoted_text": null,
+        "characterization": "The Second Amendment protects an individual's right to possess a firearm unconnected with service in a militia and to use that arm for traditionally lawful purposes, such as self-defense within the home.",
+        "context": "The Second Amendment protects an individual's right to possess a firearm unconnected with service in a militia and to use that arm for traditionally lawful purposes, such as self-defense within the home. District of Columbia v. Heller, 555 U.S. 570 (2008).",
+        "position_start": 219,
+        "position_end": 473
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Wyeth v. Levine",
+        "court": "",
+        "date_filed": "2009-03-04",
+        "url": "https://www.courtlistener.com/opinion/145902/wyeth-v-levine/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": null,
+        "confidence": 0.7,
+        "reasoning": "[Knowledge review override] The initial analyst's confidence of 0.95 is too high for knowledge-based verification, even for a landmark case. While Heller is indeed a well-known Supreme Court case and the citation format appears correct, the characterization provided is a precise statement of the holding that would be difficult to verify with such certainty without the source text. The characterization does align with general knowledge of Heller's holding about individual rights and self-defense in the home, but the confidence should be lower.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "570 U.S. 529 (2013)",
+        "case_name": "Shelby County v. Holder",
+        "full_reference": "Shelby County v. Holder, 570 U.S. 529, 559 (2013)",
+        "quoted_text": null,
+        "characterization": "The Voting Rights Act's preclearance requirement remains a valid exercise of Congressional enforcement power under the Fifteenth Amendment. The coverage formula in Section 4(b) is justified by current conditions of voting discrimination.",
+        "context": "The Voting Rights Act's preclearance requirement remains a valid exercise of Congressional enforcement power under the Fifteenth Amendment. The coverage formula in Section 4(b) is justified by current conditions of voting discrimination. Shelby County v. Holder, 570 U.S. 529, 559 (2013). The Court emphasized that Congress had amassed a substantial record of ongoing discrimination sufficient to warrant the extraordinary remedy of preclearance.",
+        "position_start": 520,
+        "position_end": 959
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Shelby County v. Holder",
+        "court": "",
+        "date_filed": "2013-06-25",
+        "url": "https://www.courtlistener.com/opinion/931614/shelby-county-v-holder/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization is completely contrary to the Court's actual holding. The Court held that Section 4(b)'s coverage formula is UNCONSTITUTIONAL and can no longer be used as a basis for subjecting jurisdictions to preclearance. The Court explicitly stated that the coverage formula was NOT justified by current conditions, finding that 'the conditions that originally justified these measures no longer characterize voting in the covered jurisdictions.' The characterization falsely claims the Court upheld the VRA's preclearance requirement and coverage formula when the Court actually struck down the coverage formula as unconstitutional.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] Step 1: Citation format verified as correct - Shelby County v. Holder, 570 U.S. 529 (2013) matches the case. Step 2: No quote provided to verify. Step 3: The characterization claims the Court upheld the VRA's preclearance requirement and found the coverage formula justified by current conditions. However, the Court's actual holding is the exact opposite. The syllabus states: 'Held: Section 4 of the Voting Rights Act is unconstitutional; its formula can no longer be used as a basis for subjecting jurisdictions to preclearance.' The Court found that 'Coverage today is based on decades-old data and eradicated practices' and that Congress 'did not use the record it compiled to shape a coverage formula grounded in current conditions.' The characterization completely misrepresents the Court's holding by claiming it upheld what it actually struck down.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "558 U.S. 310 (2010)",
+        "case_name": "Citizens United v. Federal Election Comm'n",
+        "full_reference": "Citizens United v. Federal Election Comm'n, 558 U.S. 310 (2010)",
+        "quoted_text": "distortion",
+        "characterization": "Corporations do not possess the same First Amendment rights as natural persons, and the government may restrict corporate expenditures in elections to prevent corruption and the appearance of corruption.",
+        "context": "Corporations do not possess the same First Amendment rights as natural persons, and the government may restrict corporate expenditures in elections to prevent corruption and the appearance of corruption. Citizens United v. Federal Election Comm'n, 558 U.S. 310 (2010). The Court held that the government's interest in preventing the \"distortion\" of political debate by large corporate spending justified expenditure restrictions.",
+        "position_start": 961,
+        "position_end": 1395
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Citizens United v. Federal Election Commission",
+        "court": "",
+        "date_filed": "2010-01-21",
+        "url": "https://www.courtlistener.com/opinion/1741/citizens-united-v-federal-election-commission/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "distortion",
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization is fundamentally incorrect and directly contradicts the Court's actual holding. Citizens United explicitly held that corporations DO possess First Amendment rights equal to natural persons and that the government may NOT restrict corporate expenditures in elections. The Court overruled Austin v. Michigan Chamber of Commerce, which had upheld restrictions based on an 'antidistortion' rationale. The Court rejected the antidistortion rationale entirely, stating that 'the First Amendment prohibits Congress from fining or jailing citizens, or associations of citizens, for simply engaging in political speech' and that 'political speech does not lose First Amendment protection simply because its source is a corporation.' The Court held that independent expenditures do not give rise to corruption or the appearance of corruption, and struck down the restrictions on corporate political speech.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct and the opinion text matches Citizens United v. Federal Election Comm'n, 558 U.S. 310 (2010). The case parties, subject matter, and content all align.\n\nSTEP 2 - QUOTE VERIFICATION: The single word 'distortion' appears multiple times in the opinion, particularly in discussions of Austin's 'antidistortion rationale' which the Court rejected. The quote is exact.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'Corporations do not possess the same First Amendment rights as natural persons, and the government may restrict corporate expenditures in elections to prevent corruption.' This is the OPPOSITE of what Citizens United held. The Court explicitly stated: 'political speech does not lose First Amendment protection simply because its source is a corporation' and 'The Court has thus rejected the argument that political speech of corporations or other associations should be treated differently under the First Amendment simply because such associations are not natural persons.' The Court overruled Austin and held that the government may NOT restrict corporate independent expenditures. The Court found that independent expenditures 'do not give rise to corruption or the appearance of corruption.'\n\nSTEP 4 - CONFIDENCE ASSESSMENT: I have very high confidence (0.95) in this assessment as the holding is clear and unambiguous throughout the opinion.\n\nSTEP 5 - OVERALL STATUS: This is an error because the characterization completely misrepresents the Court's holding, stating the exact opposite of what the Court actually decided.",
+        "quote_status": "verified",
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "392 U.S. 1 (1968)",
+        "case_name": "Terry v. Ohio",
+        "full_reference": "Terry v. Ohio, 392 U.S. 1 (1968)",
+        "quoted_text": null,
+        "characterization": "Before a custodial interrogation, officers must inform the suspect of their right to remain silent and their right to an attorney. This procedural safeguard is required to protect the Fifth Amendment privilege against self-incrimination.",
+        "context": "Before a custodial interrogation, officers must inform the suspect of their right to remain silent and their right to an attorney. Terry v. Ohio, 392 U.S. 1 (1968). This procedural safeguard is required to protect the Fifth Amendment privilege against self-incrimination.",
+        "position_start": 1442,
+        "position_end": 1714
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Terry v. Ohio",
+        "court": "",
+        "date_filed": "1968-06-10",
+        "url": "https://www.courtlistener.com/opinion/107729/terry-v-ohio/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization is fundamentally incorrect. Terry v. Ohio is about stop-and-frisk procedures and the Fourth Amendment's protection against unreasonable searches and seizures, not about Miranda warnings or custodial interrogation. The case establishes when police officers may conduct limited searches for weapons based on reasonable suspicion, not the requirement to inform suspects of their rights before interrogation. The characterization appears to confuse Terry v. Ohio with Miranda v. Arizona, which does establish the requirement for officers to inform suspects of their right to remain silent and right to an attorney before custodial interrogation.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Terry v. Ohio, 392 U.S. 1 (1968)). The source opinion text confirms this is indeed Terry v. Ohio - the parties match (Terry as petitioner), and the subject matter is about a stop-and-frisk incident in Cleveland involving Officer McFadden.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that Terry v. Ohio requires officers to inform suspects of their right to remain silent and right to an attorney before custodial interrogation, as a Fifth Amendment protection. This is completely incorrect. After thoroughly reviewing the entire opinion, Terry v. Ohio is about:\n- Fourth Amendment protections against unreasonable searches and seizures\n- The authority of police to conduct limited searches for weapons (stop-and-frisk)\n- The reasonableness standard for such searches based on officer safety\n- The case involves no discussion of custodial interrogation, Miranda warnings, the right to remain silent, the right to an attorney, or Fifth Amendment protections\n\nThe characterization appears to describe Miranda v. Arizona (1966), not Terry v. Ohio. This is a fundamental error in legal citation.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is 1.0 because I have the full opinion text and can definitively state that the characterization is completely unsupported by Terry v. Ohio.\n\nSTEP 5 - OVERALL STATUS: This is an 'error' because the characterization is entirely unsupported by the cited case and appears to reference an entirely different landmark case.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "384 U.S. 436 (1966)",
+        "case_name": "Miranda v. Arizona",
+        "full_reference": "Miranda v. Arizona, 384 U.S. 436 (1966)",
+        "quoted_text": null,
+        "characterization": "An officer may conduct a brief investigatory stop when the officer has reasonable suspicion that criminal activity may be afoot, and may frisk the suspect for weapons if the officer reasonably believes the person is armed and dangerous.",
+        "context": "An officer may conduct a brief investigatory stop when the officer has reasonable suspicion that criminal activity may be afoot, and may frisk the suspect for weapons if the officer reasonably believes the person is armed and dangerous. Miranda v. Arizona, 384 U.S. 436 (1966).",
+        "position_start": 1716,
+        "position_end": 1994
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Miranda v. Arizona",
+        "court": "",
+        "date_filed": "1966-06-13",
+        "url": "https://www.courtlistener.com/opinion/107252/miranda-v-arizona/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization describes the Terry stop and frisk doctrine, which comes from Terry v. Ohio (1968), not Miranda v. Arizona (1966). Miranda established the requirement for police to inform suspects of their rights during custodial interrogation (the 'Miranda warnings'). The opinion text confirms this, stating that Miranda held 'an individual held for interrogation must be clearly informed that he has the right to consult with a lawyer' and focused on Fifth Amendment protections during custodial interrogation. The characterization about investigatory stops and reasonable suspicion is completely unrelated to Miranda's actual holding.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE: The citation format is correct - Miranda v. Arizona, 384 U.S. 436 (1966) is a valid Supreme Court case. The source opinion text matches this case, discussing custodial interrogation, Fifth Amendment rights, and the Miranda warnings.\n\nSTEP 2 - QUOTE VERIFICATION: No quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that Miranda allows officers to conduct brief investigatory stops based on reasonable suspicion and frisk for weapons. However, reading the entire Miranda opinion reveals this is completely incorrect. Miranda is about:\n- Rights during custodial interrogation\n- Fifth Amendment privilege against self-incrimination\n- Requirement to warn suspects of their rights (Miranda warnings)\n- Right to counsel during interrogation\n\nThe characterization describes Terry stop doctrine, which comes from Terry v. Ohio (1968), not Miranda. The key holdings from Miranda include: 'an individual held for interrogation must be clearly informed that he has the right to consult with a lawyer' and requirements for warnings about the right to remain silent.\n\nSTEP 4 - CONFIDENCE: I have very high confidence (0.95) in this assessment as the opinion text clearly shows Miranda is about custodial interrogation rights, not investigatory stops.\n\nSTEP 5 - OVERALL STATUS: This is an error because the characterization attributes a completely different legal doctrine to the wrong case.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "17 U.S. 316 (1819)",
+        "case_name": "McCulloch v. Maryland",
+        "full_reference": "McCulloch v. Maryland, 17 U.S. 316 (1819)",
+        "quoted_text": "It is emphatically the province and duty of the judicial department to say what the law is.",
+        "characterization": "As the Court famously declared",
+        "context": "As the Court famously declared, \"It is emphatically the province and duty of the judicial department to say what the law is.\" McCulloch v. Maryland, 17 U.S. 316 (1819).",
+        "position_start": 2041,
+        "position_end": 2210
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "M'culloch v. State of Maryland",
+        "court": "",
+        "date_filed": "1819-03-18",
+        "url": "https://www.courtlistener.com/opinion/85272/mculloch-v-state-of-maryland/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "inaccurate",
+        "quote_diff": "The quoted text 'It is emphatically the province and duty of the judicial department to say what the law is' does not appear anywhere in the McCulloch v. Maryland opinion. This exact phrase is actually from Marbury v. Madison, 5 U.S. 137 (1803), not from McCulloch v. Maryland. The document incorrectly attributes this famous quote to the wrong case.",
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization 'As the Court famously declared' is unsupported because the quoted text does not appear in McCulloch v. Maryland. While the Court did make famous declarations in McCulloch (such as about implied powers and 'we must never forget, that it is a constitution we are expounding'), the specific quote provided is from a different landmark case entirely.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (McCulloch v. Maryland, 17 U.S. 316 (1819)). The source opinion provided is indeed McCulloch v. Maryland based on the parties, subject matter (constitutionality of the Bank of the United States and Maryland's attempt to tax it), and Chief Justice Marshall's authorship.\n\nSTEP 2 - QUOTE VERIFICATION: I searched the entire 61,002-character opinion text for the quoted passage 'It is emphatically the province and duty of the judicial department to say what the law is.' This quote does not appear anywhere in the opinion. The programmatic search confirmed 0% similarity. This is a famous quote from Marbury v. Madison (1803), another landmark Marshall opinion, but it is not from McCulloch v. Maryland.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states the Court 'famously declared' this quote. Since the quote is not from this case at all, the characterization is unsupported. McCulloch v. Maryland is famous for other declarations about implied powers, the Necessary and Proper Clause, and federal supremacy, but not for this particular quote about judicial review.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: I have very high confidence (0.95) in this assessment because: (1) I have the complete opinion text, (2) the quote is definitively not present, and (3) I recognize this as a famous quote from a different case entirely.\n\nSTEP 5 - OVERALL STATUS: This is an error because the quote is materially inaccurate - it's attributed to the wrong case entirely.",
+        "quote_status": "error",
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "17 U.S. 316 (1819)",
+        "case_name": "McCulloch v. Maryland",
+        "full_reference": "McCulloch v. Maryland, 17 U.S. (4 Wheat.) 316 (1819)",
+        "quoted_text": "the power to tax involves the power to destroy",
+        "characterization": "The Necessary and Proper Clause grants Congress broad authority to select the means of executing its enumerated powers.",
+        "context": "The Necessary and Proper Clause grants Congress broad authority to select the means of executing its enumerated powers. McCulloch v. Maryland, 17 U.S. (4 Wheat.) 316 (1819). The Court held that \"the power to tax involves the power to destroy\" and that states may not tax the operations of the federal government.",
+        "position_start": 2212,
+        "position_end": 2525
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "M'culloch v. State of Maryland",
+        "court": "",
+        "date_filed": "1819-03-18",
+        "url": "https://www.courtlistener.com/opinion/85272/mculloch-v-state-of-maryland/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "warning",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "inaccurate",
+        "quote_diff": "Missing initial article 'That' and lacks context",
+        "actual_quote": "That the power to tax involves the power to destroy",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures a central holding of McCulloch v. Maryland. The Court extensively discusses how the Necessary and Proper Clause grants Congress broad discretion in selecting means to execute its enumerated powers, stating that Congress may employ 'all means which are appropriate, which are plainly adapted to that end, which are not prohibited, but consist with the letter and spirit of the constitution.'",
+        "confidence": 0.95,
+        "reasoning": "[Review override] Upon careful review of the opinion text, I found the quote at page *431: 'That the power to tax involves the power to destroy'. The initial analyst marked this as 'exact' but failed to note that the quoted text omits the initial word 'That' which is present in the actual opinion. While this may seem minor, the standard for 'exact' requires verbatim accuracy. The characterization is well-supported by extensive passages in the opinion, particularly at pages *411-*421 where Marshall discusses the Necessary and Proper Clause and explicitly states at *421: 'Let the end be legitimate, let it be within the scope of the constitution, and all means which are appropriate, which are plainly adapted to that end, which are not prohibited, but consist with the letter and spirit of the constitution, are constitutional.'",
+        "quote_status": "error",
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "347 U.S. 483 (1954)",
+        "case_name": "Brown v. Board of Education",
+        "full_reference": "Brown v. Board of Education, 347 U.S. 483 (1955)",
+        "quoted_text": null,
+        "characterization": "Separate educational facilities are inherently unequal and violate the Equal Protection Clause of the Fourteenth Amendment.",
+        "context": "Separate educational facilities are inherently unequal and violate the Equal Protection Clause of the Fourteenth Amendment. Brown v. Board of Education, 347 U.S. 483 (1955).",
+        "position_start": 2556,
+        "position_end": 2729
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Brown v. Board of Education",
+        "court": "",
+        "date_filed": "1954-05-17",
+        "url": "https://www.courtlistener.com/opinion/105221/brown-v-board-of-education/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "warning",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's central holding. The opinion explicitly states: 'We conclude that in the field of public education the doctrine of \"separate but equal\" has no place. Separate educational facilities are inherently unequal.' The Court also clearly holds that this segregation violates the Equal Protection Clause of the Fourteenth Amendment, stating: 'Therefore, we hold that the plaintiffs and others similarly situated for whom the actions have been brought are, by reason of the segregation complained of, deprived of the equal protection of the laws guaranteed by the Fourteenth Amendment.'",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The case exists and is correctly identified as Brown v. Board of Education. The citation format has an error - the year is listed as 1955 in the document context, but the correct year is 1954 as shown in the source opinion. The source opinion clearly matches the cited case (parties, subject matter, and content all align). STEP 2 - QUOTE VERIFICATION: No quote was provided, so this step is not applicable. STEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'Separate educational facilities are inherently unequal and violate the Equal Protection Clause of the Fourteenth Amendment.' This is directly supported by the opinion text, which states verbatim: 'Separate educational facilities are inherently unequal' and concludes that segregation deprives plaintiffs 'of the equal protection of the laws guaranteed by the Fourteenth Amendment.' The characterization accurately captures the Court's central holding. STEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization is directly supported by explicit language in the opinion. STEP 5 - OVERALL STATUS: Despite the year error in the citation (1955 instead of 1954), the characterization is accurate and the case is correctly identified. This warrants a 'warning' status rather than 'error' because the substantive legal point is correct.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "372 U.S. 335 (1963)",
+        "case_name": "Gideon v. Wainwright",
+        "full_reference": "Gideon v. Wainwright, 372 U.S. 335 (1964)",
+        "quoted_text": null,
+        "characterization": "The Sixth Amendment's guarantee of the right to counsel is a fundamental right essential to a fair trial and is applicable to state criminal proceedings through the Fourteenth Amendment.",
+        "context": "The Sixth Amendment's guarantee of the right to counsel is a fundamental right essential to a fair trial and is applicable to state criminal proceedings through the Fourteenth Amendment. Gideon v. Wainwright, 372 U.S. 335 (1964).",
+        "position_start": 2731,
+        "position_end": 2960
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Gideon v. Wainwright",
+        "court": "",
+        "date_filed": "1963-03-18",
+        "url": "https://www.courtlistener.com/opinion/8954562/gideon-v-wainwright/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The opinion explicitly states that 'a provision of the Bill of Rights which is \"fundamental and essential to a fair trial\" is made obligatory upon the States by the Fourteenth Amendment' and concludes that 'the Sixth Amendment's guarantee of counsel is...one of these fundamental rights.' The Court overruled Betts v. Brady and held that the right to counsel is fundamental and therefore applicable to state proceedings through the Fourteenth Amendment.",
+        "confidence": 0.9500000000000001,
+        "reasoning": "[Consistency: warning \u2192 verified] Gideon v. Wainwright verified with confidence 1.0 at index 4. This citation has accurate characterization and should match the verified status.. Original: [Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format contains an error - it shows '372 U.S. 335 (1964)' but should be '372 U.S. 335 (1963)'. The source opinion is clearly Gideon v. Wainwright as evidenced by the parties, facts, and procedural history matching perfectly. STEP 2 - QUOTE VERIFICATION: No quote was provided to verify. STEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'The Sixth Amendment's guarantee of the right to counsel is a fundamental right essential to a fair trial and is applicable to state criminal proceedings through the Fourteenth Amendment.' This is precisely what the Court held. The opinion states: 'We accept Betts v. Brady's assumption...that a provision of the Bill of Rights which is \"fundamental and essential to a fair trial\" is made obligatory upon the States by the Fourteenth Amendment. We think the Court in Betts was wrong, however, in concluding that the Sixth Amendment's guarantee of counsel is not one of these fundamental rights.' The Court explicitly overruled Betts v. Brady and held that the right to counsel is fundamental and thus applicable to states. STEP 4 - CONFIDENCE ASSESSMENT: High confidence (0.9) because the characterization directly matches the Court's holding, though reduced slightly due to the year error in the citation. STEP 5 - OVERALL STATUS: Warning due to the incorrect year in the citation format.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "476 U.S. 79 (1986)",
+        "case_name": "Batson v. Kentucky",
+        "full_reference": "Batson v. Kentucky, 476 U.S. 79, 89 (1986)",
+        "quoted_text": null,
+        "characterization": "The Equal Protection Clause prohibits a prosecutor from using peremptory challenges to exclude jurors solely on the basis of race.",
+        "context": "The Equal Protection Clause prohibits a prosecutor from using peremptory challenges to exclude jurors solely on the basis of race. Batson v. Kentucky, 476 U.S. 79, 89 (1986). A defendant may establish a prima facie case of purposeful discrimination by showing that the facts and circumstances raise an inference that the prosecutor used peremptory challenges on account of race.",
+        "position_start": 2991,
+        "position_end": 3365
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Batson v. Kentucky",
+        "court": "",
+        "date_filed": "1986-04-30",
+        "url": "https://www.courtlistener.com/opinion/111662/batson-v-kentucky/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the core holding of Batson v. Kentucky. The Court explicitly states at page 89: 'the Equal Protection Clause forbids the prosecutor to challenge potential jurors solely on account of their race.' The characterization correctly identifies that this prohibition applies to prosecutors using peremptory challenges and that the basis is the Equal Protection Clause. The Court's holding establishes that racial discrimination in jury selection through peremptory challenges violates equal protection principles.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Batson v. Kentucky, 476 U.S. 79 (1986)). The source opinion text confirms this is indeed the Batson case - the parties match (petitioner Batson, a black man, versus Kentucky), and the subject matter is about racial discrimination in jury selection through peremptory challenges.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states 'The Equal Protection Clause prohibits a prosecutor from using peremptory challenges to exclude jurors solely on the basis of race.' Looking at the opinion, at page 89 the Court states: 'the Equal Protection Clause forbids the prosecutor to challenge potential jurors solely on account of their race or on the assumption that black jurors as a group will be unable impartially to consider the State's case against a black defendant.' This directly supports the characterization. The Court's entire analysis centers on establishing that prosecutors cannot use race as the basis for peremptory challenges under the Equal Protection Clause.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the characterization is directly supported by explicit language in the opinion.\n\nSTEP 5 - OVERALL STATUS: The citation is verified as the characterization accurately represents the Court's holding.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "466 U.S. 668 (1984)",
+        "case_name": "Strickland v. Washington",
+        "full_reference": "Strickland v. Washington, 466 U.S. 668, 687 (1984)",
+        "quoted_text": "judicial scrutiny of counsel's performance must be highly deferential.",
+        "characterization": "To prevail on a claim of ineffective assistance of counsel, a defendant must show (1) that counsel's performance was deficient and (2) that the deficient performance prejudiced the defense.",
+        "context": "To prevail on a claim of ineffective assistance of counsel, a defendant must show (1) that counsel's performance was deficient and (2) that the deficient performance prejudiced the defense. Strickland v. Washington, 466 U.S. 668, 687 (1984). The Court noted that \"judicial scrutiny of counsel's performance must be highly deferential.\"",
+        "position_start": 3367,
+        "position_end": 3703
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Strickland v. Washington",
+        "court": "",
+        "date_filed": "1984-06-25",
+        "url": "https://www.courtlistener.com/opinion/111170/strickland-v-washington/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "judicial scrutiny of counsel's performance must be highly deferential.",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately states the two-prong test established in Strickland. The opinion explicitly states at page 687: 'A convicted defendant's claim that counsel's assistance was so defective as to require reversal of a conviction or death sentence has two components. First, the defendant must show that counsel's performance was deficient... Second, the defendant must show that the deficient performance prejudiced the defense.' This is precisely what the characterization describes.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Strickland v. Washington, 466 U.S. 668 (1984)). The source opinion text clearly matches this case - it involves respondent Washington challenging his conviction based on ineffective assistance of counsel, with Justice O'Connor delivering the opinion.\n\nSTEP 2 - QUOTE VERIFICATION: The quoted text 'judicial scrutiny of counsel's performance must be highly deferential' appears verbatim in the opinion. A programmatic search confirmed this exact match. The quote is found in the section discussing the standard for evaluating attorney performance.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states the two-prong test for ineffective assistance of counsel claims. This is directly supported by the opinion text at page 687, which states: 'A convicted defendant's claim that counsel's assistance was so defective as to require reversal of a conviction or death sentence has two components. First, the defendant must show that counsel's performance was deficient... Second, the defendant must show that the deficient performance prejudiced the defense.' The characterization accurately captures this holding without any misleading omissions or distortions.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Both the quote and characterization are directly supported by the opinion text with no ambiguity.\n\nSTEP 5 - OVERALL STATUS: The citation is properly formatted, the quote is exact, and the characterization accurately describes the Court's holding.",
+        "quote_status": "verified",
+        "characterization_status": "verified"
+      }
+    }
+  ],
+  "created_at": "2026-04-11T22:48:53.450088+00:00"
+}

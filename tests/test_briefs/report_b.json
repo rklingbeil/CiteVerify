@@ -1,0 +1,337 @@
+{
+  "id": "02ae2960-98f7-402d-aa3a-35bfc86d1670",
+  "filename": "brief_b_fabricated_quotes.docx",
+  "document_text": "MEMORANDUM IN OPPOSITION TO MOTION TO DISMISS\n\nReynolds v. National Healthcare Corp.\n\nI. STANDARD FOR MOTION TO DISMISS\n\nTo survive a motion to dismiss under Rule 12(b)(6), a complaint must contain \"sufficient factual matter, accepted as true, to state a claim that is plausible beyond a reasonable doubt.\" Bell Atlantic Corp. v. Twombly, 550 U.S. 544, 570 (2007). The Court emphasized that this standard requires more than mere labels and conclusions.\n\nThe Supreme Court clarified this standard in Ashcroft v. Iqbal, 556 U.S. 662 (2009), holding that:\n\n\"A claim has facial plausibility when the plaintiff pleads factual content that allows the court to draw the automatic inference that the defendant is liable for the misconduct alleged. The plausibility standard requires substantially more than a sheer possibility.\"\n\nAshcroft v. Iqbal, 556 U.S. at 678.\n\nII. DEFENDANT OWED A DUTY OF CARE\n\nIt is well established that a defendant owes an absolute duty to prevent all foreseeable harm to any person within the zone of danger. Palsgraf v. Long Island Railroad Co., 248 N.Y. 339 (1928). Under Palsgraf, the question of negligence is always resolved in favor of the plaintiff when any risk of harm was foreseeable.\n\nSimilarly, the right to counsel attaches at all government interactions where a person's liberty is at stake. Miranda v. Arizona, 384 U.S. 436 (1966). The Court held that \"the prosecution may not use statements stemming from any governmental interaction unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.\" Id. at 444.\n\nIII. THE ECONOMIC LOSS DOCTRINE DOES NOT APPLY\n\nThe economic loss doctrine bars recovery in tort for purely economic losses arising from breach of contract. East River Steamship Corp. v. Transamerica Delaval, Inc., 476 U.S. 858 (1986). The Court stated that \"a manufacturer in a commercial relationship has no duty in tort to prevent purely financial disappointment of a purchaser's economic expectations.\" Id. at 871.\n\nHowever, when physical injury or property damage accompanies the economic loss, tort recovery is available. See Saratoga Fishing Co. v. J.M. Martinac & Co., 520 U.S. 875 (1997) (holding that commercial fishermen could recover in tort for damage to additional equipment installed after purchase, as these items were \"other property\" not subject to the economic loss doctrine).\n\nCONCLUSION\n\nFor the foregoing reasons, Defendant's Motion to Dismiss should be denied.",
+  "total_citations": 9,
+  "verified": 3,
+  "warnings": 0,
+  "errors": 6,
+  "unverifiable": 0,
+  "citations": [
+    {
+      "extraction": {
+        "citation_text": "550 U.S. 544 (2007)",
+        "case_name": "Bell Atlantic Corp. v. Twombly",
+        "full_reference": "Bell Atlantic Corp. v. Twombly, 550 U.S. 544, 570 (2007)",
+        "quoted_text": "sufficient factual matter, accepted as true, to state a claim that is plausible beyond a reasonable doubt",
+        "characterization": "this standard requires more than mere labels and conclusions",
+        "context": "To survive a motion to dismiss under Rule 12(b)(6), a complaint must contain \"sufficient factual matter, accepted as true, to state a claim that is plausible beyond a reasonable doubt.\" Bell Atlantic Corp. v. Twombly, 550 U.S. 544, 570 (2007). The Court emphasized that this standard requires more than mere labels and conclusions.",
+        "position_start": 185,
+        "position_end": 335
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Bell Atlantic Corp. v. Twombly",
+        "court": "",
+        "date_filed": "2007-05-21",
+        "url": "https://www.courtlistener.com/opinion/145730/bell-atlantic-corp-v-twombly/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "inaccurate",
+        "quote_diff": "The quoted text 'sufficient factual matter, accepted as true, to state a claim that is plausible beyond a reasonable doubt' does not appear anywhere in the opinion. The actual standard from Twombly is 'enough factual matter (taken as true) to suggest that an agreement was made' and requires 'enough facts to state a claim to relief that is plausible on its face.' The quoted text incorrectly adds 'beyond a reasonable doubt' which is a criminal law standard, not the civil pleading standard established in Twombly.",
+        "actual_quote": "In applying these general standards to a \u00a71 claim, we hold that stating such a claim requires a complaint with enough factual matter (taken as true) to suggest that an agreement was made.",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization that Twombly 'requires more than mere labels and conclusions' is accurate. The Court explicitly states: 'a plaintiff's obligation to provide the \"grounds\" of his \"entitle[ment] to relief\" requires more than labels and conclusions, and a formulaic recitation of the elements of a cause of action will not do.' This accurately captures the Court's holding that conclusory allegations are insufficient.",
+        "confidence": 0.9500000000000001,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Bell Atlantic Corp. v. Twombly, 550 U.S. 544 (2007)). The source opinion confirms this is the correct case.\n\nSTEP 2 - QUOTE VERIFICATION: I searched the entire opinion for the quoted text 'sufficient factual matter, accepted as true, to state a claim that is plausible beyond a reasonable doubt.' This exact phrase does not appear anywhere in the opinion. The opinion does discuss 'factual matter' and 'plausible' claims, but never uses the phrase 'beyond a reasonable doubt.' The actual standard articulated is 'enough factual matter (taken as true) to suggest that an agreement was made' and 'enough facts to state a claim to relief that is plausible on its face.' The addition of 'beyond a reasonable doubt' is a significant error as it conflates the civil pleading standard with the criminal burden of proof.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization that the standard 'requires more than mere labels and conclusions' is directly supported by the opinion at page 8, where the Court states: 'a plaintiff's obligation to provide the \"grounds\" of his \"entitle[ment] to relief\" requires more than labels and conclusions, and a formulaic recitation of the elements of a cause of action will not do.'\n\nSTEP 4 - CONFIDENCE ASSESSMENT: I have high confidence (0.9) in finding the quote inaccurate because I thoroughly searched the opinion and the phrase 'beyond a reasonable doubt' never appears. The characterization is clearly accurate.\n\nSTEP 5 - OVERALL STATUS: This is an 'error' because the quote is materially inaccurate - it misstates the legal standard by adding 'beyond a reasonable doubt,' which fundamentally changes the meaning of the pleading standard.",
+        "quote_status": "error",
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "556 U.S. 662 (2009)",
+        "case_name": "Ashcroft v. Iqbal",
+        "full_reference": "Ashcroft v. Iqbal, 556 U.S. 662 (2009)",
+        "quoted_text": "A claim has facial plausibility when the plaintiff pleads factual content that allows the court to draw the automatic inference that the defendant is liable for the misconduct alleged. The plausibility standard requires substantially more than a sheer possibility.",
+        "characterization": null,
+        "context": "The Supreme Court clarified this standard in Ashcroft v. Iqbal, 556 U.S. 662 (2009), holding that:\n\n\"A claim has facial plausibility when the plaintiff pleads factual content that allows the court to draw the automatic inference that the defendant is liable for the misconduct alleged. The plausibility standard requires substantially more than a sheer possibility.\"",
+        "position_start": 456,
+        "position_end": 495
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Ashcroft v. Iqbal",
+        "court": "",
+        "date_filed": "2009-05-18",
+        "url": "https://www.courtlistener.com/opinion/145875/ashcroft-v-iqbal/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "inaccurate",
+        "quote_diff": "The quoted text contains a critical error. The actual opinion states 'reasonable inference' but the quoted text says 'automatic inference'. This is a material difference that changes the meaning of the legal standard. The second sentence about 'substantially more than a sheer possibility' does not appear in the opinion at all.",
+        "actual_quote": "A claim has facial plausibility when the plaintiff pleads factual content that allows the court to draw the reasonable inference that the defendant is liable for the misconduct alleged.",
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE: The citation format is correct and the opinion is indeed Ashcroft v. Iqbal, 556 U.S. 662 (2009), as confirmed by the header.\n\nSTEP 2 - QUOTE VERIFICATION: I searched for the quoted passage throughout the opinion. The first sentence appears on page 14 of the Court's opinion, but with a critical difference: the actual text says 'reasonable inference' while the quote says 'automatic inference'. This is a material misquotation that changes the legal standard - 'automatic' suggests a much lower bar than 'reasonable'. The second sentence ('The plausibility standard requires substantially more than a sheer possibility') does not appear anywhere in the opinion. The opinion does discuss that plausibility 'asks for more than a sheer possibility' (page 14), but not in the formulation presented in the quote.\n\nSTEP 3 - CHARACTERIZATION: No characterization was provided to verify.\n\nSTEP 4 - CONFIDENCE: My confidence is very high (0.95) because I found the source of the first sentence and can clearly identify the misquotation, and I thoroughly searched for the second sentence without finding it.\n\nSTEP 5 - OVERALL STATUS: This is an 'error' because the quote materially misrepresents the Supreme Court's holding by changing 'reasonable' to 'automatic', which significantly alters the legal standard.",
+        "quote_status": "error",
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "556 U.S. 662 (2009)",
+        "case_name": "Ashcroft v. Iqbal",
+        "full_reference": "Ashcroft v. Iqbal, 556 U.S. at 678",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "Ashcroft v. Iqbal, 556 U.S. at 678.",
+        "position_start": 765,
+        "position_end": 800
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Ashcroft v. Iqbal",
+        "court": "",
+        "date_filed": "2009-05-18",
+        "url": "https://www.courtlistener.com/opinion/145875/ashcroft-v-iqbal/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Citation confirmed \u2014 no quote or characterization to verify",
+        "confidence": 1.0,
+        "reasoning": null,
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "248 N.Y. 339 (1928)",
+        "case_name": "Palsgraf v. Long Island Railroad Co.",
+        "full_reference": "Palsgraf v. Long Island Railroad Co., 248 N.Y. 339 (1928)",
+        "quoted_text": null,
+        "characterization": "a defendant owes an absolute duty to prevent all foreseeable harm to any person within the zone of danger",
+        "context": "It is well established that a defendant owes an absolute duty to prevent all foreseeable harm to any person within the zone of danger. Palsgraf v. Long Island Railroad Co., 248 N.Y. 339 (1928).",
+        "position_start": 859,
+        "position_end": 917
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Palsgraf v. Long Island R.R. Co.",
+        "court": "",
+        "date_filed": "1928-05-29",
+        "url": "https://www.courtlistener.com/opinion/3602780/palsgraf-v-long-island-rr-co/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization is fundamentally incorrect. Palsgraf actually holds the opposite - that there is NO duty to prevent harm to persons outside the zone of foreseeable danger. The opinion explicitly states that negligence requires a duty to the specific plaintiff, and that duty is limited by the scope of reasonably foreseeable risk. The characterization claims an 'absolute duty' to prevent 'all foreseeable harm' to 'any person within the zone of danger,' but Palsgraf's central holding is that Mrs. Palsgraf was outside the zone of danger and therefore no duty was owed to her.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE: The citation format is correct (248 N.Y. 339 (1928)) and the source text is clearly the Palsgraf opinion by Judge Cardozo.\n\nSTEP 2 - QUOTE VERIFICATION: No quote provided, so this step is skipped.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states 'a defendant owes an absolute duty to prevent all foreseeable harm to any person within the zone of danger.' This is fundamentally wrong. The Palsgraf opinion establishes that: (1) 'The conduct of the defendant's guard, if a wrong in its relation to the holder of the package, was not a wrong in its relation to the plaintiff, standing far away. Relatively to her it was not negligence at all.' (2) 'Negligence is not actionable unless it involves the invasion of a legally protected interest, the violation of a right.' (3) 'The risk reasonably to be perceived defines the duty to be obeyed.' (4) The court reversed the lower courts and dismissed the complaint, finding NO duty was owed to Mrs. Palsgraf because she was outside the zone of foreseeable danger. The characterization suggests an expansive duty to all persons in the zone of danger, but Palsgraf actually limits duty to those within the scope of foreseeable risk.\n\nSTEP 4 - CONFIDENCE: 1.0 - The opinion text is complete and clear, and the holding is unambiguous.\n\nSTEP 5 - OVERALL STATUS: Error - The characterization materially misrepresents the holding of Palsgraf.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "384 U.S. 436 (1966)",
+        "case_name": "Miranda v. Arizona",
+        "full_reference": "Miranda v. Arizona, 384 U.S. 436 (1966)",
+        "quoted_text": null,
+        "characterization": "the right to counsel attaches at all government interactions where a person's liberty is at stake",
+        "context": "Similarly, the right to counsel attaches at all government interactions where a person's liberty is at stake. Miranda v. Arizona, 384 U.S. 436 (1966).",
+        "position_start": 1161,
+        "position_end": 1200
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Miranda v. Arizona",
+        "court": "",
+        "date_filed": "1966-06-13",
+        "url": "https://www.courtlistener.com/opinion/107252/miranda-v-arizona/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization that 'the right to counsel attaches at all government interactions where a person's liberty is at stake' is a significant overstatement of Miranda's holding. Miranda specifically addresses the right to counsel during custodial interrogation - when someone is 'taken into custody or otherwise deprived of his freedom by the authorities in any significant way and is subjected to questioning.' The Court explicitly states that 'General on-the-scene questioning as to facts surrounding a crime or other general questioning of citizens in the fact-finding process is not affected by our holding.' Miranda does not establish that the right to counsel attaches at ALL government interactions where liberty is at stake - it establishes this right specifically for custodial interrogation situations.",
+        "confidence": 0.9500000000000001,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (384 U.S. 436 (1966)) and the source opinion is indeed Miranda v. Arizona from 1966, as evidenced by the case caption and content about custodial interrogation rights.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization claims that Miranda established 'the right to counsel attaches at all government interactions where a person's liberty is at stake.' This is an overly broad reading of Miranda. The Court's actual holding is much more specific: 'when an individual is taken into custody or otherwise deprived of his freedom by the authorities in any significant way and is subjected to questioning, the privilege against self-incrimination is jeopardized' and therefore certain procedural safeguards including the right to counsel must be provided. The Court explicitly notes that 'General on-the-scene questioning as to facts surrounding a crime or other general questioning of citizens in the fact-finding process is not affected by our holding.' Miranda is specifically about custodial interrogation, not ALL government interactions where liberty is at stake.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: I have high confidence (0.9) in this assessment because the opinion text clearly delineates the scope of its holding to custodial interrogation situations, not all government interactions.\n\nSTEP 5 - OVERALL STATUS: This is an error because the characterization materially misrepresents the scope of Miranda's holding by claiming it applies to 'all government interactions where a person's liberty is at stake' when Miranda specifically applies to custodial interrogation.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "384 U.S. 436 (1966)",
+        "case_name": "Miranda v. Arizona",
+        "full_reference": "Id. at 444",
+        "quoted_text": "the prosecution may not use statements stemming from any governmental interaction unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination",
+        "characterization": null,
+        "context": "The Court held that \"the prosecution may not use statements stemming from any governmental interaction unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.\" Id. at 444.",
+        "position_start": 1423,
+        "position_end": 1433
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Miranda v. Arizona",
+        "court": "",
+        "date_filed": "1966-06-13",
+        "url": "https://www.courtlistener.com/opinion/107252/miranda-v-arizona/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "inaccurate",
+        "quote_diff": "The quoted text 'the prosecution may not use statements stemming from any governmental interaction unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination' was not found in the opinion. The actual text at page 444 states: 'the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.' The key difference is that the quote says 'any governmental interaction' while the actual opinion specifically says 'custodial interrogation.'",
+        "actual_quote": "the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.",
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 0.9500000000000001,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Miranda v. Arizona, 384 U.S. 436 (1966)). The source opinion is indeed the Miranda case based on the parties, subject matter (custodial interrogation, Fifth Amendment rights), and the Chief Justice Warren authorship.\n\nSTEP 2 - QUOTE VERIFICATION: I searched for the quoted passage and found that it does not appear verbatim in the opinion. The programmatic search confirmed this with only 11% similarity. However, I found very similar language at page 444 of the opinion. The actual text reads: 'the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.' The critical difference is that the quote says 'any governmental interaction' while the actual opinion says 'custodial interrogation.' This is a material difference because 'any governmental interaction' is much broader than 'custodial interrogation' - it would include all police encounters, not just custodial interrogation situations. This misquote significantly expands the scope of Miranda's holding.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: No characterization was provided to verify.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: I have high confidence (0.9) in this assessment because I found the actual passage that was being quoted and can clearly identify the material difference.\n\nSTEP 5 - OVERALL STATUS: This is an error because the quote materially misrepresents the scope of the Miranda holding by substituting 'any governmental interaction' for 'custodial interrogation.'",
+        "quote_status": "error",
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "476 U.S. 858 (1986)",
+        "case_name": "East River Steamship Corp. v. Transamerica Delaval, Inc.",
+        "full_reference": "East River Steamship Corp. v. Transamerica Delaval, Inc., 476 U.S. 858 (1986)",
+        "quoted_text": null,
+        "characterization": "The economic loss doctrine bars recovery in tort for purely economic losses arising from breach of contract",
+        "context": "The economic loss doctrine bars recovery in tort for purely economic losses arising from breach of contract. East River Steamship Corp. v. Transamerica Delaval, Inc., 476 U.S. 858 (1986).",
+        "position_start": 1544,
+        "position_end": 1622
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "East River Steamship Corp. v. Transamerica Delaval Inc.",
+        "court": "",
+        "date_filed": "1986-06-16",
+        "url": "https://www.courtlistener.com/opinion/111693/east-river-steamship-corp-v-transamerica-delaval-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The Court explicitly states that 'we adopt an approach similar to Seely and hold that a manufacturer in a commercial relationship has no duty under either a negligence or strict products-liability theory to prevent a product from injuring itself.' The Court explains that 'when a product injures itself the reasons for imposing a tort duty are weak and those for leaving the party to its contractual remedies are strong.' The Court concludes that 'no products-liability claim lies in admiralty when the only injury claimed is economic loss,' which directly supports the characterization that the economic loss doctrine bars tort recovery for purely economic losses arising from breach of contract.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (476 U.S. 858 (1986)). The source opinion matches the cited case - it is indeed East River Steamship Corp. v. Transamerica Delaval, Inc., with the correct parties and subject matter (admiralty case about defective turbines on supertankers).\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided in the citation, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'The economic loss doctrine bars recovery in tort for purely economic losses arising from breach of contract.' This accurately reflects the Court's holding. Key passages supporting this include: (1) 'we adopt an approach similar to Seely and hold that a manufacturer in a commercial relationship has no duty under either a negligence or strict products-liability theory to prevent a product from injuring itself' (page 871); (2) 'when a product injures itself the reasons for imposing a tort duty are weak and those for leaving the party to its contractual remedies are strong' (page 871); (3) 'no products-liability claim lies in admiralty when the only injury claimed is economic loss' (page 876). The Court explicitly adopts the economic loss doctrine and bars tort recovery when only the product itself is damaged, leaving parties to their contractual remedies.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly aligns with the Court's explicit holding and reasoning throughout the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified - the characterization accurately represents the Court's adoption of the economic loss doctrine.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "476 U.S. 858 (1986)",
+        "case_name": "East River Steamship Corp. v. Transamerica Delaval, Inc.",
+        "full_reference": "Id. at 871",
+        "quoted_text": "a manufacturer in a commercial relationship has no duty in tort to prevent purely financial disappointment of a purchaser's economic expectations",
+        "characterization": null,
+        "context": "The Court stated that \"a manufacturer in a commercial relationship has no duty in tort to prevent purely financial disappointment of a purchaser's economic expectations.\" Id. at 871.",
+        "position_start": 1795,
+        "position_end": 1805
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "East River Steamship Corp. v. Transamerica Delaval Inc.",
+        "court": "",
+        "date_filed": "1986-06-16",
+        "url": "https://www.courtlistener.com/opinion/111693/east-river-steamship-corp-v-transamerica-delaval-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "inaccurate",
+        "quote_diff": "The quoted text 'a manufacturer in a commercial relationship has no duty in tort to prevent purely financial disappointment of a purchaser's economic expectations' was not found in the opinion. The closest passage is on page 871: 'we adopt an approach similar to Seely and hold that a manufacturer in a commercial relationship has no duty under either a negligence or strict products-liability theory to prevent a product from injuring itself.' The quoted language appears to be a paraphrase or mischaracterization that changes key elements: (1) 'no duty in tort' vs. 'no duty under either a negligence or strict products-liability theory', (2) 'purely financial disappointment of a purchaser's economic expectations' vs. 'to prevent a product from injuring itself', and (3) the actual holding is specifically about products injuring themselves, not broadly about financial disappointments.",
+        "actual_quote": "Exercising traditional discretion in admiralty, see Pope & Talbot, Inc. v. Hawn, 346 U. S. 406, 409 (1953), we adopt an approach similar to Seely and hold that a manufacturer in a commercial relationship has no duty under either a negligence or strict products-liability theory to prevent a product from injuring itself.",
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 0.9500000000000001,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE: The citation format is correct and the case exists. The opinion text matches East River Steamship Corp. v. Transamerica Delaval, Inc., 476 U.S. 858 (1986).\n\nSTEP 2 - QUOTE VERIFICATION: I searched the entire opinion for the quoted text. The programmatic search found no match (54% similarity at best). Manual review confirms the exact quote does not appear. The closest passage is on page 871 where the Court states its holding about manufacturers having no duty in negligence or strict products-liability to prevent a product from injuring itself. The quoted text appears to be either a paraphrase that materially changes the Court's actual language or possibly from a different source.\n\nSTEP 3 - CHARACTERIZATION: No characterization was provided to verify.\n\nSTEP 4 - CONFIDENCE: My confidence is high (0.9) because I thoroughly searched the opinion and can definitively state the quote does not appear as written.\n\nSTEP 5 - OVERALL STATUS: This is an error because the quote is materially inaccurate. The quoted language misrepresents the Court's actual holding by using different terminology and potentially broadening the scope beyond what the Court actually held.",
+        "quote_status": "error",
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "520 U.S. 875 (1997)",
+        "case_name": "Saratoga Fishing Co. v. J.M. Martinac & Co.",
+        "full_reference": "Saratoga Fishing Co. v. J.M. Martinac & Co., 520 U.S. 875 (1997)",
+        "quoted_text": null,
+        "characterization": "holding that commercial fishermen could recover in tort for damage to additional equipment installed after purchase, as these items were \"other property\" not subject to the economic loss doctrine",
+        "context": "However, when physical injury or property damage accompanies the economic loss, tort recovery is available. See Saratoga Fishing Co. v. J.M. Martinac & Co., 520 U.S. 875 (1997) (holding that commercial fishermen could recover in tort for damage to additional equipment installed after purchase, as these items were \"other property\" not subject to the economic loss doctrine).",
+        "position_start": 1918,
+        "position_end": 1983
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Saratoga Fishing Co. v. J. M. Martinac & Co.",
+        "court": "",
+        "date_filed": "1997-06-02",
+        "url": "https://www.courtlistener.com/opinion/118122/saratoga-fishing-co-v-j-m-martinac-co/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The Supreme Court held that equipment added by an initial user after purchase from the manufacturer constitutes 'other property' rather than part of the 'product itself' for purposes of the economic loss doctrine. This means that commercial fishermen (or subsequent purchasers) can recover in tort for damage to such added equipment when it is damaged by a defect in the original product. The Court specifically addressed a skiff, fishing net, and spare parts added by the initial purchaser Madruga, ruling these were 'other property' for which tort recovery was available.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (520 U.S. 875 (1997)). The source opinion matches the cited case - it is indeed Saratoga Fishing Co. v. J.M. Martinac & Co., decided by the Supreme Court in 1997.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided to verify.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states the Court held 'that commercial fishermen could recover in tort for damage to additional equipment installed after purchase, as these items were \"other property\" not subject to the economic loss doctrine.' This is accurate. The Court explicitly states: 'This case asks how this corner of tort law treats the physical destruction of extra equipment (a skiff, a fishing net, spare parts) added by the initial user after the first sale... Is that added equipment part of the \"product itself,\" in which case the plaintiff cannot recover in tort for its physical loss? Or is it \"other property,\" in which case the plaintiff can recover? We conclude that it is \"other property.\" Hence (assuming other tort law requirements are satisfied) admiralty's tort rules permit recovery.' The Court ruled that equipment added by Madruga (the initial purchaser) - including a skiff, seine net, and spare parts - constituted 'other property' for which Saratoga Fishing Co. (a commercial fishing company and subsequent purchaser) could recover tort damages.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95). The characterization directly aligns with the Court's explicit holding.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately represents the Court's holding without any material misrepresentation.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    }
+  ],
+  "created_at": "2026-04-11T19:11:25.481876+00:00"
+}

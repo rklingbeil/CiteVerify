@@ -6,11 +6,12 @@ Lookup strategy (in order):
 3. GovInfo API — secondary confirmation for federal cases
 """
 
+import html as html_module
 import logging
 import re
 import threading
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Optional
 
 import requests
@@ -27,6 +28,128 @@ logger = logging.getLogger(__name__)
 
 CL_V4 = "https://www.courtlistener.com/api/rest/v4"
 
+# Opinion types that represent the majority/controlling opinion
+_MAJORITY_OPINION_TYPES = {"010combined", "015unanamous", "020lead", "025plurality"}
+
+
+# ─── Legal Name Abbreviation Normalization ────────────────────────────────
+# Bluebook Table T6 abbreviations + common variants.  Keys are the stripped
+# form (periods and apostrophes removed, lowercased).  Both sides of a name
+# comparison are normalized so "Int'l" and "International" both become
+# "international".
+
+_LEGAL_ABBREVS: dict[str, str] = {
+    # Entity types
+    "corp": "corporation",
+    "co": "company",
+    "inc": "incorporated",
+    "ltd": "limited",
+    "llc": "llc",
+    "llp": "llp",
+    "lp": "lp",
+    "plc": "plc",
+    # Apostrophe abbreviations (stripped form)
+    "intl": "international",
+    "natl": "national",
+    "dept": "department",
+    "assn": "association",
+    "govt": "government",
+    "commn": "commission",
+    "commr": "commissioner",
+    "secy": "secretary",
+    "socy": "society",
+    "envtl": "environmental",
+    # Standard abbreviations
+    "bros": "brothers",
+    "rr": "railroad",
+    "ry": "railway",
+    "mfg": "manufacturing",
+    "univ": "university",
+    "sys": "systems",
+    "servs": "services",
+    "serv": "service",
+    "techs": "technologies",
+    "tech": "technology",
+    "indus": "industries",
+    "hosp": "hospital",
+    "hosps": "hospitals",
+    "elec": "electric",
+    "ins": "insurance",
+    "ctr": "center",
+    "cnty": "county",
+    "twp": "township",
+    "sch": "school",
+    "schs": "schools",
+    "bd": "board",
+    "admin": "administration",
+    "transp": "transportation",
+    "tel": "telephone",
+    "telecomm": "telecommunications",
+    "telecomms": "telecommunications",
+    "pharm": "pharmaceutical",
+    "pharms": "pharmaceuticals",
+    "med": "medical",
+    "sav": "savings",
+    "fin": "financial",
+    "auth": "authority",
+    "reg": "regional",
+    "regl": "regional",
+    "mgmt": "management",
+    "mut": "mutual",
+    "auto": "automobile",
+    "props": "properties",
+    "prop": "property",
+    "dev": "development",
+    "constr": "construction",
+    "eng": "engineering",
+    "engrs": "engineers",
+    "fed": "federal",
+    "gen": "general",
+    "dist": "district",
+    "div": "division",
+    "prods": "products",
+    "prod": "product",
+    "lab": "laboratory",
+    "labs": "laboratories",
+    "grp": "group",
+    "assocs": "associates",
+    "assoc": "associates",
+    "amer": "american",
+    "pac": "pacific",
+    "atl": "atlantic",
+    "nw": "northwest",
+    "ne": "northeast",
+    "sw": "southwest",
+    "se": "southeast",
+    "fsb": "federal savings bank",
+    "na": "national association",
+}
+
+
+def normalize_legal_name(name: str) -> str:
+    """Normalize a legal entity/case name by expanding standard abbreviations.
+
+    Strips periods and apostrophes, lowercases, then expands Bluebook
+    abbreviations to their full forms.  This allows "Int'l" and
+    "International" to compare as equal.
+    """
+    if not name:
+        return ""
+    # Remove periods and apostrophes, lowercase
+    normalized = name.lower().replace(".", "").replace("'", "").replace("\u2019", "")
+    # Split into words and expand abbreviations
+    words = normalized.split()
+    expanded = []
+    for word in words:
+        clean = word.strip(",;:()")
+        replacement = _LEGAL_ABBREVS.get(clean)
+        if replacement:
+            # Replace the clean form within the word (preserving any surrounding punctuation)
+            expanded.append(word.replace(clean, replacement))
+        else:
+            expanded.append(word)
+    return " ".join(expanded)
+
 
 @dataclass
 class LookupResult:
@@ -40,6 +163,7 @@ class LookupResult:
     opinion_text: str | None = None
     url: str = ""
     source: str = ""  # "courtlistener" or "govinfo"
+    actual_citations: list[str] = field(default_factory=list)  # Known citations for this case
 
 
 # ─── Rate Limiting ────────────────────────────────────────────────────────
@@ -71,9 +195,9 @@ def _throttle_gi() -> None:
 # ─── Citation Parsing ─────────────────────────────────────────────────────
 
 _CITE_PATTERN = re.compile(
-    r"^(\d+)\s+"                    # volume
-    r"([A-Za-z][A-Za-z0-9. ]+?)\s+"  # reporter (e.g. "U.S.", "F.3d", "S. Ct.", "L. Ed. 2d")
-    r"(\d+)"                        # page
+    r"^(\d+)\s+"                        # volume
+    r"([A-Za-z][A-Za-z0-9. ]*[A-Za-z.])"  # reporter — greedy, ends at last letter/period before whitespace+digit
+    r"\s+(\d+)"                         # page
 )
 
 
@@ -244,25 +368,27 @@ def _parse_citation_lookup_response(data: list) -> LookupResult | None:
             source="courtlistener",
         )
 
-        # Fetch opinion text via sub_opinions from the cluster
+        # Extract known citations from cluster data
+        cluster_cites = cluster.get("citations", [])
+        if cluster_cites:
+            result.actual_citations = _format_cluster_citations(cluster_cites)
+
+        # Fetch opinion text via sub_opinions, preferring majority opinion
         sub_opinions = cluster.get("sub_opinions", [])
         if sub_opinions:
-            for opinion_url in sub_opinions:
-                if isinstance(opinion_url, str) and opinion_url.startswith("http"):
-                    oid = _extract_id_from_url(opinion_url)
-                    if oid:
-                        text = _fetch_opinion_text(oid)
-                        if text:
-                            result.opinion_text = text
-                            result.opinion_id = oid
-                            break
-
-        # Fallback: fetch via cluster endpoint
-        if not result.opinion_text and cluster_id:
-            text, oid = _fetch_opinion_via_cluster(cluster_id)
+            text, oid = _fetch_best_opinion_from_urls(sub_opinions)
             if text:
                 result.opinion_text = text
                 result.opinion_id = oid
+
+        # Fallback: fetch via cluster endpoint
+        if not result.opinion_text and cluster_id:
+            text, oid, cluster_cites = _fetch_opinion_via_cluster(cluster_id)
+            if text:
+                result.opinion_text = text
+                result.opinion_id = oid
+            if cluster_cites and not result.actual_citations:
+                result.actual_citations = cluster_cites
 
         logger.info(
             f"Citation lookup found: {result.case_name} (cluster {cluster_id}, "
@@ -362,25 +488,37 @@ def _cl_v4_search(q: str) -> LookupResult | None:
             source="courtlistener",
         )
 
-        # Get opinion text from the opinions embedded in search results
+        result.actual_citations = [c for c in citations if isinstance(c, str)]
+
+        # Get opinion text, preferring majority opinions
         opinions = first.get("opinions", [])
         if opinions:
-            # Try each opinion for text
+            fallback_text, fallback_oid = None, None
             for op in opinions:
                 opinion_id = op.get("id")
                 if opinion_id:
-                    text = _fetch_opinion_text(opinion_id)
+                    text, opinion_type = _fetch_opinion_data(opinion_id)
                     if text:
-                        result.opinion_text = text
-                        result.opinion_id = opinion_id
-                        break
+                        if opinion_type in _MAJORITY_OPINION_TYPES or not opinion_type:
+                            result.opinion_text = text
+                            result.opinion_id = opinion_id
+                            break
+                        elif fallback_text is None:
+                            fallback_text = text
+                            fallback_oid = opinion_id
+            else:
+                if fallback_text:
+                    result.opinion_text = fallback_text
+                    result.opinion_id = fallback_oid
 
         # Fallback: try via cluster sub_opinions
         if not result.opinion_text and cluster_id:
-            text, oid = _fetch_opinion_via_cluster(cluster_id)
+            text, oid, cluster_cites = _fetch_opinion_via_cluster(cluster_id)
             if text:
                 result.opinion_text = text
                 result.opinion_id = oid
+            if cluster_cites and not result.actual_citations:
+                result.actual_citations = cluster_cites
 
         return result
 
@@ -389,8 +527,12 @@ def _cl_v4_search(q: str) -> LookupResult | None:
         return None
 
 
-def _fetch_opinion_text(opinion_id: int) -> str | None:
-    """Fetch full opinion text from V4 opinions endpoint."""
+def _fetch_opinion_data(opinion_id: int) -> tuple[str | None, str]:
+    """Fetch opinion text and type from V4 opinions endpoint.
+
+    Returns (text, type_str) where type_str is the CourtListener opinion type
+    (e.g., '020lead', '040dissent', '010combined').
+    """
     _throttle_cl()
     try:
         resp = requests.get(
@@ -399,24 +541,63 @@ def _fetch_opinion_text(opinion_id: int) -> str | None:
             timeout=30,
         )
         if resp.status_code != 200:
-            return None
+            return None, ""
 
         data = resp.json()
+        opinion_type = data.get("type", "")
         # Prefer plain_text, then html_with_citations, then html
         text = data.get("plain_text", "")
         if not text or not text.strip():
             html = data.get("html_with_citations", "") or data.get("html", "")
             if html:
                 text = _strip_html(html)
-        return text if text and text.strip() else None
+        return (text if text and text.strip() else None), opinion_type
 
     except requests.RequestException as e:
         logger.warning(f"Opinion fetch failed for {opinion_id}: {e}")
-        return None
+        return None, ""
 
 
-def _fetch_opinion_via_cluster(cluster_id: int) -> tuple[str | None, int | None]:
-    """Fetch opinion text through cluster → sub_opinions. Returns (text, opinion_id)."""
+def _fetch_opinion_text(opinion_id: int) -> str | None:
+    """Fetch full opinion text from V4 opinions endpoint."""
+    text, _ = _fetch_opinion_data(opinion_id)
+    return text
+
+
+def _fetch_best_opinion_from_urls(opinion_urls: list) -> tuple[str | None, int | None]:
+    """Fetch the best opinion from a list of URLs, preferring majority opinions.
+
+    CourtListener opinion types: 010combined, 015unanamous (sic), 020lead,
+    025plurality are majority. 030concurrence, 040dissent, etc. are secondary.
+    """
+    fallback_text = None
+    fallback_oid = None
+
+    for opinion_url in opinion_urls:
+        if isinstance(opinion_url, str) and opinion_url.startswith("http"):
+            oid = _extract_id_from_url(opinion_url)
+        else:
+            oid = _extract_id_from_url(str(opinion_url))
+        if not oid:
+            continue
+
+        text, opinion_type = _fetch_opinion_data(oid)
+        if text:
+            if opinion_type in _MAJORITY_OPINION_TYPES or not opinion_type:
+                logger.debug(f"Using majority opinion {oid} (type={opinion_type!r})")
+                return text, oid
+            elif fallback_text is None:
+                logger.debug(f"Non-majority opinion {oid} (type={opinion_type!r}), searching for majority")
+                fallback_text = text
+                fallback_oid = oid
+
+    if fallback_text:
+        logger.info(f"No majority opinion found, using fallback opinion {fallback_oid}")
+    return fallback_text, fallback_oid
+
+
+def _fetch_opinion_via_cluster(cluster_id: int) -> tuple[str | None, int | None, list[str]]:
+    """Fetch opinion text through cluster → sub_opinions, and extract known citations."""
     _throttle_cl()
     try:
         resp = requests.get(
@@ -425,40 +606,20 @@ def _fetch_opinion_via_cluster(cluster_id: int) -> tuple[str | None, int | None]
             timeout=30,
         )
         if resp.status_code != 200:
-            return None, None
+            return None, None, []
 
-        sub_opinions = resp.json().get("sub_opinions", [])
+        data = resp.json()
+        cluster_cites = _format_cluster_citations(data.get("citations", []))
+        sub_opinions = data.get("sub_opinions", [])
         if not sub_opinions:
-            return None, None
+            return None, None, cluster_cites
 
-        # Try each sub_opinion URL
-        for opinion_url in sub_opinions:
-            if isinstance(opinion_url, str) and opinion_url.startswith("http"):
-                _throttle_cl()
-                resp2 = requests.get(opinion_url, headers=_cl_headers(), timeout=30)
-                if resp2.status_code != 200:
-                    continue
-                data = resp2.json()
-                oid = data.get("id")
-                text = data.get("plain_text", "")
-                if not text or not text.strip():
-                    html = data.get("html_with_citations", "") or data.get("html", "")
-                    if html:
-                        text = _strip_html(html)
-                if text and text.strip():
-                    return text, oid
-            else:
-                oid = _extract_id_from_url(str(opinion_url))
-                if oid:
-                    text = _fetch_opinion_text(oid)
-                    if text:
-                        return text, oid
-
-        return None, None
+        text, oid = _fetch_best_opinion_from_urls(sub_opinions)
+        return text, oid, cluster_cites
 
     except requests.RequestException as e:
         logger.warning(f"Cluster fetch failed for {cluster_id}: {e}")
-        return None, None
+        return None, None, []
 
 
 def _extract_id_from_url(url: str) -> int | None:
@@ -476,6 +637,24 @@ def _extract_id_from_url(url: str) -> int | None:
         return None
 
 
+def _format_cluster_citations(citations_data: list) -> list[str]:
+    """Convert citations from CourtListener cluster format to strings.
+
+    Handles both string format (from search API) and dict format (from cluster API).
+    """
+    result = []
+    for c in citations_data:
+        if isinstance(c, str):
+            result.append(c)
+        elif isinstance(c, dict):
+            v = c.get("volume", "")
+            r = c.get("reporter", "")
+            p = c.get("page", "")
+            if v and r and p:
+                result.append(f"{v} {r} {p}")
+    return result
+
+
 def _strip_html(html: str) -> str:
     """Strip HTML tags and decode common entities."""
     # Remove <script> and <style> blocks (including content)
@@ -485,12 +664,10 @@ def _strip_html(html: str) -> str:
     text = re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
     # Strip remaining tags
     text = re.sub(r"<[^>]+>", "", text)
-    text = re.sub(r"&nbsp;", " ", text)
-    text = re.sub(r"&amp;", "&", text)
-    text = re.sub(r"&lt;", "<", text)
-    text = re.sub(r"&gt;", ">", text)
-    text = re.sub(r"&[a-z]+;", "", text)
-    text = re.sub(r"&#\d+;", "", text)
+    # Decode all HTML entities properly (smart quotes, em-dashes, section symbols, etc.)
+    text = html_module.unescape(text)
+    # Normalize non-breaking spaces to regular spaces
+    text = text.replace("\xa0", " ")
     # Collapse excessive whitespace
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
@@ -561,6 +738,57 @@ def lookup_citation_govinfo(citation_text: str, case_name: str = "") -> LookupRe
 
 
 # ─── Unified Lookup ───────────────────────────────────────────────────────
+
+def confirm_case_by_name(case_name: str) -> bool:
+    """Search CourtListener by case name to confirm a case exists.
+
+    Used as a secondary check when citation lookup returns a different case.
+    Searches by quoted party names (not full case name) to handle abbreviation
+    differences like "International" vs "Int'l".
+    Returns True if the case name was found, False otherwise.
+    """
+    if not case_name or not COURTLISTENER_API_TOKEN:
+        return False
+
+    # Split on "v." to get party names
+    parties = re.split(r'\s+v\.?\s+', case_name.strip())
+    if len(parties) < 2:
+        return False
+
+    # Build query with quoted party names (handles abbreviation mismatches)
+    # e.g., "Alice Corp" "CLS Bank" instead of "Alice Corp. v. CLS Bank International"
+    party_queries = []
+    for party in parties:
+        clean = party.strip().rstrip(',.')
+        # Remove common entity suffixes that may differ between brief and database
+        clean = re.sub(
+            r',?\s+(Inc|Corp|Corporation|LLC|L\.L\.C|Ltd|Co|International|Int\'l|'
+            r'FSB|NA|N\.A\.|LP|L\.P\.)\.?\s*$',
+            '', clean, flags=re.IGNORECASE,
+        ).strip()
+        if len(clean) > 3:
+            party_queries.append(f'"{clean}"')
+
+    if len(party_queries) < 2:
+        return False
+
+    query = " ".join(party_queries)
+    result = _cl_v4_search(q=query)
+    if result and result.found and result.case_name:
+        # Normalize both sides so "Int'l" == "International", "Corp." == "Corporation"
+        ret_norm = normalize_legal_name(result.case_name)
+        # Verify BOTH party names appear in the returned case to avoid
+        # false positives where only one party name matches a different case
+        matched_parties = 0
+        for party in parties:
+            party_norm = normalize_legal_name(party)
+            party_words = [w for w in party_norm.split() if len(w) > 3]
+            if party_words and any(w in ret_norm for w in party_words[:2]):
+                matched_parties += 1
+        if matched_parties >= 2:
+            return True
+    return False
+
 
 def lookup_citation(citation_text: str, case_name: str = "") -> LookupResult:
     """Look up a citation, trying CourtListener V4 first then GovInfo."""

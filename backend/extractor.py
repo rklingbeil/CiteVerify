@@ -26,6 +26,9 @@ def extract_pdf(file_path: str) -> ExtractionResult:
     pages: list[str] = []
 
     with fitz.open(file_path) as doc:
+        if doc.is_encrypted:
+            raise ValueError("PDF is password-protected. Please provide an unencrypted PDF.")
+        total_pages = len(doc)
         for i, page in enumerate(doc):
             text = page.get_text("text")
             if text.strip():
@@ -39,7 +42,7 @@ def extract_pdf(file_path: str) -> ExtractionResult:
 
     return ExtractionResult(
         text=full_text,
-        page_count=len(pages),
+        page_count=total_pages,
         warnings=warnings,
     )
 
@@ -55,7 +58,33 @@ def extract_docx(file_path: str) -> ExtractionResult:
     doc = Document(file_path)
     paragraphs = [p.text for p in doc.paragraphs if p.text.strip()]
 
-    full_text = "\n\n".join(paragraphs)
+    # Extract footnotes and endnotes (legal citations often appear here)
+    footnote_texts = []
+    try:
+        from docx.opc.constants import RELATIONSHIP_TYPE as RT
+        # Footnotes
+        footnotes_part = doc.part.rels.get(RT.FOOTNOTES)
+        if footnotes_part:
+            for fn in footnotes_part.target_part.element.findall('.//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}footnote'):
+                fn_text = "".join(t.text or "" for t in fn.findall('.//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t'))
+                if fn_text.strip():
+                    footnote_texts.append(fn_text)
+        # Endnotes
+        endnotes_part = doc.part.rels.get(RT.ENDNOTES)
+        if endnotes_part:
+            for en in endnotes_part.target_part.element.findall('.//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}endnote'):
+                en_text = "".join(t.text or "" for t in en.findall('.//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t'))
+                if en_text.strip():
+                    footnote_texts.append(en_text)
+    except Exception:
+        logger.warning("Could not extract footnotes/endnotes from DOCX")
+
+    all_text = paragraphs
+    if footnote_texts:
+        all_text.append("\n\n--- FOOTNOTES/ENDNOTES ---\n")
+        all_text.extend(footnote_texts)
+
+    full_text = "\n\n".join(all_text)
     if not full_text.strip():
         raise ValueError("No text could be extracted from the DOCX")
 

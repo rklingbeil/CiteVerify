@@ -1,0 +1,661 @@
+{
+  "id": "c2d62828-1ada-43f4-9d49-4b83755f26d7",
+  "filename": "brief_i_admin_stress.docx",
+  "document_text": "MEMORANDUM IN SUPPORT OF MOTION FOR SUMMARY JUDGMENT\n\nNational Environmental Coalition v. Environmental Protection Agency\n\nI. ARTICLE III STANDING\n\nArticle III standing requires three elements: (1) an injury in fact that is concrete and particularized, (2) a causal connection between the injury and the challenged conduct, and (3) a likelihood that a favorable judicial decision will redress the injury. Lujan v. Defenders of Wildlife, 504 U.S. 555, 560-61 (1992).\n\nThe injury must be \"concrete\" \u2014 a bare procedural violation of a statute, without any concrete harm, does not satisfy Article III. Spokeo, Inc. v. Robins, 578 U.S. 330 (2016).\n\nEnvironmental organizations have standing to challenge agency action when their members use the affected natural resources. Cartwright v. Dep't of Health & Human Servs., 634 F.3d 782 (4th Cir. 2011) (holding that \"organizational standing exists where an agency's regulatory failure directly impairs the organization's mission and diverts its resources\").\n\nPrivate citizens have the same standing as states to challenge the EPA's failure to regulate greenhouse gas emissions under the Clean Air Act. Massachusetts v. EPA, 549 U.S. 497 (2007). The Court held that any party demonstrating exposure to the effects of climate change satisfies the injury-in-fact requirement without any special showing.\n\nII. STANDARD OF REVIEW FOR AGENCY ACTION\n\nCourts review agency interpretations of ambiguous statutes under the two-step framework established in Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc., 467 U.S. 837 (1984). First, the court asks whether Congress has directly spoken to the precise question at issue. If the statute is ambiguous, the court defers to the agency's interpretation so long as it is a permissible construction. Id. at 842-43.\n\nAn agency's interpretation of its own ambiguous regulation is controlling unless plainly erroneous or inconsistent with the regulation. Auer v. Robbins, 519 U.S. 452, 461 (1997).\n\nAgency action is \"arbitrary and capricious\" if the agency relied on factors Congress did not intend, entirely failed to consider an important aspect of the problem, offered an explanation that runs counter to the evidence before it, or the action is so implausible that it could not be ascribed to a difference in view. Motor Vehicle Mfrs. Ass'n of the U.S., Inc. v. State Farm Mut. Auto. Ins. Co., 463 U.S. 29, 43 (1983).\n\nThe Tenth Circuit has applied State Farm's \"hard look\" standard to EPA rulemaking, holding that the agency must provide a detailed explanation for any departure from prior practice. Lexington Envtl. Servs. v. EPA, 789 F.3d 1034 (10th Cir. 2015).\n\nThe Supreme Court overruled Auer v. Robbins, holding that courts may never defer to an agency's interpretation of its own regulations. Kisor v. Wilkie, 588 U.S. 558 (2019). The Court held that all agency regulatory interpretations must be reviewed de novo without any deference.\n\nSee Nakamura v. Fed. Trade Comm'n, 845 F.3d 267 (7th Cir. 2017) (holding that \"an agency's failure to provide adequate notice of a proposed rule change renders the final rule void ab initio under the Administrative Procedure Act\").\n\nIII. AGENCY AUTHORITY AND PROCEDURE\n\nAgencies have unfettered discretion to reverse prior policies without providing any explanation for the change. FCC v. Fox Television Stations, Inc., 556 U.S. 502 (2009). The Court stated:\n\n\"An agency need not demonstrate that the reasons for its new policy are better than the reasons for its old policy, and indeed need not acknowledge the change at all, so long as the new policy falls within the scope of the agency's delegated authority.\"\n\nFCC v. Fox Television Stations, Inc., 556 U.S. at 515.\n\nSee Westfield Pharm. Corp. v. FDA, 912 F.3d 456 (D.C. Cir. 2019) (holding that \"the FDA's expedited approval pathway does not exempt the agency from the notice-and-comment requirements of the APA when imposing post-market surveillance obligations\").\n\nExhaustion of administrative remedies is jurisdictional and cannot be waived. O'Brien v. Nat'l Labor Relations Bd., 778 F.3d 1124 (11th Cir. 2015).\n\nIV. PERSONAL JURISDICTION OVER FEDERAL AGENCIES\n\nSpecific personal jurisdiction requires an affiliation between the forum and the underlying controversy. Bristol-Myers Squibb Co. v. Superior Court of California, 582 U.S. 255 (2017). The Court held that a defendant's general connections with the forum are insufficient to support specific jurisdiction over claims unrelated to those connections.\n\nGeneral personal jurisdiction exists only where the defendant is \"at home\" \u2014 typically the state of incorporation or principal place of business. Daimler AG v. Bauman, 571 U.S. 117 (2014). The Court rejected the notion that a corporation's substantial business in a forum renders it subject to general jurisdiction there.\n\nUnder the doctrine of forum non conveniens, courts balance private and public interest factors in deciding whether to dismiss in favor of a more convenient forum. Piper Aircraft Co. v. Reyno, 454 U.S. 235 (1981). The Court held that the possibility of an unfavorable change in law should ordinarily not be given conclusive or even substantial weight in the analysis.\n\nCONCLUSION\n\nFor the foregoing reasons, Plaintiff respectfully requests that this Court grant summary judgment and vacate the EPA's final rule as arbitrary and capricious.",
+  "total_citations": 18,
+  "verified": 9,
+  "warnings": 0,
+  "errors": 9,
+  "unverifiable": 0,
+  "citations": [
+    {
+      "extraction": {
+        "citation_text": "504 U.S. 555, 560-61 (1992)",
+        "case_name": "Lujan v. Defenders of Wildlife",
+        "full_reference": "Lujan v. Defenders of Wildlife, 504 U.S. 555, 560-61 (1992)",
+        "quoted_text": null,
+        "characterization": "Article III standing requires three elements: (1) an injury in fact that is concrete and particularized, (2) a causal connection between the injury and the challenged conduct, and (3) a likelihood that a favorable judicial decision will redress the injury",
+        "context": "Article III standing requires three elements: (1) an injury in fact that is concrete and particularized, (2) a causal connection between the injury and the challenged conduct, and (3) a likelihood that a favorable judicial decision will redress the injury. Lujan v. Defenders of Wildlife, 504 U.S. 555, 560-61 (1992).",
+        "position_start": 244,
+        "position_end": 410
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Lujan v. Defenders of Wildlife",
+        "court": "",
+        "date_filed": "1992-06-12",
+        "url": "https://www.courtlistener.com/opinion/112747/lujan-v-defenders-of-wildlife/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately summarizes the three elements of Article III standing as stated in the opinion at pages 560-561. The Court explicitly states that 'the irreducible constitutional minimum of standing contains three elements' and then lists: (1) injury in fact that is concrete and particularized, (2) causal connection between the injury and the conduct complained of, and (3) likelihood that the injury will be redressed by a favorable decision. The characterization correctly captures these three elements without distortion.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] I verified that the citation format is correct and matches the source opinion provided. The opinion is clearly from Lujan v. Defenders of Wildlife, authored by Justice Scalia. At pages 560-561, the Court explicitly sets forth the three elements of Article III standing. The characterization provided accurately summarizes these three elements without adding or omitting any key components. The Court states that 'the irreducible constitutional minimum of standing contains three elements' and then describes each one, which matches the characterization given.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "578 U.S. 330 (2016)",
+        "case_name": "Spokeo, Inc. v. Robins",
+        "full_reference": "Spokeo, Inc. v. Robins, 578 U.S. 330 (2016)",
+        "quoted_text": null,
+        "characterization": "The injury must be \"concrete\" \u2014 a bare procedural violation of a statute, without any concrete harm, does not satisfy Article III",
+        "context": "The injury must be \"concrete\" \u2014 a bare procedural violation of a statute, without any concrete harm, does not satisfy Article III. Spokeo, Inc. v. Robins, 578 U.S. 330 (2016).",
+        "position_start": 412,
+        "position_end": 590
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Spokeo, Inc. v. Robins",
+        "court": "",
+        "date_filed": "2016-05-16",
+        "url": "https://www.courtlistener.com/opinion/3203762/spokeo-inc-v-robins/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding that a bare procedural violation without concrete harm does not satisfy Article III standing requirements. The Court explicitly states that 'Robins cannot satisfy the demands of Article III by alleging a bare procedural violation' and emphasizes throughout the opinion that injury must be 'concrete' in addition to being particularized.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Spokeo, Inc. v. Robins, 578 U.S. 330 (2016)). The source opinion matches the cited case - it is indeed the Supreme Court opinion in Spokeo v. Robins from 2016, with matching parties and subject matter.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'The injury must be \"concrete\" \u2014 a bare procedural violation of a statute, without any concrete harm, does not satisfy Article III.' This accurately reflects the Court's holding. Key supporting passages include:\n- Page 7: 'An injury in fact must also be \"concrete.\"'\n- Page 10: 'Robins could not, for example, allege a bare procedural violation, divorced from any concrete harm, and satisfy the injury-in-fact requirement of Article III.'\n- Page 10: 'Robins cannot satisfy the demands of Article III by alleging a bare procedural violation.'\n- Page 11: The Court emphasizes that 'the particular procedural violations alleged in this case entail a degree of risk sufficient to meet the concreteness requirement.'\n\nThe Court's entire analysis focuses on the requirement that injury be concrete, not just particularized, and explicitly rejects the sufficiency of bare procedural violations.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly reflects the Court's central holding and reasoning.\n\nSTEP 5 - OVERALL STATUS: Verified - the characterization accurately captures the Court's holding about concrete injury requirements.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "634 F.3d 782 (4th Cir. 2011)",
+        "case_name": "Cartwright v. Dep't of Health & Human Servs.",
+        "full_reference": "Cartwright v. Dep't of Health & Human Servs., 634 F.3d 782 (4th Cir. 2011)",
+        "quoted_text": "organizational standing exists where an agency's regulatory failure directly impairs the organization's mission and diverts its resources",
+        "characterization": "Environmental organizations have standing to challenge agency action when their members use the affected natural resources",
+        "context": "Environmental organizations have standing to challenge agency action when their members use the affected natural resources. Cartwright v. Dep't of Health & Human Servs., 634 F.3d 782 (4th Cir. 2011) (holding that \"organizational standing exists where an agency's regulatory failure directly impairs the organization's mission and diverts its resources\").",
+        "position_start": 592,
+        "position_end": 940
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Castro v. Collecto, Inc.",
+        "court": "",
+        "date_filed": "2011-02-24",
+        "url": "https://www.courtlistener.com/opinion/205470/castro-v-collecto-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization about environmental standing appears to be mismatched with a case name suggesting health services litigation",
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] I do not recognize a case called 'Cartwright v. Dep't of Health & Human Servs.' at this citation. The database lookup warning indicates that 634 F.3d 782 (4th Cir. 2011) is actually 'Castro v. Collecto, Inc.', which is a Fair Debt Collection Practices Act case, not an environmental standing case. The mismatch between the case name (suggesting HHS litigation) and the environmental standing context is highly suspicious. Additionally, the quoted language about organizational standing and resource diversion, while a valid legal principle, does not appear to match what would be expected from either a health services case or the actual Castro case at this citation.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "549 U.S. 497 (2007)",
+        "case_name": "Massachusetts v. EPA",
+        "full_reference": "Massachusetts v. EPA, 549 U.S. 497 (2007)",
+        "quoted_text": null,
+        "characterization": "Private citizens have the same standing as states to challenge the EPA's failure to regulate greenhouse gas emissions under the Clean Air Act. The Court held that any party demonstrating exposure to the effects of climate change satisfies the injury-in-fact requirement without any special showing",
+        "context": "Private citizens have the same standing as states to challenge the EPA's failure to regulate greenhouse gas emissions under the Clean Air Act. Massachusetts v. EPA, 549 U.S. 497 (2007). The Court held that any party demonstrating exposure to the effects of climate change satisfies the injury-in-fact requirement without any special showing.",
+        "position_start": 942,
+        "position_end": 1283
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Massachusetts v. Environmental Protection Agency",
+        "court": "",
+        "date_filed": "2007-04-02",
+        "url": "https://www.courtlistener.com/opinion/145749/massachusetts-v-environmental-protection-agency/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization is fundamentally wrong. The Court did NOT hold that private citizens have the same standing as states. Instead, the Court explicitly emphasized Massachusetts' 'special position and interest' as a sovereign State (p. 15) and stated that 'the Commonwealth is entitled to special solicitude in our standing analysis' (p. 17). The Court distinguished this case from Lujan, which involved 'a private individual.' The Court's standing analysis relied heavily on Massachusetts' sovereign and quasi-sovereign interests, which private citizens do not possess. Additionally, the Court did not hold that 'any party demonstrating exposure to the effects of climate change' satisfies injury-in-fact; rather, it required Massachusetts to show specific, particularized injury (loss of coastal land), causation, and redressability.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] Step 1: Verified the citation format and confirmed the source opinion matches the cited case. Step 2: No quote provided to verify. Step 3: Analyzed the characterization against the opinion text. The characterization claims private citizens have the same standing as states, but the Court explicitly stated the opposite - that Massachusetts was entitled to 'special solicitude' in the standing analysis because it is a sovereign State, not a private individual. The Court repeatedly emphasized Massachusetts' special status throughout the standing discussion (pages 15-17). The Court also did not hold that mere exposure to climate change effects satisfies injury-in-fact; it required specific showings of particularized injury, causation, and redressability. Step 4: Very high confidence in this assessment as the opinion directly contradicts the characterization. Step 5: This is a material error requiring correction.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "467 U.S. 837 (1984)",
+        "case_name": "Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.",
+        "full_reference": "Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc., 467 U.S. 837 (1984)",
+        "quoted_text": null,
+        "characterization": "Courts review agency interpretations of ambiguous statutes under the two-step framework established in Chevron. First, the court asks whether Congress has directly spoken to the precise question at issue. If the statute is ambiguous, the court defers to the agency's interpretation so long as it is a permissible construction",
+        "context": "Courts review agency interpretations of ambiguous statutes under the two-step framework established in Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc., 467 U.S. 837 (1984). First, the court asks whether Congress has directly spoken to the precise question at issue. If the statute is ambiguous, the court defers to the agency's interpretation so long as it is a permissible construction.",
+        "position_start": 1340,
+        "position_end": 1735
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Chevron U. S. A. Inc. v. Natural Resources Defense Council, Inc.",
+        "court": "",
+        "date_filed": "1984-06-25",
+        "url": "https://www.courtlistener.com/opinion/111221/chevron-u-s-a-inc-v-natural-resources-defense-council-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes the Chevron two-step framework. The opinion explicitly states at pages 842-843: 'When a court reviews an agency's construction of the statute which it administers, it is confronted with two questions. First, always, is the question whether Congress has directly spoken to the precise question at issue. If the intent of Congress is clear, that is the end of the matter... If, however, the court determines Congress has not directly addressed the precise question at issue... the question for the court is whether the agency's answer is based on a permissible construction of the statute.' This matches the characterization's description of the two-step process.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc., 467 U.S. 837 (1984)). The source opinion matches the cited case - it's the Supreme Court opinion in Chevron delivered by Justice Stevens regarding EPA regulations under the Clean Air Act.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization describes the Chevron two-step framework for reviewing agency interpretations of ambiguous statutes. Looking at pages 842-843 of the opinion, I find the Court explicitly laying out this exact framework: 'When a court reviews an agency's construction of the statute which it administers, it is confronted with two questions. First, always, is the question whether Congress has directly spoken to the precise question at issue.' The opinion then explains that if Congress's intent is clear, that ends the matter. If not, 'the question for the court is whether the agency's answer is based on a permissible construction of the statute.' This precisely matches the characterization's description of: (1) asking whether Congress has directly spoken to the precise question, and (2) if the statute is ambiguous, deferring to the agency's interpretation if it's a permissible construction.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization accurately captures the core holding of Chevron that is explicitly stated in the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately describes the Chevron two-step framework as articulated in the opinion.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "467 U.S. 837 (1984)",
+        "case_name": "Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.",
+        "full_reference": "Id. at 842-43",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "If the statute is ambiguous, the court defers to the agency's interpretation so long as it is a permissible construction. Id. at 842-43.",
+        "position_start": 1736,
+        "position_end": 1750
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Chevron U. S. A. Inc. v. Natural Resources Defense Council, Inc.",
+        "court": "",
+        "date_filed": "1984-06-25",
+        "url": "https://www.courtlistener.com/opinion/111221/chevron-u-s-a-inc-v-natural-resources-defense-council-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Citation confirmed \u2014 no quote or characterization to verify",
+        "confidence": 0.9,
+        "reasoning": null,
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "519 U.S. 452, 461 (1997)",
+        "case_name": "Auer v. Robbins",
+        "full_reference": "Auer v. Robbins, 519 U.S. 452, 461 (1997)",
+        "quoted_text": null,
+        "characterization": "An agency's interpretation of its own ambiguous regulation is controlling unless plainly erroneous or inconsistent with the regulation",
+        "context": "An agency's interpretation of its own ambiguous regulation is controlling unless plainly erroneous or inconsistent with the regulation. Auer v. Robbins, 519 U.S. 452, 461 (1997).",
+        "position_start": 1752,
+        "position_end": 1931
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Auer v. Robbins",
+        "court": "",
+        "date_filed": "1997-02-19",
+        "url": "https://www.courtlistener.com/opinion/118089/auer-v-robbins/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding about agency deference. The Court explicitly states on page 461 that an agency's interpretation of its own regulations is 'controlling unless \"plainly erroneous or inconsistent with the regulation.\"' This is the exact principle stated in the characterization, using nearly identical language.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Auer v. Robbins, 519 U.S. 452, 461 (1997)). The source opinion text confirms this is indeed the Auer v. Robbins case from 1997, with Justice Scalia delivering the opinion regarding FLSA overtime exemptions and the Secretary of Labor's salary-basis test.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'An agency's interpretation of its own ambiguous regulation is controlling unless plainly erroneous or inconsistent with the regulation.' Looking at page 461 of the opinion, I find this exact principle stated: 'Because the salary-basis test is a creature of the Secretary's own regulations, his interpretation of it is, under our jurisprudence, controlling unless \"'plainly erroneous or inconsistent with the regulation.'\"' The Court cites Robertson v. Methow Valley Citizens Council and Bowles v. Seminole Rock & Sand Co. for this principle. The characterization accurately captures this holding.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the characterization uses nearly identical language to what appears in the opinion at the cited page.\n\nSTEP 5 - OVERALL STATUS: The citation is verified. The characterization accurately states the principle of deference to agency interpretations of their own regulations as articulated in Auer.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "463 U.S. 29, 43 (1983)",
+        "case_name": "Motor Vehicle Mfrs. Ass'n of the U.S., Inc. v. State Farm Mut. Auto. Ins. Co.",
+        "full_reference": "Motor Vehicle Mfrs. Ass'n of the U.S., Inc. v. State Farm Mut. Auto. Ins. Co., 463 U.S. 29, 43 (1983)",
+        "quoted_text": null,
+        "characterization": "Agency action is \"arbitrary and capricious\" if the agency relied on factors Congress did not intend, entirely failed to consider an important aspect of the problem, offered an explanation that runs counter to the evidence before it, or the action is so implausible that it could not be ascribed to a difference in view",
+        "context": "Agency action is \"arbitrary and capricious\" if the agency relied on factors Congress did not intend, entirely failed to consider an important aspect of the problem, offered an explanation that runs counter to the evidence before it, or the action is so implausible that it could not be ascribed to a difference in view. Motor Vehicle Mfrs. Ass'n of the U.S., Inc. v. State Farm Mut. Auto. Ins. Co., 463 U.S. 29, 43 (1983).",
+        "position_start": 1933,
+        "position_end": 2365
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Motor Vehicle Mfrs. Assn. of United States, Inc. v. State Farm Mut. Automobile Ins. Co.",
+        "court": "",
+        "date_filed": "1983-06-24",
+        "url": "https://www.courtlistener.com/opinion/110991/motor-vehicle-mfrs-assn-of-united-states-inc-v-state-farm-mut/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's articulation of the arbitrary and capricious standard from page 43 of the opinion. The Court states that 'an agency rule would be arbitrary and capricious if the agency has relied on factors which Congress has not intended it to consider, entirely failed to consider an important aspect of the problem, offered an explanation for its decision that runs counter to the evidence before the agency, or is so implausible that it could not be ascribed to a difference in view or the product of agency expertise.' The characterization correctly presents these four grounds for finding agency action arbitrary and capricious, with only minor stylistic differences (using 'Agency action' instead of 'an agency rule' and 'the action' instead of 'it').",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (463 U.S. 29, 43 (1983)). The source opinion is clearly Motor Vehicle Manufacturers Association v. State Farm, as evidenced by the case caption and content. The abbreviation 'Mfrs.' for 'Manufacturers' and 'Ass'n' for 'Association' are standard legal abbreviations and do not constitute a mismatch. The parties match (Motor Vehicle Manufacturers Association as petitioner, State Farm as respondent).\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: I located the relevant passage on page 43 of the opinion. The Court states: 'Normally, an agency rule would be arbitrary and capricious if the agency has relied on factors which Congress has not intended it to consider, entirely failed to consider an important aspect of the problem, offered an explanation for its decision that runs counter to the evidence before the agency, or is so implausible that it could not be ascribed to a difference in view or the product of agency expertise.' The characterization accurately captures this standard with only minor, non-substantive differences in wording.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because I found the exact passage being characterized, and the characterization accurately reflects the Court's articulation of the arbitrary and capricious standard.\n\nSTEP 5 - OVERALL STATUS: The citation is verified. The characterization accurately represents the Court's holding about when agency action is arbitrary and capricious.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "789 F.3d 1034 (10th Cir. 2015)",
+        "case_name": "Lexington Envtl. Servs. v. EPA",
+        "full_reference": "Lexington Envtl. Servs. v. EPA, 789 F.3d 1034 (10th Cir. 2015)",
+        "quoted_text": null,
+        "characterization": "The Tenth Circuit has applied State Farm's \"hard look\" standard to EPA rulemaking, holding that the agency must provide a detailed explanation for any departure from prior practice",
+        "context": "The Tenth Circuit has applied State Farm's \"hard look\" standard to EPA rulemaking, holding that the agency must provide a detailed explanation for any departure from prior practice. Lexington Envtl. Servs. v. EPA, 789 F.3d 1034 (10th Cir. 2015).",
+        "position_start": 2367,
+        "position_end": 2614
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Nadia Naffe v. John Frey",
+        "court": "",
+        "date_filed": "2015-06-15",
+        "url": "https://www.courtlistener.com/opinion/2808340/nadia-naffe-v-john-frey/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization about State Farm's hard look standard and EPA rulemaking cannot be verified because this case does not appear to exist. The citation appears to be fabricated.",
+        "confidence": 0.4,
+        "reasoning": "[Confirmed by knowledge review] I do not recognize 'Lexington Envtl. Servs. v. EPA' as a real case from the Tenth Circuit in 2015. The database lookup warning confirms that 789 F.3d 1034 actually corresponds to a completely different case (Nadia Naffe v. John Frey), and searches by case name failed to find this case. This strongly indicates the citation is fabricated. While the State Farm hard look doctrine is a real administrative law principle that courts do apply to EPA rulemakings, attributing this principle to a non-existent case is problematic. The citation format itself follows proper Bluebook style, but the case it purports to cite does not exist.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "588 U.S. 558 (2019)",
+        "case_name": "Kisor v. Wilkie",
+        "full_reference": "Kisor v. Wilkie, 588 U.S. 558 (2019)",
+        "quoted_text": null,
+        "characterization": "The Supreme Court overruled Auer v. Robbins, holding that courts may never defer to an agency's interpretation of its own regulations. The Court held that all agency regulatory interpretations must be reviewed de novo without any deference",
+        "context": "The Supreme Court overruled Auer v. Robbins, holding that courts may never defer to an agency's interpretation of its own regulations. Kisor v. Wilkie, 588 U.S. 558 (2019). The Court held that all agency regulatory interpretations must be reviewed de novo without any deference.",
+        "position_start": 2616,
+        "position_end": 2895
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Kisor v. Wilkie",
+        "court": "",
+        "date_filed": "2019-06-26",
+        "url": "https://www.courtlistener.com/opinion/4632953/kisor-v-wilkie/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization is materially incorrect. The Supreme Court did NOT overrule Auer v. Robbins. In fact, the Court explicitly held the opposite - that 'Auer and Seminole Rock are not overruled.' The Court upheld Auer deference while clarifying and reinforcing its limits. The characterization states that courts 'may never defer' and must review 'de novo without any deference,' but the Court actually preserved the Auer deference doctrine, stating that 'Auer deference retains an important role in construing agency regulations' while emphasizing that it is 'cabined in its scope.'",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (588 U.S. 558 (2019)). The source opinion is indeed Kisor v. Wilkie, matching the cited case.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization claims that the Supreme Court 'overruled Auer v. Robbins' and held that 'courts may never defer to an agency's interpretation of its own regulations' and that 'all agency regulatory interpretations must be reviewed de novo without any deference.' However, the syllabus explicitly states: 'JUSTICE KAGAN delivered the opinion of the Court with respect to Parts I, II\u2013B, III\u2013B, and IV, holding that Auer and Seminole Rock are not overruled.' The opinion further states: 'The only question presented here is whether we should overrule those decisions, discarding the deference they give to agencies. We answer that question no. Auer deference retains an important role in construing agency regulations.' The Court did not eliminate Auer deference but rather clarified its scope and limitations, stating 'The deference doctrine we describe is potent in its place, but cabined in its scope.'\n\nSTEP 4 - CONFIDENCE ASSESSMENT: I have very high confidence (0.95) in this assessment because the opinion explicitly states the opposite of what the characterization claims.\n\nSTEP 5 - OVERALL STATUS: This is an error because the characterization fundamentally misrepresents the Court's holding. The Court preserved Auer deference rather than overruling it.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "845 F.3d 267 (7th Cir. 2017)",
+        "case_name": "Nakamura v. Fed. Trade Comm'n",
+        "full_reference": "Nakamura v. Fed. Trade Comm'n, 845 F.3d 267 (7th Cir. 2017)",
+        "quoted_text": "an agency's failure to provide adequate notice of a proposed rule change renders the final rule void ab initio under the Administrative Procedure Act",
+        "characterization": null,
+        "context": "See Nakamura v. Fed. Trade Comm'n, 845 F.3d 267 (7th Cir. 2017) (holding that \"an agency's failure to provide adequate notice of a proposed rule change renders the final rule void ab initio under the Administrative Procedure Act\").",
+        "position_start": 2897,
+        "position_end": 3133
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Selective Insurance Co. of South Carolina v. Target Corp.",
+        "court": "",
+        "date_filed": "2016-12-29",
+        "url": "https://www.courtlistener.com/opinion/4334882/selective-insurance-co-of-south-carolina-v-target-corp/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] I cannot find any record of a case called 'Nakamura v. Fed. Trade Comm'n' at 845 F.3d 267 (7th Cir. 2017) in my knowledge base. The database lookup warning indicates that this citation actually refers to 'Selective Insurance Co. of South Carolina v. Target Corp.', which is an entirely different case. This strongly suggests that the Nakamura case citation is either fabricated or contains a significant error. The quoted text about APA notice requirements and rules being 'void ab initio' sounds plausible as a general principle, but I cannot verify it comes from this non-existent case. Without being able to confirm this case exists, I must conclude this is likely a fabricated or severely erroneous citation.",
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "556 U.S. 502 (2009)",
+        "case_name": "FCC v. Fox Television Stations, Inc.",
+        "full_reference": "FCC v. Fox Television Stations, Inc., 556 U.S. 502 (2009)",
+        "quoted_text": null,
+        "characterization": "Agencies have unfettered discretion to reverse prior policies without providing any explanation for the change",
+        "context": "Agencies have unfettered discretion to reverse prior policies without providing any explanation for the change. FCC v. Fox Television Stations, Inc., 556 U.S. 502 (2009).",
+        "position_start": 3177,
+        "position_end": 3348
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Federal Communications Commission v. Fox Television Stations, Inc.",
+        "court": "",
+        "date_filed": "2009-04-28",
+        "url": "https://www.courtlistener.com/opinion/145882/federal-communications-commission-v-fox-television-stations-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization is fundamentally inaccurate and contradicts the Court's actual holding. The Court held that agencies must provide reasoned explanations for policy changes and explicitly stated that agencies 'may not...depart from a prior policy sub silentio.' The Court required agencies to 'display awareness that it is changing position' and 'articulate a satisfactory explanation for its action.' While the Court held that agencies need not prove the new policy is better than the old one, they must still provide 'good reasons' for the change. The word 'unfettered' (meaning unrestricted) is the opposite of what the Court held - agencies are constrained by requirements to explain their decisions and cannot change policies without any explanation.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] I verified the citation format and confirmed the source opinion matches the cited case. No quote was provided to verify. For the characterization, I searched for the Court's holdings on agency discretion to change policies. The opinion explicitly states agencies must 'examine the relevant data and articulate a satisfactory explanation' (p.9), must 'display awareness that it is changing position' (p.11), and 'may not...depart from a prior policy sub silentio' (p.11). The Court affirmed that agencies need 'good reasons' for new policies. The characterization claiming 'unfettered discretion...without providing any explanation' directly contradicts these holdings. The Court actually upheld the FCC's policy change precisely because the agency DID provide explanations, not because it had unfettered discretion to act without explanation.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "556 U.S. 502 (2009)",
+        "case_name": "FCC v. Fox Television Stations, Inc.",
+        "full_reference": "FCC v. Fox Television Stations, Inc., 556 U.S. at 515",
+        "quoted_text": "An agency need not demonstrate that the reasons for its new policy are better than the reasons for its old policy, and indeed need not acknowledge the change at all, so long as the new policy falls within the scope of the agency's delegated authority",
+        "characterization": null,
+        "context": "The Court stated:\n\n\"An agency need not demonstrate that the reasons for its new policy are better than the reasons for its old policy, and indeed need not acknowledge the change at all, so long as the new policy falls within the scope of the agency's delegated authority.\"\n\nFCC v. Fox Television Stations, Inc., 556 U.S. at 515.",
+        "position_start": 3349,
+        "position_end": 3674
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Federal Communications Commission v. Fox Television Stations, Inc.",
+        "court": "",
+        "date_filed": "2009-04-28",
+        "url": "https://www.courtlistener.com/opinion/145882/federal-communications-commission-v-fox-television-stations-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "inaccurate",
+        "quote_diff": "The quote is a significant mischaracterization. The actual text states agencies must 'ordinarily...display awareness that it is changing position' and 'may not...depart from a prior policy sub silentio.' The quote incorrectly claims agencies 'need not acknowledge the change at all.' Additionally, the actual text does not contain the phrase 'so long as the new policy falls within the scope of the agency's delegated authority.'",
+        "actual_quote": "To be sure, the requirement that an agency provide reasoned explanation for its action would ordinarily demand that it display awareness that it is changing position. An agency may not, for example, depart from a prior policy sub silentio or simply disregard rules that are still on the books. See United States v. Nixon, 418 U. S. 683, 696 (1974). And of course the agency must show that there are good reasons for the new policy. But it need not demonstrate to a court's satisfaction that the reasons for the new policy are better than the reasons for the old one; it suffices that the new policy is permissible under the statute, that there are good reasons for it, and that the agency believes it to be better, which the conscious change adequately indicates.",
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 0.95,
+        "reasoning": "[Review override] The initial verification incorrectly labeled this as a complete fabrication. While the quote is indeed inaccurate, it's not entirely fabricated - it's a mischaracterization that combines elements from the actual text while reversing key holdings. The Court actually held that agencies must ordinarily acknowledge changes and cannot depart sub silentio from prior policy. The first part about not needing to demonstrate better reasons is accurate, but the second part about not needing to acknowledge change contradicts what the Court actually said. Found at slip op. pages 11-12.",
+        "quote_status": "error",
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "912 F.3d 456 (D.C. Cir. 2019)",
+        "case_name": "Westfield Pharm. Corp. v. FDA",
+        "full_reference": "Westfield Pharm. Corp. v. FDA, 912 F.3d 456 (D.C. Cir. 2019)",
+        "quoted_text": "the FDA's expedited approval pathway does not exempt the agency from the notice-and-comment requirements of the APA when imposing post-market surveillance obligations",
+        "characterization": null,
+        "context": "See Westfield Pharm. Corp. v. FDA, 912 F.3d 456 (D.C. Cir. 2019) (holding that \"the FDA's expedited approval pathway does not exempt the agency from the notice-and-comment requirements of the APA when imposing post-market surveillance obligations\").",
+        "position_start": 3676,
+        "position_end": 3928
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Kevin F. Tomlinson v. State of Florida",
+        "court": "Supreme Court of Florida",
+        "date_filed": "2023-08-24",
+        "url": "https://www.courtlistener.com/opinion/9422294/kevin-f-tomlinson-v-state-of-florida/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] I do not recognize 'Westfield Pharm. Corp. v. FDA' as a real case from the D.C. Circuit in 2019. The fact that a search for '912 F.3d 456' returns an entirely different case (a Florida state case) strongly indicates this citation is incorrect or fabricated. The D.C. Circuit would hear FDA-related cases, and the subject matter (FDA approval pathways and APA requirements) is plausible, but I have no knowledge of this specific case existing. Given the database search returned a different case for this citation and no case was found by name, this appears to be a fabricated or erroneous citation.",
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "778 F.3d 1124 (11th Cir. 2015)",
+        "case_name": "O'Brien v. Nat'l Labor Relations Bd.",
+        "full_reference": "O'Brien v. Nat'l Labor Relations Bd., 778 F.3d 1124 (11th Cir. 2015)",
+        "quoted_text": null,
+        "characterization": "Exhaustion of administrative remedies is jurisdictional and cannot be waived",
+        "context": "Exhaustion of administrative remedies is jurisdictional and cannot be waived. O'Brien v. Nat'l Labor Relations Bd., 778 F.3d 1124 (11th Cir. 2015).",
+        "position_start": 3930,
+        "position_end": 4078
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "People v. Brent F.",
+        "court": "California Court of Appeal",
+        "date_filed": "2005-06-30",
+        "url": "https://www.courtlistener.com/opinion/2245858/people-v-brent-f/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization that exhaustion of administrative remedies before the NLRB is jurisdictional cannot be verified for this case, as the case appears not to exist",
+        "confidence": 0.15000000000000002,
+        "reasoning": "[Confirmed by knowledge review] The citation format appears problematic. The database search found a different case at this citation (778 F.3d 1124), and no case matching 'O'Brien v. National Labor Relations Board' could be found in the 11th Circuit from 2015. While exhaustion of administrative remedies is indeed required in NLRB proceedings under Section 10(e) and (f) of the NLRA, the specific characterization that it is 'jurisdictional and cannot be waived' is a nuanced legal point that would need verification from the actual case. The failure to locate this case in multiple database searches strongly suggests this citation may be fabricated or contain significant errors.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "582 U.S. 255 (2017)",
+        "case_name": "Bristol-Myers Squibb Co. v. Superior Court of California",
+        "full_reference": "Bristol-Myers Squibb Co. v. Superior Court of California, 582 U.S. 255 (2017)",
+        "quoted_text": null,
+        "characterization": "Specific personal jurisdiction requires an affiliation between the forum and the underlying controversy. The Court held that a defendant's general connections with the forum are insufficient to support specific jurisdiction over claims unrelated to those connections",
+        "context": "Specific personal jurisdiction requires an affiliation between the forum and the underlying controversy. Bristol-Myers Squibb Co. v. Superior Court of California, 582 U.S. 255 (2017). The Court held that a defendant's general connections with the forum are insufficient to support specific jurisdiction over claims unrelated to those connections.",
+        "position_start": 4142,
+        "position_end": 4497
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Bristol-Myers Squibb Co. v. Superior Court of Cal., San Francisco Cty.",
+        "court": "",
+        "date_filed": "2017-06-19",
+        "url": "https://www.courtlistener.com/opinion/4403809/bristol-myers-squibb-co-v-superior-court-of-cal-san-francisco-cty/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The opinion explicitly states that specific jurisdiction requires 'an affiliation between the forum and the underlying controversy' and that 'a defendant's general connections with the forum are not enough' when those connections are 'unrelated to' the specific claims at issue.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Bristol-Myers Squibb Co. v. Superior Court of California, 582 U.S. 255 (2017)). The source opinion matches the cited case - it's the Supreme Court's decision in Bristol-Myers Squibb involving personal jurisdiction issues.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states two key points: (1) specific personal jurisdiction requires an affiliation between the forum and the underlying controversy, and (2) a defendant's general connections with the forum are insufficient to support specific jurisdiction over claims unrelated to those connections.\n\nFor the first point, the opinion explicitly states: 'In order for a state court to exercise specific jurisdiction, \"the suit\" must \"aris[e] out of or relat[e] to the defendant's contacts with the forum.\"' (slip op. at 5). The opinion also states: 'there must be \"an affiliation between the forum and the underlying controversy, principally, [an] activity or an occurrence that takes place in the forum State.\"' (slip op. at 5-6).\n\nFor the second point, the opinion clearly states: 'For specific jurisdiction, a defendant's general connections with the forum are not enough.' (slip op. at 7-8). The Court elaborates: 'As we have said, \"[a] corporation's 'continuous activity of some sorts within a state . . . is not enough to support the demand that the corporation be amenable to suits unrelated to that activity.'\"' (slip op. at 8).\n\nThe characterization accurately summarizes these holdings without distortion or omission of important context.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly reflects explicit statements in the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately represents the Court's holding on specific personal jurisdiction requirements.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "571 U.S. 117 (2014)",
+        "case_name": "Daimler AG v. Bauman",
+        "full_reference": "Daimler AG v. Bauman, 571 U.S. 117 (2014)",
+        "quoted_text": null,
+        "characterization": "General personal jurisdiction exists only where the defendant is \"at home\" \u2014 typically the state of incorporation or principal place of business. The Court rejected the notion that a corporation's substantial business in a forum renders it subject to general jurisdiction there",
+        "context": "General personal jurisdiction exists only where the defendant is \"at home\" \u2014 typically the state of incorporation or principal place of business. Daimler AG v. Bauman, 571 U.S. 117 (2014). The Court rejected the notion that a corporation's substantial business in a forum renders it subject to general jurisdiction there.",
+        "position_start": 4499,
+        "position_end": 4820
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Daimler AG v. Bauman",
+        "court": "",
+        "date_filed": "2014-01-14",
+        "url": "https://www.courtlistener.com/opinion/2649076/daimler-ag-v-bauman/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The Court established that general jurisdiction exists only where a corporation is 'at home,' which typically means its state of incorporation or principal place of business. The Court explicitly rejected the Ninth Circuit's view that Daimler's substantial business operations in California (through MBUSA) were sufficient for general jurisdiction, stating that 'No decision of this Court sanctions a view of general jurisdiction so grasping.' The characterization correctly summarizes both the 'at home' standard and the rejection of substantial business contacts as a sufficient basis for general jurisdiction.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] Step 1: Verified the citation format is correct and the source opinion matches the cited case. Step 2: No quote provided, so quote verification not applicable. Step 3: Analyzed the characterization's two main points. First point about 'at home' jurisdiction is directly supported by multiple passages in the opinion establishing that general jurisdiction requires a corporation to be 'essentially at home' in the forum state, with paradigm examples being state of incorporation and principal place of business. Second point about rejecting substantial business as sufficient is explicitly supported by the Court's reversal of the Ninth Circuit and its statement that substantial California activities would not suffice for general jurisdiction. Step 4: High confidence as the characterization accurately reflects the Court's central holdings. Step 5: Overall status is verified as the characterization correctly represents the Court's reasoning and conclusions.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "454 U.S. 235 (1981)",
+        "case_name": "Piper Aircraft Co. v. Reyno",
+        "full_reference": "Piper Aircraft Co. v. Reyno, 454 U.S. 235 (1981)",
+        "quoted_text": null,
+        "characterization": "Under the doctrine of forum non conveniens, courts balance private and public interest factors in deciding whether to dismiss in favor of a more convenient forum. The Court held that the possibility of an unfavorable change in law should ordinarily not be given conclusive or even substantial weight in the analysis",
+        "context": "Under the doctrine of forum non conveniens, courts balance private and public interest factors in deciding whether to dismiss in favor of a more convenient forum. Piper Aircraft Co. v. Reyno, 454 U.S. 235 (1981). The Court held that the possibility of an unfavorable change in law should ordinarily not be given conclusive or even substantial weight in the analysis.",
+        "position_start": 4822,
+        "position_end": 5193
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Piper Aircraft Co. v. Reyno",
+        "court": "",
+        "date_filed": "1982-01-25",
+        "url": "https://www.courtlistener.com/opinion/110586/piper-aircraft-co-v-reyno/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The opinion explicitly states at page 247: 'The possibility of a change in substantive law should ordinarily not be given conclusive or even substantial weight in the forum non conveniens inquiry.' The Court also discusses the balancing of private and public interest factors under the Gilbert analysis throughout the opinion, particularly at pages 241-242 where it describes the factors from Gulf Oil Corp. v. Gilbert.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (454 U.S. 235 (1981)). The source opinion matches the cited case - it is indeed Piper Aircraft Co. v. Reyno, with Justice Marshall delivering the opinion. The case involves forum non conveniens analysis arising from an aircraft crash in Scotland.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states two main points: (1) courts balance private and public interest factors under forum non conveniens doctrine, and (2) the possibility of unfavorable change in law should ordinarily not be given conclusive or substantial weight. Both points are directly supported by the opinion. At page 247, the Court states: 'The possibility of a change in substantive law should ordinarily not be given conclusive or even substantial weight in the forum non conveniens inquiry.' The opinion extensively discusses the Gilbert balancing test and its private and public interest factors (pages 241-242, 257-261).\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly reflects explicit holdings in the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately represents the Court's holdings on both the balancing test and the weight given to potential changes in law.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    }
+  ],
+  "created_at": "2026-04-11T21:59:27.221727+00:00"
+}

@@ -3,8 +3,9 @@
 import os
 import uuid
 
-from fastapi import APIRouter, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, HTTPException, UploadFile
 
+from backend.auth import check_upload_rate, verify_auth
 from backend.config import MAX_UPLOAD_SIZE_MB, UPLOAD_DIR
 from backend.jobs import submit_job
 
@@ -12,8 +13,10 @@ router = APIRouter()
 
 
 @router.post("/upload")
-async def upload_document(file: UploadFile):
+async def upload_document(file: UploadFile, username: str = Depends(verify_auth)):
     """Upload a legal document for citation verification."""
+    check_upload_rate(username)
+
     if not file.filename:
         raise HTTPException(400, "No filename provided")
 

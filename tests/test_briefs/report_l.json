@@ -1,0 +1,481 @@
+{
+  "id": "e7f6921d-5695-462e-ae51-9b5d3fa2cdad",
+  "filename": "brief_l_lookalikes.docx",
+  "document_text": "MEMORANDUM OF LAW IN SUPPORT OF PRELIMINARY INJUNCTION\n\nApex Technologies, Inc. v. Consolidated Data Services, LLC\n\nI. NEAR-MISS CASE NAMES\n\nSuspects must be informed of their constitutional rights prior to custodial interrogation. Miranda v. State of Arizona, 384 U.S. 436 (1966). This requirement applies to all law enforcement agencies regardless of jurisdiction.\n\nThe warnings required prior to custodial interrogation serve to protect the Fifth Amendment privilege against self-incrimination. Miranda v. Arizona, 384 U.S. 436 (1966). The Court held that \"the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.\"\n\nII. PARTY NAME REVERSAL\n\nA public official may not recover damages for a defamatory falsehood relating to his official conduct unless he proves the statement was made with \"actual malice.\" Sullivan v. New York Times Co., 376 U.S. 254 (1964).\n\nThe President does not have inherent constitutional authority to seize private property in the absence of explicit congressional authorization. Sawyer v. Youngstown Sheet & Tube Co., 343 U.S. 579 (1952). Justice Jackson's concurrence established the influential three-category framework for analyzing presidential power.\n\nIII. UNITED STATES v. [COMMON NAME] DISAMBIGUATION\n\nExecutive privilege is not absolute and must yield to the demonstrated, specific need for evidence in a criminal trial. United States v. Nixon, 418 U.S. 683, 713 (1974). The Court ordered President Nixon to comply with the subpoena for the White House tape recordings.\n\nA former President is entitled to absolute immunity from damages liability for acts within the \"outer perimeter\" of his official responsibility. Nixon v. Fitzgerald, 457 U.S. 731 (1982).\n\nThe government bears the burden of proving that electronically stored information was not altered after seizure. United States v. Williams, 893 F.3d 1127 (9th Cir. 2018) (holding that the Fourth Amendment requires a chain-of-custody foundation for all digital evidence introduced at trial).\n\nIV. STATE vs. FEDERAL VERSION CONFUSION\n\nLiability in negligence requires a duty owed to the particular plaintiff. Palsgraf v. Long Island R.R. Co., 248 N.Y. 339, 162 N.E. 99 (1928). Chief Judge Cardozo held that negligence in the air, so to speak, will not do; there must be negligence directed at the plaintiff or a class of which the plaintiff is a member.\n\nThe foreseeability of harm to a particular plaintiff is the touchstone of the duty analysis. Palsgraf v. Long Island R.R. Co., 248 F.2d 339 (2d Cir. 1928) (holding that proximate cause analysis must focus on the specific risk that made the actor's conduct negligent).\n\nV. IN RE CASES WITH SIMILAR NAMES\n\nJuveniles in delinquency proceedings are entitled to fundamental due process protections, including the right to notice, the right to counsel, the privilege against self-incrimination, and the right to confront witnesses. In re Gault, 387 U.S. 1 (1967).\n\nThe Bankruptcy Code's automatic stay provisions apply to all proceedings against the debtor, including state regulatory actions seeking monetary penalties. In re Galt, 387 F.3d 295 (4th Cir. 2004) (distinguishing between governmental regulatory actions exempt under Section 362(b)(4) and those that are stayed).\n\nVI. MULTIPLE ISSUES IN SINGLE CITATION\n\nStates possess broad police power to enact reasonable regulations to protect public health, including compulsory vaccination laws. Jacobson v. Massachusetts, 197 U.S. 11 (1905). The Court upheld a Cambridge, Massachusetts ordinance requiring vaccination against smallpox, holding that individual liberty is not absolute and is subject to the restraint necessary for the common welfare.\n\nThe Court extended Jacobson to hold that the government may mandate any medical procedure it deems necessary for public health without providing individualized medical exemptions. Jacobson v. Massachusetts, 197 U.S. 11, 38 (1905). This unlimited public health authority has been consistently reaffirmed.\n\nCONCLUSION\n\nFor the foregoing reasons, Plaintiff respectfully requests that the Court grant the preliminary injunction.",
+  "total_citations": 13,
+  "verified": 8,
+  "warnings": 1,
+  "errors": 3,
+  "unverifiable": 1,
+  "citations": [
+    {
+      "extraction": {
+        "citation_text": "384 U.S. 436 (1966)",
+        "case_name": "Miranda v. State of Arizona",
+        "full_reference": "Miranda v. State of Arizona, 384 U.S. 436 (1966)",
+        "quoted_text": null,
+        "characterization": "Suspects must be informed of their constitutional rights prior to custodial interrogation",
+        "context": "Suspects must be informed of their constitutional rights prior to custodial interrogation. Miranda v. State of Arizona, 384 U.S. 436 (1966). This requirement applies to all law enforcement agencies regardless of jurisdiction.",
+        "position_start": 179,
+        "position_end": 232
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Miranda v. Arizona",
+        "court": "",
+        "date_filed": "1966-06-13",
+        "url": "https://www.courtlistener.com/opinion/107252/miranda-v-arizona/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the core holding of Miranda v. Arizona. The Court explicitly held that suspects must be informed of their constitutional rights prior to custodial interrogation, including the right to remain silent and the right to counsel. The opinion states: 'Prior to any questioning, the person must be warned that he has a right to remain silent, that any statement he does make may be used as evidence against him, and that he has a right to the presence of an attorney, either retained or appointed.' The characterization correctly summarizes this fundamental requirement established by the Court.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Miranda v. State of Arizona, 384 U.S. 436 (1966)). The source opinion text confirms this is indeed the Miranda case, with Chief Justice Warren delivering the opinion and dealing with the constitutional requirements for custodial interrogation.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states 'Suspects must be informed of their constitutional rights prior to custodial interrogation.' This is directly supported by multiple passages in the opinion:\n- Page 444: 'Prior to any questioning, the person must be warned that he has a right to remain silent, that any statement he does make may be used as evidence against him, and that he has a right to the presence of an attorney, either retained or appointed.'\n- Page 467-468: 'At the outset, if a person in custody is to be subjected to interrogation, he must first be informed in clear and unequivocal terms that he has the right to remain silent.'\n- Page 479: 'He must be warned prior to any questioning that he has the right to remain silent, that anything he says can be used against him in a court of law, that he has the right to the presence of an attorney, and that if he cannot afford an attorney one will be appointed for him prior to any questioning if he so desires.'\n\nThe characterization accurately captures the essence of the Miranda holding without misrepresenting or omitting crucial context.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization is clearly and repeatedly supported throughout the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified - the characterization accurately represents the Court's holding.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "384 U.S. 436 (1966)",
+        "case_name": "Miranda v. Arizona",
+        "full_reference": "Miranda v. Arizona, 384 U.S. 436 (1966)",
+        "quoted_text": "the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.",
+        "characterization": "The warnings required prior to custodial interrogation serve to protect the Fifth Amendment privilege against self-incrimination",
+        "context": "The warnings required prior to custodial interrogation serve to protect the Fifth Amendment privilege against self-incrimination. Miranda v. Arizona, 384 U.S. 436 (1966). The Court held that \"the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.\"",
+        "position_start": 334,
+        "position_end": 373
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Miranda v. Arizona",
+        "court": "",
+        "date_filed": "1966-06-13",
+        "url": "https://www.courtlistener.com/opinion/107252/miranda-v-arizona/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes the Court's holding. The opinion explicitly states that the warnings are required to protect the Fifth Amendment privilege against self-incrimination. The Court repeatedly emphasizes throughout the opinion that the procedural safeguards, including the warnings, are necessary to protect this constitutional privilege during custodial interrogation.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Miranda v. Arizona, 384 U.S. 436 (1966)). The source opinion text is clearly from Miranda v. Arizona - it contains the correct case name, discusses custodial interrogation and Fifth Amendment rights, and is authored by Chief Justice Warren, all matching the cited case.\n\nSTEP 2 - QUOTE VERIFICATION: The programmatic search confirmed the quote exists verbatim in the opinion. I found the exact quote on page 444 of the opinion: 'the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.' This is a word-for-word match with no differences.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'The warnings required prior to custodial interrogation serve to protect the Fifth Amendment privilege against self-incrimination.' This is accurate. Throughout the opinion, the Court repeatedly emphasizes that the warnings are designed to protect the Fifth Amendment privilege. For example, the Court states: 'In order to combat these pressures and to permit a full opportunity to exercise the privilege against self-incrimination, the accused must be adequately and effectively apprised of his rights.' The entire opinion is focused on establishing procedural safeguards, including warnings, to protect the Fifth Amendment privilege during custodial interrogation.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: I have very high confidence (0.95) because: (1) the quote is found verbatim in the opinion, (2) the characterization is clearly supported by the Court's reasoning throughout the opinion, and (3) the source text is definitively from the cited case.\n\nSTEP 5 - OVERALL STATUS: Verified. Both the quote and characterization are accurate, with the quote being exact and the characterization correctly describing the purpose of the Miranda warnings.",
+        "quote_status": "verified",
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "376 U.S. 254 (1964)",
+        "case_name": "Sullivan v. New York Times Co.",
+        "full_reference": "Sullivan v. New York Times Co., 376 U.S. 254 (1964)",
+        "quoted_text": "actual malice",
+        "characterization": "A public official may not recover damages for a defamatory falsehood relating to his official conduct unless he proves the statement was made with \"actual malice.\"",
+        "context": "A public official may not recover damages for a defamatory falsehood relating to his official conduct unless he proves the statement was made with \"actual malice.\" Sullivan v. New York Times Co., 376 U.S. 254 (1964).",
+        "position_start": 825,
+        "position_end": 877
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "New York Times Co. v. Sullivan",
+        "court": "",
+        "date_filed": "1964-03-09",
+        "url": "https://www.courtlistener.com/opinion/106761/new-york-times-co-v-sullivan/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "actual malice",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The opinion explicitly states: 'The constitutional guarantees require, we think, a federal rule that prohibits a public official from recovering damages for a defamatory falsehood relating to his official conduct unless he proves that the statement was made with \"actual malice\"\u2014that is, with knowledge that it was false or with reckless disregard of whether it was false or not.' This is the central holding of the case, establishing the actual malice standard for defamation claims by public officials.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (376 U.S. 254 (1964)). The source opinion confirms this is New York Times Co. v. Sullivan, with the correct parties and subject matter matching the cited case.\n\nSTEP 2 - QUOTE VERIFICATION: The quoted text 'actual malice' appears verbatim multiple times throughout the opinion. The programmatic search confirmed its presence. The quote appears most prominently on page 279-280 where the Court defines the standard: 'with \"actual malice\"\u2014that is, with knowledge that it was false or with reckless disregard of whether it was false or not.'\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization is accurate. The Court explicitly holds that 'a public official' cannot recover damages for defamatory falsehoods 'relating to his official conduct' unless he proves 'actual malice.' This is stated clearly in the opinion and represents the core constitutional rule established by the case.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the quote is found verbatim and the characterization directly reflects the Court's explicit holding.\n\nSTEP 5 - OVERALL STATUS: Verified. Both the quote and characterization are accurate representations of the source opinion.",
+        "quote_status": "verified",
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "343 U.S. 579 (1952)",
+        "case_name": "Sawyer v. Youngstown Sheet & Tube Co.",
+        "full_reference": "Sawyer v. Youngstown Sheet & Tube Co., 343 U.S. 579 (1952)",
+        "quoted_text": null,
+        "characterization": "The President does not have inherent constitutional authority to seize private property in the absence of explicit congressional authorization",
+        "context": "The President does not have inherent constitutional authority to seize private property in the absence of explicit congressional authorization. Sawyer v. Youngstown Sheet & Tube Co., 343 U.S. 579 (1952). Justice Jackson's concurrence established the influential three-category framework for analyzing presidential power.",
+        "position_start": 1023,
+        "position_end": 1083
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Youngstown Sheet & Tube Co. v. Sawyer",
+        "court": "",
+        "date_filed": "1952-06-02",
+        "url": "https://www.courtlistener.com/opinion/105018/youngstown-sheet-tube-co-v-sawyer/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "warning",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The majority opinion explicitly states that the President's seizure order 'cannot properly be sustained' and that 'the President's power, if any, to issue the order must stem either from an act of Congress or from the Constitution itself.' The Court found neither source of authority present, concluding that the President lacked inherent constitutional power to seize the steel mills without congressional authorization.",
+        "confidence": 0.9500000000000001,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is incorrect. The case is actually Youngstown Sheet & Tube Co. v. Sawyer, not 'Sawyer v. Youngstown Sheet & Tube Co.' The parties are reversed in the citation. The correct citation is Youngstown Sheet & Tube Co. v. Sawyer, 343 U.S. 579 (1952). The source opinion confirms this is the correct case - it deals with President Truman's seizure of steel mills and the constitutional limits on presidential power.\n\nSTEP 2 - QUOTE VERIFICATION: No quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states 'The President does not have inherent constitutional authority to seize private property in the absence of explicit congressional authorization.' This accurately reflects the Court's holding. Justice Black's majority opinion states: 'The President's power, if any, to issue the order must stem either from an act of Congress or from the Constitution itself. There is no statute that expressly authorizes the President to take possession of property as he did here.' The Court concluded that the seizure order 'cannot stand' and affirmed the District Court's judgment against the President. The characterization correctly captures the essence of the Court's rejection of inherent presidential seizure power.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: High confidence (0.9) in the characterization accuracy despite the citation format error. The opinion clearly supports the characterization.\n\nSTEP 5 - OVERALL STATUS: Warning due to the incorrect citation format (reversed party names), though the characterization is accurate.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "418 U.S. 683, 713 (1974)",
+        "case_name": "United States v. Nixon",
+        "full_reference": "United States v. Nixon, 418 U.S. 683, 713 (1974)",
+        "quoted_text": null,
+        "characterization": "Executive privilege is not absolute and must yield to the demonstrated, specific need for evidence in a criminal trial",
+        "context": "Executive privilege is not absolute and must yield to the demonstrated, specific need for evidence in a criminal trial. United States v. Nixon, 418 U.S. 683, 713 (1974). The Court ordered President Nixon to comply with the subpoena for the White House tape recordings.",
+        "position_start": 1318,
+        "position_end": 1367
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "United States v. Nixon",
+        "court": "",
+        "date_filed": "1974-07-24",
+        "url": "https://www.courtlistener.com/opinion/109101/united-states-v-nixon/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding that executive privilege is not absolute and must yield to the demonstrated, specific need for evidence in a criminal trial. The Court explicitly states on page 713: 'The generalized assertion of privilege must yield to the demonstrated, specific need for evidence in a pending criminal trial.' This directly supports the characterization provided.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (United States v. Nixon, 418 U.S. 683, 713 (1974)). The source opinion text confirms this is indeed the Nixon case involving President Nixon's assertion of executive privilege against a subpoena for White House tape recordings in a criminal prosecution.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states 'Executive privilege is not absolute and must yield to the demonstrated, specific need for evidence in a criminal trial.' Looking at page 713 of the opinion, the Court explicitly states: 'We conclude that when the ground for asserting privilege as to subpoenaed materials sought for use in a criminal trial is based only on the generalized interest in confidentiality, it cannot prevail over the fundamental demands of due process of law in the fair administration of criminal justice. The generalized assertion of privilege must yield to the demonstrated, specific need for evidence in a pending criminal trial.' This language directly supports the characterization. The Court also states earlier that 'the legitimate needs of the judicial process may outweigh Presidential privilege' and discusses the need to balance competing interests. The characterization accurately summarizes the Court's holding.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization is directly supported by explicit language in the opinion at the cited page.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately represents the Court's holding as stated on page 713 of the opinion.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "457 U.S. 731 (1982)",
+        "case_name": "Nixon v. Fitzgerald",
+        "full_reference": "Nixon v. Fitzgerald, 457 U.S. 731 (1982)",
+        "quoted_text": "outer perimeter",
+        "characterization": "A former President is entitled to absolute immunity from damages liability for acts within the \"outer perimeter\" of his official responsibility",
+        "context": "A former President is entitled to absolute immunity from damages liability for acts within the \"outer perimeter\" of his official responsibility. Nixon v. Fitzgerald, 457 U.S. 731 (1982).",
+        "position_start": 1585,
+        "position_end": 1625
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Nixon v. Fitzgerald",
+        "court": "",
+        "date_filed": "1982-06-24",
+        "url": "https://www.courtlistener.com/opinion/110762/nixon-v-fitzgerald/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "outer perimeter",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately states the Court's holding. The opinion explicitly states that 'petitioner, as a former President of the United States, is entitled to absolute immunity from damages liability predicated on his official acts' and that this immunity extends to acts within the 'outer perimeter' of official responsibility. The Court specifically uses this phrase when stating: 'In view of the special nature of the President's constitutional office and functions, we think it appropriate to recognize absolute Presidential immunity from damages liability for acts within the \"outer perimeter\" of his official responsibility.'",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE: The citation format is correct (Nixon v. Fitzgerald, 457 U.S. 731 (1982)). The source opinion is clearly from this case, as evidenced by the case caption and the discussion of Fitzgerald's dismissal from the Air Force.\n\nSTEP 2 - QUOTE VERIFICATION: The phrase 'outer perimeter' appears multiple times in the opinion. Most notably, it appears on page 756 where the Court states: 'we think it appropriate to recognize absolute Presidential immunity from damages liability for acts within the \"outer perimeter\" of his official responsibility.' The quote is found verbatim.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization is accurate. The Court explicitly holds that 'petitioner, as a former President of the United States, is entitled to absolute immunity from damages liability predicated on his official acts' (page 749). The Court then clarifies the scope of this immunity extends to acts within the 'outer perimeter' of official responsibility (page 756). The characterization correctly combines these elements of the holding.\n\nSTEP 4 - CONFIDENCE: Very high confidence (0.95) as the quote is found verbatim and the characterization accurately reflects the Court's explicit holding.\n\nSTEP 5 - OVERALL STATUS: Verified. Both the quote and characterization are accurate.",
+        "quote_status": "verified",
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "893 F.3d 1127 (9th Cir. 2018)",
+        "case_name": "United States v. Williams",
+        "full_reference": "United States v. Williams, 893 F.3d 1127 (9th Cir. 2018)",
+        "quoted_text": null,
+        "characterization": "The government bears the burden of proving that electronically stored information was not altered after seizure",
+        "context": "The government bears the burden of proving that electronically stored information was not altered after seizure. United States v. Williams, 893 F.3d 1127 (9th Cir. 2018) (holding that the Fourth Amendment requires a chain-of-custody foundation for all digital evidence introduced at trial).",
+        "position_start": 1740,
+        "position_end": 1797
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Heggem v. Colvin",
+        "court": "",
+        "date_filed": "2016-04-04",
+        "url": "https://www.courtlistener.com/opinion/9022883/heggem-v-colvin/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "unverifiable",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "While the Ninth Circuit has addressed digital evidence authentication requirements in various cases, I cannot verify that Williams specifically held that the Fourth Amendment requires chain-of-custody foundation for all digital evidence. This appears to conflate authentication requirements under the Federal Rules of Evidence with Fourth Amendment constitutional requirements.",
+        "confidence": 0.25,
+        "reasoning": "[Confirmed by knowledge review] The citation format appears correct for a Ninth Circuit case from 2018. However, I cannot definitively verify the specific holding attributed to United States v. Williams at this citation. The characterization seems problematic because: (1) Chain of custody requirements for digital evidence typically arise under Federal Rules of Evidence 901 (authentication), not the Fourth Amendment; (2) The Fourth Amendment generally addresses search and seizure issues, not evidentiary foundation requirements at trial; (3) While courts do require proper authentication of digital evidence, framing this as a Fourth Amendment requirement seems incorrect. Without access to the actual opinion, I cannot confirm whether this case exists or what it actually held.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "248 N.Y. 339, 162 N.E. 99 (1928)",
+        "case_name": "Palsgraf v. Long Island R.R. Co.",
+        "full_reference": "Palsgraf v. Long Island R.R. Co., 248 N.Y. 339, 162 N.E. 99 (1928)",
+        "quoted_text": null,
+        "characterization": "Liability in negligence requires a duty owed to the particular plaintiff",
+        "context": "Liability in negligence requires a duty owed to the particular plaintiff. Palsgraf v. Long Island R.R. Co., 248 N.Y. 339, 162 N.E. 99 (1928). Chief Judge Cardozo held that negligence in the air, so to speak, will not do; there must be negligence directed at the plaintiff or a class of which the plaintiff is a member.",
+        "position_start": 2019,
+        "position_end": 2087
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Palsgraf v. Long Island R.R. Co.",
+        "court": "",
+        "date_filed": "1928-05-29",
+        "url": "https://www.courtlistener.com/opinion/3602780/palsgraf-v-long-island-rr-co/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the core holding of Palsgraf. The opinion explicitly states that negligence requires a duty to the particular plaintiff: 'In every instance, before negligence can be predicated of a given act, back of the act must be sought and found a duty to the individual complaining' and 'The plaintiff sues in her own right for a wrong personal to her, and not as the vicarious beneficiary of a breach of duty to another.' The document's additional context about 'negligence in the air' is also directly supported by the opinion's quote from Pollock.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (248 N.Y. 339, 162 N.E. 99 (1928)). The source opinion is clearly the Palsgraf case - it discusses Mrs. Palsgraf being injured by falling scales after guards helped a passenger board a train, causing a package of fireworks to fall and explode. The parties match (Palsgraf v. Long Island R.R. Co.) and this is Judge Cardozo's famous opinion. No abbreviation issues present.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided to verify.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states 'Liability in negligence requires a duty owed to the particular plaintiff.' This is strongly supported throughout the opinion. Key passages include: (1) 'In every instance, before negligence can be predicated of a given act, back of the act must be sought and found a duty to the individual complaining' (citing W. Va. Central R. Co. v. State); (2) 'The ideas of negligence and duty are strictly correlative' (quoting Bowen, L.J.); (3) 'The plaintiff sues in her own right for a wrong personal to her, and not as the vicarious beneficiary of a breach of duty to another'; (4) 'What the plaintiff must show is \"a wrong\" to herself, i.e., a violation of her own right, and not merely a wrong to some one else.' The document's additional context about 'negligence in the air' is also directly from the opinion, which quotes Pollock: 'Proof of negligence in the air, so to speak, will not do.'\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95). The characterization is clearly and repeatedly supported by the opinion's text.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately captures Cardozo's central holding that negligence liability requires a duty owed to the specific plaintiff, not just negligent conduct in general.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "248 F.2d 339 (2d Cir. 1928)",
+        "case_name": "Palsgraf v. Long Island R.R. Co.",
+        "full_reference": "Palsgraf v. Long Island R.R. Co., 248 F.2d 339 (2d Cir. 1928)",
+        "quoted_text": null,
+        "characterization": "The foreseeability of harm to a particular plaintiff is the touchstone of the duty analysis",
+        "context": "The foreseeability of harm to a particular plaintiff is the touchstone of the duty analysis. Palsgraf v. Long Island R.R. Co., 248 F.2d 339 (2d Cir. 1928) (holding that proximate cause analysis must focus on the specific risk that made the actor's conduct negligent).",
+        "position_start": 2343,
+        "position_end": 2407
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Palsgraf v. Long Island R.R. Co.",
+        "court": "New York Court of Appeals",
+        "date_filed": "1928-05-29",
+        "url": "https://www.courtlistener.com/opinion/3602780/palsgraf-v-long-island-rr-co/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "misleading",
+        "characterization_explanation": "While Palsgraf does discuss foreseeability and duty, the characterization oversimplifies and potentially misrepresents the holding. The opinion emphasizes that duty is relational and depends on the risk reasonably to be perceived, but it does not establish foreseeability as 'the touchstone' of duty analysis in the broad way suggested. The parenthetical about 'proximate cause analysis' is particularly problematic as Cardozo explicitly states 'The law of causation, remote or proximate, is thus foreign to the case before us.'",
+        "confidence": 0.9500000000000001,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format contains a critical error. Palsgraf v. Long Island R.R. Co. was decided by the New York Court of Appeals in 1928 and is reported at 248 N.Y. 339, 162 N.E. 99 (1928). The citation given (248 F.2d 339 (2d Cir. 1928)) incorrectly identifies it as a Second Circuit federal case. The volume number 248 is coincidentally correct for the N.Y. reporter, but F.2d is the wrong reporter series.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided to verify.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states 'The foreseeability of harm to a particular plaintiff is the touchstone of the duty analysis.' While Palsgraf does discuss the relationship between foreseeability and duty, this characterization is misleading for several reasons: (1) Cardozo's opinion focuses on the relational nature of duty - that negligence must be understood in relation to a particular plaintiff, not negligence 'in the air'; (2) The opinion states 'The risk reasonably to be perceived defines the duty to be obeyed, and risk imports relation' but this is more nuanced than making foreseeability 'the touchstone'; (3) The parenthetical claiming the case holds 'that proximate cause analysis must focus on the specific risk that made the actor's conduct negligent' is particularly problematic because Cardozo explicitly states: 'The law of causation, remote or proximate, is thus foreign to the case before us.' The case is about duty, not proximate cause.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: 0.9 - I have high confidence in this assessment as the opinion text clearly shows the citation format error and the characterization issues.\n\nSTEP 5 - OVERALL STATUS: Error due to incorrect citation format and misleading characterization.",
+        "quote_status": null,
+        "characterization_status": "warning"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "387 U.S. 1 (1967)",
+        "case_name": "In re Gault",
+        "full_reference": "In re Gault, 387 U.S. 1 (1967)",
+        "quoted_text": null,
+        "characterization": "Juveniles in delinquency proceedings are entitled to fundamental due process protections, including the right to notice, the right to counsel, the privilege against self-incrimination, and the right to confront witnesses",
+        "context": "Juveniles in delinquency proceedings are entitled to fundamental due process protections, including the right to notice, the right to counsel, the privilege against self-incrimination, and the right to confront witnesses. In re Gault, 387 U.S. 1 (1967).",
+        "position_start": 2741,
+        "position_end": 2772
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "In Re GAULT",
+        "court": "",
+        "date_filed": "1967-05-15",
+        "url": "https://www.courtlistener.com/opinion/107439/in-re-gault/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately summarizes the Court's holdings in In re Gault. The Court explicitly held that juveniles in delinquency proceedings are entitled to: (1) adequate notice of charges (pp. 31-34); (2) the right to counsel, including appointed counsel if indigent (p. 41); (3) the privilege against self-incrimination (p. 55); and (4) the right to confrontation and cross-examination of witnesses (pp. 56-57). Each of these due process protections was specifically addressed and mandated by the Court for juvenile delinquency proceedings that could result in commitment to an institution.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] I verified the characterization by locating the Court's specific holdings on each of the four due process rights mentioned. The Court addressed notice requirements at pages 31-34, holding that juveniles must receive notice that would be constitutionally adequate in civil or criminal proceedings. For right to counsel, the Court explicitly stated at page 41 that the Due Process Clause requires notification of the right to counsel and appointment if unable to afford counsel. For self-incrimination, the Court clearly held at page 55 that the privilege applies to juveniles as it does to adults. For confrontation rights, the Court held at pages 56-57 that sworn testimony subject to cross-examination is required. The characterization accurately captures these four fundamental holdings without exaggeration or misstatement.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "387 F.3d 295 (4th Cir. 2004)",
+        "case_name": "In re Galt",
+        "full_reference": "In re Galt, 387 F.3d 295 (4th Cir. 2004)",
+        "quoted_text": null,
+        "characterization": "The Bankruptcy Code's automatic stay provisions apply to all proceedings against the debtor, including state regulatory actions seeking monetary penalties",
+        "context": "The Bankruptcy Code's automatic stay provisions apply to all proceedings against the debtor, including state regulatory actions seeking monetary penalties. In re Galt, 387 F.3d 295 (4th Cir. 2004) (distinguishing between governmental regulatory actions exempt under Section 362(b)(4) and those that are stayed).",
+        "position_start": 2929,
+        "position_end": 2970
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Sejid Smriko v. John Ashcroft, Attorney General of the United States",
+        "court": "",
+        "date_filed": "2004-10-26",
+        "url": "https://www.courtlistener.com/opinion/788149/sejid-smriko-v-john-ashcroft-attorney-general-of-the-united-states/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": false,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "Cannot verify the characterization because the case appears not to exist. The citation format itself is technically proper, but the case name and citation do not match any known case.",
+        "confidence": 0.4,
+        "reasoning": "[Confirmed by knowledge review] The citation 'In re Galt, 387 F.3d 295 (4th Cir. 2004)' appears to be fabricated or erroneous. The database lookup indicates that 387 F.3d 295 is actually 'Sejid Smriko v. John Ashcroft,' not 'In re Galt.' I do not recognize any Fourth Circuit case styled 'In re Galt' from 2004 dealing with bankruptcy automatic stay provisions. While the legal principle described (that automatic stays apply to proceedings against debtors with exceptions for certain regulatory actions under Section 362(b)(4)) is a correct statement of bankruptcy law, this particular case citation appears to be fictitious. The mismatch between the case name and the actual case at this citation strongly suggests this is a fabricated citation.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "197 U.S. 11 (1905)",
+        "case_name": "Jacobson v. Massachusetts",
+        "full_reference": "Jacobson v. Massachusetts, 197 U.S. 11 (1905)",
+        "quoted_text": null,
+        "characterization": "States possess broad police power to enact reasonable regulations to protect public health, including compulsory vaccination laws",
+        "context": "States possess broad police power to enact reasonable regulations to protect public health, including compulsory vaccination laws. Jacobson v. Massachusetts, 197 U.S. 11 (1905). The Court upheld a Cambridge, Massachusetts ordinance requiring vaccination against smallpox, holding that individual liberty is not absolute and is subject to the restraint necessary for the common welfare.",
+        "position_start": 3232,
+        "position_end": 3278
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Jacobson v. Massachusetts",
+        "court": "",
+        "date_filed": "1905-02-20",
+        "url": "https://www.courtlistener.com/opinion/96230/jacobson-v-massachusetts/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The opinion explicitly states that 'the police power of a State must be held to embrace, at least, such reasonable regulations established directly by legislative enactment as will protect the public health and the public safety' and that states have 'the authority of a State to enact quarantine laws and health laws of every description.' The Court upheld Massachusetts' compulsory vaccination law as a valid exercise of police power, stating that 'the State may invest local bodies called into existence for purposes of local administration with authority in some appropriate way to safeguard the public health and the public safety.' The characterization correctly summarizes this core holding.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Jacobson v. Massachusetts, 197 U.S. 11 (1905)). The source opinion text clearly matches this case - it discusses Massachusetts' compulsory vaccination statute, mentions Jacobson as the defendant, and addresses the constitutional challenge to the vaccination requirement. STEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable. STEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'States possess broad police power to enact reasonable regulations to protect public health, including compulsory vaccination laws.' This is strongly supported by the opinion. Key passages include: (1) 'The authority of the State to enact this statute is to be referred to what is commonly called the police power' (page 24-25); (2) 'According to settled principles the police power of a State must be held to embrace, at least, such reasonable regulations established directly by legislative enactment as will protect the public health and the public safety' (page 25); (3) The Court explicitly upheld the vaccination requirement, stating 'We now decide only that the statute covers the present case, and that nothing clearly appears that would justify this court in holding it to be unconstitutional' (page 39). The Court affirmed the lower court's judgment upholding the statute. STEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly reflects the Court's explicit holdings about state police power and vaccination laws. STEP 5 - OVERALL STATUS: Verified - the characterization accurately represents the Court's holding.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "197 U.S. 11, 38 (1905)",
+        "case_name": "Jacobson v. Massachusetts",
+        "full_reference": "Jacobson v. Massachusetts, 197 U.S. 11, 38 (1905)",
+        "quoted_text": null,
+        "characterization": "The Court extended Jacobson to hold that the government may mandate any medical procedure it deems necessary for public health without providing individualized medical exemptions",
+        "context": "The Court extended Jacobson to hold that the government may mandate any medical procedure it deems necessary for public health without providing individualized medical exemptions. Jacobson v. Massachusetts, 197 U.S. 11, 38 (1905). This unlimited public health authority has been consistently reaffirmed.",
+        "position_start": 3635,
+        "position_end": 3685
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Jacobson v. Massachusetts",
+        "court": "",
+        "date_filed": "1905-02-20",
+        "url": "https://www.courtlistener.com/opinion/96230/jacobson-v-massachusetts/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "error",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "unsupported",
+        "characterization_explanation": "The characterization grossly misrepresents Jacobson v. Massachusetts. The Court did NOT hold that 'the government may mandate any medical procedure it deems necessary for public health without providing individualized medical exemptions.' In fact, the Court: (1) upheld only a specific vaccination requirement during a smallpox outbreak in Cambridge; (2) explicitly recognized limits on state police power, stating it cannot be exercised in 'arbitrary and oppressive' ways; (3) specifically noted that extreme cases involving individuals for whom vaccination would be 'cruel and inhuman in the last degree' would justify judicial intervention; (4) stated that courts would be 'competent to interfere and protect the health and life of the individual concerned' in cases where vaccination would 'seriously impair his health or probably cause his death'; and (5) emphasized that the case before it involved an adult 'in perfect health and a fit subject of vaccination.' The Court's holding was narrow and specific to the facts presented, not a broad authorization for unlimited government power over medical procedures.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE: The citation format is correct (197 U.S. 11, 38 (1905)) and the source text is indeed from Jacobson v. Massachusetts.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization claims the Court 'extended Jacobson to hold that the government may mandate any medical procedure it deems necessary for public health without providing individualized medical exemptions.' This is fundamentally incorrect in multiple ways:\n\n1. The Court cannot 'extend Jacobson' within the Jacobson opinion itself - this appears to be the original Jacobson decision, not a later case extending it.\n\n2. The Court did NOT hold that government can mandate 'any medical procedure' - it specifically addressed only vaccination during a smallpox outbreak.\n\n3. The Court did NOT say there could be no individualized exemptions. In fact, at pages 38-39, the Court explicitly states: 'We are not to be understood as holding that the statute was intended to be applied to such a case, or, if it was so intended, that the judiciary would not be competent to interfere and protect the health and life of the individual concerned' when vaccination would be 'cruel and inhuman in the last degree' or would 'seriously impair his health or probably cause his death.'\n\n4. The Court emphasized the narrow nature of its holding: 'We now decide only that the statute covers the present case, and that nothing clearly appears that would justify this court in holding it to be unconstitutional.'\n\n5. The Court repeatedly emphasized limits on police power, stating it may not be exercised in 'arbitrary and oppressive' ways.\n\nSTEP 4 - CONFIDENCE: 0.95 - Very high confidence as the opinion text clearly contradicts the characterization.\n\nSTEP 5 - OVERALL STATUS: Error - The characterization materially misrepresents the Court's holding.",
+        "quote_status": null,
+        "characterization_status": "error"
+      }
+    }
+  ],
+  "created_at": "2026-04-11T22:47:13.811471+00:00"
+}

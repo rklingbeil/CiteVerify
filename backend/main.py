@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
-from backend.jobs import purge_old_jobs
+from backend.jobs import purge_old_jobs, shutdown_executor
 from backend.routers import upload, jobs, reports
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
@@ -24,6 +24,7 @@ async def lifespan(app: FastAPI):
     logger.info("CiteVerify starting up")
     purge_old_jobs()
     yield
+    shutdown_executor()
     logger.info("CiteVerify shutting down")
 
 
@@ -38,10 +39,11 @@ app = FastAPI(
     openapi_url=None if _disable_docs else "/openapi.json",
 )
 
-# CORS for local development
+# CORS — configurable via env var for production
+_cors_origins = os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[o.strip() for o in _cors_origins],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

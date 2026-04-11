@@ -1,0 +1,553 @@
+{
+  "id": "de445f52-1674-4d4a-ad68-1f1f9f3c6ea7",
+  "filename": "brief_a_all_real.docx",
+  "document_text": "MEMORANDUM IN SUPPORT OF MOTION FOR SUMMARY JUDGMENT\n\nJohnson v. Pacific Northwest Industries, Inc.\n\nI. STANDARD OF REVIEW\n\nSummary judgment is appropriate when \"there is no genuine dispute as to any material fact and the movant is entitled to judgment as a matter of law.\" Fed. R. Civ. P. 56(a). The Supreme Court has held that the moving party bears the initial burden of demonstrating the absence of a genuine issue of material fact. Celotex Corp. v. Catrett, 477 U.S. 317, 323 (1986).\n\nIn evaluating a motion for summary judgment, courts must view the evidence in the light most favorable to the nonmoving party. Anderson v. Liberty Lobby, Inc., 477 U.S. 242, 255 (1986). The Court explained:\n\n\"The evidence of the non-movant is to be believed, and all justifiable inferences are to be drawn in his favor.\"\n\nAnderson v. Liberty Lobby, Inc., 477 U.S. at 255. However, the nonmoving party must present more than a \"mere scintilla\" of evidence to survive summary judgment. Id. at 252.\n\nII. THE FIRST AMENDMENT PROTECTS COMMERCIAL SPEECH\n\nThe First Amendment, as applied through the Fourteenth Amendment, protects commercial speech. Virginia State Board of Pharmacy v. Virginia Citizens Consumer Council, Inc., 425 U.S. 748 (1976). The Supreme Court established a four-part test for determining when commercial speech regulations are permissible in Central Hudson Gas & Electric Corp. v. Public Service Commission of New York, 447 U.S. 557 (1980). Under Central Hudson, the government may restrict commercial speech only if: (1) the speech concerns lawful activity and is not misleading; (2) the government interest is substantial; (3) the regulation directly advances the government interest; and (4) the regulation is no more extensive than necessary. Id. at 566.\n\nIII. DUE PROCESS REQUIRES NOTICE AND OPPORTUNITY TO BE HEARD\n\nThe Fourteenth Amendment provides that no state shall \"deprive any person of life, liberty, or property, without due process of law.\" The Supreme Court in Mathews v. Eldridge, 424 U.S. 319 (1976), established a three-factor balancing test for determining what process is due:\n\n\"First, the private interest that will be affected by the official action; second, the risk of an erroneous deprivation of such interest through the procedures used, and the probable value, if any, of additional or substitute procedural safeguards; and finally, the Government's interest, including the function involved and the fiscal and administrative burdens that the additional or substitute procedural requirement would entail.\"\n\nMathews v. Eldridge, 424 U.S. at 335. The Ninth Circuit has applied the Mathews balancing test in numerous contexts. See Goldberg v. Kelly, 397 U.S. 254 (1970) (holding that welfare recipients must receive an evidentiary hearing before termination of benefits).\n\nIV. QUALIFIED IMMUNITY ANALYSIS\n\nGovernment officials performing discretionary functions are generally shielded from liability for civil damages insofar as their conduct does not violate \"clearly established\" statutory or constitutional rights. Harlow v. Fitzgerald, 457 U.S. 800, 818 (1982). The Supreme Court refined this analysis in Ashcroft v. al-Kidd, 563 U.S. 731 (2011), holding that qualified immunity protects \"all but the plainly incompetent or those who knowingly violate the law.\" Id. at 743.\n\nThe qualified immunity inquiry involves two prongs: (1) whether the facts alleged make out a violation of a constitutional right, and (2) whether the right at issue was \"clearly established\" at the time of defendant's alleged misconduct. Pearson v. Callahan, 555 U.S. 223, 232 (2009). Courts may address either prong first. Id. at 236.\n\nCONCLUSION\n\nFor the foregoing reasons, Plaintiff respectfully requests that this Court grant summary judgment in her favor.",
+  "total_citations": 15,
+  "verified": 14,
+  "warnings": 1,
+  "errors": 0,
+  "unverifiable": 0,
+  "citations": [
+    {
+      "extraction": {
+        "citation_text": "477 U.S. 317 (1986)",
+        "case_name": "Celotex Corp. v. Catrett",
+        "full_reference": "Celotex Corp. v. Catrett, 477 U.S. 317, 323 (1986)",
+        "quoted_text": null,
+        "characterization": "held that the moving party bears the initial burden of demonstrating the absence of a genuine issue of material fact",
+        "context": "The Supreme Court has held that the moving party bears the initial burden of demonstrating the absence of a genuine issue of material fact. Celotex Corp. v. Catrett, 477 U.S. 317, 323 (1986).",
+        "position_start": 344,
+        "position_end": 445
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Celotex Corp. v. Catrett, Administratrix of the Estate of Catrett",
+        "court": "",
+        "date_filed": "1986-06-25",
+        "url": "https://www.courtlistener.com/opinion/111722/celotex-corp-v-catrett-administratrix-of-the-estate-of-catrett/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes the Court's holding. The opinion explicitly states at page 323: 'Of course, a party seeking summary judgment always bears the initial responsibility of informing the district court of the basis for its motion, and identifying those portions of \"the pleadings, depositions, answers to interrogatories, and admissions on file, together with the affidavits, if any,\" which it believes demonstrate the absence of a genuine issue of material fact.' This directly supports the characterization that the moving party bears the initial burden of demonstrating the absence of a genuine issue of material fact.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Celotex Corp. v. Catrett, 477 U.S. 317 (1986)). The source opinion text matches the cited case - it shows Justice Rehnquist delivering the opinion, discusses Celotex Corporation as petitioner and Catrett as respondent, and addresses summary judgment standards.\n\nSTEP 2 - QUOTE VERIFICATION: No quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that the Court 'held that the moving party bears the initial burden of demonstrating the absence of a genuine issue of material fact.' Looking at page 323 of the opinion, the Court explicitly states: 'Of course, a party seeking summary judgment always bears the initial responsibility of informing the district court of the basis for its motion, and identifying those portions of \"the pleadings, depositions, answers to interrogatories, and admissions on file, together with the affidavits, if any,\" which it believes demonstrate the absence of a genuine issue of material fact.' This language directly supports the characterization. The Court goes on to clarify that this burden can be met by 'showing' - that is, pointing out to the district court - that there is an absence of evidence to support the nonmoving party's case (page 325). The characterization accurately captures this initial burden on the moving party.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the opinion explicitly discusses the moving party's initial burden in clear terms that match the characterization.\n\nSTEP 5 - OVERALL STATUS: The citation is verified. The characterization accurately represents the Court's holding about the moving party's initial burden.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "477 U.S. 242, 255 (1986)",
+        "case_name": "Anderson v. Liberty Lobby, Inc.",
+        "full_reference": "Anderson v. Liberty Lobby, Inc., 477 U.S. 242, 255 (1986)",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "In evaluating a motion for summary judgment, courts must view the evidence in the light most favorable to the nonmoving party. Anderson v. Liberty Lobby, Inc., 477 U.S. 242, 255 (1986).",
+        "position_start": 447,
+        "position_end": 631
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Anderson v. Liberty Lobby, Inc.",
+        "court": "",
+        "date_filed": "1986-06-25",
+        "url": "https://www.courtlistener.com/opinion/111719/anderson-v-liberty-lobby-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Citation confirmed \u2014 no quote or characterization to verify",
+        "confidence": 0.9,
+        "reasoning": null,
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "477 U.S. 242, 255 (1986)",
+        "case_name": "Anderson v. Liberty Lobby, Inc.",
+        "full_reference": "Anderson v. Liberty Lobby, Inc., 477 U.S. at 255",
+        "quoted_text": "The evidence of the non-movant is to be believed, and all justifiable inferences are to be drawn in his favor.",
+        "characterization": null,
+        "context": "The Court explained:\n\n\"The evidence of the non-movant is to be believed, and all justifiable inferences are to be drawn in his favor.\"\n\nAnderson v. Liberty Lobby, Inc., 477 U.S. at 255.",
+        "position_start": 633,
+        "position_end": 820
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Anderson v. Liberty Lobby, Inc.",
+        "court": "",
+        "date_filed": "1986-06-25",
+        "url": "https://www.courtlistener.com/opinion/111719/anderson-v-liberty-lobby-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "The evidence of the non-movant is to be believed, and all justifiable inferences are to be drawn in his favor.",
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Anderson v. Liberty Lobby, Inc., 477 U.S. 242, 255 (1986)). The source opinion text confirms this is indeed the Anderson v. Liberty Lobby case - Justice White delivered the opinion, it discusses summary judgment standards in the context of libel cases involving public figures, and the parties match (Liberty Lobby, Inc. as respondent, Jack Anderson as petitioner). STEP 2 - QUOTE VERIFICATION: The programmatic search confirmed the quote exists verbatim in the opinion. I manually verified this appears on page 255 of the opinion in the context of discussing summary judgment standards. The quote is exact with no alterations, ellipses, or brackets. It appears in a paragraph discussing how courts should handle evidence when ruling on summary judgment motions. STEP 3 - CHARACTERIZATION VERIFICATION: No characterization was provided to verify. STEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the quote was found verbatim and the citation clearly matches the source opinion. STEP 5 - OVERALL STATUS: Verified - the quote is exact and the citation is correct.",
+        "quote_status": "verified",
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "477 U.S. 242, 255 (1986)",
+        "case_name": "Anderson v. Liberty Lobby, Inc.",
+        "full_reference": "Id. at 252",
+        "quoted_text": "mere scintilla",
+        "characterization": "the nonmoving party must present more than a \"mere scintilla\" of evidence to survive summary judgment",
+        "context": "However, the nonmoving party must present more than a \"mere scintilla\" of evidence to survive summary judgment. Id. at 252.",
+        "position_start": 822,
+        "position_end": 946
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Anderson v. Liberty Lobby, Inc.",
+        "court": "",
+        "date_filed": "1986-06-25",
+        "url": "https://www.courtlistener.com/opinion/111719/anderson-v-liberty-lobby-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "mere scintilla",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The opinion explicitly states at page 252: 'The mere existence of a scintilla of evidence in support of the plaintiff's position will be insufficient; there must be evidence on which the jury could reasonably find for the plaintiff.' This directly supports the characterization that the nonmoving party must present more than a 'mere scintilla' of evidence to survive summary judgment.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Anderson v. Liberty Lobby, Inc., 477 U.S. 242, 255 (1986)). The source opinion matches the cited case - it is clearly the Anderson v. Liberty Lobby opinion dealing with summary judgment standards in libel cases involving public figures.\n\nSTEP 2 - QUOTE VERIFICATION: The quoted text 'mere scintilla' appears verbatim in the opinion. At page 252 (which corresponds to the cited page 255), the Court states: 'The mere existence of a scintilla of evidence in support of the plaintiff's position will be insufficient.' The quote is exact.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization that 'the nonmoving party must present more than a \"mere scintilla\" of evidence to survive summary judgment' is accurate. The Court explicitly holds this principle, stating that mere scintilla is insufficient and that there must be evidence on which a jury could reasonably find for the plaintiff. This is a central holding of the case regarding summary judgment standards.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the quote is found verbatim and the characterization directly reflects the Court's explicit holding.\n\nSTEP 5 - OVERALL STATUS: Verified - both the quote and characterization are accurate.",
+        "quote_status": "verified",
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "425 U.S. 748 (1976)",
+        "case_name": "Virginia State Board of Pharmacy v. Virginia Citizens Consumer Council, Inc.",
+        "full_reference": "Virginia State Board of Pharmacy v. Virginia Citizens Consumer Council, Inc., 425 U.S. 748 (1976)",
+        "quoted_text": null,
+        "characterization": null,
+        "context": "The First Amendment, as applied through the Fourteenth Amendment, protects commercial speech. Virginia State Board of Pharmacy v. Virginia Citizens Consumer Council, Inc., 425 U.S. 748 (1976).",
+        "position_start": 1041,
+        "position_end": 1234
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Virginia State Board of Pharmacy v. Virginia Citizens Consumer Council, Inc.",
+        "court": "",
+        "date_filed": "1976-05-24",
+        "url": "https://www.courtlistener.com/opinion/109450/virginia-state-board-of-pharmacy-v-virginia-citizens-consumer-council/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": null,
+        "characterization_explanation": "Citation confirmed \u2014 no quote or characterization to verify",
+        "confidence": 0.9,
+        "reasoning": null,
+        "quote_status": null,
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "447 U.S. 557 (1980)",
+        "case_name": "Central Hudson Gas & Electric Corp. v. Public Service Commission of New York",
+        "full_reference": "Central Hudson Gas & Electric Corp. v. Public Service Commission of New York, 447 U.S. 557 (1980)",
+        "quoted_text": null,
+        "characterization": "established a four-part test for determining when commercial speech regulations are permissible",
+        "context": "The Supreme Court established a four-part test for determining when commercial speech regulations are permissible in Central Hudson Gas & Electric Corp. v. Public Service Commission of New York, 447 U.S. 557 (1980).",
+        "position_start": 1236,
+        "position_end": 1451
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Central Hudson Gas & Electric Corp. v. Public Service Commission",
+        "court": "",
+        "date_filed": "1980-06-20",
+        "url": "https://www.courtlistener.com/opinion/110312/central-hudson-gas-electric-corp-v-public-service-commission/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes the Court's holding. The opinion explicitly states 'In commercial speech cases, then, a four-part analysis has developed' and then proceeds to outline the four parts: (1) whether the expression concerns lawful activity and is not misleading, (2) whether the governmental interest is substantial, (3) whether the regulation directly advances the governmental interest, and (4) whether the regulation is not more extensive than necessary.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (447 U.S. 557 (1980)). The source opinion matches the cited case - it is indeed Central Hudson Gas & Electric Corp. v. Public Service Commission of New York, with Justice Powell delivering the opinion of the Court.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that the case 'established a four-part test for determining when commercial speech regulations are permissible.' Looking at the opinion, in Part II, the Court explicitly states: 'In commercial speech cases, then, a four-part analysis has developed. At the outset, we must determine whether the expression is protected by the First Amendment. For commercial speech to come within that provision, it at least must concern lawful activity and not be misleading. Next, we ask whether the asserted governmental interest is substantial. If both inquiries yield positive answers, we must determine whether the regulation directly advances the governmental interest asserted, and whether it is not more extensive than is necessary to serve that interest.' This directly supports the characterization. The Court then applies this four-part test in Part III of the opinion.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the opinion explicitly articulates the four-part test and this case is widely recognized as establishing this framework for commercial speech analysis.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately describes what the Court established in this landmark commercial speech case.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "447 U.S. 557 (1980)",
+        "case_name": "Central Hudson Gas & Electric Corp. v. Public Service Commission of New York",
+        "full_reference": "Id. at 566",
+        "quoted_text": null,
+        "characterization": "the government may restrict commercial speech only if: (1) the speech concerns lawful activity and is not misleading; (2) the government interest is substantial; (3) the regulation directly advances the government interest; and (4) the regulation is no more extensive than necessary",
+        "context": "Under Central Hudson, the government may restrict commercial speech only if: (1) the speech concerns lawful activity and is not misleading; (2) the government interest is substantial; (3) the regulation directly advances the government interest; and (4) the regulation is no more extensive than necessary. Id. at 566.",
+        "position_start": 1453,
+        "position_end": 1770
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Central Hudson Gas & Electric Corp. v. Public Service Commission",
+        "court": "",
+        "date_filed": "1980-06-20",
+        "url": "https://www.courtlistener.com/opinion/110312/central-hudson-gas-electric-corp-v-public-service-commission/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the four-part test established in Central Hudson. The opinion states at page 566: 'In commercial speech cases, then, a four-part analysis has developed. At the outset, we must determine whether the expression is protected by the First Amendment. For commercial speech to come within that provision, it at least must concern lawful activity and not be misleading. Next, we ask whether the asserted governmental interest is substantial. If both inquiries yield positive answers, we must determine whether the regulation directly advances the governmental interest asserted, and whether it is not more extensive than is necessary to serve that interest.' This matches the characterization provided, though the characterization phrases the first prong slightly differently by stating 'the speech concerns lawful activity and is not misleading' rather than asking whether it does.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Central Hudson Gas & Electric Corp. v. Public Service Commission of New York, 447 U.S. 557 (1980)). The source opinion text clearly matches this case - it involves Central Hudson Gas & Electric Corp. as appellant challenging a Public Service Commission order, and Justice Powell delivered the opinion.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization describes a four-part test for commercial speech restrictions. Looking at the opinion, I find this test explicitly stated on page 566: 'In commercial speech cases, then, a four-part analysis has developed.' The Court then lists the four parts: (1) the expression must concern lawful activity and not be misleading; (2) the asserted governmental interest must be substantial; (3) the regulation must directly advance the governmental interest; and (4) the regulation must not be more extensive than necessary. The characterization accurately captures all four prongs of this test, with only minor phrasing differences that don't affect the meaning.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the four-part test is explicitly stated in the opinion and the characterization accurately reflects it.\n\nSTEP 5 - OVERALL STATUS: The citation is verified as the characterization accurately describes the Central Hudson test established in this case.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "424 U.S. 319 (1976)",
+        "case_name": "Mathews v. Eldridge",
+        "full_reference": "Mathews v. Eldridge, 424 U.S. 319 (1976)",
+        "quoted_text": null,
+        "characterization": "established a three-factor balancing test for determining what process is due",
+        "context": "The Supreme Court in Mathews v. Eldridge, 424 U.S. 319 (1976), established a three-factor balancing test for determining what process is due:",
+        "position_start": 1959,
+        "position_end": 2104
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Mathews v. Eldridge",
+        "court": "",
+        "date_filed": "1976-02-24",
+        "url": "https://www.courtlistener.com/opinion/109382/mathews-v-eldridge/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes the Court's establishment of a three-factor balancing test. The opinion explicitly states at page 335: 'More precisely, our prior decisions indicate that identification of the specific dictates of due process generally requires consideration of three distinct factors: First, the private interest that will be affected by the official action; second, the risk of an erroneous deprivation of such interest through the procedures used, and the probable value, if any, of additional or substitute procedural safeguards; and finally, the Government's interest, including the function involved and the fiscal and administrative burdens that the additional or substitute procedural requirement would entail.' This is the three-factor balancing test that has become known as the Mathews test.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (424 U.S. 319 (1976)). The source opinion confirms this is indeed Mathews v. Eldridge, with Mathews as Secretary of Health, Education, and Welfare and Eldridge as respondent. The case concerns Social Security disability benefits termination procedures.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that Mathews 'established a three-factor balancing test for determining what process is due.' Reading the opinion, I find this characterization is accurate. At page 335, the Court explicitly articulates the three-factor test: (1) the private interest affected, (2) the risk of erroneous deprivation and value of additional safeguards, and (3) the Government's interest including fiscal and administrative burdens. The Court then applies this test throughout the remainder of the opinion to determine whether pre-termination evidentiary hearings are required for disability benefits.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the three-factor test is explicitly stated in the opinion and this test has become a foundational principle in procedural due process jurisprudence.\n\nSTEP 5 - OVERALL STATUS: The citation is verified as the characterization accurately describes a central holding of the case.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "424 U.S. 319 (1976)",
+        "case_name": "Mathews v. Eldridge",
+        "full_reference": "Mathews v. Eldridge, 424 U.S. at 335",
+        "quoted_text": "First, the private interest that will be affected by the official action; second, the risk of an erroneous deprivation of such interest through the procedures used, and the probable value, if any, of additional or substitute procedural safeguards; and finally, the Government's interest, including the function involved and the fiscal and administrative burdens that the additional or substitute procedural requirement would entail.",
+        "characterization": null,
+        "context": "\"First, the private interest that will be affected by the official action; second, the risk of an erroneous deprivation of such interest through the procedures used, and the probable value, if any, of additional or substitute procedural safeguards; and finally, the Government's interest, including the function involved and the fiscal and administrative burdens that the additional or substitute procedural requirement would entail.\"\n\nMathews v. Eldridge, 424 U.S. at 335.",
+        "position_start": 2106,
+        "position_end": 2596
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Mathews v. Eldridge",
+        "court": "",
+        "date_filed": "1976-02-24",
+        "url": "https://www.courtlistener.com/opinion/109382/mathews-v-eldridge/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "First, the private interest that will be affected by the official action; second, the risk of an erroneous deprivation of such interest through the procedures used, and the probable value, if any, of additional or substitute procedural safeguards; and finally, the Government's interest, including the function involved and the fiscal and administrative burdens that the additional or substitute procedural requirement would entail.",
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Mathews v. Eldridge, 424 U.S. 319 (1976)). The source opinion text confirms this is indeed the Mathews v. Eldridge case from the Supreme Court, decided February 24, 1976, with the correct U.S. Reports citation.\n\nSTEP 2 - QUOTE VERIFICATION: The programmatic search found the quoted text verbatim in the opinion. I verified this by examining the pinpoint page context around page 335, where the quote appears exactly as provided. The quote is from the Court's articulation of the three-factor test for determining what process is due under the Due Process Clause. The quote appears word-for-word with no differences in punctuation, capitalization, or wording.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: No characterization was provided to verify.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is 1.0 because the quote was found verbatim in the source opinion at the expected location (page 335), and the citation format is correct.\n\nSTEP 5 - OVERALL STATUS: The citation is verified as the quote is exact and the citation format is correct.",
+        "quote_status": "verified",
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "397 U.S. 254 (1970)",
+        "case_name": "Goldberg v. Kelly",
+        "full_reference": "Goldberg v. Kelly, 397 U.S. 254 (1970)",
+        "quoted_text": null,
+        "characterization": "holding that welfare recipients must receive an evidentiary hearing before termination of benefits",
+        "context": "The Ninth Circuit has applied the Mathews balancing test in numerous contexts. See Goldberg v. Kelly, 397 U.S. 254 (1970) (holding that welfare recipients must receive an evidentiary hearing before termination of benefits).",
+        "position_start": 2598,
+        "position_end": 2822
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Goldberg v. Kelly",
+        "court": "",
+        "date_filed": "1970-05-04",
+        "url": "https://www.courtlistener.com/opinion/108100/goldberg-v-kelly/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The opinion explicitly states 'we hold that due process requires an adequate hearing before termination of welfare benefits' (emphasis added). The Court affirmed the District Court's ruling that 'only a pre-termination evidentiary hearing would satisfy the constitutional command.' The characterization correctly identifies this as requiring an evidentiary hearing before (not after) termination of benefits.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (397 U.S. 254 (1970)). The source opinion confirms this is indeed Goldberg v. Kelly, with Goldberg as Commissioner of Social Services of the City of New York and Kelly et al. as appellees. The case concerns welfare benefits termination procedures.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states the case held 'that welfare recipients must receive an evidentiary hearing before termination of benefits.' This is directly supported by multiple passages in the opinion:\n- 'we hold that due process requires an adequate hearing before termination of welfare benefits' (page 261)\n- 'The constitutional issue to be decided, therefore, is the narrow one whether the Due Process Clause requires that the recipient be afforded an evidentiary hearing before the termination of benefits.' (page 260)\n- 'The District Court held that only a pre-termination evidentiary hearing would satisfy the constitutional command' (pages 260-261)\n- 'We affirm.' (page 271)\n\nThe Court explicitly rejected the argument that a post-termination hearing would suffice, stating 'the fact that there is a later constitutionally fair proceeding does not alter the result.'\n\nSTEP 4 - CONFIDENCE ASSESSMENT: The characterization is clearly and directly supported by the opinion text. The holding is stated explicitly and unambiguously.\n\nSTEP 5 - OVERALL STATUS: The citation is properly formatted and the characterization accurately reflects the Court's holding.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "457 U.S. 800, 818 (1982)",
+        "case_name": "Harlow v. Fitzgerald",
+        "full_reference": "Harlow v. Fitzgerald, 457 U.S. 800, 818 (1982)",
+        "quoted_text": "clearly established",
+        "characterization": "Government officials performing discretionary functions are generally shielded from liability for civil damages insofar as their conduct does not violate \"clearly established\" statutory or constitutional rights",
+        "context": "Government officials performing discretionary functions are generally shielded from liability for civil damages insofar as their conduct does not violate \"clearly established\" statutory or constitutional rights. Harlow v. Fitzgerald, 457 U.S. 800, 818 (1982).",
+        "position_start": 2862,
+        "position_end": 3122
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Harlow v. Fitzgerald",
+        "court": "",
+        "date_filed": "1982-06-24",
+        "url": "https://www.courtlistener.com/opinion/110763/harlow-v-fitzgerald/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "We therefore hold that government officials performing discretionary functions, generally are shielded from liability for civil damages insofar as their conduct does not violate clearly established statutory or constitutional rights of which a reasonable person would have known.",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The Court explicitly states that government officials performing discretionary functions are shielded from liability for civil damages unless their conduct violates 'clearly established' statutory or constitutional rights. This is the core holding of the case regarding qualified immunity.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Harlow v. Fitzgerald, 457 U.S. 800, 818 (1982)). The opinion text confirms this is indeed Harlow v. Fitzgerald, as evidenced by the case caption and the discussion of petitioners Harlow and Butterfield.\n\nSTEP 2 - QUOTE VERIFICATION: The quoted text 'clearly established' appears verbatim on page 818 of the opinion in the key holding: 'We therefore hold that government officials performing discretionary functions, generally are shielded from liability for civil damages insofar as their conduct does not violate clearly established statutory or constitutional rights of which a reasonable person would have known.' The quote is exact.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that 'Government officials performing discretionary functions are generally shielded from liability for civil damages insofar as their conduct does not violate \"clearly established\" statutory or constitutional rights.' This is virtually identical to the Court's actual holding on page 818. The characterization accurately captures the essence of the qualified immunity doctrine as articulated by the Court.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: The quote is found verbatim and the characterization directly tracks the Court's language. This is a straightforward, accurate citation. Confidence is very high.\n\nSTEP 5 - OVERALL STATUS: Both the quote and characterization are accurate, making this a verified citation.",
+        "quote_status": "verified",
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "563 U.S. 731 (2011)",
+        "case_name": "Ashcroft v. al-Kidd",
+        "full_reference": "Ashcroft v. al-Kidd, 563 U.S. 731 (2011)",
+        "quoted_text": null,
+        "characterization": "refined this analysis",
+        "context": "The Supreme Court refined this analysis in Ashcroft v. al-Kidd, 563 U.S. 731 (2011), holding that qualified immunity protects \"all but the plainly incompetent or those who knowingly violate the law.\"",
+        "position_start": 3124,
+        "position_end": 3208
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Ashcroft v. al-Kidd",
+        "court": "",
+        "date_filed": "2011-05-31",
+        "url": "https://www.courtlistener.com/opinion/7344719/ashcroft-v-al-kidd/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "warning",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "all but the plainly incompetent or those who knowingly violate the law",
+        "characterization_accuracy": "misleading",
+        "characterization_explanation": "The characterization 'refined this analysis' is misleading because it suggests Ashcroft v. al-Kidd introduced or modified the quoted standard. In fact, the Court was merely quoting an existing standard from Malley v. Briggs, 475 U.S. 335, 341 (1986). The opinion states: 'When properly applied, it protects \"all but the plainly incompetent or those who knowingly violate the law.\" Malley, supra, at 341, 106 S. Ct. 1092, 89 L. Ed. 2d 271.' The al-Kidd Court did not refine or modify this standard - it simply applied the existing Malley standard to the facts before it.",
+        "confidence": 0.7,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Ashcroft v. al-Kidd, 563 U.S. 731 (2011)). The source opinion text matches this case - it involves Ashcroft and al-Kidd, discusses qualified immunity, and is from 2011.\n\nSTEP 2 - QUOTE VERIFICATION: Found the exact quote on page 743 of the opinion: 'When properly applied, it protects \"all but the plainly incompetent or those who knowingly violate the law.\"' The quote appears verbatim in the source.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that the Supreme Court 'refined this analysis' in al-Kidd. However, examining the context shows this is misleading. The Court was not refining or modifying the standard - it was quoting an existing standard from Malley v. Briggs (1986). The opinion explicitly cites Malley immediately after the quote. Al-Kidd applied this existing standard but did not refine or change it. The case's main holding was about objective reasonableness of arrests under material witness warrants, not about refining the qualified immunity standard.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the quote is found verbatim and the context clearly shows the Court was citing existing precedent, not creating new law.\n\nSTEP 5 - OVERALL STATUS: Warning - while the quote is accurate, the characterization misleadingly suggests al-Kidd modified or refined the qualified immunity standard when it merely applied existing precedent.",
+        "quote_status": "verified",
+        "characterization_status": "warning"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "563 U.S. 731 (2011)",
+        "case_name": "Ashcroft v. al-Kidd",
+        "full_reference": "Id. at 743",
+        "quoted_text": "all but the plainly incompetent or those who knowingly violate the law",
+        "characterization": "holding that qualified immunity protects \"all but the plainly incompetent or those who knowingly violate the law\"",
+        "context": "The Supreme Court refined this analysis in Ashcroft v. al-Kidd, 563 U.S. 731 (2011), holding that qualified immunity protects \"all but the plainly incompetent or those who knowingly violate the law.\" Id. at 743.",
+        "position_start": 3124,
+        "position_end": 3336
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Ashcroft v. al-Kidd",
+        "court": "",
+        "date_filed": "2011-05-31",
+        "url": "https://www.courtlistener.com/opinion/7344719/ashcroft-v-al-kidd/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "all but the plainly incompetent or those who knowingly violate the law",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes what the Court held. The quoted language appears in the context of explaining when qualified immunity protects government officials, which is precisely what the characterization states.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Ashcroft v. al-Kidd, 563 U.S. 731 (2011)). The source opinion text clearly matches this case - it shows Justice Scalia delivering the opinion, discusses Abdullah al-Kidd's arrest and detention, and addresses qualified immunity for former Attorney General Ashcroft. The parties and subject matter match perfectly.\n\nSTEP 2 - QUOTE VERIFICATION: I searched for the quoted text 'all but the plainly incompetent or those who knowingly violate the law' and found it verbatim on page 743 of the opinion. The exact passage reads: 'Qualified immunity gives government officials breathing room to make reasonable but mistaken judgments about open legal questions. When properly applied, it protects \"all but the plainly incompetent or those who knowingly violate the law.\" Malley, supra, at 341, 106 S. Ct. 1092, 89 L. Ed. 2d 271.' The quote is exact with no differences.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that qualified immunity protects 'all but the plainly incompetent or those who knowingly violate the law.' This is precisely what the Court held. The quoted language appears in Part II.B of the opinion where the Court is explaining the qualified immunity standard. The Court uses this phrase to describe who qualified immunity protects when 'properly applied.' The characterization accurately captures this holding.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: I have very high confidence (0.95) because: (1) the quote was found verbatim in the opinion, (2) the characterization accurately describes the Court's holding about qualified immunity, and (3) the full context supports this interpretation.\n\nSTEP 5 - OVERALL STATUS: The citation is verified. The quote is exact and the characterization is accurate.",
+        "quote_status": "verified",
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "555 U.S. 223, 232 (2009)",
+        "case_name": "Pearson v. Callahan",
+        "full_reference": "Pearson v. Callahan, 555 U.S. 223, 232 (2009)",
+        "quoted_text": "clearly established",
+        "characterization": "The qualified immunity inquiry involves two prongs: (1) whether the facts alleged make out a violation of a constitutional right, and (2) whether the right at issue was \"clearly established\" at the time of defendant's alleged misconduct",
+        "context": "The qualified immunity inquiry involves two prongs: (1) whether the facts alleged make out a violation of a constitutional right, and (2) whether the right at issue was \"clearly established\" at the time of defendant's alleged misconduct. Pearson v. Callahan, 555 U.S. 223, 232 (2009).",
+        "position_start": 3338,
+        "position_end": 3622
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Pearson v. Callahan",
+        "court": "",
+        "date_filed": "2009-01-21",
+        "url": "https://www.courtlistener.com/opinion/145918/pearson-v-callahan/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "clearly established",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes the two-prong qualified immunity test as articulated in Pearson v. Callahan. The opinion explicitly discusses both prongs: (1) whether facts show a constitutional violation, and (2) whether the right was 'clearly established' at the time. This is found throughout the opinion, particularly at page 232 (slip op. at 6-7) where the Court describes the Saucier two-step sequence.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1: The citation format is correct and the source opinion is indeed Pearson v. Callahan, 555 U.S. 223 (2009), as confirmed by the case caption and content.\n\nSTEP 2: The quoted text 'clearly established' appears verbatim multiple times throughout the opinion. At the cited page 232 (slip op. at 6-7), the Court states: 'Second, if the plaintiff has satisfied this first step, the court must decide whether the right at issue was \"clearly established\" at the time of defendant's alleged misconduct.' The quote is exact.\n\nSTEP 3: The characterization accurately describes the qualified immunity framework. The opinion explicitly outlines the two-prong test at pages 231-232 (slip op. at 6-7): 'First, a court must decide whether the facts that a plaintiff has alleged (see Fed. Rules Civ. Proc. 12(b)(6), (c)) or shown (see Rules 50, 56) make out a violation of a constitutional right. 533 U. S., at 201. Second, if the plaintiff has satisfied this first step, the court must decide whether the right at issue was \"clearly established\" at the time of defendant's alleged misconduct.' This matches the characterization provided.\n\nSTEP 4: High confidence because the quote is found verbatim and the characterization accurately reflects the Court's holding about the qualified immunity test.\n\nSTEP 5: Overall status is verified as both the quote and characterization are accurate.",
+        "quote_status": "verified",
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "555 U.S. 223, 232 (2009)",
+        "case_name": "Pearson v. Callahan",
+        "full_reference": "Id. at 236",
+        "quoted_text": null,
+        "characterization": "Courts may address either prong first",
+        "context": "Courts may address either prong first. Id. at 236.",
+        "position_start": 3624,
+        "position_end": 3675
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Pearson v. Callahan",
+        "court": "",
+        "date_filed": "2009-01-21",
+        "url": "https://www.courtlistener.com/opinion/145918/pearson-v-callahan/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately reflects the Court's holding. The opinion explicitly states on page 236 (slip op. at 17): 'the judges of the district courts and the courts of appeals are in the best position to determine the order of decisionmaking will best facilitate the fair and efficient disposition of each case.' The Court modified the Saucier two-step procedure from mandatory to discretionary, allowing courts to address either prong of qualified immunity analysis first.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1: The citation format is correct - Pearson v. Callahan, 555 U.S. 223 (2009) is a valid Supreme Court citation. The source opinion confirms this is indeed the Pearson v. Callahan case from 2009.\n\nSTEP 2: No quote was provided to verify.\n\nSTEP 3: The characterization states 'Courts may address either prong first.' The opinion discusses the Saucier two-step procedure for qualified immunity analysis, which previously mandated that courts first determine if there was a constitutional violation, then determine if the right was clearly established. The Court's holding modifies this rigid requirement. On page 236 (slip op. at 17), the Court states: 'the judges of the district courts and the courts of appeals are in the best position to determine the order of decisionmaking will best facilitate the fair and efficient disposition of each case.' Earlier, the Court states: 'we conclude that, while the sequence set forth there is often appropriate, it should no longer be regarded as mandatory' (slip op. at 10). The characterization accurately captures this holding.\n\nSTEP 4: High confidence because the characterization is directly supported by explicit language in the opinion.\n\nSTEP 5: The characterization is accurate and clearly supported by the opinion text.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    }
+  ],
+  "created_at": "2026-04-11T19:05:27.097361+00:00"
+}

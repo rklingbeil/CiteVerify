@@ -23,8 +23,10 @@ class TestExtractPDF:
 
         mock_doc = MagicMock()
         mock_doc.__iter__ = lambda self: iter([page1, page2])
+        mock_doc.__len__ = lambda self: 2
         mock_doc.__enter__ = lambda self: self
         mock_doc.__exit__ = lambda *_: None
+        mock_doc.is_encrypted = False
 
         mock_fitz = MagicMock()
         mock_fitz.open.return_value = mock_doc
@@ -52,8 +54,10 @@ class TestExtractPDF:
 
         mock_doc = MagicMock()
         mock_doc.__iter__ = lambda self: iter([page1, page2])
+        mock_doc.__len__ = lambda self: 2
         mock_doc.__enter__ = lambda self: self
         mock_doc.__exit__ = lambda *_: None
+        mock_doc.is_encrypted = False
 
         mock_fitz = MagicMock()
         mock_fitz.open.return_value = mock_doc
@@ -76,8 +80,10 @@ class TestExtractPDF:
 
         mock_doc = MagicMock()
         mock_doc.__iter__ = lambda self: iter([page])
+        mock_doc.__len__ = lambda self: 1
         mock_doc.__enter__ = lambda self: self
         mock_doc.__exit__ = lambda *_: None
+        mock_doc.is_encrypted = False
 
         mock_fitz = MagicMock()
         mock_fitz.open.return_value = mock_doc

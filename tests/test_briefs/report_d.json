@@ -1,0 +1,445 @@
+{
+  "id": "3d531a21-8e8e-4e44-9e0c-1fb4aa39307d",
+  "filename": "brief_d_employment_real.docx",
+  "document_text": "MEMORANDUM IN SUPPORT OF MOTION FOR SUMMARY JUDGMENT\n\nDavis v. Consolidated Industries, Inc.\n\nI. THE McDONNELL DOUGLAS BURDEN-SHIFTING FRAMEWORK\n\nEmployment discrimination claims under Title VII of the Civil Rights Act of 1964 are evaluated using the burden-shifting framework established in McDonnell Douglas Corp. v. Green, 411 U.S. 792 (1973). Under this framework, the plaintiff must first establish a prima facie case of discrimination by showing membership in a protected class, qualification for the position, an adverse employment action, and circumstances giving rise to an inference of discrimination. Id. at 802.\n\nOnce the plaintiff establishes a prima facie case, the burden shifts to the employer to articulate a legitimate, nondiscriminatory reason for the adverse action. Texas Department of Community Affairs v. Burdine, 450 U.S. 248 (1981). Critically, the Court clarified that this is a burden of production, not persuasion:\n\n\"The ultimate burden of persuading the trier of fact that the defendant intentionally discriminated against the plaintiff remains at all times with the plaintiff.\"\n\nTexas Department of Community Affairs v. Burdine, 450 U.S. at 253.\n\nII. DISPARATE IMPACT DISCRIMINATION\n\nTitle VII prohibits not only intentional discrimination but also facially neutral employment practices that have a discriminatory effect. Griggs v. Duke Power Co., 401 U.S. 424 (1971). The Court held:\n\n\"The Act proscribes not only overt discrimination but also practices that are fair in form, but discriminatory in operation.\"\n\nGriggs v. Duke Power Co., 401 U.S. at 431. The disparate impact framework was later codified in the Civil Rights Act of 1991 and further refined in Ricci v. DeStefano, 557 U.S. 557 (2009), where the Court held that before an employer can engage in intentional discrimination to avoid disparate impact liability, the employer must have a strong basis in evidence to believe it would be subject to disparate impact liability.\n\nIII. PROTECTION AGAINST RETALIATION\n\nTitle VII also prohibits retaliation against employees who oppose unlawful employment practices or participate in Title VII proceedings. Burlington Northern & Santa Fe Railway Co. v. White, 548 U.S. 53 (2006). The Court adopted a broad, objective standard for actionable retaliation, holding that a plaintiff must show that a reasonable employee would have found the challenged action materially adverse, \"which in this context means it well might have dissuaded a reasonable worker from making or supporting a charge of discrimination.\" Id. at 68.\n\nIV. HOSTILE WORK ENVIRONMENT\n\nThe Supreme Court recognized that workplace harassment creating a hostile or abusive working environment constitutes actionable employment discrimination under Title VII. Meritor Savings Bank, FSB v. Vinson, 477 U.S. 57 (1986). To establish a hostile work environment claim, the conduct must be sufficiently severe or pervasive to alter the conditions of employment and create an abusive working environment. Harris v. Forklift Systems, Inc., 510 U.S. 17 (1993). The Court explained that this determination requires examining the totality of the circumstances, including the frequency of the conduct, its severity, whether it is physically threatening or humiliating, and whether it unreasonably interferes with an employee's work performance. Id. at 23.\n\nCONCLUSION\n\nFor the foregoing reasons, Plaintiff respectfully requests that this Court grant summary judgment on her Title VII claims.",
+  "total_citations": 12,
+  "verified": 12,
+  "warnings": 0,
+  "errors": 0,
+  "unverifiable": 0,
+  "citations": [
+    {
+      "extraction": {
+        "citation_text": "411 U.S. 792 (1973)",
+        "case_name": "McDonnell Douglas Corp. v. Green",
+        "full_reference": "McDonnell Douglas Corp. v. Green, 411 U.S. 792 (1973)",
+        "quoted_text": null,
+        "characterization": "established the burden-shifting framework for employment discrimination claims under Title VII",
+        "context": "Employment discrimination claims under Title VII of the Civil Rights Act of 1964 are evaluated using the burden-shifting framework established in McDonnell Douglas Corp. v. Green, 411 U.S. 792 (1973).",
+        "position_start": 244,
+        "position_end": 299
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "McDonnell Douglas Corp. v. Green",
+        "court": "",
+        "date_filed": "1973-05-14",
+        "url": "https://www.courtlistener.com/opinion/108786/mcdonnell-douglas-corp-v-green/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes McDonnell Douglas as establishing the burden-shifting framework for employment discrimination claims under Title VII. The opinion explicitly sets forth this framework in detail, describing: (1) the plaintiff's initial burden to establish a prima facie case of discrimination, (2) the burden then shifting to the employer to articulate a legitimate, nondiscriminatory reason for the adverse action, and (3) the plaintiff's opportunity to show that the employer's stated reason was pretextual. This framework has become the foundational analytical structure for Title VII discrimination claims.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (411 U.S. 792 (1973)). The source opinion is clearly from McDonnell Douglas Corp. v. Green - the parties match (McDonnell Douglas Corp. as petitioner, Green as respondent), and the subject matter is employment discrimination under Title VII.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that McDonnell Douglas 'established the burden-shifting framework for employment discrimination claims under Title VII.' Reading the opinion carefully, this is precisely what the Court did. In Section II of the opinion, the Court states: 'The critical issue before us concerns the order and allocation of proof in a private, non-class action challenging employment discrimination.' The Court then proceeds to establish the now-famous burden-shifting framework: (1) 'The complainant in a Title VII trial must carry the initial burden under the statute of establishing a prima facie case of racial discrimination' by showing four specific elements; (2) 'The burden then must shift to the employer to articulate some legitimate, nondiscriminatory reason for the employee's rejection'; and (3) The plaintiff must then 'be afforded a fair opportunity to show that petitioner's stated reason for respondent's rejection was in fact pretext.' This is the foundational burden-shifting framework that has governed Title VII discrimination cases ever since.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the opinion explicitly and clearly establishes the burden-shifting framework that the characterization describes.\n\nSTEP 5 - OVERALL STATUS: The citation is verified. While there is no quote to verify, the characterization is entirely accurate in describing McDonnell Douglas as establishing the burden-shifting framework for Title VII employment discrimination claims.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "411 U.S. 792 (1973)",
+        "case_name": "McDonnell Douglas Corp. v. Green",
+        "full_reference": "Id. at 802",
+        "quoted_text": null,
+        "characterization": "establishes that plaintiff must show membership in a protected class, qualification for the position, an adverse employment action, and circumstances giving rise to an inference of discrimination",
+        "context": "Under this framework, the plaintiff must first establish a prima facie case of discrimination by showing membership in a protected class, qualification for the position, an adverse employment action, and circumstances giving rise to an inference of discrimination. Id. at 802.",
+        "position_start": 556,
+        "position_end": 566
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "McDonnell Douglas Corp. v. Green",
+        "court": "",
+        "date_filed": "1973-05-14",
+        "url": "https://www.courtlistener.com/opinion/108786/mcdonnell-douglas-corp-v-green/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes the four-part prima facie case framework established in McDonnell Douglas. The Court explicitly states on page 802: 'This may be done by showing (i) that he belongs to a racial minority; (ii) that he applied and was qualified for a job for which the employer was seeking applicants; (iii) that, despite his qualifications, he was rejected; and (iv) that, after his rejection, the position remained open and the employer continued to seek applicants from persons of complainant's qualifications.' While the Court uses 'racial minority' rather than 'protected class,' the characterization correctly captures the essence of the framework, which has been applied more broadly to other protected classes in subsequent cases.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (411 U.S. 792 (1973)). The source opinion is clearly from McDonnell Douglas Corp. v. Green, as evidenced by the parties named and the subject matter (Title VII employment discrimination case involving a mechanic named Green who was denied rehiring after participating in civil rights protests).\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states the case 'establishes that plaintiff must show membership in a protected class, qualification for the position, an adverse employment action, and circumstances giving rise to an inference of discrimination.' Looking at page 802 of the opinion, the Court states: 'The complainant in a Title VII trial must carry the initial burden under the statute of establishing a prima facie case of racial discrimination. This may be done by showing (i) that he belongs to a racial minority; (ii) that he applied and was qualified for a job for which the employer was seeking applicants; (iii) that, despite his qualifications, he was rejected; and (iv) that, after his rejection, the position remained open and the employer continued to seek applicants from persons of complainant's qualifications.' The characterization accurately captures these four elements, though it uses slightly different terminology ('protected class' vs. 'racial minority' and 'adverse employment action' vs. 'was rejected'). The fourth element in the opinion is more specific than 'circumstances giving rise to an inference of discrimination,' but the characterization's broader language encompasses the Court's more specific requirement.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.9) because the characterization accurately reflects the Court's holding about the prima facie case framework, even if using slightly modernized terminology.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately describes the prima facie case framework established in McDonnell Douglas.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "450 U.S. 248 (1981)",
+        "case_name": "Texas Department of Community Affairs v. Burdine",
+        "full_reference": "Texas Department of Community Affairs v. Burdine, 450 U.S. 248 (1981)",
+        "quoted_text": null,
+        "characterization": "clarified that the employer's burden is one of production, not persuasion",
+        "context": "Once the plaintiff establishes a prima facie case, the burden shifts to the employer to articulate a legitimate, nondiscriminatory reason for the adverse action. Texas Department of Community Affairs v. Burdine, 450 U.S. 248 (1981).",
+        "position_start": 730,
+        "position_end": 800
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Texas Department of Community Affairs v. Burdine",
+        "court": "",
+        "date_filed": "1981-03-04",
+        "url": "https://www.courtlistener.com/opinion/110424/texas-department-of-community-affairs-v-burdine/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Supreme Court's holding. The Court explicitly states that 'the defendant bears only the burden of explaining clearly the nondiscriminatory reasons for its actions' and repeatedly emphasizes that the employer need only 'produce' evidence or 'articulate' reasons, not 'persuade' the court. The Court specifically rejected the Fifth Circuit's requirement that defendants prove by a preponderance of the evidence that legitimate reasons existed.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (450 U.S. 248 (1981)). The source opinion is indeed Texas Department of Community Affairs v. Burdine, as evidenced by the case caption and parties discussed throughout.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that Burdine 'clarified that the employer's burden is one of production, not persuasion.' This is precisely what the Court held. Key passages supporting this include:\n- 'The burden that shifts to the defendant, therefore, is to rebut the presumption of discrimination by producing evidence that the plaintiff was rejected, or someone else was preferred, for a legitimate, nondiscriminatory reason. The defendant need not persuade the court that it was actually motivated by the proffered reasons.'\n- 'We stated in Sweeney that \"the employer's burden is satisfied if he simply 'explains what he has done' or 'produce[s] evidence of legitimate nondiscriminatory reasons.'\"'\n- 'The Court of Appeals has misconstrued the nature of the burden that McDonnell Douglas and its progeny place on the defendant... It is plain that the Court of Appeals required much more: it placed on the defendant the burden of persuading the court that it had convincing, objective reasons for preferring the chosen applicant above the plaintiff.'\n- The Court's conclusion: 'the Court of Appeals erred by requiring the defendant to prove by a preponderance of the evidence the existence of nondiscriminatory reasons... the defendant bears only the burden of explaining clearly the nondiscriminatory reasons for its actions.'\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly reflects the Court's central holding, which is stated multiple times throughout the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately captures the Supreme Court's clarification of the employer's burden in Title VII cases.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "450 U.S. 248 (1981)",
+        "case_name": "Texas Department of Community Affairs v. Burdine",
+        "full_reference": "Texas Department of Community Affairs v. Burdine, 450 U.S. at 253",
+        "quoted_text": "The ultimate burden of persuading the trier of fact that the defendant intentionally discriminated against the plaintiff remains at all times with the plaintiff.",
+        "characterization": null,
+        "context": "Critically, the Court clarified that this is a burden of production, not persuasion:\n\n\"The ultimate burden of persuading the trier of fact that the defendant intentionally discriminated against the plaintiff remains at all times with the plaintiff.\"\n\nTexas Department of Community Affairs v. Burdine, 450 U.S. at 253.",
+        "position_start": 1048,
+        "position_end": 1116
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Texas Department of Community Affairs v. Burdine",
+        "court": "",
+        "date_filed": "1981-03-04",
+        "url": "https://www.courtlistener.com/opinion/110424/texas-department-of-community-affairs-v-burdine/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "The ultimate burden of persuading the trier of fact that the defendant intentionally discriminated against the plaintiff remains at all times with the plaintiff.",
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Texas Department of Community Affairs v. Burdine, 450 U.S. 248 (1981)). The source opinion text confirms this is indeed the Burdine case - it shows Justice Powell delivered the opinion, discusses the Texas Department of Community Affairs as petitioner, and involves Title VII employment discrimination claims.\n\nSTEP 2 - QUOTE VERIFICATION: I searched for the quoted text and found it verbatim on page 253 of the opinion. The programmatic search confirmed this exact match. The quote appears in the section discussing the burden of proof framework in Title VII cases: 'The ultimate burden of persuading the trier of fact that the defendant intentionally discriminated against the plaintiff remains at all times with the plaintiff.' This is followed by citations to Board of Trustees of Keene State College v. Sweeney and Wigmore on Evidence. The quote is exact with no differences.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: No characterization was provided to verify.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because: (1) the quote was found verbatim in the opinion text, (2) the citation format is correct, (3) the source opinion clearly matches the cited case, and (4) the context confirms this is discussing burden of proof in Title VII cases.\n\nSTEP 5 - OVERALL STATUS: The citation is verified. The quote is exact and properly attributed to the correct page of the opinion.",
+        "quote_status": "verified",
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "401 U.S. 424 (1971)",
+        "case_name": "Griggs v. Duke Power Co.",
+        "full_reference": "Griggs v. Duke Power Co., 401 U.S. 424 (1971)",
+        "quoted_text": null,
+        "characterization": "established that Title VII prohibits not only intentional discrimination but also facially neutral employment practices that have a discriminatory effect",
+        "context": "Title VII prohibits not only intentional discrimination but also facially neutral employment practices that have a discriminatory effect. Griggs v. Duke Power Co., 401 U.S. 424 (1971).",
+        "position_start": 1259,
+        "position_end": 1305
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Griggs v. Duke Power Co.",
+        "court": "",
+        "date_filed": "1971-03-08",
+        "url": "https://www.courtlistener.com/opinion/108284/griggs-v-duke-power-co/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Supreme Court's holding in Griggs. The Court explicitly stated that 'The Act proscribes not only overt discrimination but also practices that are fair in form, but discriminatory in operation' and that 'Under the Act, practices, procedures, or tests neutral on their face, and even neutral in terms of intent, cannot be maintained if they operate to \"freeze\" the status quo of prior discriminatory employment practices.' The Court made clear that Title VII reaches beyond intentional discrimination to prohibit facially neutral practices with discriminatory effects.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (401 U.S. 424 (1971)). The source opinion is clearly from Griggs v. Duke Power Co., as evidenced by the parties, subject matter (Title VII employment discrimination), and the Chief Justice Burger authorship.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that Griggs 'established that Title VII prohibits not only intentional discrimination but also facially neutral employment practices that have a discriminatory effect.' This is directly supported by multiple passages in the opinion:\n- 'The Act proscribes not only overt discrimination but also practices that are fair in form, but discriminatory in operation.'\n- 'Under the Act, practices, procedures, or tests neutral on their face, and even neutral in terms of intent, cannot be maintained if they operate to \"freeze\" the status quo of prior discriminatory employment practices.'\n- 'good intent or absence of discriminatory intent does not redeem employment procedures or testing mechanisms that operate as \"built-in headwinds\" for minority groups and are unrelated to measuring job capability.'\n- 'Congress directed the thrust of the Act to the consequences of employment practices, not simply the motivation.'\n\nThe Court reversed the Court of Appeals' holding that had required discriminatory intent, establishing instead that discriminatory effects alone can violate Title VII.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization is clearly and repeatedly supported by explicit language in the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified - the characterization accurately describes a central holding of Griggs v. Duke Power Co.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "401 U.S. 424 (1971)",
+        "case_name": "Griggs v. Duke Power Co.",
+        "full_reference": "Griggs v. Duke Power Co., 401 U.S. at 431",
+        "quoted_text": "The Act proscribes not only overt discrimination but also practices that are fair in form, but discriminatory in operation.",
+        "characterization": null,
+        "context": "The Court held:\n\n\"The Act proscribes not only overt discrimination but also practices that are fair in form, but discriminatory in operation.\"\n\nGriggs v. Duke Power Co., 401 U.S. at 431.",
+        "position_start": 1453,
+        "position_end": 1495
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Griggs v. Duke Power Co.",
+        "court": "",
+        "date_filed": "1971-03-08",
+        "url": "https://www.courtlistener.com/opinion/108284/griggs-v-duke-power-co/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "The Act proscribes not only overt discrimination but also practices that are fair in form, but discriminatory in operation.",
+        "characterization_accuracy": null,
+        "characterization_explanation": null,
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Griggs v. Duke Power Co., 401 U.S. 424 (1971)). The source opinion text confirms this is indeed the Griggs v. Duke Power Co. case - the header shows 'Mr. Chief Justice Burger delivered the opinion of the Court' and discusses Duke Power Company's employment practices, matching the cited case.\n\nSTEP 2 - QUOTE VERIFICATION: The programmatic search confirmed the quote exists verbatim in the opinion. I found the exact quote on page 431 of the opinion: 'The Act proscribes not only overt discrimination but also practices that are fair in form, but discriminatory in operation.' The quote appears in a paragraph discussing how Title VII addresses both overt discrimination and facially neutral practices that have discriminatory effects. The quote is character-for-character identical to what was provided.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: No characterization was provided to verify.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is 1.0 because the quote was found verbatim in the opinion text at the exact page cited (431), and the case identity is confirmed.\n\nSTEP 5 - OVERALL STATUS: The citation is verified as the quote is exact and appears at the cited page.",
+        "quote_status": "verified",
+        "characterization_status": null
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "557 U.S. 557 (2009)",
+        "case_name": "Ricci v. DeStefano",
+        "full_reference": "Ricci v. DeStefano, 557 U.S. 557 (2009)",
+        "quoted_text": null,
+        "characterization": "held that before an employer can engage in intentional discrimination to avoid disparate impact liability, the employer must have a strong basis in evidence to believe it would be subject to disparate impact liability",
+        "context": "The disparate impact framework was later codified in the Civil Rights Act of 1991 and further refined in Ricci v. DeStefano, 557 U.S. 557 (2009), where the Court held that before an employer can engage in intentional discrimination to avoid disparate impact liability, the employer must have a strong basis in evidence to believe it would be subject to disparate impact liability.",
+        "position_start": 1601,
+        "position_end": 1640
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Ricci v. DeStefano",
+        "court": "",
+        "date_filed": "2009-06-29",
+        "url": "https://www.courtlistener.com/opinion/145848/ricci-v-destefano/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The opinion explicitly states that 'race-based action like the City's in this case is impermissible under Title VII unless the employer can demonstrate a strong basis in evidence that, had it not taken the action, it would have been liable under the disparate-impact statute.' This directly supports the characterization that employers must have 'a strong basis in evidence to believe it would be subject to disparate impact liability' before engaging in intentional discrimination to avoid such liability.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (557 U.S. 557 (2009)). The source opinion is clearly from Ricci v. DeStefano based on the parties named, the facts about New Haven firefighter promotions, and the 2009 date.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states the Court 'held that before an employer can engage in intentional discrimination to avoid disparate impact liability, the employer must have a strong basis in evidence to believe it would be subject to disparate impact liability.' This is directly supported by the Court's holding on page 563: 'We conclude that race-based action like the City's in this case is impermissible under Title VII unless the employer can demonstrate a strong basis in evidence that, had it not taken the action, it would have been liable under the disparate-impact statute.' The Court also reiterates this standard throughout the opinion, including: 'We hold only that, under Title VII, before an employer can engage in intentional discrimination for the asserted purpose of avoiding or remedying an unintentional disparate impact, the employer must have a strong basis in evidence to believe it will be subject to disparate-impact liability if it fails to take the race-conscious, discriminatory action.' (page 585)\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization directly matches the Court's explicit holding.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately represents the Court's holding with no material differences.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "548 U.S. 53 (2006)",
+        "case_name": "Burlington Northern & Santa Fe Railway Co. v. White",
+        "full_reference": "Burlington Northern & Santa Fe Railway Co. v. White, 548 U.S. 53 (2006)",
+        "quoted_text": null,
+        "characterization": "adopted a broad, objective standard for actionable retaliation",
+        "context": "Title VII also prohibits retaliation against employees who oppose unlawful employment practices or participate in Title VII proceedings. Burlington Northern & Santa Fe Railway Co. v. White, 548 U.S. 53 (2006).",
+        "position_start": 2039,
+        "position_end": 2111
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Burlington Northern & Santa Fe Railway Co. v. White",
+        "court": "",
+        "date_filed": "2006-06-22",
+        "url": "https://www.courtlistener.com/opinion/145636/burlington-northern-santa-fe-railway-co-v-white/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately describes the Court's holding. The Court explicitly adopted a broad, objective standard that asks whether the employer's actions 'would have been materially adverse to a reasonable employee' and 'could well dissuade a reasonable worker from making or supporting a charge of discrimination.' This is indeed a broad standard that extends beyond workplace-related actions and uses an objective reasonable person test.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (548 U.S. 53 (2006)). The source opinion matches the cited case - it is indeed Burlington Northern & Santa Fe Railway Co. v. White, with the correct parties and subject matter (Title VII retaliation claim).\n\nSTEP 2 - QUOTE VERIFICATION: No quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states the Court 'adopted a broad, objective standard for actionable retaliation.' This is accurate. The Court explicitly states: 'We conclude that the anti-retaliation provision does not confine the actions and harms it forbids to those that are related to employment or occur at the workplace' (page 1-2 of opinion). The Court adopted the standard that 'a plaintiff must show that a reasonable employee would have found the challenged action materially adverse, which in this context means it well might have dissuaded a reasonable worker from making or supporting a charge of discrimination' (page 13). The Court emphasizes this is an 'objective standard' because 'we believe that the provision's standard for judging harm must be objective. An objective standard is judicially administrable' (page 14). The Court also notes 'The scope of the anti-retaliation provision extends beyond workplace-related or employment-related retaliatory acts and harm' (page 12).\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization is clearly supported by explicit language throughout the opinion.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately captures the Court's holding of a broad, objective standard for retaliation claims.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "548 U.S. 53 (2006)",
+        "case_name": "Burlington Northern & Santa Fe Railway Co. v. White",
+        "full_reference": "Id. at 68",
+        "quoted_text": "which in this context means it well might have dissuaded a reasonable worker from making or supporting a charge of discrimination.",
+        "characterization": "holding that a plaintiff must show that a reasonable employee would have found the challenged action materially adverse",
+        "context": "The Court adopted a broad, objective standard for actionable retaliation, holding that a plaintiff must show that a reasonable employee would have found the challenged action materially adverse, \"which in this context means it well might have dissuaded a reasonable worker from making or supporting a charge of discrimination.\" Id. at 68.",
+        "position_start": 2434,
+        "position_end": 2443
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Burlington Northern & Santa Fe Railway Co. v. White",
+        "court": "",
+        "date_filed": "2006-06-22",
+        "url": "https://www.courtlistener.com/opinion/145636/burlington-northern-santa-fe-railway-co-v-white/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": "exact",
+        "quote_diff": null,
+        "actual_quote": "which in this context means it well might have 'dissuaded a reasonable worker from making or supporting a charge of discrimination.'",
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The Court adopted an objective standard requiring that a plaintiff show that 'a reasonable employee would have found the challenged action materially adverse,' which the Court then defined as meaning the action 'well might have dissuaded a reasonable worker from making or supporting a charge of discrimination.' This is precisely what the characterization states.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1: The citation format is correct (548 U.S. 53 (2006)) and the source opinion confirms this is Burlington Northern & Santa Fe Railway Co. v. White.\n\nSTEP 2: The quoted text appears verbatim on page 13 of the opinion: 'In our view, a plaintiff must show that a reasonable employee would have found the challenged action materially adverse, \"which in this context means it well might have 'dissuaded a reasonable worker from making or supporting a charge of discrimination.' \" Rochon, 438 F. 3d, at 1219'. The quote is exact.\n\nSTEP 3: The characterization states the Court held 'that a plaintiff must show that a reasonable employee would have found the challenged action materially adverse.' This is directly supported by the Court's language on page 13: 'In our view, a plaintiff must show that a reasonable employee would have found the challenged action materially adverse.' The Court then immediately defines what 'materially adverse' means with the quoted language. The characterization accurately captures the Court's holding.\n\nSTEP 4: High confidence because the quote is found verbatim and the characterization directly tracks the Court's holding language.\n\nSTEP 5: Both the quote and characterization are accurate, warranting 'verified' status.",
+        "quote_status": "verified",
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "477 U.S. 57 (1986)",
+        "case_name": "Meritor Savings Bank, FSB v. Vinson",
+        "full_reference": "Meritor Savings Bank, FSB v. Vinson, 477 U.S. 57 (1986)",
+        "quoted_text": null,
+        "characterization": "recognized that workplace harassment creating a hostile or abusive working environment constitutes actionable employment discrimination under Title VII",
+        "context": "The Supreme Court recognized that workplace harassment creating a hostile or abusive working environment constitutes actionable employment discrimination under Title VII. Meritor Savings Bank, FSB v. Vinson, 477 U.S. 57 (1986).",
+        "position_start": 2612,
+        "position_end": 2668
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Meritor Savings Bank, FSB v. Vinson",
+        "court": "",
+        "date_filed": "1986-06-19",
+        "url": "https://www.courtlistener.com/opinion/111712/meritor-savings-bank-fsb-v-vinson/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Supreme Court's holding that hostile environment sexual harassment constitutes actionable employment discrimination under Title VII. The Court explicitly states: 'we hold that a claim of \"hostile environment\" sex discrimination is actionable under Title VII' and earlier affirms that 'courts have uniformly held, and we agree, that a plaintiff may establish a violation of Title VII by proving that discrimination based on sex has created a hostile or abusive work environment.'",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Meritor Savings Bank, FSB v. Vinson, 477 U.S. 57 (1986)). The source opinion text clearly matches this case - it involves Mechelle Vinson as respondent and Meritor Savings Bank as petitioner, dealing with sexual harassment claims under Title VII.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states the Court 'recognized that workplace harassment creating a hostile or abusive working environment constitutes actionable employment discrimination under Title VII.' This is directly supported by multiple passages in the opinion:\n- Page 64: 'Respondent argues, and the Court of Appeals held, that unwelcome sexual advances that create an offensive or hostile working environment violate Title VII.'\n- Page 66: 'courts have uniformly held, and we agree, that a plaintiff may establish a violation of Title VII by proving that discrimination based on sex has created a hostile or abusive work environment.'\n- Page 73: 'In sum, we hold that a claim of \"hostile environment\" sex discrimination is actionable under Title VII'\n\nThe Court explicitly endorses the hostile environment theory of sexual harassment as a valid Title VII claim, making the characterization accurate.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the characterization is directly and explicitly supported by the Court's holding.\n\nSTEP 5 - OVERALL STATUS: Verified - The characterization accurately represents the Court's holding with no material issues.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "510 U.S. 17 (1993)",
+        "case_name": "Harris v. Forklift Systems, Inc.",
+        "full_reference": "Harris v. Forklift Systems, Inc., 510 U.S. 17 (1993)",
+        "quoted_text": null,
+        "characterization": "established that conduct must be sufficiently severe or pervasive to alter the conditions of employment and create an abusive working environment",
+        "context": "To establish a hostile work environment claim, the conduct must be sufficiently severe or pervasive to alter the conditions of employment and create an abusive working environment. Harris v. Forklift Systems, Inc., 510 U.S. 17 (1993).",
+        "position_start": 2850,
+        "position_end": 2903
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Harris v. Forklift Systems, Inc.",
+        "court": "",
+        "date_filed": "1993-11-09",
+        "url": "https://www.courtlistener.com/opinion/112911/harris-v-forklift-systems-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Supreme Court's holding in Harris. The Court explicitly states that conduct must be 'sufficiently severe or pervasive to alter the conditions of the victim's employment and create an abusive working environment' (at 21, quoting Meritor). This is the exact standard the characterization describes.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (510 U.S. 17 (1993)). The source opinion matches the cited case - it is indeed Harris v. Forklift Systems, Inc., decided by the Supreme Court in 1993, dealing with hostile work environment claims under Title VII.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states that Harris 'established that conduct must be sufficiently severe or pervasive to alter the conditions of employment and create an abusive working environment.' Looking at the opinion, the Court explicitly reaffirms this standard at page 21: 'When the workplace is permeated with discriminatory intimidation, ridicule, and insult, 477 U.S., at 65, that is sufficiently severe or pervasive to alter the conditions of the victim's employment and create an abusive working environment, id., at 67 (internal brackets and quotation marks omitted), Title VII is violated.' The Court states 'This standard, which we reaffirm today...' The characterization accurately describes what Harris established.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: Very high confidence (0.95) because the opinion explicitly states and reaffirms the exact standard described in the characterization.\n\nSTEP 5 - OVERALL STATUS: Verified. The characterization accurately describes the holding of Harris v. Forklift Systems.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    },
+    {
+      "extraction": {
+        "citation_text": "510 U.S. 17 (1993)",
+        "case_name": "Harris v. Forklift Systems, Inc.",
+        "full_reference": "Id. at 23",
+        "quoted_text": null,
+        "characterization": "explained that hostile work environment determination requires examining the totality of the circumstances, including the frequency of the conduct, its severity, whether it is physically threatening or humiliating, and whether it unreasonably interferes with an employee's work performance",
+        "context": "The Court explained that this determination requires examining the totality of the circumstances, including the frequency of the conduct, its severity, whether it is physically threatening or humiliating, and whether it unreasonably interferes with an employee's work performance. Id. at 23.",
+        "position_start": 3184,
+        "position_end": 3193
+      },
+      "lookup": {
+        "found": true,
+        "status": "found",
+        "case_name": "Harris v. Forklift Systems, Inc.",
+        "court": "",
+        "date_filed": "1993-11-09",
+        "url": "https://www.courtlistener.com/opinion/112911/harris-v-forklift-systems-inc/",
+        "source": "courtlistener",
+        "has_opinion_text": true
+      },
+      "verification": {
+        "status": "verified",
+        "citation_exists": true,
+        "citation_format_correct": true,
+        "quote_accuracy": null,
+        "quote_diff": null,
+        "actual_quote": null,
+        "characterization_accuracy": "accurate",
+        "characterization_explanation": "The characterization accurately captures the Court's holding. The opinion explicitly states on page 23: 'But we can say that whether an environment is \"hostile\" or \"abusive\" can be determined only by looking at all the circumstances. These may include the frequency of the discriminatory conduct; its severity; whether it is physically threatening or humiliating, or a mere offensive utterance; and whether it unreasonably interferes with an employee's work performance.' This matches the characterization's description of examining 'the totality of the circumstances' and listing the exact same factors in the same order.",
+        "confidence": 1.0,
+        "reasoning": "[Confirmed by review] STEP 1 - CITATION EXISTENCE AND IDENTITY: The citation format is correct (Harris v. Forklift Systems, Inc., 510 U.S. 17 (1993)). The source opinion text confirms this is the correct case - it shows the same case name, citation, and deals with Title VII hostile work environment claims as expected.\n\nSTEP 2 - QUOTE VERIFICATION: No direct quote was provided, so this step is not applicable.\n\nSTEP 3 - CHARACTERIZATION VERIFICATION: The characterization states the Court 'explained that hostile work environment determination requires examining the totality of the circumstances, including the frequency of the conduct, its severity, whether it is physically threatening or humiliating, and whether it unreasonably interferes with an employee's work performance.' Looking at page 23 of the opinion, I find this exact language: 'But we can say that whether an environment is \"hostile\" or \"abusive\" can be determined only by looking at all the circumstances. These may include the frequency of the discriminatory conduct; its severity; whether it is physically threatening or humiliating, or a mere offensive utterance; and whether it unreasonably interferes with an employee's work performance.' The characterization accurately captures this holding, using 'totality of the circumstances' as a reasonable paraphrase of 'looking at all the circumstances' and listing the exact same factors.\n\nSTEP 4 - CONFIDENCE ASSESSMENT: My confidence is very high (0.95) because the characterization directly tracks the Court's language and accurately represents the holding.\n\nSTEP 5 - OVERALL STATUS: The citation is properly formatted and the characterization accurately represents the Court's holding, so the overall status is 'verified'.",
+        "quote_status": null,
+        "characterization_status": "verified"
+      }
+    }
+  ],
+  "created_at": "2026-04-11T19:32:42.562400+00:00"
+}

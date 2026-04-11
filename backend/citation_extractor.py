@@ -150,8 +150,8 @@ def extract_citations(document_text: str) -> list[ExtractedCitation]:
             # Adjust positions for chunk offset
             c.position_start += chunk_offset
             c.position_end += chunk_offset
-            # Deduplicate by citation text + approximate position
-            key = f"{c.citation_text}:{c.position_start // 500}"
+            # Deduplicate by citation text + approximate position (2000-char buckets for AI estimate variance)
+            key = f"{c.citation_text}:{c.position_start // 2000}"
             if key not in seen:
                 seen.add(key)
                 all_citations.append(c)
@@ -181,7 +181,7 @@ def _extract_from_text(text: str) -> list[ExtractedCitation]:
     result = call_ai_json(
         messages=[{"role": "user", "content": prompt}],
         system=EXTRACTION_SYSTEM,
-        max_tokens=32768,  # Large budget — don't truncate results
+        max_tokens=16384,  # Large budget — don't truncate results
         operation_name="Citation extraction",
     )
 
@@ -236,7 +236,12 @@ def _review_extraction(text: str, citations: list[ExtractedCitation]) -> list[Ex
         idx = corr.get("index")
         field = corr.get("field")
         new_value = corr.get("new_value")
+        _ALLOWED_FIELDS = {"citation_text", "case_name", "full_reference", "quoted_text",
+                           "characterization", "context", "pinpoint", "position_start", "position_end"}
         if idx is not None and field and new_value is not None and 0 <= idx < len(citations):
+            if field not in _ALLOWED_FIELDS:
+                logger.warning(f"Correction rejected: disallowed field '{field}'")
+                continue
             if hasattr(citations[idx], field):
                 logger.info(f"Correction: citation[{idx}].{field} = {new_value!r}")
                 setattr(citations[idx], field, new_value)
@@ -261,6 +266,15 @@ def _parse_citation_list(items: list) -> list[ExtractedCitation]:
     for item in items:
         if not isinstance(item, dict):
             continue
+        # Safely cast position values to int (AI may return strings)
+        try:
+            pos_start = int(item.get("position_start", 0))
+        except (ValueError, TypeError):
+            pos_start = 0
+        try:
+            pos_end = int(item.get("position_end", 0))
+        except (ValueError, TypeError):
+            pos_end = 0
         citations.append(ExtractedCitation(
             citation_text=item.get("citation_text", ""),
             case_name=item.get("case_name", ""),
@@ -268,8 +282,8 @@ def _parse_citation_list(items: list) -> list[ExtractedCitation]:
             quoted_text=item.get("quoted_text"),
             characterization=item.get("characterization"),
             context=item.get("context", ""),
-            position_start=item.get("position_start", 0),
-            position_end=item.get("position_end", 0),
+            position_start=pos_start,
+            position_end=pos_end,
             pinpoint=item.get("pinpoint"),
         ))
     return citations
