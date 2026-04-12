@@ -43,14 +43,14 @@ function CheckIcon({ value }: { value: number }) {
 }
 
 function statusBadgeClass(status: string): string {
-  if (status === "error") return styles.statusError;
-  if (status === "warning") return styles.statusWarning;
+  if (status === "error") return styles.statusError ?? "";
+  if (status === "warning") return styles.statusWarning ?? "";
   return "";
 }
 
 function rowClass(status: string): string {
-  if (status === "error") return styles.rowError;
-  if (status === "warning") return styles.rowWarning;
+  if (status === "error") return styles.rowError ?? "";
+  if (status === "warning") return styles.rowWarning ?? "";
   return "";
 }
 
