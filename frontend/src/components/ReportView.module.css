@@ -375,8 +375,19 @@
 /* ─── Print Styles ──────────────────────────────────────────── */
 
 @media print {
-  .wrapper { overflow: visible; }
-  .content { overflow: visible; background: #fff; }
+  .wrapper {
+    display: block !important;
+    overflow: visible !important;
+    height: auto !important;
+    flex: none !important;
+  }
+  .content {
+    display: block !important;
+    overflow: visible !important;
+    height: auto !important;
+    flex: none !important;
+    background: #fff;
+  }
   .headerButtons { display: none !important; }
   .btnRow { display: none !important; }
   .header {
@@ -388,6 +399,9 @@
   .colorBar, .statsRow {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
+  }
+  .tableWrapper {
+    overflow: visible !important;
   }
   .table { font-size: 10px; page-break-inside: auto; }
   .table thead {

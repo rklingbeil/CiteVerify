@@ -54,3 +54,17 @@
   display: flex;
   flex-direction: column;
 }
+
+@media print {
+  .app {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  .main {
+    display: block !important;
+    overflow: visible !important;
+    height: auto !important;
+    flex: none !important;
+  }
+}
