@@ -144,13 +144,6 @@ export default function ReportView({ report, onReset }: Props) {
     return <span className={`${styles.arrow} ${styles.arrowActive}`}>{sortDir === "asc" ? "\u25BC" : "\u25B2"}</span>;
   }
 
-  function handleDownloadPdf() {
-    const link = document.createElement("a");
-    link.href = `/api/reports/${report.id}/pdf`;
-    link.download = "";
-    link.click();
-  }
-
   function handleDownloadExcel() {
     const link = document.createElement("a");
     link.href = `/api/reports/${report.id}/excel`;
@@ -173,8 +166,7 @@ export default function ReportView({ report, onReset }: Props) {
           </div>
         </div>
         <div className={styles.headerButtons}>
-          <button className={styles.headerBtn} onClick={handlePrint}>Print / PDF</button>
-          <button className={styles.headerBtn} onClick={handleDownloadPdf}>Download PDF</button>
+          <button className={styles.headerBtn} onClick={handlePrint}>Print / Save PDF</button>
           <button className={styles.headerBtn} onClick={handleDownloadExcel}>Export Excel</button>
           <button className={styles.headerBtn} onClick={onReset}>New Document</button>
         </div>
@@ -225,12 +217,6 @@ export default function ReportView({ report, onReset }: Props) {
               </>
             )}
             {flagged.length > 0 && <p>Review all flagged citations below.</p>}
-          </div>
-
-          {/* Download Buttons */}
-          <div className={styles.btnRow}>
-            <button className={styles.downloadBtn} onClick={handleDownloadPdf}>Download PDF</button>
-            <button className={styles.exportBtn} onClick={handleDownloadExcel}>Export to Excel</button>
           </div>
 
           {/* Citation Summary Table */}
