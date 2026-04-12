@@ -59,14 +59,16 @@ def _case_names_match(extracted_name: str, lookup_name: str) -> bool:
     # Extract party names (split on "v" — periods already stripped by normalizer)
     ext_parties = re.split(r'\s+v\s+', ext)
     lkp_parties = re.split(r'\s+v\s+', lkp)
-    # Check if at least one substantial party name matches
+    lkp_words = set(lkp.split())
+    ext_words = set(ext.split())
+    # Check if at least one substantial party name word matches (word-boundary)
     for party in ext_parties:
-        party = party.strip().rstrip(',')
-        if len(party) > 3 and party in lkp:
+        words = [w for w in party.strip().rstrip(',').split() if len(w) > 3]
+        if words and any(w in lkp_words for w in words[:2]):
             return True
     for party in lkp_parties:
-        party = party.strip().rstrip(',')
-        if len(party) > 3 and party in ext:
+        words = [w for w in party.strip().rstrip(',').split() if len(w) > 3]
+        if words and any(w in ext_words for w in words[:2]):
             return True
     return False
 
@@ -496,6 +498,7 @@ class VerificationReport:
     errors: int
     unverifiable: int
     citations: list[CitationReport] = field(default_factory=list)
+    extraction_warnings: list[str] = field(default_factory=list)
     created_at: str = ""
 
     def to_dict(self) -> dict:
@@ -548,6 +551,7 @@ class VerificationReport:
                 }
                 for c in self.citations
             ],
+            "extraction_warnings": self.extraction_warnings,
             "created_at": self.created_at,
         }
 
@@ -571,6 +575,9 @@ def run_verification(
     progress(2, 100, "Extracting text from document...")
     extraction = extract_document(file_path)
     logger.info(f"Extracted {len(extraction.text)} chars from {filename}")
+    if extraction.warnings:
+        for w in extraction.warnings:
+            logger.warning(f"Extraction warning: {w}")
 
     # ── Step 2: Extract citations via AI (two-pass) ──────────────────────
     progress(5, 100, "Pass 1: Identifying all citations, quotes, and characterizations...")
@@ -587,6 +594,7 @@ def run_verification(
             warnings=0,
             errors=0,
             unverifiable=0,
+            extraction_warnings=extraction.warnings,
             created_at=datetime.now(timezone.utc).isoformat(),
         )
 
@@ -913,6 +921,7 @@ def run_verification(
         errors=error_count,
         unverifiable=unverifiable_count,
         citations=citation_reports,
+        extraction_warnings=extraction.warnings,
         created_at=datetime.now(timezone.utc).isoformat(),
     )
 

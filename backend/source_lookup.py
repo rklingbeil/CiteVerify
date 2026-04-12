@@ -248,6 +248,7 @@ def _names_plausibly_match(extracted_name: str, lookup_name: str) -> bool:
     """Quick check if two case names plausibly refer to the same case.
 
     Used to reject obviously wrong results from broad searches.
+    Uses word-boundary matching to avoid false positives.
     """
     if not extracted_name or not lookup_name:
         return True
@@ -255,11 +256,12 @@ def _names_plausibly_match(extracted_name: str, lookup_name: str) -> bool:
     lkp = normalize_legal_name(lookup_name)
     if ext == lkp:
         return True
-    # Check if any substantial party word appears in both
+    # Check if any substantial party word appears in both (word-boundary)
+    lkp_words = set(lkp.split())
     ext_parties = re.split(r'\s+v\s+', ext)
     for party in ext_parties:
         words = [w for w in party.strip().split() if len(w) > 3]
-        if words and any(w in lkp for w in words[:2]):
+        if words and any(w in lkp_words for w in words[:2]):
             return True
     return False
 
@@ -810,12 +812,14 @@ def confirm_case_by_name(case_name: str) -> bool:
         # Normalize both sides so "Int'l" == "International", "Corp." == "Corporation"
         ret_norm = normalize_legal_name(result.case_name)
         # Verify BOTH party names appear in the returned case to avoid
-        # false positives where only one party name matches a different case
+        # false positives where only one party name matches a different case.
+        # Use word-boundary matching to prevent "jones" matching "jonesboro".
+        ret_words = set(ret_norm.split())
         matched_parties = 0
         for party in parties:
             party_norm = normalize_legal_name(party)
             party_words = [w for w in party_norm.split() if len(w) > 3]
-            if party_words and any(w in ret_norm for w in party_words[:2]):
+            if party_words and any(w in ret_words for w in party_words[:2]):
                 matched_parties += 1
         if matched_parties >= 2:
             return True

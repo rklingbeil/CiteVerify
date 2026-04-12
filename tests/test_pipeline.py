@@ -6,7 +6,7 @@ from backend.citation_extractor import ExtractedCitation
 from backend.extractor import ExtractionResult
 from backend.pipeline import VerificationReport, run_verification
 from backend.source_lookup import LookupResult
-from backend.verifier import VerificationResult
+from backend.verifier import VerificationResult, make_unverifiable_result
 
 
 def _make_citation(**overrides) -> ExtractedCitation:
@@ -63,16 +63,21 @@ class TestRunVerification:
         assert report.total_citations == 0
         assert report.citations == []
 
+    @patch("backend.pipeline.verify_citation_from_knowledge")
     @patch("backend.pipeline.verify_citation")
     @patch("backend.pipeline.lookup_citation")
     @patch("backend.pipeline.extract_citations")
     @patch("backend.pipeline.extract_document")
-    def test_unverifiable_when_no_opinion_text(self, mock_extract_doc, mock_extract_cit, mock_lookup, mock_verify):
+    def test_unverifiable_when_no_opinion_text(
+        self, mock_extract_doc, mock_extract_cit, mock_lookup, mock_verify, mock_knowledge,
+    ):
         mock_extract_doc.return_value = ExtractionResult(text="doc text")
         mock_extract_cit.return_value = [_make_citation()]
         mock_lookup.return_value = LookupResult(
             found=True, status="found", opinion_text=None, source="courtlistener",
+            case_name="Smith v. Jones",
         )
+        mock_knowledge.return_value = make_unverifiable_result("No source text available")
 
         report = run_verification("/tmp/test.pdf", "test.pdf")
         assert report.unverifiable == 1

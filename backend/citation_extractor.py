@@ -166,9 +166,9 @@ def _extract_with_review(text: str) -> list[ExtractedCitation]:
     logger.info(f"Pass 1: extracted {len(citations)} citations")
 
     # Pass 2: Review pass — check for missed citations and errors
-    if citations:  # Only review if we found something (otherwise the doc may not have cites)
-        citations = _review_extraction(text, citations)
-        logger.info(f"Pass 2 (review): now have {len(citations)} citations")
+    # Always run review even if Pass 1 returned empty (AI hiccup recovery)
+    citations = _review_extraction(text, citations)
+    logger.info(f"Pass 2 (review): now have {len(citations)} citations")
 
     return citations
 
