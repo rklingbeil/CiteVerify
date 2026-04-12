@@ -836,6 +836,14 @@ def run_verification(
                     f"prefer 'unverifiable' over 'verified'. Cap your confidence "
                     f"accordingly."
                 )
+            if cr.lookup.status == "mention":
+                return (
+                    f"LOOKUP NOTE: This citation was not found in CourtListener's "
+                    f"case law database. A GovInfo search found a government document "
+                    f"that mentions it, but this only confirms the citation text "
+                    f"appears somewhere — NOT that the case exists or that the "
+                    f"citation is correct. Treat this as weak evidence."
+                )
             return ""
 
         def _knowledge_verify(idx: int, cr: CitationReport) -> VerificationResult:

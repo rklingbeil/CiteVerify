@@ -766,7 +766,7 @@ def lookup_citation_govinfo(citation_text: str, case_name: str = "") -> LookupRe
 
         return LookupResult(
             found=True,
-            status="found",
+            status="mention",  # GovInfo finds documents that mention the citation, not the case itself
             case_name=best.get("title", ""),
             court=", ".join(best.get("governmentAuthor", [])),
             date_filed=best.get("dateIssued", ""),
