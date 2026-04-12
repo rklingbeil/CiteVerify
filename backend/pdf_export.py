@@ -170,10 +170,16 @@ def _citation_section(idx: int, cr: CitationReport, styles: dict) -> list:
                 f"<i>{_esc(cr.verification.characterization_explanation)}</i>", styles["small"],
             ))
 
-    # Confidence
+    # Confidence + reasoning
     conf = cr.verification.confidence
     if conf > 0:
         elements.append(Paragraph(f"Confidence: {conf:.0%}", styles["small"]))
+    if cr.verification.reasoning:
+        # Truncate very long reasoning for PDF readability
+        reasoning = cr.verification.reasoning[:500]
+        if len(cr.verification.reasoning) > 500:
+            reasoning += "..."
+        elements.append(Paragraph(f"<i>{_esc(reasoning)}</i>", styles["small"]))
 
     elements.append(Spacer(1, 12))
     return elements
@@ -214,6 +220,13 @@ def generate_pdf(report: VerificationReport) -> bytes:
     # Summary
     elements.append(_summary_table(report, styles))
     elements.append(Spacer(1, 16))
+
+    # Extraction warnings (scanned pages, etc.)
+    if report.extraction_warnings:
+        elements.append(Paragraph("Document Warnings", styles["heading"]))
+        for w in report.extraction_warnings:
+            elements.append(Paragraph(f"• {_esc(w)}", styles["small"]))
+        elements.append(Spacer(1, 8))
 
     # Citations
     if report.citations:
