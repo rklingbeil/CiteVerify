@@ -203,8 +203,8 @@ def _review_extraction(text: str, citations: list[ExtractedCitation]) -> list[Ex
             "index": i,
             "case_name": c.case_name,
             "citation_text": c.citation_text,
-            "quoted_text": c.quoted_text[:100] if c.quoted_text else None,
-            "characterization": c.characterization[:100] if c.characterization else None,
+            "quoted_text": c.quoted_text[:500] if c.quoted_text else None,
+            "characterization": c.characterization[:500] if c.characterization else None,
         }
         cite_summaries.append(summary)
 

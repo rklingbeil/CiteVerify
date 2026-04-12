@@ -268,7 +268,7 @@ def _names_plausibly_match(extracted_name: str, lookup_name: str) -> bool:
 
 # ─── Citation Lookup API (primary) ────────────────────────────────────────
 
-def _cl_citation_lookup(citation_text: str) -> LookupResult | None:
+def _cl_citation_lookup(citation_text: str, case_name: str = "") -> LookupResult | None:
     """Look up a citation via CourtListener's Citation Lookup API.
 
     This is the purpose-built citation resolver using Eyecite (trained on 55M+
@@ -293,21 +293,21 @@ def _cl_citation_lookup(citation_text: str) -> LookupResult | None:
     parts = _parse_citation_parts(citation_text)
     if parts:
         volume, reporter, page = parts
-        result = _cl_citation_lookup_direct(volume, reporter, page)
+        result = _cl_citation_lookup_direct(volume, reporter, page, case_name=case_name)
         if result:
             return result
 
     # Mode 2: Text mode — let Eyecite parse the citation
     clean = _clean_citation_for_search(citation_text)
     if clean:
-        result = _cl_citation_lookup_text(clean)
+        result = _cl_citation_lookup_text(clean, case_name=case_name)
         if result:
             return result
 
     return None
 
 
-def _cl_citation_lookup_direct(volume: str, reporter: str, page: str) -> LookupResult | None:
+def _cl_citation_lookup_direct(volume: str, reporter: str, page: str, case_name: str = "") -> LookupResult | None:
     """Citation Lookup API — direct volume/reporter/page mode."""
     _throttle_cl()
     try:
@@ -324,14 +324,14 @@ def _cl_citation_lookup_direct(volume: str, reporter: str, page: str) -> LookupR
             logger.debug(f"Citation lookup direct returned {resp.status_code}")
             return None
 
-        return _parse_citation_lookup_response(resp.json())
+        return _parse_citation_lookup_response(resp.json(), case_name=case_name)
 
     except requests.RequestException as e:
         logger.warning(f"Citation lookup direct failed: {e}")
         return None
 
 
-def _cl_citation_lookup_text(text: str) -> LookupResult | None:
+def _cl_citation_lookup_text(text: str, case_name: str = "") -> LookupResult | None:
     """Citation Lookup API — text mode (Eyecite parsing)."""
     _throttle_cl()
     try:
@@ -348,14 +348,14 @@ def _cl_citation_lookup_text(text: str) -> LookupResult | None:
             logger.debug(f"Citation lookup text returned {resp.status_code}")
             return None
 
-        return _parse_citation_lookup_response(resp.json())
+        return _parse_citation_lookup_response(resp.json(), case_name=case_name)
 
     except requests.RequestException as e:
         logger.warning(f"Citation lookup text failed: {e}")
         return None
 
 
-def _parse_citation_lookup_response(data: list) -> LookupResult | None:
+def _parse_citation_lookup_response(data: list, case_name: str = "") -> LookupResult | None:
     """Parse the Citation Lookup API response array into a LookupResult.
 
     The response is a JSON array of citation results. Each has:
@@ -381,8 +381,17 @@ def _parse_citation_lookup_response(data: list) -> LookupResult | None:
         if not clusters:
             continue
 
-        # Use the first cluster (best match for status 200, first of several for 300)
+        # For ambiguous results (300), try to match by case name
         cluster = clusters[0]
+        if status == 300 and case_name and len(clusters) > 1:
+            for candidate in clusters:
+                cand_name = candidate.get("case_name", "") or candidate.get("case_name_full", "")
+                if _names_plausibly_match(case_name, cand_name):
+                    cluster = candidate
+                    logger.info(
+                        f"Ambiguous citation: selected '{cand_name}' from {len(clusters)} candidates"
+                    )
+                    break
         cluster_id = cluster.get("id")
         absolute_url = cluster.get("absolute_url", "")
 
@@ -444,7 +453,7 @@ def lookup_citation_courtlistener(
     5. Search API with unquoted citation (broadest)
     """
     # Strategy 1: Citation Lookup API (primary)
-    result = _cl_citation_lookup(citation_text)
+    result = _cl_citation_lookup(citation_text, case_name=case_name)
     if result and result.found:
         return result
 
