@@ -7,6 +7,7 @@ import threading
 import time
 from typing import Any, Dict, List, Optional
 
+import httpx
 from anthropic import Anthropic, APIConnectionError, APIError, RateLimitError
 
 from backend.config import ANTHROPIC_API_KEY, CLAUDE_MODEL, AI_PROVIDER
@@ -28,7 +29,10 @@ def get_client() -> Anthropic:
             if _client is None:  # Double-checked locking
                 if not ANTHROPIC_API_KEY:
                     raise RuntimeError("ANTHROPIC_API_KEY is not set")
-                _client = Anthropic(api_key=ANTHROPIC_API_KEY)
+                _client = Anthropic(
+                    api_key=ANTHROPIC_API_KEY,
+                    timeout=httpx.Timeout(300.0, read=120.0),
+                )
     return _client
 
 

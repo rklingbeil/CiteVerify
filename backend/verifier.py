@@ -579,7 +579,24 @@ def _cap_knowledge_confidence(
         result.confidence = cap
 
 
-# ── Holdings Extraction (#5) ──────────��────────────────────────────��──
+def _truncate_at_sentence(text: str, max_chars: int) -> str:
+    """Truncate text at the nearest sentence boundary before max_chars."""
+    if len(text) <= max_chars:
+        return text
+    # Search backward from max_chars for a sentence-ending punctuation
+    search_start = max(0, max_chars - 500)
+    candidate = text[:max_chars]
+    # Find last sentence boundary (. ! ? followed by space or newline)
+    last_boundary = -1
+    for m in re.finditer(r'[.!?]\s', candidate[search_start:]):
+        last_boundary = search_start + m.end()
+    if last_boundary > 0:
+        return text[:last_boundary].rstrip() + "\n\n[... opinion text truncated for length ...]"
+    # No sentence boundary found — cut at max_chars
+    return text[:max_chars] + "\n\n[... opinion text truncated for length ...]"
+
+
+# ── Holdings Extraction (#5) ──────────────────────────────────────────
 
 _HOLDING_PATTERNS = [
     r'[Ww]e (?:hold|conclude|decide|determine|rule) that\b',
@@ -666,10 +683,8 @@ def verify_citation(
     else:
         char_section = "CHARACTERIZATION: (none — no characterization to verify)"
 
-    # Use generous truncation — 150K chars
-    truncated_opinion = opinion_text[:150_000]
-    if len(opinion_text) > 150_000:
-        truncated_opinion += "\n\n[... opinion text truncated for length ...]"
+    # Use generous truncation — 150K chars, cut at sentence boundary
+    truncated_opinion = _truncate_at_sentence(opinion_text, 150_000)
 
     prompt = VERIFY_PROMPT.format(
         case_name=citation.case_name,
@@ -894,9 +909,7 @@ def _review_verification(
     initial: VerificationResult,
 ) -> VerificationResult:
     """Pass 2: Adversarial review of source-based verification."""
-    truncated_opinion = opinion_text[:150_000]
-    if len(opinion_text) > 150_000:
-        truncated_opinion += "\n\n[... opinion text truncated for length ...]"
+    truncated_opinion = _truncate_at_sentence(opinion_text, 150_000)
 
     quote_section = (
         f'QUOTED TEXT FROM DOCUMENT:\n"{citation.quoted_text}"'
