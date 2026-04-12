@@ -8,6 +8,7 @@ from backend.source_lookup import (
     _parse_citation_parts,
     _clean_citation_for_search,
     _strip_html,
+    _web_search_citation,
     lookup_citation,
     lookup_citation_courtlistener,
     lookup_citation_govinfo,
@@ -157,3 +158,121 @@ class TestUnifiedLookup:
     def test_whitespace_citation_returns_not_found(self):
         result = lookup_citation("   ")
         assert result.found is False
+
+    @patch("backend.source_lookup._web_search_citation")
+    @patch("backend.source_lookup.lookup_citation_govinfo")
+    @patch("backend.source_lookup.lookup_citation_courtlistener")
+    def test_falls_back_to_web_search(self, mock_cl, mock_gi, mock_web):
+        """Falls back to DuckDuckGo web search when CL and GovInfo both fail."""
+        mock_cl.return_value = LookupResult(found=False, status="not_found")
+        mock_gi.return_value = LookupResult(found=False, status="not_found")
+        mock_web.return_value = LookupResult(
+            found=True, status="found", case_name="In re Grand Jury Investigation",
+            source="web_search", court="9th Cir", date_filed="2016",
+        )
+        result = lookup_citation("810 F.3d 1110", case_name="In re Grand Jury Investigation")
+        assert result.found is True
+        assert result.source == "web_search"
+        mock_web.assert_called_once()
+
+    @patch("backend.source_lookup._web_search_citation")
+    @patch("backend.source_lookup.lookup_citation_govinfo")
+    @patch("backend.source_lookup.lookup_citation_courtlistener")
+    def test_web_search_not_called_when_cl_succeeds(self, mock_cl, mock_gi, mock_web):
+        """Web search is NOT called if CourtListener finds the case."""
+        mock_cl.return_value = LookupResult(found=True, status="found", source="courtlistener")
+        result = lookup_citation("810 F.3d 1110")
+        assert result.source == "courtlistener"
+        mock_web.assert_not_called()
+
+
+class TestWebSearch:
+    """Tests for the DuckDuckGo web search backstop."""
+
+    @patch("backend.source_lookup.requests.get")
+    def test_parses_ddg_results(self, mock_get):
+        """Correctly parses DDG HTML results with citation in title."""
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.text = """
+        <div class="result">
+            <a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fjustia.com%2Fcase">
+                In re Grand Jury Investigation, 810 F.3d 1110 (9th Cir. 2016)
+            </a>
+        </div>
+        """
+        mock_get.return_value = mock_resp
+
+        result = _web_search_citation("810 F.3d 1110", case_name="In re Grand Jury Investigation")
+        assert result is not None
+        assert result.found is True
+        assert result.source == "web_search"
+        assert "Grand Jury" in result.case_name
+        assert result.date_filed == "2016"
+        assert result.court == "9th Cir"
+
+    @patch("backend.source_lookup.requests.get")
+    def test_handles_no_results(self, mock_get):
+        """Returns None when DDG returns no matching results."""
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.text = "<html><body>No results found</body></html>"
+        mock_get.return_value = mock_resp
+
+        result = _web_search_citation("999 Fake.Rep 999")
+        assert result is None
+
+    @patch("backend.source_lookup.requests.get")
+    def test_handles_http_error(self, mock_get):
+        """Returns None on HTTP errors."""
+        mock_resp = MagicMock()
+        mock_resp.status_code = 403
+        mock_get.return_value = mock_resp
+
+        result = _web_search_citation("810 F.3d 1110")
+        assert result is None
+
+    @patch("backend.source_lookup.requests.get")
+    def test_handles_network_error(self, mock_get):
+        """Returns None on network errors."""
+        import requests as req
+        mock_get.side_effect = req.ConnectionError("timeout")
+
+        result = _web_search_citation("810 F.3d 1110")
+        assert result is None
+
+    @patch("backend.source_lookup.requests.get")
+    def test_rejects_mismatched_case_name(self, mock_get):
+        """Skips results that don't match the expected case name."""
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.text = """
+        <div class="result">
+            <a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fjustia.com">
+                Totally Different Case, 810 F.3d 1110 (2016)
+            </a>
+        </div>
+        """
+        mock_get.return_value = mock_resp
+
+        result = _web_search_citation("810 F.3d 1110", case_name="In re Grand Jury Investigation")
+        assert result is None
+
+    @patch("backend.source_lookup.requests.get")
+    def test_accepts_202_response(self, mock_get):
+        """DDG sometimes returns 202 with valid results."""
+        mock_resp = MagicMock()
+        mock_resp.status_code = 202
+        mock_resp.text = """
+        <div class="result">
+            <a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fjustia.com%2Fcase">
+                Miranda v. Arizona, 384 U.S. 436 (1966) - Justia
+            </a>
+        </div>
+        """
+        mock_get.return_value = mock_resp
+
+        result = _web_search_citation("384 U.S. 436", case_name="Miranda v. Arizona")
+        assert result is not None
+        assert result.found is True
+        assert "Miranda" in result.case_name

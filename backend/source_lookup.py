@@ -1,9 +1,10 @@
-"""Case law source lookup — CourtListener V4 API and GovInfo.
+"""Case law source lookup — CourtListener V4 API, GovInfo, and web search.
 
 Lookup strategy (in order):
 1. CourtListener Citation Lookup API — purpose-built citation resolver using Eyecite
 2. CourtListener V4 Search API — broader keyword/case name search as fallback
 3. GovInfo API — secondary confirmation for federal cases
+4. DuckDuckGo web search — last-resort backstop for cases not in other databases
 """
 
 import html as html_module
@@ -780,6 +781,157 @@ def lookup_citation_govinfo(citation_text: str, case_name: str = "") -> LookupRe
         return LookupResult(found=False, status="error")
 
 
+# ─── DuckDuckGo Web Search (last resort) ─────────────────────────────────
+
+import urllib.parse as _urllib_parse
+
+_DDG_URL = "https://html.duckduckgo.com/html/"
+_DDG_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    ),
+}
+
+# Regex to extract title + redirect URL from DDG HTML results
+_DDG_TITLE_RE = re.compile(
+    r'<a[^>]*class="result__a"[^>]*href="([^"]*?)"[^>]*>(.*?)</a>', re.DOTALL
+)
+# Extract the actual URL from DDG's redirect wrapper
+_DDG_URL_RE = re.compile(r"uddg=([^&]+)")
+
+# Common legal case-law databases (results from these are higher signal)
+_LEGAL_DOMAINS = {
+    "justia.com", "courtlistener.com", "law.cornell.edu", "leagle.com",
+    "casetext.com", "scholar.google.com", "govinfo.gov", "loc.gov",
+    "vlex.com", "law.justia.com", "supreme.justia.com",
+}
+
+# Pattern to extract year from search result titles
+# Handles both "(1966)" and "(9th Cir. 2016)"
+_TITLE_YEAR_RE = re.compile(r"\((?:[^)]*\s)?((?:18|19|20)\d{2})\)")
+_TITLE_COURT_RE = re.compile(
+    r"\b(9th Cir|1st Cir|2d Cir|3d Cir|4th Cir|5th Cir|6th Cir|7th Cir|"
+    r"8th Cir|10th Cir|11th Cir|D\.C\. Cir|Fed\. Cir|S\. ?Ct|"
+    r"Supreme Court|Court of Appeals)\b",
+    re.IGNORECASE,
+)
+
+
+def _web_search_citation(citation_text: str, case_name: str = "") -> LookupResult | None:
+    """Last-resort web search via DuckDuckGo.
+
+    Only called when CourtListener and GovInfo both fail to find the case.
+    Confirms the case exists and extracts basic metadata (name, court, date, URL).
+    Does NOT provide opinion text — pipeline falls back to knowledge verification.
+    """
+    # Build a focused search query with the citation in quotes
+    parts = _parse_citation_parts(citation_text)
+    if parts:
+        vol, rep, page = parts
+        query = f'"{vol} {rep} {page}"'
+    else:
+        clean = _clean_citation_for_search(citation_text)
+        query = f'"{clean}"'
+
+    if case_name:
+        first_party = re.split(r'\s+v\.?\s+', case_name)[0].strip()
+        if first_party:
+            query = f'{first_party} {query}'
+
+    try:
+        resp = requests.get(
+            _DDG_URL,
+            params={"q": query},
+            headers=_DDG_HEADERS,
+            timeout=15,
+        )
+        if resp.status_code not in (200, 202):
+            logger.debug(f"DuckDuckGo returned {resp.status_code}")
+            return None
+
+        html_text = resp.text
+
+        # Parse results (202 with no results means rate-limited)
+        matches = _DDG_TITLE_RE.findall(html_text)
+        if not matches:
+            logger.debug("DuckDuckGo: no results found")
+            return None
+
+        # Scan results for a matching case
+        for url_raw, title_raw in matches[:5]:
+            title = html_module.unescape(re.sub(r"<[^>]+>", "", title_raw)).strip()
+            if not title:
+                continue
+
+            # Extract actual URL from DDG redirect
+            url_match = _DDG_URL_RE.search(url_raw)
+            url = _urllib_parse.unquote(url_match.group(1)) if url_match else ""
+
+            # Check if the citation text appears in the title (strong signal)
+            if parts:
+                vol, rep, page = parts
+                citation_in_title = f"{vol}" in title and f"{page}" in title
+            else:
+                citation_in_title = any(
+                    w in title.lower() for w in citation_text.lower().split()[:3]
+                )
+
+            if not citation_in_title:
+                continue
+
+            # Validate case name match if provided
+            if case_name and not _names_plausibly_match(case_name, title):
+                continue
+
+            # Extract case name from the title (text before the citation)
+            found_name = title
+            # Try to extract just the case name portion (e.g. "Miranda v. Arizona")
+            # by looking for the pattern "Name, Vol Rep Page"
+            name_match = re.match(r"^(.+?),?\s+\d+\s+\S+\s+\d+", title)
+            if name_match:
+                found_name = name_match.group(1).strip()
+                # Remove common prefixes like "PDF" from DDG
+                found_name = re.sub(r"^(?:PDF|HTML)\s+", "", found_name).strip()
+
+            # Extract year and court from title/snippet
+            date_filed = ""
+            year_match = _TITLE_YEAR_RE.search(title)
+            if year_match:
+                date_filed = year_match.group(1)
+
+            court = ""
+            court_match = _TITLE_COURT_RE.search(title)
+            if court_match:
+                court = court_match.group(1)
+
+            logger.info(
+                f"Web search found: {found_name} ({court}, {date_filed}) "
+                f"for citation '{citation_text}'"
+            )
+
+            return LookupResult(
+                found=True,
+                status="found",
+                case_name=found_name,
+                court=court,
+                date_filed=date_filed,
+                url=url,
+                source="web_search",
+                opinion_text=None,
+            )
+
+        logger.debug(f"DuckDuckGo: no matching result for '{citation_text}'")
+        return None
+
+    except requests.RequestException as e:
+        logger.debug(f"DuckDuckGo web search failed: {e}")
+        return None
+    except Exception as e:
+        logger.warning(f"DuckDuckGo parse error: {e}")
+        return None
+
+
 # ─── Unified Lookup ───────────────────────────────────────────────────────
 
 def confirm_case_by_name(case_name: str) -> bool:
@@ -836,12 +988,23 @@ def confirm_case_by_name(case_name: str) -> bool:
 
 
 def lookup_citation(citation_text: str, case_name: str = "") -> LookupResult:
-    """Look up a citation, trying CourtListener V4 first then GovInfo."""
+    """Look up a citation, trying CourtListener, GovInfo, then web search."""
     if not citation_text or not citation_text.strip():
         return LookupResult(found=False, status="not_found")
 
+    # Strategy 1-5: CourtListener (Citation Lookup API + V4 Search)
     result = lookup_citation_courtlistener(citation_text, case_name=case_name)
     if result.found:
         return result
 
-    return lookup_citation_govinfo(citation_text, case_name=case_name)
+    # Strategy 6: GovInfo
+    result = lookup_citation_govinfo(citation_text, case_name=case_name)
+    if result.found:
+        return result
+
+    # Strategy 7: DuckDuckGo web search (last resort)
+    web_result = _web_search_citation(citation_text, case_name=case_name)
+    if web_result and web_result.found:
+        return web_result
+
+    return LookupResult(found=False, status="not_found")
