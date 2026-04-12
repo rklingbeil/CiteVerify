@@ -37,13 +37,15 @@ export default function App() {
 
   return (
     <div className={styles.app}>
-      <header className={styles.header}>
-        <h1 className={styles.logo} onClick={handleReset}>
-          <span className={styles.logoIcon}>✓</span>
-          CiteVerify
-        </h1>
-        <span className={styles.tagline}>Legal Citation Verification</span>
-      </header>
+      {state !== "report" && (
+        <header className={styles.header}>
+          <h1 className={styles.logo} onClick={handleReset}>
+            <span className={styles.logoIcon}>✓</span>
+            CiteVerify
+          </h1>
+          <span className={styles.tagline}>Legal Citation Verification</span>
+        </header>
+      )}
 
       <main className={styles.main}>
         {state === "upload" && (

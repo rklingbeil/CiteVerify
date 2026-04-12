@@ -33,6 +33,8 @@ export interface VerificationInfo {
   characterization_explanation: string | null;
   confidence: number;
   reasoning: string | null;
+  quote_status: string | null;
+  characterization_status: string | null;
 }
 
 export interface CitationReport {
@@ -51,6 +53,7 @@ export interface VerificationReport {
   errors: number;
   unverifiable: number;
   citations: CitationReport[];
+  extraction_warnings: string[];
   created_at: string;
 }
 

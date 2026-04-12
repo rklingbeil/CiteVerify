@@ -62,9 +62,17 @@
   border: 1px solid var(--color-unverifiable-border);
 }
 
-.pdfBtn {
+.actions {
+  display: flex;
+  gap: 8px;
   margin-left: auto;
-  padding: 6px 16px;
+}
+
+.exportBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
   border: 1px solid var(--color-accent);
   border-radius: var(--radius);
   background: transparent;
@@ -75,9 +83,13 @@
   transition: background 0.2s, color 0.2s;
 }
 
-.pdfBtn:hover {
+.exportBtn:hover {
   background: var(--color-accent);
   color: white;
+}
+
+.exportBtn svg {
+  flex-shrink: 0;
 }
 
 .newBtn {

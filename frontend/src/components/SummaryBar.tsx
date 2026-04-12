@@ -14,6 +14,13 @@ export default function SummaryBar({ report, onReset }: Props) {
     link.click();
   }
 
+  function handleDownloadExcel() {
+    const link = document.createElement("a");
+    link.href = `/api/reports/${report.id}/excel`;
+    link.download = "";
+    link.click();
+  }
+
   return (
     <div className={styles.bar}>
       <div className={styles.left}>
@@ -46,12 +53,23 @@ export default function SummaryBar({ report, onReset }: Props) {
         )}
       </div>
 
-      <button className={styles.pdfBtn} onClick={handleDownloadPdf}>
-        Download PDF
-      </button>
-      <button className={styles.newBtn} onClick={onReset}>
-        New Document
-      </button>
+      <div className={styles.actions}>
+        <button className={styles.exportBtn} onClick={handleDownloadPdf} title="Download PDF report">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12h8M8 2v8m0 0L5 7m3 3l3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          PDF
+        </button>
+        <button className={styles.exportBtn} onClick={handleDownloadExcel} title="Download Excel spreadsheet">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12h8M8 2v8m0 0L5 7m3 3l3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          Excel
+        </button>
+        <button className={styles.newBtn} onClick={onReset}>
+          New Document
+        </button>
+      </div>
     </div>
   );
 }
