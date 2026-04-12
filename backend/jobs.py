@@ -12,6 +12,8 @@ from typing import Optional
 from backend.config import JOB_TTL_HOURS
 from backend.pipeline import VerificationReport, run_verification
 
+JOB_TIMEOUT_SECONDS = int(os.getenv("JOB_TIMEOUT_SECONDS", "3600"))  # 60 minutes
+
 logger = logging.getLogger(__name__)
 
 _executor = ThreadPoolExecutor(max_workers=2)
@@ -55,10 +57,19 @@ def submit_job(filename: str, file_path: str) -> str:
     def _run() -> None:
         with _lock:
             job.status = "running"
+        start_time = time.time()
         try:
             def _progress(step: int, total: int, message: str) -> None:
                 job.progress = min(int(step / total * 100), 99)
                 job.progress_message = message
+                # Check timeout during processing
+                elapsed = time.time() - start_time
+                if elapsed > JOB_TIMEOUT_SECONDS:
+                    raise TimeoutError(
+                        f"Verification timed out after {int(elapsed // 60)} minutes. "
+                        f"Your document may have too many citations to process at once. "
+                        f"Try splitting it into smaller sections and submitting each part separately."
+                    )
 
             report = run_verification(file_path, filename, progress_callback=_progress)
 
@@ -69,6 +80,11 @@ def submit_job(filename: str, file_path: str) -> str:
                 job.progress_message = "Complete"
                 job.status = "completed"
 
+        except TimeoutError as e:
+            logger.warning(f"Job {job_id} timed out: {e}")
+            with _lock:
+                job.error = str(e)
+                job.status = "failed"
         except Exception as e:
             logger.exception(f"Job {job_id} failed: {e}")
             with _lock:
