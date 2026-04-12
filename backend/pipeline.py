@@ -25,6 +25,7 @@ from backend.extractor import extract_document
 from backend.source_lookup import (
     LookupResult,
     _parse_citation_parts,
+    _web_search_citation,
     confirm_case_by_name,
     lookup_citation,
     normalize_legal_name,
@@ -747,18 +748,35 @@ def run_verification(
                     if j != i and other_cr.extraction.case_name == cr.extraction.case_name:
                         name_confirmed_citations.add(j)
             else:
-                logger.info(
-                    f"Case name search also failed for '{cr.extraction.case_name}' "
-                    f"— likely fabricated"
+                # CourtListener name search failed — try web search as last resort
+                web_result = _web_search_citation(
+                    cr.extraction.citation_text, case_name=cr.extraction.case_name
                 )
-                cr.verification = make_unverifiable_result(
-                    f"Source text may be for wrong case: '{cr.lookup.case_name}'"
-                )
-                mismatch_citations.add(i)
-                # Also mark other citations with the same case name as mismatched
-                for j, other_cr in enumerate(citation_reports):
-                    if j != i and other_cr.extraction.case_name == cr.extraction.case_name:
-                        mismatch_citations.add(j)
+                if web_result and web_result.found:
+                    logger.info(
+                        f"Web search confirmed '{cr.extraction.case_name}' exists "
+                        f"as '{web_result.case_name}' — citation mapping issue, not fabricated"
+                    )
+                    cr.verification = make_unverifiable_result(
+                        f"Source text is for wrong case ('{cr.lookup.case_name}'), "
+                        f"but case confirmed to exist by web search"
+                    )
+                    name_confirmed_citations.add(i)
+                    for j, other_cr in enumerate(citation_reports):
+                        if j != i and other_cr.extraction.case_name == cr.extraction.case_name:
+                            name_confirmed_citations.add(j)
+                else:
+                    logger.info(
+                        f"Case name search and web search both failed for "
+                        f"'{cr.extraction.case_name}' — likely fabricated"
+                    )
+                    cr.verification = make_unverifiable_result(
+                        f"Source text may be for wrong case: '{cr.lookup.case_name}'"
+                    )
+                    mismatch_citations.add(i)
+                    for j, other_cr in enumerate(citation_reports):
+                        if j != i and other_cr.extraction.case_name == cr.extraction.case_name:
+                            mismatch_citations.add(j)
             continue
         verifiable.append(cr)
 
